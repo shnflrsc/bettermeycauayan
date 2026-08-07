@@ -1,1119 +1,1359 @@
 [
   {
-    "slug": "barangay-anos",
-    "barangay_name": "ANOS",
-    "address": "Barangay Hall, Brgy. Anos, Los Baños, Laguna",
-    "trunkline": ["0917 146 9167"],
-    "website": "https://www.facebook.com/barangayanosofficialbarangay",
+    "slug": "barangay-bagbaguin",
+    "barangay_name": "BAGBAGUIN",
+    "address": "",
+    "trunkline": ["0962-425-4204"],
+    "website": "",
     "officials": [
       {
-        "role": "Punong Barangay",
-        "name": "BENITO B. ELEC"
+        "role": "Barangay Captain",
+        "name": "CRISPULO D. RIVERA"
       },
       {
-        "role": "SB Member",
-        "name": "EDITHA V. LOZANO"
+        "role": "Councilor",
+        "name": "EVELYN S. YALONG"
       },
       {
-        "role": "SB Member",
-        "name": "ROSALIE P. PANTING"
+        "role": "Councilor",
+        "name": "CARLITO R. ALTOVEROS"
       },
       {
-        "role": "SB Member",
-        "name": "MIGUEL E. SORIANO"
+        "role": "Councilor",
+        "name": "NEMBERT B. CO"
       },
       {
-        "role": "SB Member",
-        "name": "EDGARDO R. EVANGELISTA"
+        "role": "Councilor",
+        "name": "DIOSDADO G. ACERO"
       },
       {
-        "role": "SB Member",
-        "name": "ANGELITA N. ALVAREZ"
+        "role": "Councilor",
+        "name": "ELINO R. ALTOVEROS, SR."
       },
       {
-        "role": "SB Member",
-        "name": "NORA S. ROBLES"
+        "role": "Councilor",
+        "name": "WILBERT C. DELOS SANTOS"
+      },
+      {
+        "role": "Councilor",
+        "name": "VICTOR P. DIAZ, JR."
       },
       {
         "role": "SK Chairperson",
-        "name": "SAMANTHALIN S. BANASIHAN"
+        "name": "JOHN KIN CARL M. DELA CRUZ"
       },
       {
-        "role": "Barangay Secretary",
-        "name": "SARAH M. ROBLES"
+        "role": "Secretary",
+        "name": "HERMINIGILDA A. RIVERA"
       },
       {
-        "role": "SK Member",
-        "name": "KATRINA B. MENDOZA"
-      },
-      {
-        "role": "SK Member",
-        "name": "REAN ROSALES"
-      },
-      {
-        "role": "SK Member",
-        "name": "ALEXIS ROSALES"
-      },
-      {
-        "role": "SK Member",
-        "name": "ALIYAH AVSONIO ABEDANIA"
-      },
-      {
-        "role": "SK Member",
-        "name": "JANELLE TEYENG"
-      },
-      {
-        "role": "SK Member",
-        "name": "MICAELA C. BANDIAN"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "RYAM JOR G. BARREDA"
+        "role": "Treasurer",
+        "name": "EUGENE M. LEGASPI"
       }
     ]
   },
   {
-    "slug": "barangay-bagong-silang",
-    "barangay_name": "BAGONG SILANG",
-    "address": "Barangay Hall, Brgy. Bagong Silang, Los Baños, Laguna",
-    "trunkline": ["0955 527 9328"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-bahay-pare",
+    "barangay_name": "BAHAY PARE",
+    "address": "",
+    "trunkline": ["0906-560-9380"],
+    "website": "",
     "officials": [
       {
-        "role": "Punong Barangay",
-        "name": "ROGELIO N. DELOS REYES"
+        "role": "Barangay Captain",
+        "name": "HON. JOEL E. BERNARDINO"
       },
       {
-        "role": "SB Member",
-        "name": "HAROLD L. DELOS REYES"
+        "role": "Councilor",
+        "name": "ROLANDO R. SANTIAGO"
       },
       {
-        "role": "SB Member",
-        "name": "JOEL PANGANI"
+        "role": "Councilor",
+        "name": "CATHERINE F. SANTIAGO"
       },
       {
-        "role": "SB Member",
-        "name": "ALVINO D. QUIATCHON"
+        "role": "Councilor",
+        "name": "MARIO Y. FIDEL"
       },
       {
-        "role": "SB Member",
-        "name": "DELOS REYES QUIATCHON JACINTO"
+        "role": "Councilor",
+        "name": "ARIEL A. GONZALES"
       },
       {
-        "role": "SB Member",
-        "name": "BABY JANE M. CALAO"
+        "role": "Councilor",
+        "name": "KRISTINE JANE S. SEMINIANO-CURIB"
       },
       {
-        "role": "SB Member",
-        "name": "PRIMITIVO C. NAVAREZ"
+        "role": "Councilor",
+        "name": "CLAIRE ANNE D. DIAZ"
       },
       {
-        "role": "SB Member",
-        "name": "AMADOR A. DELOS REYES"
+        "role": "Councilor",
+        "name": "ROY ANGELO E. DEL ROSARIO"
       },
       {
         "role": "SK Chairperson",
-        "name": "SHENA M. CALAO"
+        "name": "MARY JOY R. BASAS"
       },
       {
-        "role": "Barangay Secretary",
-        "name": "MYLA L. LAYOG"
+        "role": "Secretary",
+        "name": "TEODORO E. RODRIGUEZ"
       },
       {
-        "role": "SK Member",
-        "name": "IVAN D. QUIATCHON"
-      },
-      {
-        "role": "SK Member",
-        "name": "MAXINE Z. QUIATCHON"
-      },
-      {
-        "role": "SK Member",
-        "name": "BHABY AN DELOS REYES MALABANAN"
-      },
-      {
-        "role": "SK Member",
-        "name": "ANTONIO N. DELA CRUZ"
-      },
-      {
-        "role": "SK Member",
-        "name": "CHRISTIA V. QUIATCHON"
-      },
-      {
-        "role": "SK Member",
-        "name": "NATHALIE M. SULLEGUIN"
-      },
-      {
-        "role": "SK Member",
-        "name": "KEYLA D. BADILLO"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "FRANCINE D. MONTEZA"
+        "role": "Treasurer",
+        "name": "ANNABELLE O. CAINGAY"
       }
     ]
   },
   {
-    "slug": "barangay-bambang",
-    "barangay_name": "BAMBANG",
-    "address": "Barangay Hall, Brgy. Bambang, Los Baños, Laguna",
-    "trunkline": ["0906 725 9232"],
-    "website": "https://www.facebook.com/barangay.bambang.50",
+    "slug": "barangay-bancal",
+    "barangay_name": "BANCAL",
+    "address": "",
+    "trunkline": ["0949-683-7766", "(044)-323-0076"],
+    "website": "",
     "officials": [
       {
-        "role": "Punong Barangay",
-        "name": "ARLENE P. DELOS SANTO"
+        "role": "Barangay Captain",
+        "name": "HON. FRANCISCO M. PACHECO"
       },
       {
-        "role": "SB Member",
-        "name": "MARIA AILEEN M. APACIONADO"
+        "role": "Councilor",
+        "name": "JAYLENE O. SANCHEZ"
       },
       {
-        "role": "SB Member",
-        "name": "HENRY M. YANGO"
+        "role": "Councilor",
+        "name": "FELINO J. GAYO"
       },
       {
-        "role": "SB Member",
-        "name": "GERARD TATAD"
+        "role": "Councilor",
+        "name": "HIPOLITO DG. ESPIRITU"
       },
       {
-        "role": "SB Member",
-        "name": "TERESA M. MIRANDAN"
+        "role": "Councilor",
+        "name": "FREDIE C. SERRANO"
       },
       {
-        "role": "SB Member",
-        "name": "RODRIGO S. GALANG"
+        "role": "Councilor",
+        "name": "PERLITA L. DIMASIN"
       },
       {
-        "role": "SB Member",
-        "name": "JOY B. BAS"
+        "role": "Councilor",
+        "name": "ALLAN NEIL B. ALCARAZ"
       },
       {
-        "role": "SB Member",
-        "name": "CORAZON S. BOSTON"
+        "role": "Councilor",
+        "name": "MILDRED D. ABACAN"
       },
       {
         "role": "SK Chairperson",
-        "name": "GLENDEL F. PACCIAL"
+        "name": "BOB CHESTER R. DIMASIN"
       },
       {
-        "role": "Barangay Secretary",
-        "name": "MA. NENE A. REALISTA"
+        "role": "Secretary",
+        "name": "LEANNE M. ALCARAZ"
       },
       {
-        "role": "SK Member",
-        "name": "AISEYIAH A. CANLAS"
-      },
-      {
-        "role": "SK Member",
-        "name": "MARYAN M. MARINO"
-      },
-      {
-        "role": "SK Member",
-        "name": "AUBREY M. GAVILAN"
-      },
-      {
-        "role": "SK Member",
-        "name": "PRINCE ZYR SALAZAR"
-      },
-      {
-        "role": "SK Member",
-        "name": "AUDREY V. GANGIL"
-      },
-      {
-        "role": "SK Member",
-        "name": "ALESSANDRA C. GUDA"
-      },
-      {
-        "role": "SK Member",
-        "name": "STEPHEN C. OBRA"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "PATRICIA A. GAVILAN"
+        "role": "Treasurer",
+        "name": "CARLA FRANCHESCA A. BORJAL"
       }
     ]
   },
   {
-    "slug": "barangay-batong-malake",
-    "barangay_name": "BATONG MALAKE",
-    "address": "Barangay Hall, Brgy. Batong Malake, Los Baños, Laguna",
-    "trunkline": ["0945 544 2954", "0919 254 4257"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-banga",
+    "barangay_name": "BANGA",
+    "address": "",
+    "trunkline": ["0915-086-5516"],
+    "website": "",
     "officials": [
       {
-        "role": "Punong Barangay",
-        "name": "IAN N. KALAW"
+        "role": "Barangay Captain",
+        "name": "HON. MAR R. BIUNAS"
       },
       {
-        "role": "SB Member",
-        "name": "DELFIN M. PABALATE"
+        "role": "Councilor",
+        "name": "BERNARDO A. DELA CRUZ"
       },
       {
-        "role": "SB Member",
-        "name": "KRISTINE P. CADAPAN"
+        "role": "Councilor",
+        "name": "RENATO M. PARAISO"
       },
       {
-        "role": "SB Member",
-        "name": "JOEY R. DE GALA"
+        "role": "Councilor",
+        "name": "JULIO M. BELO"
       },
       {
-        "role": "SB Member",
-        "name": "NELSON R. BANDIAN"
+        "role": "Councilor",
+        "name": "GIAN ERCE M. DONIDEL"
       },
       {
-        "role": "SB Member",
-        "name": "RONDELL R. RAZALDO"
+        "role": "Councilor",
+        "name": "MINARDO S. DELA CRUZ"
       },
       {
-        "role": "SB Member",
-        "name": "ELVIRA A. TEVES"
+        "role": "Councilor",
+        "name": "NOMELITA S. DELA ROSA"
       },
       {
-        "role": "SB Member",
-        "name": "LEO L. CATIMBANG"
+        "role": "Councilor",
+        "name": "MA. JESUSA P. AQUINO"
       },
       {
         "role": "SK Chairperson",
-        "name": "VINCENT P. BANASIHAN"
+        "name": "ANGELO MILLAN"
       },
       {
-        "role": "Barangay Secretary",
-        "name": "GENESIS J. BANDONG"
+        "role": "Secretary",
+        "name": "JONIC AJUNO"
       },
       {
-        "role": "SK Member",
-        "name": "KAELA CERVANTINA CADAPAN"
-      },
-      {
-        "role": "SK Member",
-        "name": "MIKAS SHANE M. AQUINO"
-      },
-      {
-        "role": "SK Member",
-        "name": "RAIVEN NICOLE E. BUENA"
-      },
-      {
-        "role": "SK Member",
-        "name": "ALIETH B. LANCETA"
-      },
-      {
-        "role": "SK Member",
-        "name": "FAYE MIKAELA BATUGON DIZON"
-      },
-      {
-        "role": "SK Member",
-        "name": "JOHN MOSES M. DONOS"
-      },
-      {
-        "role": "SK Member",
-        "name": "JENNYLOU C. ABAYAN"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "JANNA HE L. DAHONOG"
+        "role": "Treasurer",
+        "name": "JULIUS M. DEE"
       }
     ]
   },
   {
-    "slug": "barangay-baybayin",
-    "barangay_name": "BAYBAYIN",
-    "address": "Barangay Hall, Brgy. Baybayin, Los Baños, Laguna",
-    "trunkline": ["0995 679 2525"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-bayugo",
+    "barangay_name": "BAYUGO",
+    "address": "",
+    "trunkline": ["0943-142-1738"],
+    "website": "",
     "officials": [
       {
-        "role": "Punong Barangay",
-        "name": "GAUDENCIO VILLAMOR LORESTO"
+        "role": "Barangay Captain",
+        "name": "HON. JOEY M. UY"
       },
       {
-        "role": "SB Member",
-        "name": "NICANOR P. LEDESMA"
+        "role": "Councilor",
+        "name": "DOUGLAS C. BUÑING"
       },
       {
-        "role": "SB Member",
-        "name": "ROBERT T. PALACPAC"
+        "role": "Councilor",
+        "name": "ROLANDO C. ESPIRITU"
       },
       {
-        "role": "SB Member",
-        "name": "JEFFREY G. SAN VALENTIN"
+        "role": "Councilor",
+        "name": "ABEL C. ZUÑIGA"
       },
       {
-        "role": "SB Member",
-        "name": "CHONA V. PALACPAC"
+        "role": "Councilor",
+        "name": "MONALIZA R. TUAZON"
       },
       {
-        "role": "SB Member",
-        "name": "RAMESES M. LIKWONG"
+        "role": "Councilor",
+        "name": "MICHAEL C. MANLANGIT"
       },
       {
-        "role": "SB Member",
-        "name": "DELFIN H. CARPIO"
+        "role": "Councilor",
+        "name": "ALVIN G. BAÑEZ"
       },
       {
-        "role": "SB Member",
-        "name": "MERLITA L. RALLOS"
+        "role": "Councilor",
+        "name": "NOEL Z. BARRETTO"
       },
       {
         "role": "SK Chairperson",
-        "name": "FRANZES D. TOLENTINO"
+        "name": "PRINCESS JHEANNE L. CABIGQUEZ"
       },
       {
-        "role": "Barangay Secretary",
-        "name": "MARIE JOY P. PALACPAC"
+        "role": "Secretary",
+        "name": "RONALD N. MOLINA"
       },
       {
-        "role": "SK Member",
-        "name": "TRICIA NICOLE S. CONSULTI"
+        "role": "Treasurer",
+        "name": "DIONISIO A. SUMERA JR."
+      }
+    ]
+  },{
+    "slug": "barangay-caingin",
+    "barangay_name": "CAINGIN",
+    "address": "",
+    "trunkline": ["0975-672-7943"],
+    "website": "",
+    "officials": [
+      {
+        "role": "Barangay Captain",
+        "name": "HON. MELANIO B. ALCANTARA"
       },
       {
-        "role": "SK Member",
-        "name": "KRISTINA G. DE VILLA"
+        "role": "Councilor",
+        "name": "NARCISA D. ENCARNADO"
       },
       {
-        "role": "SK Member",
-        "name": "JOHN BRYLE C. GOMEZ"
+        "role": "Councilor",
+        "name": "FREDERICK V. IGNACIO"
       },
       {
-        "role": "SK Member",
-        "name": "JOEL O. RAMOS"
+        "role": "Councilor",
+        "name": "NEIL F. RIVERO"
       },
       {
-        "role": "SK Member",
-        "name": "JAYPEE D. AGOJO"
+        "role": "Councilor",
+        "name": "REYNALDO D. ENCARNADO, JR."
       },
       {
-        "role": "SK Member",
-        "name": "JUNE O. DEL MUNDO"
+        "role": "Councilor",
+        "name": "CECILE R. LLANERAS"
       },
       {
-        "role": "SK Member",
-        "name": "TREXY C. CLARIDAD"
+        "role": "Councilor",
+        "name": "ROSALINDA P. ALFONSO"
       },
       {
-        "role": "SK Secretary",
-        "name": "ARNEL M. PESTANO"
+        "role": "Councilor",
+        "name": "RUSTAN A. RIVERO"
+      },
+      {
+        "role": "SK Chairperson",
+        "name": "ABEGAIL D. DE LEON"
+      },
+      {
+        "role": "Secretary",
+        "name": "JOHN ERUEL ALIPIO"
+      },
+      {
+        "role": "Treasurer",
+        "name": "RODRIGO P. ALFONSO JR."
+      }
+    ]
+  },{
+    "slug": "barangay-calvario",
+    "barangay_name": "CALVARIO",
+    "address": "",
+    "trunkline": ["0926-678-2500"],
+    "website": "",
+    "officials": [
+      {
+        "role": "Barangay Captain",
+        "name": "HON. APOLINAR S. DEL ROSARIO"
+      },
+      {
+        "role": "Councilor",
+        "name": "JEFFERSON R. AGUILA"
+      },
+      {
+        "role": "Councilor",
+        "name": "ALVIN C. ABACAN"
+      },
+      {
+        "role": "Councilor",
+        "name": "JESUS M. DAVID, JR."
+      },
+      {
+        "role": "Councilor",
+        "name": "GAYSON A. FLORANTE"
+      },
+      {
+        "role": "Councilor",
+        "name": "PABLITO M. CONTRERAS"
+      },
+      {
+        "role": "Councilor",
+        "name": "ANGELITO T. STA. ANA, JR."
+      },
+      {
+        "role": "Councilor",
+        "name": "RODOLFO B. LAGMAN, JR."
+      },
+      {
+        "role": "SK Chairperson",
+        "name": "KYLA MARIE C. MIJARES"
+      },
+      {
+        "role": "Secretary",
+        "name": "CHERRY M.  DE VEGA"
+      },
+      {
+        "role": "Treasurer",
+        "name": "JUSTINO R. VALINO, JR."
+      }
+    ]
+  },{
+    "slug": "barangay-camalig",
+    "barangay_name": "CAMALIG",
+    "address": "",
+    "trunkline": ["0969-473-2425"],
+    "website": "",
+    "officials": [
+      {
+        "role": "Barangay Captain",
+        "name": "HON. MARK JOSEPH O. VIOLAGO"
+      },
+      {
+        "role": "Councilor",
+        "name": "ANALIZA D. SANTOS"
+      },
+      {
+        "role": "Councilor",
+        "name": "RESTITUTO G. JAVIER"
+      },
+      {
+        "role": "Councilor",
+        "name": "HILARIO C. SAN PASCUAL"
+      },
+      {
+        "role": "Councilor",
+        "name": "TEODORO J. PILA"
+      },
+      {
+        "role": "Councilor",
+        "name": "REYNALDO I. CAMACHO"
+      },
+      {
+        "role": "Councilor",
+        "name": "JOEL P. POLICARPIO"
+      },
+      {
+        "role": "Councilor",
+        "name": "FRANCISCA P. JAVIER"
+      },
+      {
+        "role": "SK Chairperson",
+        "name": "RENZ ANGELO T. SAN PASCUAL"
+      },
+      {
+        "role": "Secretary",
+        "name": "JORGE A. BUHAT"
+      },
+      {
+        "role": "Treasurer",
+        "name": "DESIREE JOY J.  BUELA"
+      }
+    ]
+  },{
+    "slug": "barangay-hulo",
+    "barangay_name": "HULO",
+    "address": "",
+    "trunkline": ["0917-154-2169", "0936-535-1409"],
+    "website": "",
+    "officials": [
+      {
+        "role": "Barangay Captain",
+        "name": "HON. PAUL JOHN P. PRODON"
+      },
+      {
+        "role": "Councilor",
+        "name": "EDUARDO J. SIMBULAN"
+      },
+      {
+        "role": "Councilor",
+        "name": "REYMAR G. ADINA"
+      },
+      {
+        "role": "Councilor",
+        "name": "MARK LOUIE S. PALOMARES"
+      },
+      {
+        "role": "Councilor",
+        "name": "ERIC S. ADINA"
+      },
+      {
+        "role": "Councilor",
+        "name": "MARISSA DL. DIMASIN"
+      },
+      {
+        "role": "Councilor",
+        "name": "PATRICK PAUL B. BARAZON"
+      },
+      {
+        "role": "Councilor",
+        "name": "RYAN PAOLO V. PILA"
+      },
+      {
+        "role": "SK Chairperson",
+        "name": "CARLO N. HIQUIANA"
+      },
+      {
+        "role": "Secretary",
+        "name": "HYDEE L. GERONIMO"
+      },
+      {
+        "role": "Treasurer",
+        "name": "NESTOR C. LIM, JR."
       }
     ]
   },
   {
-    "slug": "barangay-bayog",
-    "barangay_name": "BAYOG",
-    "address": "Barangay Hall, Brgy. Bayog, Los Baños, Laguna",
-    "trunkline": ["0926 963 4402"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-pantoc",
+    "barangay_name": "PANTOC",
+    "address": "",
+    "trunkline": ["0977-452-4991"],
+    "website": "",
     "officials": [
       {
-        "role": "Punong Barangay",
-        "name": "EDUARDO E. DELMING"
+        "role": "Barangay Captain",
+        "name": "HON. CRISANTO NIÑO DC. CAPARAS"
       },
       {
-        "role": "SB Member",
-        "name": "OBDULIA C. VASQUEZ"
+        "role": "Councilor",
+        "name": "DANICA ROSE B. AVENDAÑO"
       },
       {
-        "role": "SB Member",
-        "name": "JONAS E. ARAGON"
+        "role": "Councilor",
+        "name": "JOEL S. BOLINA"
       },
       {
-        "role": "SB Member",
-        "name": "ROLANDO V. EVANGELISTA"
+        "role": "Councilor",
+        "name": "BRIGIDO F. AVENDAÑO"
       },
       {
-        "role": "SB Member",
-        "name": "VIRGILIO A. TANDANG"
+        "role": "Councilor",
+        "name": "OLIVERT Y. DUYA"
       },
       {
-        "role": "SB Member",
-        "name": "FELICIANO S. TANDANG"
+        "role": "Councilor",
+        "name": "ELPIDIO B. BRIONES"
+      },
+      {
+        "role": "Councilor",
+        "name": "JAMIL R. BUSRAN"
+      },
+      {
+        "role": "Councilor",
+        "name": "ZANDECX P. ERNESTO"
       },
       {
         "role": "SK Chairperson",
-        "name": "ERICA P. PAR"
+        "name": "RM KEEBIN B. AVENDAÑO"
       },
       {
-        "role": "Barangay Secretary",
-        "name": "LORELEI M. HINTURAL"
+        "role": "Secretary",
+        "name": "MARC ANTHONY BALITAAN"
       },
       {
-        "role": "SK Member",
-        "name": "TRICIA MAE B. REYES"
-      },
-      {
-        "role": "SK Member",
-        "name": "JANRIAN P. PAR"
-      },
-      {
-        "role": "SK Member",
-        "name": "MARIVEL P. CARILLAGA"
-      },
-      {
-        "role": "SK Member",
-        "name": "GIEN C. MAZO"
-      },
-      {
-        "role": "SK Member",
-        "name": "GUIA LORRAINE M. CATILLO"
-      },
-      {
-        "role": "SK Member",
-        "name": "KURT KEVIN Q. CLAVE"
-      },
-      {
-        "role": "SK Member",
-        "name": "CYRUS JYL M. FELIX"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "PATRICK E. ARCINUE"
+        "role": "Treasurer",
+        "name": "REANN MARIE S. VERDILLO"
       }
     ]
   },
   {
-    "slug": "barangay-lalakay",
-    "barangay_name": "LALAKAY",
-    "address": "Barangay Hall, Brgy. Lalakay, Los Baños, Laguna",
-    "trunkline": ["0908 890 9125"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-perez",
+    "barangay_name": "PEREZ",
+    "address": "",
+    "trunkline": ["0964-164-9298"],
+    "website": "",
     "officials": [
       {
-        "role": "Punong Barangay",
-        "name": "MARIO P. MAGULI"
+        "role": "Barangay Captain",
+        "name": "HON. JOB D. DOROJA"
       },
       {
-        "role": "SB Member",
-        "name": "LETICIA C. CONCEPCION"
+        "role": "Councilor",
+        "name": "MANNY DC. EVANGELISTA"
       },
       {
-        "role": "SB Member",
-        "name": "KAYNETH M. BATAS"
+        "role": "Councilor",
+        "name": "JAQUELYN R. JACOB"
       },
       {
-        "role": "SB Member",
-        "name": "ELVIS Q. ATIENZA"
+        "role": "Councilor",
+        "name": "DANIEL E. COMPENDIO"
       },
       {
-        "role": "SB Member",
-        "name": "ROBERT R. DELA CRUZ"
+        "role": "Councilor",
+        "name": "NELIA T. CAMACHO"
       },
       {
-        "role": "SB Member",
-        "name": "CRISTOPHER BAUTISTA REVILLEZA"
+        "role": "Councilor",
+        "name": "ELISA C. REVILLA"
       },
       {
-        "role": "SB Member",
-        "name": "DOMINGO T. OBOSA"
+        "role": "Councilor",
+        "name": "MICHELLE B. HULAR"
       },
       {
-        "role": "SB Member",
-        "name": "ALLAN R. GARROVILLAS"
+        "role": "Councilor",
+        "name": "MERVIN A. BERBOSO"
       },
       {
         "role": "SK Chairperson",
-        "name": "JOHN KYLE N. PAMPLONA"
+        "name": "JESTER E. BERBOSO"
       },
       {
-        "role": "Barangay Secretary",
-        "name": "EILEEN RUTH S. FABAYOS"
+        "role": "Secretary",
+        "name": "RIZBETH L. ARMAS"
       },
       {
-        "role": "SK Member",
-        "name": "CARLO B. TOLEDO"
-      },
-      {
-        "role": "SK Member",
-        "name": "KAYE MARTINEZ ORTE"
-      },
-      {
-        "role": "SK Member",
-        "name": "DANIEL PAOLO S. TUMDALA"
-      },
-      {
-        "role": "SK Member",
-        "name": "ELLA MAE C. ELASIGUE"
-      },
-      {
-        "role": "SK Member",
-        "name": "DESIREE J. ALMEYDA"
-      },
-      {
-        "role": "SK Member",
-        "name": "ERICA JOY B. ALEMANEA"
-      },
-      {
-        "role": "SK Member",
-        "name": "NORMAN L. DELA CRUZ"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "SHERALYN E. NAS"
+        "role": "Treasurer",
+        "name": "ROBERTO H. BENITO"
       }
     ]
   },
   {
-    "slug": "barangay-maahas",
-    "barangay_name": "MAAHAS",
-    "address": "Barangay Hall, Brgy. Maahas, Los Baños, Laguna",
-    "trunkline": ["0928 285 2720"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-poblacion",
+    "barangay_name": "POBLACION",
+    "address": "",
+    "trunkline": ["0969-478-7543"],
+    "website": "",
     "officials": [
       {
-        "role": "Punong Barangay",
-        "name": "FERDINAND P. VARGAS"
+        "role": "Barangay Captain",
+        "name": "HON. MARY GRACE T. PORTENTO"
       },
       {
-        "role": "SB Member",
-        "name": "EVA MARIE C. LASANAS"
+        "role": "Councilor",
+        "name": "ROMEO M. FERRER"
       },
       {
-        "role": "SB Member",
-        "name": "BERNARD S. BAUTISTA"
+        "role": "Councilor",
+        "name": "CHRISMAR T. CANLAS"
       },
       {
-        "role": "SB Member",
-        "name": "CARIDAD T. LANUANG"
+        "role": "Councilor",
+        "name": "FERDINAND T. IGNACIO"
       },
       {
-        "role": "SB Member",
-        "name": "GINO M. LAWAS"
+        "role": "Councilor",
+        "name": "ROSIE FE B. DUMAGAN"
       },
       {
-        "role": "SB Member",
-        "name": "GAUDENCIO M. PAGCANLUNGAN"
+        "role": "Councilor",
+        "name": "REYNALDO V. PABLO"
       },
       {
-        "role": "SB Member",
-        "name": "JOSEPH T. ALVAREZ"
+        "role": "Councilor",
+        "name": "EVELYN F. ARANIEGO"
       },
       {
-        "role": "SB Member",
-        "name": "GERARDO A. LANTICAN"
+        "role": "Councilor",
+        "name": "ROBERTO O. MANAPOL"
       },
       {
         "role": "SK Chairperson",
-        "name": "CATHERINE D. EISMA"
+        "name": "LOVELY JANIELLA R. HERNANDEZ"
       },
       {
-        "role": "Barangay Secretary",
-        "name": "ALONA T. CANICOSA"
+        "role": "Secretary",
+        "name": "MADONNA AMOR R. HERNANDEZ"
       },
       {
-        "role": "SK Member",
-        "name": "RAEJ P. SIMAN"
-      },
-      {
-        "role": "SK Member",
-        "name": "KYLA NICOLE L. LINGON"
-      },
-      {
-        "role": "SK Member",
-        "name": "JOHN ROY M. TAMIS"
-      },
-      {
-        "role": "SK Member",
-        "name": "RALPH MARK M. MABILANGAN"
-      },
-      {
-        "role": "SK Member",
-        "name": "SONNY M. ALVEZ"
-      },
-      {
-        "role": "SK Member",
-        "name": "SHANIA ISABEL B. MOLINAWAN"
-      },
-      {
-        "role": "SK Member",
-        "name": "KYLE AERON L. BATULINA"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "MYLENE G. LAPIZ"
+        "role": "Treasurer",
+        "name": "VAN JOHN VILLAFLORES"
       }
     ]
   },
   {
-    "slug": "barangay-malinta",
-    "barangay_name": "MALINTA",
-    "address": "Barangay Hall, Brgy. Malinta, Los Baños, Laguna",
-    "trunkline": ["0906 934 5752"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-saluysoy",
+    "barangay_name": "SALUYSOY",
+    "address": "",
+    "trunkline": ["0916-635-1777", "(044) 237-8128"],
+    "website": "",
     "officials": [
       {
-        "role": "Punong Barangay",
-        "name": "JESUS H. DE UNA JR"
+        "role": "Barangay Captain",
+        "name": "HON. ARNALDO R. VELASCO"
       },
       {
-        "role": "SB Member",
-        "name": "ROLANDO L. ERROBA"
+        "role": "Councilor",
+        "name": "BEEJAY M. JIMENEZ"
       },
       {
-        "role": "SB Member",
-        "name": "RANIE F. ANDAL"
+        "role": "Councilor",
+        "name": "JOSEPHUS PHILIPPE M. LUNARIA"
       },
       {
-        "role": "SB Member",
-        "name": "ERNESTO G. ALCANTARA"
+        "role": "Councilor",
+        "name": "DANILO E. CARPIO"
       },
       {
-        "role": "SB Member",
-        "name": "ALLAN B. BIENES"
+        "role": "Councilor",
+        "name": "MARY VAL ANTOINETTE R. URIAN"
       },
       {
-        "role": "SB Member",
-        "name": "BENNY S. MORALDE"
+        "role": "Councilor",
+        "name": "ROMEO N. LEGASPI"
       },
       {
-        "role": "SB Member",
-        "name": "SHERYL S. BAGNES"
+        "role": "Councilor",
+        "name": "ARSENIO DC. DIONISIO"
       },
       {
-        "role": "SB Member",
-        "name": "GAUDENCIO D. MARIANO"
+        "role": "Councilor",
+        "name": "EDMART R. PACHECO"
       },
       {
         "role": "SK Chairperson",
-        "name": "EDMUND E. VELASCO"
+        "name": "MIGUEL ANTHONY Z. ARGUELLES"
       },
       {
-        "role": "Barangay Secretary",
-        "name": "RICHEL C. TAKAHASHI"
+        "role": "Secretary",
+        "name": "JULIENNE D. DELA CRUZ"
       },
       {
-        "role": "SK Member",
-        "name": "RONA KAY F. PELEGRINA"
+        "role": "Treasurer",
+        "name": "ERICA MAE P. VIBAR"
+      }
+    ]
+  },{
+    "slug": "barangay-st-francis-gasak",
+    "barangay_name": "ST. FRANCIS GASAK",
+    "address": "",
+    "trunkline": ["0916-437-3305", "(044) 323-2764"],
+    "website": "",
+    "officials": [
+      {
+        "role": "Barangay Captain",
+        "name": "HON. HOMER J. EVANGELISTA"
       },
       {
-        "role": "SK Member",
-        "name": "JOSE ROD T. RECARIO"
+        "role": "Councilor",
+        "name": "JESSIE S. PINEDA"
       },
       {
-        "role": "SK Member",
-        "name": "JUDITH R. SARMIENTO"
+        "role": "Councilor",
+        "name": "RENATO V. SAN ANDRES"
       },
       {
-        "role": "SK Member",
-        "name": "MARY JOY E. BIENES"
+        "role": "Councilor",
+        "name": "LUISITO D. BARRETTO"
       },
       {
-        "role": "SK Member",
-        "name": "MA. ALTHEA Q. VALLEJO"
+        "role": "Councilor",
+        "name": "SIMPLICIO C. CARIÑO"
       },
       {
-        "role": "SK Member",
-        "name": "ROSEMER V. SUBIAGA"
+        "role": "Councilor",
+        "name": "EMILIANO R. PEROMINGAN"
       },
       {
-        "role": "SK Member",
-        "name": "JIMUELL N. LEGASPI"
+        "role": "Councilor",
+        "name": "ALEXANDER J. EVANGELISTA"
       },
       {
-        "role": "SK Secretary",
-        "name": "KARL LOU T. LABARETE"
+        "role": "Councilor",
+        "name": "FRANCISCO N. ABCEDE, JR."
+      },
+      {
+        "role": "SK Chairperson",
+        "name": "JASCEL FLORO"
+      },
+      {
+        "role": "Secretary",
+        "name": "ANNE CAMILLE B. AQUINO"
+      },
+      {
+        "role": "Treasurer",
+        "name": "FLORINA M. MAGKASI"
+      }
+    ]
+  },{
+    "slug": "barangay-tugatog",
+    "barangay_name": "TUGATOG",
+    "address": "",
+    "trunkline": ["0953-552-9090"],
+    "website": "",
+    "officials": [
+      {
+        "role": "Barangay Captain",
+        "name": "HON. CARLITO O. MAGNO"
+      },
+      {
+        "role": "Councilor",
+        "name": "CHRISTIAN M. VELASCO"
+      },
+      {
+        "role": "Councilor",
+        "name": "GIL P. MAGLAQUI"
+      },
+      {
+        "role": "Councilor",
+        "name": "DENNIS L. ACUNA"
+      },
+      {
+        "role": "Councilor",
+        "name": "GENARO L. SENO"
+      },
+      {
+        "role": "Councilor",
+        "name": "EFREN SR. AFABLE"
+      },
+      {
+        "role": "Councilor",
+        "name": "PATRICIA F. MORTE"
+      },
+      {
+        "role": "Councilor",
+        "name": "RONALD G. PRUDON"
+      },
+      {
+        "role": "SK Chairperson",
+        "name": "KAITLYN COSSETTE A. TALUSIG"
+      },
+      {
+        "role": "Secretary",
+        "name": "KRISELLE P. BULAWAN"
+      },
+      {
+        "role": "Treasurer",
+        "name": "CHONA A. TALUSIG"
+      }
+    ]
+  },{
+    "slug": "barangay-ubihan",
+    "barangay_name": "UBIHAN",
+    "address": "",
+    "trunkline": ["0925-480-1863"],
+    "website": "",
+    "officials": [
+      {
+        "role": "Barangay Captain",
+        "name": "HON. NIÑO JOSEPH P. VILLADOZ"
+      },
+      {
+        "role": "Councilor",
+        "name": "ORLANDO O. DELA CRUZ"
+      },
+      {
+        "role": "Councilor",
+        "name": "RICO P. CORTEZ"
+      },
+      {
+        "role": "Councilor",
+        "name": "JOHN PHARAON P. DEATO"
+      },
+      {
+        "role": "Councilor",
+        "name": "WILFREDO E. CABEROS"
+      },
+      {
+        "role": "Councilor",
+        "name": "KENNETH A. ALCANAR"
+      },
+      {
+        "role": "Councilor",
+        "name": "ROMANA D. RAMOS"
+      },
+      {
+        "role": "Councilor",
+        "name": "GASPAR L. FERNANDO"
+      },
+      {
+        "role": "SK Chairperson",
+        "name": "JESCEL MAE A. DIAMANTE"
+      },
+      {
+        "role": "Secretary",
+        "name": "YOLANDA A. DIAMANTE"
+      },
+      {
+        "role": "Treasurer",
+        "name": "JOAN A. VILLADOZ"
+      }
+    ]
+  },{
+    "slug": "barangay-zamora",
+    "barangay_name": "ZAMORA",
+    "address": "",
+    "trunkline": ["0927-754-1986"],
+    "website": "",
+    "officials": [
+      {
+        "role": "Barangay Captain",
+        "name": "HON. BRYAN M. SAN PEDRO"
+      },
+      {
+        "role": "Councilor",
+        "name": "SONNY E. FALCIS"
+      },
+      {
+        "role": "Councilor",
+        "name": "LETICIA B. VALDEZ"
+      },
+      {
+        "role": "Councilor",
+        "name": "ESTELA M. MANALESE"
+      },
+      {
+        "role": "Councilor",
+        "name": "MARCO D. PARIÑAS"
+      },
+      {
+        "role": "Councilor",
+        "name": "MARIA CRISTALYN C. ESCOTO"
+      },
+      {
+        "role": "Councilor",
+        "name": "MANNY C. TIBAJIA"
+      },
+      {
+        "role": "SK Chairperson",
+        "name": "LHORENZ P. MARIANO"
+      },
+      {
+        "role": "Secretary",
+        "name": "CRISANTO C. SOVERANO"
+      },
+      {
+        "role": "Treasurer",
+        "name": "ROLANDO M. BAUTISTA"
       }
     ]
   },
   {
-    "slug": "barangay-mayondon",
-    "barangay_name": "MAYONDON",
-    "address": "Barangay Hall, Brgy. Mayondon, Los Baños, Laguna",
-    "trunkline": ["0906 783 7773", "0956 721 7127", "0938 298 8166"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-iba",
+    "barangay_name": "IBA",
+    "address": "",
+    "trunkline": ["0933-866-4001"],
+    "website": "",
     "officials": [
       {
-        "role": "Punong Barangay",
-        "name": "ROMMEL N. MANINGAS"
+        "role": "Barangay Captain",
+        "name": "HON. AGUSTIN O. SEMINIANO"
       },
       {
-        "role": "SB Member",
-        "name": "DANILO V. APOLINAR"
+        "role": "Councilor",
+        "name": "JOEL O. BERBOSO"
       },
       {
-        "role": "SB Member",
-        "name": "MIGUEL C. CONCIO"
+        "role": "Councilor",
+        "name": "IRENEO O. SEMINIANO"
       },
       {
-        "role": "SB Member",
-        "name": "MICHAEL E. ESCOBIN"
+        "role": "Councilor",
+        "name": "SERGIO S. ARIAS"
       },
       {
-        "role": "SB Member",
-        "name": "ERICSON B. REYES"
+        "role": "Councilor",
+        "name": "ARTHUR M. DEL ROSARIO"
       },
       {
-        "role": "SB Member",
-        "name": "MARTA D. LONTOC"
+        "role": "Councilor",
+        "name": "FELIX M. LAXAMANA"
       },
       {
-        "role": "SB Member",
-        "name": "FELISA C. CAUNCA"
+        "role": "Councilor",
+        "name": "MARY ANN DC. DE CASTRO"
       },
       {
-        "role": "SB Member",
-        "name": "MARJORIE E. DE ADA"
+        "role": "Councilor",
+        "name": "DAN VINCENT P. SORIANO"
       },
       {
         "role": "SK Chairperson",
-        "name": "MARIA AN A. EUSEBIO"
+        "name": "MARK JOHN PAUL C. DOMINGO"
       },
       {
-        "role": "Barangay Secretary",
-        "name": "REYMARC V. TORRES"
+        "role": "Secretary",
+        "name": "MICHAEL M. GONZAGA"
       },
       {
-        "role": "SK Member",
-        "name": "JANEYA M. SAPIN"
-      },
-      {
-        "role": "SK Member",
-        "name": "FRANCIS D. AJO"
-      },
-      {
-        "role": "SK Member",
-        "name": "CHESKA MAE H. DULAY"
-      },
-      {
-        "role": "SK Member",
-        "name": "CHARLES M. ARABIT"
-      },
-      {
-        "role": "SK Member",
-        "name": "DENNIS R. OARTE"
-      },
-      {
-        "role": "SK Member",
-        "name": "SOPHIA M. DIZON"
-      },
-      {
-        "role": "SK Member",
-        "name": "WENCIE J. BANASIHAN"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "ARIANE JOY M. TERBIO"
+        "role": "Treasurer",
+        "name": "ANNA MARIE P. BERBOSO"
       }
     ]
   },
   {
-    "slug": "barangay-putho-tuntungi",
-    "barangay_name": "PUTHO-TUNTUNGIN",
-    "address": "Barangay Hall, Brgy. Putho Tuntungi, Los Baños, Laguna",
-    "trunkline": ["0962 077 4706", "0970 736 3270"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-langka",
+    "barangay_name": "LANGKA",
+    "address": "",
+    "trunkline": ["0926-730-1544"],
+    "website": "",
     "officials": [
       {
-        "role": "Punong Barangay",
-        "name": "FRANCISCO O. TORRES JR"
+        "role": "Barangay Captain",
+        "name": "HON. JOSELITO L. BENIZA"
       },
       {
-        "role": "SB Member",
-        "name": "RONALDO O. ONATE"
+        "role": "Councilor",
+        "name": "ERNESTO ALCARAZ"
       },
       {
-        "role": "SB Member",
-        "name": "ELMER R. GARCIA"
+        "role": "Councilor",
+        "name": "RAUL L. DE JESUS"
       },
       {
-        "role": "SB Member",
-        "name": "ELENA S. RAMOS"
+        "role": "Councilor",
+        "name": "ENRIQUE SAMONTE"
       },
       {
-        "role": "SB Member",
-        "name": "JOHN ANDREW PEREZ"
+        "role": "Councilor",
+        "name": "NOEL W. MIRANDA"
       },
       {
-        "role": "SB Member",
-        "name": "ESTELITA L. JACOBO"
+        "role": "Councilor",
+        "name": "RENATO BOSQUE"
       },
       {
-        "role": "SB Member",
-        "name": "ERVIM F. MALABANAN"
+        "role": "Councilor",
+        "name": "REYNALDO CLARIÑO"
       },
       {
-        "role": "SB Member",
-        "name": "MANUEL P. ALBORIDA"
+        "role": "Councilor",
+        "name": "ENRICO GREGORIO, JR."
       },
       {
         "role": "SK Chairperson",
-        "name": "JEMELYN E. TATAD"
+        "name": "RUBY E. MULIG"
       },
       {
-        "role": "Barangay Secretary",
-        "name": "JOSEPH M. CARDINO"
+        "role": "Secretary",
+        "name": "ROY F. RAMIREZ"
       },
       {
-        "role": "SK Member",
-        "name": "LEVI JEN R. CUEVAS"
-      },
-      {
-        "role": "SK Member",
-        "name": "JOHNCEL P. BUEZA"
-      },
-      {
-        "role": "SK Member",
-        "name": "ANNE MAE P. FAUNDO"
-      },
-      {
-        "role": "SK Member",
-        "name": "OMAR C. CASTILLO"
-      },
-      {
-        "role": "SK Member",
-        "name": "DOROTHY C. RAMOS"
-      },
-      {
-        "role": "SK Member",
-        "name": "JINUEL D. ALBORIDA"
-      },
-      {
-        "role": "SK Member",
-        "name": "LORENXE B. DIOKNO"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "JAYVEE A. ESCOTON"
+        "role": "Treasurer",
+        "name": "MAY ANN S. TALADRO"
       }
     ]
   },
   {
-    "slug": "barangay-san-antonio",
-    "barangay_name": "SAN ANTONIO",
-    "address": "Barangay Hall, Brgy. San Antonio, Los Baños, Laguna",
-    "trunkline": ["0960 576 0044"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-lawa",
+    "barangay_name": "LAWA",
+    "address": "",
+    "trunkline": ["0916-308-4003", "(044) 323-2772"],
+    "website": "",
     "officials": [
       {
-        "role": "Punong Barangay",
-        "name": "RELLY C. MANAY"
+        "role": "Barangay Captain",
+        "name": "HON. RICHARD A. DELA CRUZ"
       },
       {
-        "role": "SB Member",
-        "name": "VICKY G. LAWAS"
+        "role": "Councilor",
+        "name": "DEMETRIO B. ABRACERO"
       },
       {
-        "role": "SB Member",
-        "name": "DAISY E. MANESE"
+        "role": "Councilor",
+        "name": "HERSON S. BAUTISTA"
       },
       {
-        "role": "SB Member",
-        "name": "ANGELINA M. MUNDIN"
+        "role": "Councilor",
+        "name": "ABELARDO S. MEDIANA"
       },
       {
-        "role": "SB Member",
-        "name": "JONATHAN M. MEJIA"
+        "role": "Councilor",
+        "name": "TERESITA O. LOZARDA"
       },
       {
-        "role": "SB Member",
-        "name": "LIBERATO A. CALICA"
+        "role": "Councilor",
+        "name": "DANILO D. RIVERA"
       },
       {
-        "role": "SB Member",
-        "name": "JOSEPHINE M. DIMASANGAL"
+        "role": "Councilor",
+        "name": "ARSENIA J. SORIENTE"
       },
       {
-        "role": "SB Member",
-        "name": "RENA THEA V. DIZON"
+        "role": "Councilor",
+        "name": "NESTOR S. PADUA"
       },
       {
         "role": "SK Chairperson",
-        "name": "ASHLEY J. PAYAS"
+        "name": "PRINCE ALBERT R. MEDIANA"
       },
       {
-        "role": "Barangay Secretary",
-        "name": "MARIE JOY S. JUNIO"
+        "role": "Secretary",
+        "name": "EDITHA S. BULARAN"
       },
       {
-        "role": "SK Member",
-        "name": "MAEWIN L. GENIL"
-      },
-      {
-        "role": "SK Member",
-        "name": "CRISEL JOY B. OGALIN"
-      },
-      {
-        "role": "SK Member",
-        "name": "BERNADETTE LOPEZ"
-      },
-      {
-        "role": "SK Member",
-        "name": "ASHLEY N. SORRERA"
-      },
-      {
-        "role": "SK Member",
-        "name": "DENISE GRACE BALOGO"
-      },
-      {
-        "role": "SK Member",
-        "name": "YLA MARIE O. ROSARIO"
-      },
-      {
-        "role": "SK Member",
-        "name": "JOHN CARLO C. GUBA"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "ELAINE M. LAPITAN"
+        "role": "Treasurer",
+        "name": "PAZ E. TOLENTINO"
       }
     ]
   },
   {
-    "slug": "barangay-tadlak",
-    "barangay_name": "TADLAK",
-    "address": "Barangay Hall, Brgy. Tadlak, Los Baños, Laguna",
-    "trunkline": ["0921 526 3893"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-libtong",
+    "barangay_name": "LIBTONG",
+    "address": "",
+    "trunkline": ["0922-604-1922"],
+    "website": "",
     "officials": [
       {
-        "role": "Punong Barangay",
-        "name": "JAIME B. BUENDIA"
+        "role": "Barangay Captain",
+        "name": "HON. CARLOS M. EVANGELISTA"
       },
       {
-        "role": "SB Member",
-        "name": "VICTOR M. DEL ROSA"
+        "role": "Councilor",
+        "name": "ERNESTO V. DAYAG"
       },
       {
-        "role": "SB Member",
-        "name": "NANNET R. SALDANA"
+        "role": "Councilor",
+        "name": "LEONILA D. CORTEZ"
       },
       {
-        "role": "SB Member",
-        "name": "IRENEO L. DIAZ"
+        "role": "Councilor",
+        "name": "MELENCIA S. LUCIO"
       },
       {
-        "role": "SB Member",
-        "name": "ARMANDO C. LLANES JR"
+        "role": "Councilor",
+        "name": "ARIES LOUGIE D. ORBE"
       },
       {
-        "role": "SB Member",
-        "name": "HENRY R. EVANGELISTA"
+        "role": "Councilor",
+        "name": "FLORA S. BARTOLO"
       },
       {
-        "role": "SB Member",
-        "name": "LEOPOLDO M. TATAD"
+        "role": "Councilor",
+        "name": "SHERWIN M. ATADERO"
       },
       {
-        "role": "SB Member",
-        "name": "GILBERTO G. BAUTISTA"
+        "role": "Councilor",
+        "name": "JERRY A. ZAFRANCO"
       },
       {
         "role": "SK Chairperson",
-        "name": "JEROME F. ELIZALDE"
+        "name": "ROY CHRISTIAN P. AFABLE"
       },
       {
-        "role": "Barangay Secretary",
-        "name": "MA. CECCILIA P. ESCULTOR"
+        "role": "Secretary",
+        "name": "CATHERINE C. EVANGELISTA"
       },
       {
-        "role": "SK Member",
-        "name": "JESSEL C. LORIA"
-      },
-      {
-        "role": "SK Member",
-        "name": "KYLENE R. CAHINDI"
-      },
-      {
-        "role": "SK Member",
-        "name": "ROY D. LUMIBAO"
-      },
-      {
-        "role": "SK Member",
-        "name": "JHON PATRICK S. ERASGA"
-      },
-      {
-        "role": "SK Member",
-        "name": "MARC ANTHONY A. MILAN"
-      },
-      {
-        "role": "SK Member",
-        "name": "JOSEPH R. MORALES"
-      },
-      {
-        "role": "SK Member",
-        "name": "DIALYN SAMSON"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "MARY ROSE P. ERASGA"
+        "role": "Treasurer",
+        "name": "MOISES E. LUCIO"
       }
     ]
   },
   {
-    "slug": "barangay-timugan",
-    "barangay_name": "TIMUGAN",
-    "address": "Barangay Hall, Brgy. Timugan, Los Baños, Laguna",
-    "trunkline": ["0932 063 7743"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-liputan",
+    "barangay_name": "LIPUTAN",
+    "address": "",
+    "trunkline": ["0932-775-9766", "0928-9814290"],
+    "website": "",
     "officials": [
       {
-        "role": "Punong Barangay",
-        "name": "RENATO A. SAMSON"
+        "role": "Barangay Captain",
+        "name": "HON. ANDRES T. LEGASPI"
       },
       {
-        "role": "SB Member",
-        "name": "ISAGANI D. BAUTISTA"
+        "role": "Councilor",
+        "name": "OLIVER R. DUMALAY"
       },
       {
-        "role": "SB Member",
-        "name": "RODERICK S. ISIDRO"
+        "role": "Councilor",
+        "name": "ORLY R. DUMALAY"
       },
       {
-        "role": "SB Member",
-        "name": "LIZA C. MATUNDAN"
+        "role": "Councilor",
+        "name": "ARNEL R. LEGASPI"
       },
       {
-        "role": "SB Member",
-        "name": "SOLIDAD D. ABDAH"
+        "role": "Councilor",
+        "name": "GERLIE R. SAN GABRIEL"
       },
       {
-        "role": "SB Member",
-        "name": "ELEAZAR B. AQUINO"
+        "role": "Councilor",
+        "name": "ESTELLA G. RODELA"
       },
       {
-        "role": "SB Member",
-        "name": "PAMELA FLORDELIZA F. DE VERA"
-      },
-      {
-        "role": "SB Member",
-        "name": "MARY JEAN C. AQUINO"
+        "role": "Councilor",
+        "name": "DANILO G. REYNANTE"
       },
       {
         "role": "SK Chairperson",
-        "name": "RICO T. YADAO"
+        "name": "RIZZA CAMILLE G. RODELA"
       },
       {
-        "role": "Barangay Secretary",
-        "name": "WILROSE L. PENALVER"
+        "role": "Secretary",
+        "name": "JASON L. DUMALAY"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-longos",
+    "barangay_name": "LONGOS",
+    "address": "",
+    "trunkline": ["0999-581-4350"],
+    "website": "",
+    "officials": [
+      {
+        "role": "Barangay Captain",
+        "name": "HON. ARNEL C. GUTIERREZ"
       },
       {
-        "role": "SK Member",
-        "name": "FELICITY T. BAGAO"
+        "role": "Councilor",
+        "name": "LARRY C. TRANCE"
       },
       {
-        "role": "SK Member",
-        "name": "RICA P. GAYLON"
+        "role": "Councilor",
+        "name": "BRADFORD U. BERGANIA"
       },
       {
-        "role": "SK Member",
-        "name": "PHIL BOJO REPOTEN"
+        "role": "Councilor",
+        "name": "SANDY J. PUPOS"
       },
       {
-        "role": "SK Member",
-        "name": "MARJORY B. GUIMMAYEN"
+        "role": "Councilor",
+        "name": "ARVIN J. PUPOS"
       },
       {
-        "role": "SK Member",
-        "name": "DERICK B. ORAP"
+        "role": "Councilor",
+        "name": "RAMON T. BALDIVAS"
       },
       {
-        "role": "SK Member",
-        "name": "KC MAE M. DELA CRUZ"
+        "role": "Councilor",
+        "name": "DENNIS D. DEL MUNDO"
       },
       {
-        "role": "SK Member",
-        "name": "JUSTINE JAKE L. EDUCADO"
+        "role": "Councilor",
+        "name": "SENEN M. IGUAL"
       },
       {
-        "role": "SK Secretary",
-        "name": "CHARLES I. DE VERA"
+        "role": "SK Chairperson",
+        "name": "LAURENE V. LAGMAN"
+      },
+      {
+        "role": "Secretary",
+        "name": "MARY JOICE B. TICSON"
+      },
+      {
+        "role": "Treasurer",
+        "name": "HOSELL L. SANTOS"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-malhacan",
+    "barangay_name": "MALHACAN",
+    "address": "",
+    "trunkline": ["0966-914-9859"],
+    "website": "",
+    "officials": [
+      {
+        "role": "Barangay Captain",
+        "name": "HON. DELFIN B. SAN PABLO, IV"
+      },
+      {
+        "role": "Councilor",
+        "name": "ULYSON CHARLZ V. CERTEZA"
+      },
+      {
+        "role": "Councilor",
+        "name": "MIGUEL B. SAN PABLO"
+      },
+      {
+        "role": "Councilor",
+        "name": "ROLANDO D. ABACAN"
+      },
+      {
+        "role": "Councilor",
+        "name": "ALEX T. AGUINALDO"
+      },
+      {
+        "role": "Councilor",
+        "name": "BEVERLY T. CORNELIO"
+      },
+      {
+        "role": "Councilor",
+        "name": "ROMEL B. ABACAN"
+      },
+      {
+        "role": "Councilor",
+        "name": "TOMAS U. DULALIA"
+      },
+      {
+        "role": "SK Chairperson",
+        "name": "JIN MARIE EUGENIE L. MIZUSE"
+      },
+      {
+        "role": "Secretary",
+        "name": "CEFERINO S. GUEVARRA, JR."
+      },
+      {
+        "role": "Treasurer",
+        "name": "NERIJANE C. SOLARTE"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-pajo",
+    "barangay_name": "PAJO",
+    "address": "",
+    "trunkline": ["0995-368-4653"],
+    "website": "",
+    "officials": [
+      {
+        "role": "Barangay Captain",
+        "name": "HON. GILBERT P. DE VERA"
+      },
+      {
+        "role": "Councilor",
+        "name": "EMMA C. GATCHALIAN"
+      },
+      {
+        "role": "Councilor",
+        "name": "MARVIN G. DATIG"
+      },
+      {
+        "role": "Councilor",
+        "name": "MA. LEONORA R. DE VERA"
+      },
+      {
+        "role": "Councilor",
+        "name": "JOEY DG. MACALIPAS"
+      },
+      {
+        "role": "Councilor",
+        "name": "ENRICO S. PILA"
+      },
+      {
+        "role": "Councilor",
+        "name": "FRANCIS DV. GATCHALIAN"
+      },
+      {
+        "role": "Councilor",
+        "name": "TERESITA DS. NABAYRA"
+      },
+      {
+        "role": "SK Chairperson",
+        "name": "DAVE ADRAINE DP. VIVO"
+      },
+      {
+        "role": "Secretary",
+        "name": "ALVIN DG. MACALIPAS"
+      },
+      {
+        "role": "Treasurer",
+        "name": "ALIANA MARIE N. TANGAN"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-pandayan",
+    "barangay_name": "PANDAYAN",
+    "address": "",
+    "trunkline": ["0995-061-9722"],
+    "website": "",
+    "officials": [
+      {
+        "role": "Barangay Captain",
+        "name": "HON. ARSENIO B. LUNARIA"
+      },
+      {
+        "role": "Councilor",
+        "name": "ERLINDA P. ACEBEDO"
+      },
+      {
+        "role": "Councilor",
+        "name": "JEROME B. JARING"
+      },
+      {
+        "role": "Councilor",
+        "name": "DANHILL I. LEONCIO"
+      },
+      {
+        "role": "Councilor",
+        "name": "FREDERICK O. ABRENICA"
+      },
+      {
+        "role": "Councilor",
+        "name": "MICHAEL ANGELO L. RAYMUNDO"
+      },
+      {
+        "role": "Councilor",
+        "name": "MARIO S. ANTONIO"
+      },
+      {
+        "role": "Councilor",
+        "name": "MELVIN T. MARTIN"
+      },
+      {
+        "role": "SK Chairperson",
+        "name": "PAULINE HOPE A. FEBRADA"
+      },
+      {
+        "role": "Secretary",
+        "name": "JHON MATTHEW DC. VALENCIA"
+      },
+      {
+        "role": "Treasurer",
+        "name": "RACHEL L. LUNARIA"
       }
     ]
   }
