@@ -245,7 +245,7 @@ export default function PopulationPage() {
       <DetailSection title='How to read this data' icon={Info}>
         <p className='text-xs italic leading-relaxed text-kapwa-text-disabled'>
           {activeTab === 'municipality'
-            ? 'The municipal growth chart tracks long-term population expansion from 1960 to current estimates.'
+            ? 'The municipal growth chart tracks long-term population expansion from 1903 to current estimates.'
             : 'The comparison chart allows you to track which barangays are experiencing the fastest urban growth relative to their 2010 baseline.'}
         </p>
       </DetailSection>
