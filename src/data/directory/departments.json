@@ -17,7 +17,7 @@
     "office_name": "City Assessor's Office",
     "address": null,
     "trunkline": ["(044) 919-8020 local 103"],
-    "website": null,
+    "website": "https://www.facebook.com/profile.php?id=61575572890470",
     "email": "",
     "department_head": {
       "name": null,
@@ -160,11 +160,11 @@
     "office_name": "City Civil Registrar Office",
     "address": null,
     "trunkline": ["(044) 919-8020 local 105"],
-    "website": null,
-    "email": "",
+    "website": "https://www.facebook.com/MeycauayanCityCivilRegistrar",
+    "email": "civil.registrar@meycauayan.gov.ph",
     "department_head": {
       "name": null,
-      "contact": null,
+      "contact": "0955 459 2998",
       "email": null
     }
   },
@@ -212,8 +212,8 @@
     "office_name": "City Public Employment Service Office",
     "address": null,
     "trunkline": ["(044) 919-8020 local 502"],
-    "website": null,
-    "email": "",
+    "website": "https://www.facebook.com/PesoMeycauayan",
+    "email": "peso@meycauayan.gov.ph",
     "department_head": {
       "name": null,
       "contact": null,
@@ -290,7 +290,7 @@
     "office_name": "City Population Office",
     "address": null,
     "trunkline": ["(044) 919-8020 local 507"],
-    "website": null,
+    "website": "https://www.facebook.com/CPOMeycauayan02",
     "email": "",
     "department_head": {
       "name": null,
@@ -331,6 +331,71 @@
     "trunkline": ["(044) 919-8020 local 204"],
     "website": null,
     "email": "",
+    "department_head": {
+      "name": null,
+      "contact": null,
+      "email": null
+    }
+  },
+  {
+    "slug": "meycauayan-transportation-and-traffic-management",
+    "office_name": "Meycauayan Transportation and Traffic Management",
+    "address": null,
+    "trunkline": null,
+    "website": "https://www.facebook.com/MTPBOffice",
+    "email": "mtpb@meycauayan.gov.ph",
+    "department_head": {
+      "name": null,
+      "contact": null,
+      "email": null
+    }
+  },
+  {
+    "slug": "city-veterinary-office",
+    "office_name": "City Veterinary Office",
+    "address": null,
+    "trunkline": null,
+    "website": "https://www.facebook.com/profile.php?id=100066819422435",
+    "email": null,
+    "department_head": {
+      "name": null,
+      "contact": null,
+      "email": null
+    }
+  },
+  {
+    "slug": "land-transportation-office-meycauayan-district-office",
+    "office_name": "LTO Meycauayan District Office R3",
+    "address": null,
+    "trunkline": null,
+    "website": "https://www.facebook.com/0356LTOMeyc",
+    "email": null,
+    "department_head": {
+      "name": null,
+      "contact": null,
+      "email": null
+    }
+  },
+  {
+    "slug": "city-of-meycauayan-tourism-and-cultural-affairs",
+    "office_name": "City of Meycauayan Tourism and Cultural Affairs",
+    "address": null,
+    "trunkline": null,
+    "website": "https://www.facebook.com/CityofMeycauayanTourism1578",
+    "email": "tourism@meycauayan.gov.ph",
+    "department_head": {
+      "name": null,
+      "contact": null,
+      "email": null
+    }
+  },
+  {
+    "slug": "meycauayan-city-advisory-council-for-police-transformation-development",
+    "office_name": "Meycauayan City Advisory Council for Police Transformation Development",
+    "address": null,
+    "trunkline": null,
+    "website": "https://www.facebook.com/profile.php?id=100084284967213",
+    "email": null,
     "department_head": {
       "name": null,
       "contact": null,
