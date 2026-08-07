@@ -37,7 +37,7 @@ export default function BarangaysIndex() {
       <div className='grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3'>
         {filtered.map(brgy => {
           const punong = brgy.officials?.find(o =>
-            o.role.includes('Punong Barangay')
+            o.role.includes('Barangay Captain')
           );
 
           return (
