@@ -59,10 +59,10 @@ const GovernmentSection: FC = () => {
         {/* Quick stats using documented Badge component */}
         <div className='flex flex-wrap justify-center gap-4 mb-8'>
           <Badge variant='primary' className='px-4 py-2 text-sm'>
-            18 Barangays
+            26 Barangays
           </Badge>
           <Badge variant='secondary' className='px-4 py-2 text-sm'>
-            15 Departments
+            31 Departments
           </Badge>
           <Badge variant='slate' className='px-4 py-2 text-sm'>
             Elected Officials
