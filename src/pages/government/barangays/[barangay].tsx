@@ -29,10 +29,10 @@ export default function BarangayDetail() {
     return <div className='p-20 text-center'>Barangay not found</div>;
 
   const punongBarangay = barangay.officials?.find(o =>
-    o.role.includes('Punong Barangay')
+    o.role.includes('Barangay Captain')
   );
   const kagawads = barangay.officials?.filter(o =>
-    o.role.includes('SB Member')
+    o.role.includes('Councilor')
   );
   const skOfficials = barangay.officials?.filter(o => o.role.includes('SK'));
   const secretary = barangay.officials?.find(o => o.role.includes('Secretary'));
