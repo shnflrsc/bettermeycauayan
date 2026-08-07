@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "Welcome to BetterLB",
-    "subtitle": "The volunteer run portal of the Municipality of Los Baños. Find information, access government services, stay updated with the latest news about Los Baños.",
+    "title": "Welcome to BetterMeycauayan",
+    "subtitle": "The volunteer run portal of the City of Meycauayan. Find information, access government services, stay updated with the latest news about Meycauayan.",
     "quickAccess": "Quick Access",
     "nationalId": "National ID",
     "birthCertificate": "Birth Certificate",
@@ -35,7 +35,7 @@
     "title": "Latest News & Updates"
   },
   "footer": {
-    "copyright": "2025 BetterLB.org - All content is public domain unless otherwise specified."
+    "copyright": "2026 BetterMeycauayan.org - All content is public domain unless otherwise specified."
   },
   "navbar": {
     "home": "Home",

@@ -1,29 +1,29 @@
 {
   "lgu": {
-    "name": "Los Ba\u00f1os",
-    "fullName": "Municipality of Los Ba\u00f1os",
-    "province": "Laguna",
-    "districtEngineeringOffice": "Laguna 2nd DEO",
-    "region": "Region IV-A",
-    "regionCode": "CALABARZON",
-    "type": "municipality",
-    "officialWebsite": "https://losbanos.gov.ph",
-    "provinceWebsite": "https://laguna.gov.ph"
+    "name": "Meycauayan",
+    "fullName": "City of Meycauayan",
+    "province": "Bulacan",
+    "districtEngineeringOffice": "DPWH Bulacan 2nd District Engineering Office",
+    "region": "Region III",
+    "regionCode": "CENTRAL LUZON",
+    "type": "city",
+    "officialWebsite": "https://meycauayan.gov.ph",
+    "provinceWebsite": "https://bulacan.gov.ph"
   },
   "portal": {
-    "name": "BetterLB",
-    "domain": "betterlb.org",
-    "baseUrl": "https://betterlb.org",
-    "description": "Community-powered portal of the Municipality of Los Ba\u00f1os.",
+    "name": "BetterMeycauayan",
+    "domain": "bettermeycauayan.org",
+    "baseUrl": "https://bettermeycauayan.org",
+    "description": "Community-powered portal of the City of Meycauayan.",
     "brandColor": "#0066eb",
-    "footerBrandName": "Better Los Ba\u00f1os",
+    "footerBrandName": "Better Meycauayan",
     "logoWhitePath": "/logos/svg/betterlb-icon-white.svg",
     "navbarLogoPath": "/logos/svg/betterlb-icon-colored.svg",
     "defaultOgImagePath": "/logos/svg/betterlb-icon-colored.svg",
     "faviconPath": "/logos/png/betterlb-banner-colored.png",
     "faviconSvgPath": "/logos/svg/betterlb-logo-primary.svg",
     "appleTouchIconPath": "/logos/png/betterlb-banner-inverted.png",
-    "githubUrl": "https://github.com/BetterLosBanos/betterlb",
+    "githubUrl": "https://github.com/shnflrsc/bettermeycauayan",
     "discordUrl": "https://discord.gg/dA6tkU4FYS",
     "facebookUrl": "https://facebook.com/betterlb.org",
     "contactEmail": "volunteers@bettergov.ph"
@@ -34,17 +34,17 @@
       "lon": 121.2219
     },
     "weather": {
-      "defaultCity": "Los Ba\u00f1os"
+      "defaultCity": "Meycauayan"
     }
   },
   "transparency": {
     "procurement": {
-      "organizationName": "MUNICIPALITY OF LOS BA\u00d1OS, LAGUNA",
+      "organizationName": "CITY OF MEYCAUAYAN, BULACAN",
       "externalDashboard": "https://transparency.bettergov.ph/organizations/"
     },
     "infrastructure": {
-      "searchString": "Los Ba\u00f1os",
-      "exactMatchTargets": ["los ba\u00f1os", "los banos"]
+      "searchString": "Meycauayan",
+      "exactMatchTargets": ["meycauayan", "meycauayan city", "city of meycauayan", "meycauayan, bulacan"]
     }
   },
   "dataPaths": {
