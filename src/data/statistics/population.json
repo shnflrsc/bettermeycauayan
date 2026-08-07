@@ -1,13 +1,17 @@
 {
   "meta": {
     "location": {
-      "region": "Region IV-A",
-      "province": "Laguna",
-      "municipality": "Los Baños"
+      "region": "Region III",
+      "province": "Bulacan",
+      "municipality": "Meycauayan"
     },
     "source": "PSA Census",
     "notes": "2024 data is projected/latest census.",
     "censusDates": {
+      "1903": "1903-03-02",
+      "1918": "1918-12-31",
+      "1939": "1939-01-01",
+      "1948": "1948-10-01",
       "1960": "1960-02-15",
       "1970": "1970-05-06",
       "1975": "1975-05-01",
@@ -23,167 +27,303 @@
     }
   },
   "municipality": {
-    "name": "Los Baños",
+    "name": "Meycauayan",
     "history": [
-      { "year": 1960, "population": 21519 },
-      { "year": 1970, "population": 32167 },
-      { "year": 1975, "population": 38351 },
-      { "year": 1980, "population": 49555 },
-      { "year": 1990, "population": 66211 },
-      { "year": 1995, "population": 71683 },
-      { "year": 2000, "population": 82027 },
-      { "year": 2007, "population": 98631 },
-      { "year": 2010, "population": 101884 },
-      { "year": 2015, "population": 112008 },
-      { "year": 2020, "population": 115353 },
-      { "year": 2024, "population": 117030 }
+      { "year": 1903, "population": 9742 },
+      { "year": 1918, "population": 11285 },
+      { "year": 1939, "population": 16082 },
+      { "year": 1948, "population": 21695 },
+      { "year": 1960, "population": 32234 },
+      { "year": 1970, "population": 50977 },
+      { "year": 1975, "population": 60225 },
+      { "year": 1980, "population": 83579 },
+      { "year": 1990, "population": 123982 },
+      { "year": 1995, "population": 137081 },
+      { "year": 2000, "population": 163037 },
+      { "year": 2007, "population": 196569 },
+      { "year": 2010, "population": 199154 },
+      { "year": 2015, "population": 209083 },
+      { "year": 2020, "population": 225673 },
+      { "year": 2024, "population": 228023 }
     ],
     "growthRates": [
-      { "period": "2010-2015", "rate": 1.82 },
-      { "period": "2015-2020", "rate": 0.62 },
-      { "period": "2015-2024", "rate": 0.49 },
-      { "period": "2020-2024", "rate": 0.35 }
+      { "period": "1903-1918", "rate": 15.84 },
+      { "period": "1918-1939", "rate": 42.51 },
+      { "period": "1939-1948", "rate": 34.90 },
+      { "period": "1948-1960", "rate": 48.57 },
+      { "period": "1960-1970", "rate": 58.15 },
+      { "period": "1970-1975", "rate": 18.14 },
+      { "period": "1975-1980", "rate": 38.78 },
+      { "period": "1980-1990", "rate": 48.34 },
+      { "period": "1990-1995", "rate": 10.57 },
+      { "period": "1995-2000", "rate": 18.93 },
+      { "period": "2000-2007", "rate": 20.57 },
+      { "period": "2007-2010", "rate": 1.31 },
+      { "period": "2010-2015", "rate": 4.99 },
+      { "period": "2015-2020", "rate": 7.93 },
+      { "period": "2020-2024", "rate": 1.04 }
     ]
   },
   "barangays": [
     {
-      "id": "anos",
-      "name": "Anos",
+      "id": "bagbaguin",
+      "name": "Bagbaguin",
       "history": [
-        { "year": 2010, "population": 7446 },
-        { "year": 2015, "population": 8039 },
-        { "year": 2020, "population": 8815 },
-        { "year": 2024, "population": 9368 }
+        { "year": 2010, "population": 6908 },
+        { "year": 2015, "population": 7760 },
+        { "year": 2020, "population": 8426 },
+        { "year": 2024, "population": 7910 }
       ]
     },
     {
-      "id": "bagong-silang",
-      "name": "Bagong Silang",
+      "id": "bahay-pare",
+      "name": "Bahay Pare",
       "history": [
-        { "year": 2010, "population": 577 },
-        { "year": 2015, "population": 629 },
-        { "year": 2020, "population": 707 },
-        { "year": 2024, "population": 727 }
+        { "year": 2010, "population": 10221 },
+        { "year": 2015, "population": 11568 },
+        { "year": 2020, "population": 13232 },
+        { "year": 2024, "population": 12944 }
       ]
     },
     {
-      "id": "bambang",
-      "name": "Bambang",
+      "id": "bancal",
+      "name": "Bancal",
       "history": [
-        { "year": 2010, "population": 7021 },
-        { "year": 2015, "population": 7228 },
-        { "year": 2020, "population": 7638 },
-        { "year": 2024, "population": 7816 }
+        { "year": 2010, "population": 14242 },
+        { "year": 2015, "population": 12589 },
+        { "year": 2020, "population": 12687 },
+        { "year": 2024, "population": 12090 }
       ]
     },
     {
-      "id": "batong-malake",
-      "name": "Batong Malake",
+      "id": "banga",
+      "name": "Banga",
       "history": [
-        { "year": 2010, "population": 11884 },
-        { "year": 2015, "population": 15314 },
-        { "year": 2020, "population": 12578 },
-        { "year": 2024, "population": 12879 }
+        { "year": 2010, "population": 2911 },
+        { "year": 2015, "population": 2913 },
+        { "year": 2020, "population": 2524 },
+        { "year": 2024, "population": 2739 }
       ]
     },
     {
-      "id": "baybayin",
-      "name": "Baybayin (Pob.)",
+      "id": "bayugo",
+      "name": "Bayugo",
       "history": [
-        { "year": 2010, "population": 1307 },
-        { "year": 2015, "population": 1632 },
-        { "year": 2020, "population": 1466 },
-        { "year": 2024, "population": 1538 }
+        { "year": 2010, "population": 17982 },
+        { "year": 2015, "population": 18560 },
+        { "year": 2020, "population": 19195 },
+        { "year": 2024, "population": 19683 }
       ]
     },
     {
-      "id": "bayog",
-      "name": "Bayog",
+      "id": "calvario",
+      "name": "Calvario",
       "history": [
-        { "year": 2010, "population": 9671 },
-        { "year": 2015, "population": 10460 },
-        { "year": 2020, "population": 11613 },
-        { "year": 2024, "population": 11782 }
+        { "year": 2010, "population": 5009 },
+        { "year": 2015, "population": 5317 },
+        { "year": 2020, "population": 5074 },
+        { "year": 2024, "population": 5101 }
       ]
     },
     {
-      "id": "lalakay",
-      "name": "Lalakay",
+      "id": "camalig",
+      "name": "Camalig",
       "history": [
-        { "year": 2010, "population": 4253 },
-        { "year": 2015, "population": 5032 },
-        { "year": 2020, "population": 4234 },
-        { "year": 2024, "population": 4350 }
+        { "year": 2010, "population": 8042 },
+        { "year": 2015, "population": 8972 },
+        { "year": 2020, "population": 8388 },
+        { "year": 2024, "population": 7907 }
       ]
     },
     {
-      "id": "maahas",
-      "name": "Maahas",
+      "id": "hulo",
+      "name": "Hulo",
       "history": [
-        { "year": 2010, "population": 6800 },
-        { "year": 2015, "population": 7536 },
-        { "year": 2020, "population": 8785 },
-        { "year": 2024, "population": 9485 }
+        { "year": 2010, "population": 1636 },
+        { "year": 2015, "population": 1675 },
+        { "year": 2020, "population": 2683 },
+        { "year": 2024, "population": 2734 }
       ]
     },
     {
-      "id": "malinta",
-      "name": "Malinta",
+      "id": "iba",
+      "name": "Iba",
       "history": [
-        { "year": 2010, "population": 6258 },
-        { "year": 2015, "population": 7368 },
-        { "year": 2020, "population": 6531 },
-        { "year": 2024, "population": 6161 }
+        { "year": 2010, "population": 7450 },
+        { "year": 2015, "population": 8032 },
+        { "year": 2020, "population": 9367 },
+        { "year": 2024, "population": 9943 }
       ]
     },
     {
-      "id": "mayondon",
-      "name": "Mayondon",
+      "id": "langka",
+      "name": "Langka",
       "history": [
-        { "year": 2010, "population": 16181 },
-        { "year": 2015, "population": 17071 },
-        { "year": 2020, "population": 17817 },
-        { "year": 2024, "population": 16520 }
+        { "year": 2010, "population": 3179 },
+        { "year": 2015, "population": 3871 },
+        { "year": 2020, "population": 4319 },
+        { "year": 2024, "population": 4754 }
       ]
     },
     {
-      "id": "putho-tuntungin",
-      "name": "Putho Tuntungin",
+      "id": "lawa",
+      "name": "Lawa",
       "history": [
-        { "year": 2010, "population": 8692 },
-        { "year": 2015, "population": 9068 },
-        { "year": 2020, "population": 9300 },
-        { "year": 2024, "population": 9602 }
+        { "year": 2010, "population": 13392 },
+        { "year": 2015, "population": 12854 },
+        { "year": 2020, "population": 15592 },
+        { "year": 2024, "population": 13904 }
       ]
     },
     {
-      "id": "san-antonio",
-      "name": "San Antonio",
+      "id": "libtong",
+      "name": "Libtong",
       "history": [
-        { "year": 2010, "population": 13173 },
-        { "year": 2015, "population": 13537 },
-        { "year": 2020, "population": 15978 },
-        { "year": 2024, "population": 16512 }
+        { "year": 2010, "population": 10190 },
+        { "year": 2015, "population": 10552 },
+        { "year": 2020, "population": 12742 },
+        { "year": 2024, "population": 13100 }
       ]
     },
     {
-      "id": "tadlak",
-      "name": "Tadlak",
+      "id": "liputan",
+      "name": "Liputan",
       "history": [
-        { "year": 2010, "population": 3342 },
-        { "year": 2015, "population": 3319 },
-        { "year": 2020, "population": 4043 },
-        { "year": 2024, "population": 4377 }
+        { "year": 2010, "population": 1546 },
+        { "year": 2015, "population": 1584 },
+        { "year": 2020, "population": 1615 },
+        { "year": 2024, "population": 1691 }
       ]
     },
     {
-      "id": "timugan",
-      "name": "Timugan (Pob.)",
+      "id": "longos",
+      "name": "Longos",
       "history": [
-        { "year": 2010, "population": 5279 },
-        { "year": 2015, "population": 5775 },
-        { "year": 2020, "population": 5848 },
-        { "year": 2024, "population": 5913 }
+        { "year": 2010, "population": 3300 },
+        { "year": 2015, "population": 3412 },
+        { "year": 2020, "population": 2903 },
+        { "year": 2024, "population": 2855 }
+      ]
+    },
+    {
+      "id": "malhacan",
+      "name": "Malhacan",
+      "history": [
+        { "year": 2010, "population": 20914 },
+        { "year": 2015, "population": 22205 },
+        { "year": 2020, "population": 21540 },
+        { "year": 2024, "population": 21806 }
+      ]
+    },
+    {
+      "id": "pajo",
+      "name": "Pajo",
+      "history": [
+        { "year": 2010, "population": 5168 },
+        { "year": 2015, "population": 6166 },
+        { "year": 2020, "population": 7752 },
+        { "year": 2024, "population": 8918 }
+      ]
+    },
+    {
+      "id": "pandayan",
+      "name": "Pandayan",
+      "history": [
+        { "year": 2010, "population": 14703 },
+        { "year": 2015, "population": 15264 },
+        { "year": 2020, "population": 17171 },
+        { "year": 2024, "population": 17689 }
+      ]
+    },
+    {
+      "id": "pantoc",
+      "name": "Pantoc",
+      "history": [
+        { "year": 2010, "population": 10554 },
+        { "year": 2015, "population": 11804 },
+        { "year": 2020, "population": 12577 },
+        { "year": 2024, "population": 13297 }
+      ]
+    },
+    {
+      "id": "perez",
+      "name": "Perez",
+      "history": [
+        { "year": 2010, "population": 15779 },
+        { "year": 2015, "population": 17251 },
+        { "year": 2020, "population": 18848 },
+        { "year": 2024, "population": 20230 }
+      ]
+    },
+    {
+      "id": "poblacion",
+      "name": "Poblacion",
+      "history": [
+        { "year": 2010, "population": 239 },
+        { "year": 2015, "population": 348 },
+        { "year": 2020, "population": 304 },
+        { "year": 2024, "population": 227 }
+      ]
+    },
+    {
+      "id": "saluysoy",
+      "name": "Saluysoy",
+      "history": [
+        { "year": 2010, "population": 10603 },
+        { "year": 2015, "population": 10347 },
+        { "year": 2020, "population": 11024 },
+        { "year": 2024, "population": 11204 }
+      ]
+    },
+    {
+      "id": "st-francis-gasak",
+      "name": "St. Francis Gasak",
+      "history": [
+        { "year": 2010, "population": 1286 },
+        { "year": 2015, "population": 1288 },
+        { "year": 2020, "population": 1313 },
+        { "year": 2024, "population": 1037 }
+      ]
+    },
+    {
+      "id": "tugatog",
+      "name": "Tugatog",
+      "history": [
+        { "year": 2010, "population": 4288 },
+        { "year": 2015, "population": 4407 },
+        { "year": 2020, "population": 4852 },
+        { "year": 2024, "population": 4959 }
+      ]
+    },
+    {
+      "id": "ubihan",
+      "name": "Ubihan",
+      "history": [
+        { "year": 2010, "population": 2279 },
+        { "year": 2015, "population": 2255 },
+        { "year": 2020, "population": 2280 },
+        { "year": 2024, "population": 2419 }
+      ]
+    },
+    {
+      "id": "zamora",
+      "name": "Zamora",
+      "history": [
+        { "year": 2010, "population": 2570 },
+        { "year": 2015, "population": 2646 },
+        { "year": 2020, "population": 2370 },
+        { "year": 2024, "population": 2405 }
+      ]
+    }
+    ,
+    {
+      "id": "caingin",
+      "name": "Caingin",
+      "history": [
+        { "year": 2010, "population": 4763 },
+        { "year": 2015, "population": 5443 },
+        { "year": 2020, "population": 6895 },
+        { "year": 2024, "population": 6477 }
       ]
     }
   ]
