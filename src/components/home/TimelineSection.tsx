@@ -3,14 +3,14 @@ import { useState } from 'react';
 import { Button } from '@bettergov/kapwa/button';
 import {
   ChevronDown,
-  Feather,
   Gavel,
-  Leaf,
   LucideIcon,
   MapPin,
-  Mountain,
   Scroll,
   Waves,
+  House,
+  Swords,
+  Gem
 } from 'lucide-react';
 
 import { Card, CardContent } from '@/components/ui/Card';
@@ -21,13 +21,12 @@ import highlightsData from '@/data/about/highlights.json';
 import historyData from '@/data/about/history.json';
 
 const ICON_MAP: Record<string, LucideIcon> = {
-  Waves,
-  Feather,
   Scroll,
-  Leaf,
   Gavel,
-  Mountain,
   MapPin,
+  House,
+  Swords,
+  Gem
 };
 
 export default function TimelineSection() {
