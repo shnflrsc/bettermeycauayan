@@ -10,7 +10,7 @@ import {
   Waves,
   House,
   Swords,
-  Gem
+  Gem,
 } from 'lucide-react';
 
 import { Card, CardContent } from '@/components/ui/Card';
@@ -26,7 +26,7 @@ const ICON_MAP: Record<string, LucideIcon> = {
   MapPin,
   House,
   Swords,
-  Gem
+  Gem,
 };
 
 export default function TimelineSection() {

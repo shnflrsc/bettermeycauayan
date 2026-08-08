@@ -73,9 +73,7 @@
       {
         "committee": "",
         "chairperson": "",
-        "members": [
-          { "name": "", "role": "" }
-        ]
+        "members": [{ "name": "", "role": "" }]
       }
     ]
   }

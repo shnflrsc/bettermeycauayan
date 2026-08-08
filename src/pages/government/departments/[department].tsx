@@ -246,11 +246,11 @@ export default function DepartmentDetail() {
           <Card variant='default' hover={false} className='bg-kapwa-bg-surface'>
             <CardContent className='p-6'>
               <p className='text-kapwa-text-support text-sm leading-relaxed'>
-                The {toTitleCase(dept.office_name)} is a frontline office of the
+                The {toTitleCase(dept.office_name)} is a frontline office of the{' '}
                 {lguLabels.fullName}. It is responsible for executing
                 administrative mandates and technical functions to ensure the
-                delivery of high-quality public services within the Science and
-                Nature City.
+                delivery of high-quality public services within the Fine Jewelry
+                Center of the Philippines.
               </p>
             </CardContent>
           </Card>

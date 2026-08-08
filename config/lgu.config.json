@@ -44,7 +44,12 @@
     },
     "infrastructure": {
       "searchString": "Meycauayan",
-      "exactMatchTargets": ["meycauayan", "meycauayan city", "city of meycauayan", "meycauayan, bulacan"]
+      "exactMatchTargets": [
+        "meycauayan",
+        "meycauayan city",
+        "city of meycauayan",
+        "meycauayan, bulacan"
+      ]
     }
   },
   "dataPaths": {
