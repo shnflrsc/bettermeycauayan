@@ -1,22 +1,22 @@
 {
-	"name": "betterlb",
+	"name": "bettermeycauayan",
 	"pages_build_output_dir": "dist",
-	"compatibility_date": "2026-01-13",
+	"compatibility_date": "2026-08-08",
 	"kv_namespaces": [
 		{
 			"binding": "WEATHER_KV",
-			"id": "a6daec9904a04769918521d0b3d836e3"
+			"id": "9ac9a902a64d430490bc78d12a59bf46"
 		}
 	],
 	"d1_databases": [
 		{
-			"binding": "BETTERLB_DB",
-			"database_name": "betterlb-openlgu",
-			"database_id": "2adbe9e2-d061-473b-8de2-8aacdae4fb0d",
+			"binding": "BETTER_DB",
+			"database_name": "bettermeycauayan-openlgu",
+			"database_id": "aa9fbb2c-6049-4fb2-a6de-17a17c44141d",
 			"migrations_dir": "db/migrations"
 		}
 	],
 	"vars": {
-		"GITHUB_REPO": "BetterLosBanos/betterlb",
+		"GITHUB_REPO": "shnflrsc/bettermeycauayan"
 	}
 }
