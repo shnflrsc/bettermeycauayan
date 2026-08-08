@@ -44,6 +44,9 @@ export async function onRequest(context: {
   const url = new URL(context.request.url);
   const origin = url.origin;
 
+  const normalizeCityKey = (cityName: string): string =>
+    cityName.toLowerCase().replace(/\s+/g, '_').replace(/ñ/g, 'n');
+
   try {
     const cityParam = url.searchParams.get('city');
 
@@ -80,7 +83,7 @@ export async function onRequest(context: {
 
     // If city parameter is provided, filter the data
     if (cityParam) {
-      const cityKey = cityParam.toLowerCase();
+      const cityKey = normalizeCityKey(cityParam);
       if (cachedData[cityKey]) {
         return new Response(
           JSON.stringify({ [cityKey]: cachedData[cityKey] }),

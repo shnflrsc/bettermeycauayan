@@ -49,9 +49,9 @@ function getCorsHeaders(origin: string | null): Record<string, string> {
 
 // CONFIGURATION - Easy to change for other municipalities
 const DEFAULT_CITY: CityCoordinates = {
-  name: 'Los Baños',
-  lat: 14.1763,
-  lon: 121.2219,
+  name: 'Meycauayan',
+  lat: 14.7367,
+  lon: 120.9667,
 };
 
 // Optional: Add more cities if needed
