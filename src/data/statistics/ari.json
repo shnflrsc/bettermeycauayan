@@ -2,45 +2,45 @@
   {
     "period": "FY-2024",
     "location_info": {
-      "region": "Region IV-A",
-      "province": "Laguna",
-      "lgu_name": "Los Baños",
-      "lgu_type": "Municipality"
+      "region": "Region III",
+      "province": "Bulacan",
+      "lgu_name": "Meycauayan",
+      "lgu_type": "City"
     },
     "locally_sourced_revenue": {
       "tax_revenue": {
-        "real_property_tax_general_fund": 15.32,
-        "tax_on_business": 69.66,
-        "other_taxes": 2.75,
-        "total_tax_revenue": 87.73
+        "real_property_tax_general_fund": 58.26,
+        "tax_on_business": 924.73,
+        "other_taxes": 33.02,
+        "total_tax_revenue": 1016.01
       },
       "non_tax_revenue": {
-        "regulatory_fees": 20.87,
-        "service_user_charges": 6.71,
-        "receipts_from_economic_enterprises": 11.49,
-        "total_non_tax_revenue": 39.08
+        "regulatory_fees": 49.71,
+        "service_user_charges": 61.56,
+        "receipts_from_economic_enterprises": 10.98,
+        "total_non_tax_revenue": 122.25
       },
-      "total_locally_sourced_revenue": 126.81
+      "total_locally_sourced_revenue": 1138.26
     },
     "other_income_sources": {
-      "interest_income": 0.32,
-      "national_tax_allotment": 328.82
+      "interest_income": 1.20,
+      "national_tax_allotment": 884.75
     },
     "other_shares_from_national_tax_collection": {
-      "share_from_economic_zone": 0.0,
+      "share_from_economic_zone": 4.62,
       "share_from_evat": 0.0,
       "share_from_national_wealth": 0.0,
-      "share_from_pagcor_pcso_lotto": 1.11,
+      "share_from_pagcor_pcso_lotto": 1.52,
       "share_from_tobacco_excise_tax": 0.0,
       "others": 0.0,
-      "total_other_shares": 1.11
+      "total_other_shares": 6.14
     },
     "summary_indicators": {
-      "annual_regular_income": 457.06,
+      "annual_regular_income": 2030.36,
       "dependency_rates": {
-        "lsr_dependency": "27.7%",
-        "nta_dependency": "71.9%",
-        "other_shares_from_national_tax_dependency": "0.24%"
+        "lsr_dependency": "56.1%",
+        "nta_dependency": "43.6%",
+        "other_shares_from_national_tax_dependency": "0.30%"
       }
     }
   }
