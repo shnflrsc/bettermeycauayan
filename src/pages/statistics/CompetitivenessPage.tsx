@@ -97,8 +97,8 @@ export default function CompetitivenessPage() {
         />
         <StatCard
           label='Official Rank'
-          value='33'
-          subtext='1st Class Municipality'
+          value='54'
+          subtext='Component City'
           variant='secondary'
         >
           <div className='flex items-center gap-0.5 rounded-full border border-kapwa-border-success bg-kapwa-bg-success-weak px-2 py-0.5 text-kapwa-text-success'>
