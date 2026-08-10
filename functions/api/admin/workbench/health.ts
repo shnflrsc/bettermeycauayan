@@ -16,21 +16,21 @@ export async function handleGetHealth(context: {
 
   const [stagedCount, sourceCount, decisionsCount, termsCount] =
     await Promise.all([
-      env.BETTERLB_DB.prepare(
+      env.BETTERME_DB.prepare(
         'SELECT COUNT(*) as count FROM staged_documents'
       ).first<{ count: number }>(),
-      env.BETTERLB_DB.prepare(
+      env.BETTERME_DB.prepare(
         'SELECT COUNT(*) as count FROM source_records'
       ).first<{ count: number }>(),
-      env.BETTERLB_DB.prepare(
+      env.BETTERME_DB.prepare(
         'SELECT COUNT(*) as count FROM review_decisions'
       ).first<{ count: number }>(),
-      env.BETTERLB_DB.prepare('SELECT COUNT(*) as count FROM terms').first<{
+      env.BETTERME_DB.prepare('SELECT COUNT(*) as count FROM terms').first<{
         count: number;
       }>(),
     ]);
 
-  const latestCapture = await env.BETTERLB_DB.prepare(
+  const latestCapture = await env.BETTERME_DB.prepare(
     'SELECT captured_at FROM source_records ORDER BY captured_at DESC LIMIT 1'
   ).first<{ captured_at: string }>();
 

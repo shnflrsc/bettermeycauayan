@@ -10,9 +10,9 @@
 	],
 	"d1_databases": [
 		{
-			"binding": "BETTER_DB",
+			"binding": "BETTERME_DB",
 			"database_name": "bettermeycauayan-openlgu",
-			"database_id": "aa9fbb2c-6049-4fb2-a6de-17a17c44141d",
+			"database_id": "1df210d2-6b3c-4af2-8787-55958ada42dd",
 			"migrations_dir": "db/migrations"
 		}
 	],

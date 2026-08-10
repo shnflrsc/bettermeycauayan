@@ -40,7 +40,7 @@ export async function handleGetReviewDecisions(context: {
   }
   sql += ' ORDER BY created_at DESC';
 
-  const result = await env.BETTERLB_DB.prepare(sql)
+  const result = await env.BETTERME_DB.prepare(sql)
     .bind(...params)
     .all<ReviewDecisionRow>();
 
@@ -106,7 +106,7 @@ export async function handleCreateDecision(context: {
         }
       } else if (body.field === 'term_id') {
         // Validate term exists
-        const termCheck = await env.BETTERLB_DB.prepare(
+        const termCheck = await env.BETTERME_DB.prepare(
           'SELECT id FROM terms WHERE id = ?'
         )
           .bind(body.value)
@@ -121,7 +121,7 @@ export async function handleCreateDecision(context: {
       if (body.field !== 'turnover_marker') {
         return badRequest('confirm_turnover requires turnover_marker field');
       }
-      const termCheck = await env.BETTERLB_DB.prepare(
+      const termCheck = await env.BETTERME_DB.prepare(
         'SELECT id FROM terms WHERE id = ?'
       )
         .bind(body.value)
@@ -131,7 +131,7 @@ export async function handleCreateDecision(context: {
       }
     }
 
-    const result = await createDecision(env.BETTERLB_DB, auth.user.login, body);
+    const result = await createDecision(env.BETTERME_DB, auth.user.login, body);
 
     return Response.json(result, { status: 201 });
   } catch (error) {

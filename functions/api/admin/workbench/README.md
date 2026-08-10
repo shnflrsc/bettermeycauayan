@@ -20,7 +20,7 @@ src/pages/admin/OpenLguWorkbench.tsx     UI (auto-detects deployed vs local)
 functions/api/admin/workbench/*.ts       this dir — D1 adapter
         │  withAuth() + RBAC + CSRF       functions/utils/admin-auth.ts
         ▼
-D1 (BETTERLB_DB)                          staged_documents, source_records,
+D1 (BETTERME_DB)                          staged_documents, source_records,
                                           review_decisions, terms
 ```
 

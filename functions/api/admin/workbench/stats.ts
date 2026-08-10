@@ -14,7 +14,7 @@ export async function handleGetStats(context: {
   auth: AuthContext;
 }) {
   const { env } = context;
-  const stats = await queryStats(env.BETTERLB_DB);
+  const stats = await queryStats(env.BETTERME_DB);
   return Response.json(stats);
 }
 

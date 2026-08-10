@@ -54,7 +54,7 @@ function wranglerCommand(sql, isRemote) {
   const tempFile = path.join(ROOT, `.wrangler-temp-${Date.now()}.sql`);
   fs.writeFileSync(tempFile, sql);
   try {
-    const cmd = `npx wrangler d1 execute BETTERLB_DB ${flag} --file="${tempFile}"`;
+    const cmd = `npx wrangler d1 execute BETTERME_DB ${flag} --file="${tempFile}"`;
     console.log(`  Executing batch...`);
     execSync(cmd, { cwd: ROOT, stdio: 'inherit' });
   } finally {

@@ -14,7 +14,7 @@ export async function handleGetTerms(context: {
   auth: AuthContext;
 }) {
   const { env } = context;
-  const terms = await queryTerms(env.BETTERLB_DB);
+  const terms = await queryTerms(env.BETTERME_DB);
   return Response.json({ items: terms });
 }
 

@@ -38,7 +38,7 @@ export async function handleGetStagedDocuments(context: {
   ) {
     const id = decodeURIComponent(lastPart);
     if (id) {
-      const doc = await queryDecoratedDocument(env.BETTERLB_DB, id);
+      const doc = await queryDecoratedDocument(env.BETTERME_DB, id);
       if (!doc) {
         return Response.json(
           { error: 'Staged document not found' },
@@ -62,7 +62,7 @@ export async function handleGetStagedDocuments(context: {
   );
   const search = (url.searchParams.get('search') || '').trim();
 
-  const result = await queryStagedDocuments(env.BETTERLB_DB, {
+  const result = await queryStagedDocuments(env.BETTERME_DB, {
     tab,
     status,
     page,
