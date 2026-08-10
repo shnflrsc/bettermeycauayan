@@ -50,8 +50,8 @@ function getCorsHeaders(origin: string | null): Record<string, string> {
 // CONFIGURATION - Easy to change for other municipalities
 const DEFAULT_CITY: CityCoordinates = {
   name: 'Meycauayan',
-  lat: 14.7367,
-  lon: 120.9667,
+  lat: 14.7407645,
+  lon: 120.9565652,
 };
 
 // Optional: Add more cities if needed
