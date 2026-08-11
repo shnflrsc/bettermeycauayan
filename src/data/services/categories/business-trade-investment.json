@@ -3,7 +3,11 @@
     "service": "Business One Stop Shop (BOSS) / Business Permit Issuance",
     "slug": "application-for-new-business-permit",
     "officialServiceNumber": "CBPLO-1",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "47-51", "charterPages": "46-50" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "47-51",
+      "charterPages": "46-50"
+    },
     "deliveryChannel": "Hybrid",
     "type": "transaction",
     "description": "Processes new business-permit applications through Meycauayan's Business One Stop Shop (BOSS).",
@@ -83,7 +87,11 @@
     "service": "Online Business Permit Renewal Application",
     "slug": "renewal-of-business-permit",
     "officialServiceNumber": "CBPLO-2",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "51-54", "charterPages": "50-53" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "51-54",
+      "charterPages": "50-53"
+    },
     "deliveryChannel": "Online",
     "type": "transaction",
     "description": "Online renewal service for registered business establishments operating in the City of Meycauayan.",
@@ -160,7 +168,11 @@
     "service": "Mayor's Clearance Certificate Issuance",
     "slug": "mayors-clearance",
     "officialServiceNumber": "CBPLO-9",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "64-65", "charterPages": "63-64" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "64-65",
+      "charterPages": "63-64"
+    },
     "deliveryChannel": "Walk-in",
     "type": "Clearance",
     "description": "Clearance issued to residents who require the document for employment, identification, driver's-license, overseas, firearms, certification, or other lawful purposes.",
@@ -229,7 +241,11 @@
     "service": "Motorized Tricycle Operator's Permit (MTOP) Issuance for Tricycle-for-Hire Units",
     "slug": "mayors-tricycle-operators-permit-public-units",
     "officialServiceNumber": "CBPLO-3",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "54-59", "charterPages": "53-58" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "54-59",
+      "charterPages": "53-58"
+    },
     "deliveryChannel": "Walk-in",
     "type": "Permit",
     "description": "One-year permit for qualified tricycle operators to operate a tricycle for hire.",
@@ -298,11 +314,18 @@
     "service": "Private Tricycle/Kolong-Kolong Permit for Personal or Business Use Issuance",
     "slug": "mayors-tricycle-operators-permit-private-units",
     "officialServiceNumber": "CBPLO-4",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "60-63", "charterPages": "59-62" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "60-63",
+      "charterPages": "59-62"
+    },
     "deliveryChannel": "Walk-in",
     "type": "Permit",
     "description": "Permit for a privately owned tricycle intended solely for personal or family use.",
-    "officeSlug": ["city-business-permit-and-licenses-office", "city-treasurers-office"],
+    "officeSlug": [
+      "city-business-permit-and-licenses-office",
+      "city-treasurers-office"
+    ],
     "officeDivision": "City Business Permit and Licensing Office",
     "category": {
       "name": "Business, Trade and Investment",
@@ -362,7 +385,11 @@
     "service": "Issuance of Sanitary Permit (Business Establishment)",
     "slug": "sanitary-permit",
     "officialServiceNumber": "CHO-2",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "205", "charterPages": "204" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "205",
+      "charterPages": "204"
+    },
     "deliveryChannel": "Scheduled inspection",
     "type": "Permit",
     "description": "Permit issued to new and renewing business establishments after sanitation requirements are met.",
@@ -422,7 +449,11 @@
     "service": "Locational Clearance/Certificate of Zoning Compliance for Building Permit Issuance",
     "slug": "zoning-compliance-for-building-permit",
     "officialServiceNumber": "CPDO-1",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "110-112", "charterPages": "109-111" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "110-112",
+      "charterPages": "109-111"
+    },
     "deliveryChannel": "Scheduled inspection",
     "type": "Clearance",
     "description": "Locational or zoning clearance confirming that a proposed building project complies with the city's land-use plan and zoning rules.",
@@ -528,7 +559,11 @@
     "service": "Building Permit Issuance (with Sanitary/Plumbing and Electrical Permit)",
     "slug": "building-permit",
     "officialServiceNumber": "CEO-1",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "77-81", "charterPages": "76-80" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "77-81",
+      "charterPages": "76-80"
+    },
     "deliveryChannel": "Scheduled inspection",
     "type": "Permit",
     "description": "Permit issued by the Building Official allowing an owner or contractor to begin a construction, remodeling, or renovation project. The source classifies applications as Simple, Complex, or Highly Technical depending on scope.",
@@ -566,25 +601,82 @@
       "The Building Permit application form must be notarized"
     ],
     "detailedRequirements": [
-      { "requirement": "Transfer Certificate of Title/Land Title (5 photocopies)", "where_to_secure": "Registry of Deeds – Meycauayan or property owner" },
-      { "requirement": "Contract of Sale or Lease if the applicant is not the registered owner (5 photocopies)", "where_to_secure": "Property lessor" },
-      { "requirement": "Tax Declaration (5 photocopies)", "where_to_secure": "City Assessor's Office" },
-      { "requirement": "Latest Real Property Tax Receipt/Amilyar (5 photocopies)", "where_to_secure": "Owner's copy or City Treasurer's Office" },
-      { "requirement": "Lot or Location Plan with Vicinity Map, with the original signature of a licensed civil engineer or architect (5 copies)", "where_to_secure": "Owner or licensed civil engineer/architect" },
-      { "requirement": "Building plans, specifications, and bill of materials, signed and dry-sealed by a licensed civil engineer or architect (5 original copies)", "where_to_secure": "Licensed civil engineer/architect" },
-      { "requirement": "Barangay Clearance (original and 1 photocopy)", "where_to_secure": "Barangay Hall where the building will be constructed" },
-      { "requirement": "Community Tax Certificate/Cedula (1 photocopy)", "where_to_secure": "Barangay Hall or City Treasurer's Office" },
-      { "requirement": "Locational or Zoning Clearance (original and 1 photocopy)", "where_to_secure": "City Urban Planning and Development Office" },
-      { "requirement": "Signing engineer's PRC ID (front and back), current Professional Tax Receipt, and current Community Tax Certificate (photocopies)", "where_to_secure": "Licensed civil engineer/architect" },
-      { "requirement": "Fire Safety Evaluation Clearance/FSEC (1 original and 1 photocopy)", "where_to_secure": "Bureau of Fire Protection – Meycauayan" },
-      { "requirement": "Environmental Compliance Certificate/ECC (1 original and 1 photocopy)", "where_to_secure": "ECC – Malolos Branch" },
-      { "requirement": "DOLE Construction Safety and Health Program/CSHP document (1 original and 1 photocopy)", "where_to_secure": "DOLE – Malolos Branch" },
-      { "requirement": "Structural computation or analysis for buildings with 2 storeys or more", "where_to_secure": "Licensed civil engineer/architect" },
-      { "requirement": "For repair, renovation, or addition: previous Building Permit (1 photocopy)", "where_to_secure": "Owner's copy" },
-      { "requirement": "For repair, renovation, or addition: approved plan (1 original copy)", "where_to_secure": "Owner's copy" },
-      { "requirement": "For repair, renovation, or addition: Certificate of Occupancy (1 photocopy)", "where_to_secure": "Owner's copy" },
-      { "requirement": "For repair, renovation, or addition: Fire Safety Evaluation Clearance/FSEC (1 photocopy)", "where_to_secure": "Bureau of Fire Protection – Meycauayan" },
-      { "requirement": "Notarized Building Permit application form", "where_to_secure": "Office of the City Engineer; notarization by a notary public" }
+      {
+        "requirement": "Transfer Certificate of Title/Land Title (5 photocopies)",
+        "where_to_secure": "Registry of Deeds – Meycauayan or property owner"
+      },
+      {
+        "requirement": "Contract of Sale or Lease if the applicant is not the registered owner (5 photocopies)",
+        "where_to_secure": "Property lessor"
+      },
+      {
+        "requirement": "Tax Declaration (5 photocopies)",
+        "where_to_secure": "City Assessor's Office"
+      },
+      {
+        "requirement": "Latest Real Property Tax Receipt/Amilyar (5 photocopies)",
+        "where_to_secure": "Owner's copy or City Treasurer's Office"
+      },
+      {
+        "requirement": "Lot or Location Plan with Vicinity Map, with the original signature of a licensed civil engineer or architect (5 copies)",
+        "where_to_secure": "Owner or licensed civil engineer/architect"
+      },
+      {
+        "requirement": "Building plans, specifications, and bill of materials, signed and dry-sealed by a licensed civil engineer or architect (5 original copies)",
+        "where_to_secure": "Licensed civil engineer/architect"
+      },
+      {
+        "requirement": "Barangay Clearance (original and 1 photocopy)",
+        "where_to_secure": "Barangay Hall where the building will be constructed"
+      },
+      {
+        "requirement": "Community Tax Certificate/Cedula (1 photocopy)",
+        "where_to_secure": "Barangay Hall or City Treasurer's Office"
+      },
+      {
+        "requirement": "Locational or Zoning Clearance (original and 1 photocopy)",
+        "where_to_secure": "City Urban Planning and Development Office"
+      },
+      {
+        "requirement": "Signing engineer's PRC ID (front and back), current Professional Tax Receipt, and current Community Tax Certificate (photocopies)",
+        "where_to_secure": "Licensed civil engineer/architect"
+      },
+      {
+        "requirement": "Fire Safety Evaluation Clearance/FSEC (1 original and 1 photocopy)",
+        "where_to_secure": "Bureau of Fire Protection – Meycauayan"
+      },
+      {
+        "requirement": "Environmental Compliance Certificate/ECC (1 original and 1 photocopy)",
+        "where_to_secure": "ECC – Malolos Branch"
+      },
+      {
+        "requirement": "DOLE Construction Safety and Health Program/CSHP document (1 original and 1 photocopy)",
+        "where_to_secure": "DOLE – Malolos Branch"
+      },
+      {
+        "requirement": "Structural computation or analysis for buildings with 2 storeys or more",
+        "where_to_secure": "Licensed civil engineer/architect"
+      },
+      {
+        "requirement": "For repair, renovation, or addition: previous Building Permit (1 photocopy)",
+        "where_to_secure": "Owner's copy"
+      },
+      {
+        "requirement": "For repair, renovation, or addition: approved plan (1 original copy)",
+        "where_to_secure": "Owner's copy"
+      },
+      {
+        "requirement": "For repair, renovation, or addition: Certificate of Occupancy (1 photocopy)",
+        "where_to_secure": "Owner's copy"
+      },
+      {
+        "requirement": "For repair, renovation, or addition: Fire Safety Evaluation Clearance/FSEC (1 photocopy)",
+        "where_to_secure": "Bureau of Fire Protection – Meycauayan"
+      },
+      {
+        "requirement": "Notarized Building Permit application form",
+        "where_to_secure": "Office of the City Engineer; notarization by a notary public"
+      }
     ],
     "steps": [
       "Submit the filled-out and notarized application form with complete requirements.",
@@ -634,17 +726,47 @@
       { "name": "Residential – Building", "amount": "Area × ₱8.40" },
       { "name": "Residential – Filing fee", "amount": "₱100.00" },
       { "name": "Residential – Processing fee", "amount": "₱50.00" },
-      { "name": "Commercial/Residential Apartment/Industrial – Building", "amount": "Area × ₱23.00" },
-      { "name": "Commercial/Residential Apartment/Industrial – Filing fee", "amount": "₱100.00" },
-      { "name": "Commercial/Residential Apartment/Industrial – Processing fee", "amount": "₱1,000.00" },
-      { "name": "Line and Grade", "amount": "₱24.00 for the first 10 m area, plus ₱2.40 for every succeeding meter" },
-      { "name": "Plumbing", "amount": "₱31.00 per fixture set, ₱24.00 per septic tank, and ₱10.00 per water meter" },
+      {
+        "name": "Commercial/Residential Apartment/Industrial – Building",
+        "amount": "Area × ₱23.00"
+      },
+      {
+        "name": "Commercial/Residential Apartment/Industrial – Filing fee",
+        "amount": "₱100.00"
+      },
+      {
+        "name": "Commercial/Residential Apartment/Industrial – Processing fee",
+        "amount": "₱1,000.00"
+      },
+      {
+        "name": "Line and Grade",
+        "amount": "₱24.00 for the first 10 m area, plus ₱2.40 for every succeeding meter"
+      },
+      {
+        "name": "Plumbing",
+        "amount": "₱31.00 per fixture set, ₱24.00 per septic tank, and ₱10.00 per water meter"
+      },
       { "name": "Electrical – Up to 5 KVA", "amount": "₱200.00" },
-      { "name": "Electrical – Over 5 KVA to 50 KVA", "amount": "₱200.00 plus ₱20.00 per KVA" },
-      { "name": "Electrical – Over 50 KVA to 300 KVA", "amount": "₱1,100.00 plus ₱10.00 per KVA" },
-      { "name": "Building Height", "amount": "Height in cubic meters × ₱0.25 per square meter; applies to commercial/residential apartments over 2 storeys and industrial buildings" },
-      { "name": "Industrial – Pavement", "amount": "Up to 20 sq. m.: ₱24.00; excess over 20 sq. m.: ₱3.00 per sq. m." },
-      { "name": "Industrial – Excavation and Ground Preparation", "amount": "Cubic meters excavated × ₱3.00, plus ₱200.00 inspection and verification fee" }
+      {
+        "name": "Electrical – Over 5 KVA to 50 KVA",
+        "amount": "₱200.00 plus ₱20.00 per KVA"
+      },
+      {
+        "name": "Electrical – Over 50 KVA to 300 KVA",
+        "amount": "₱1,100.00 plus ₱10.00 per KVA"
+      },
+      {
+        "name": "Building Height",
+        "amount": "Height in cubic meters × ₱0.25 per square meter; applies to commercial/residential apartments over 2 storeys and industrial buildings"
+      },
+      {
+        "name": "Industrial – Pavement",
+        "amount": "Up to 20 sq. m.: ₱24.00; excess over 20 sq. m.: ₱3.00 per sq. m."
+      },
+      {
+        "name": "Industrial – Excavation and Ground Preparation",
+        "amount": "Cubic meters excavated × ₱3.00, plus ₱200.00 inspection and verification fee"
+      }
     ],
     "processingTime": "1 hour and 5 minutes",
     "personResponsible": [
@@ -672,7 +794,11 @@
     "service": "Electrical Permit Issuance",
     "slug": "electrical-permit",
     "officialServiceNumber": "CEO-2",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "81-83", "charterPages": "80-82" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "81-83",
+      "charterPages": "80-82"
+    },
     "deliveryChannel": "Scheduled inspection",
     "type": "Permit",
     "description": "Permit issued by the Building Official for electrical installation, alteration, replacement, or repair work.",
@@ -766,7 +892,11 @@
     "service": "Certificate of Occupancy Permit Issuance",
     "slug": "occupancy-permit",
     "officialServiceNumber": "CEO-4",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "84-86", "charterPages": "83-85" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "84-86",
+      "charterPages": "83-85"
+    },
     "deliveryChannel": "Scheduled inspection",
     "type": "Permit",
     "description": "Certificate issued by the Building Official confirming that a completed structure is suitable for occupancy under the National Building Code.",

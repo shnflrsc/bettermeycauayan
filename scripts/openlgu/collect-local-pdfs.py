@@ -238,26 +238,32 @@ def extract_number(document_type: str, filename: str, text: str) -> str:
     for sample in (text[:15_000],):
         match = re.search(
             rf"{prefix}\s*(?:no\.?|number)?\s*[:#-]?\s*"
-            r"((?:20\d{2}\s*[-–]\s*)?\d+[A-Z]?(?:[-–]\d+[A-Z]?)?)",
+        r"((?:20\d{2}\s*[-–]\s*)?[0-9OI]+(?:[-–][0-9A-Z]+)?)",
             sample,
             re.I,
         )
         if match:
-            return re.sub(r"\s+", "", match.group(1)).replace("–", "-")
+            return (
+                re.sub(r"\s+", "", match.group(1))
+                .replace("–", "-")
+                .upper()
+                .replace("O", "0")
+                .replace("I", "1")
+            )
 
     compact = re.sub(r"[^A-Z0-9-]", "", text[:15_000].upper())
     compact_prefixes = {
-        "ordinance": r"(?:(?:CITY)?ORDINANCENO|KAUTUSANGPANLUNGSODBLG)",
+        "ordinance": r"(?:(?:CITY)?ORDINANCE[N0]O|KAUTUSANGPANLUNGSODBLG)",
         "resolution": r"(?:CITY)?RESOLUTIONNO",
-        "executive_order": r"EXECUTIVEORDERNO",
+        "executive_order": r"EXECUTIVEORDER[N0]O",
     }
     compact_match = re.search(
         compact_prefixes[document_type]
-        + r"((?:2[0O]\d{2}-)?[0-9O]+[A-Z]?(?:-[0-9O]+[A-Z]?)?)",
+        + r"((?:2[0O]\d{2}-)?[0-9OI]+(?:-[0-9A-Z]+)?)(?=OF|NG|SERIES|S\d|$)",
         compact,
     )
     if compact_match:
-        return compact_match.group(1).replace("O", "0")
+        return compact_match.group(1).replace("O", "0").replace("I", "1")
 
     filename_patterns = {
         "ordinance": (
@@ -310,7 +316,11 @@ def extract_title(document_type: str, text: str) -> str:
         return ""
     compact_lines = [re.sub(r"\s+", "", line) for line in text.splitlines()]
     header_markers = {
-        "ordinance": ("CITYORDINANCENO", "KAUTUSANGPANLUNGSODBLG"),
+        "ordinance": (
+            "CITYORDINANCENO",
+            "CITYORDINANCEN0",
+            "KAUTUSANGPANLUNGSODBLG",
+        ),
         "resolution": ("CITYRESOLUTIONNO",),
         "executive_order": ("EXECUTIVEORDERNO",),
     }

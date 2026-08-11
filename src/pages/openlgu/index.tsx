@@ -142,7 +142,7 @@ export default function LegislationIndex() {
     return (
       <IndexPageLayout
         title='Legislation'
-        description='Browse ordinances, resolutions, and executive orders from the Sangguniang Bayan.'
+        description='Browse ordinances, resolutions, and executive orders from the Sangguniang Panlungsod.'
         search={{
           value: searchQuery,
           onChange: setSearchQuery,
@@ -161,7 +161,7 @@ export default function LegislationIndex() {
   return (
     <IndexPageLayout
       title='Legislation'
-      description='Browse ordinances, resolutions, and executive orders from the Sangguniang Bayan.'
+      description='Browse ordinances, resolutions, and executive orders from the Sangguniang Panlungsod.'
       search={{
         value: searchQuery,
         onChange: setSearchQuery,

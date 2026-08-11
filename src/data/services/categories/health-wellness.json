@@ -3,11 +3,18 @@
     "service": "Medical Assistance",
     "slug": "medical-assistance",
     "officialServiceNumber": "CMO-1 / CSWDO-3",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "14-15; 250-252", "charterPages": "13-14; 249-251" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "14-15; 250-252",
+      "charterPages": "13-14; 249-251"
+    },
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Supports applications for city medical financial assistance and the Social Case Study Report or endorsement required by hospitals, charitable institutions, and partner organizations.",
-    "officeSlug": ["office-of-the-city-mayor", "city-social-welfare-and-development-office"],
+    "officeSlug": [
+      "office-of-the-city-mayor",
+      "city-social-welfare-and-development-office"
+    ],
     "officeDivision": "Office of the City Mayor / City Social Welfare and Development Office",
     "category": {
       "name": "Health & Wellness",
@@ -140,7 +147,11 @@
     "service": "Anti-Rabies Vaccination for Walk-In Dog/Cat Owners",
     "slug": "anti-rabies-vaccination-for-walk-in-dog-cat-owners",
     "officialServiceNumber": "CVO-2",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "347-348", "charterPages": "346-347" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "347-348",
+      "charterPages": "346-347"
+    },
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Registers and vaccinates eligible dogs and cats against rabies in support of Republic Act No. 9482 and a rabies-free Meycauayan City.",

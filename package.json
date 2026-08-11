@@ -23,6 +23,7 @@
     "openlgu:collect-local-pdfs": "node scripts/run-python.cjs scripts/openlgu/collect-local-pdfs.py",
     "openlgu:ocr-local-pdfs": "node scripts/run-python.cjs scripts/openlgu/collect-local-pdfs.py --ocr",
     "openlgu:reparse-source-records": "node scripts/run-python.cjs scripts/openlgu/reparse-source-records.py",
+    "openlgu:normalize-display-titles": "node scripts/run-python.cjs scripts/openlgu/normalize-display-titles.py",
     "openlgu:stage-documents": "node scripts/openlgu/stage-documents.cjs",
     "openlgu:promote-documents": "node scripts/openlgu/promote-documents.cjs",
     "openlgu:reconcile:shadow": "node scripts/openlgu/reconcile-shadow.cjs",

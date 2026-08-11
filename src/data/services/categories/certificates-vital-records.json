@@ -3,7 +3,11 @@
     "service": "Certificate of Birth - Timely Registration",
     "slug": "registration-of-birth",
     "officialServiceNumber": "CCRO-1",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "158-159", "charterPages": "157-158" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "158-159",
+      "charterPages": "157-158"
+    },
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Registers a birth that occurred in Meycauayan within the 30-day reglementary period.",
@@ -102,7 +106,12 @@
     },
     "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
     "updatedAt": null,
-    "sources": [{ "name": "City of Meycauayan Citizens' Charter", "url": "https://meycauayan.gov.ph" }],
+    "sources": [
+      {
+        "name": "City of Meycauayan Citizens' Charter",
+        "url": "https://meycauayan.gov.ph"
+      }
+    ],
     "dataComplete": false,
     "needsVerification": true
   },
@@ -110,7 +119,11 @@
     "service": "Certificate of Marriage - Timely Registration",
     "slug": "registration-of-marriage",
     "officialServiceNumber": "CCRO-2",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "159-160", "charterPages": "158-159" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "159-160",
+      "charterPages": "158-159"
+    },
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Registers a marriage solemnized in Meycauayan within the 15-day reglementary period.",
@@ -191,7 +204,12 @@
     },
     "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
     "updatedAt": null,
-    "sources": [{ "name": "City of Meycauayan Citizens' Charter", "url": "https://meycauayan.gov.ph" }],
+    "sources": [
+      {
+        "name": "City of Meycauayan Citizens' Charter",
+        "url": "https://meycauayan.gov.ph"
+      }
+    ],
     "dataComplete": false,
     "needsVerification": true
   },
@@ -199,7 +217,11 @@
     "service": "Certificate of Death - Timely Registration",
     "slug": "registration-of-death-certificate",
     "officialServiceNumber": "CCRO-3",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "160-161", "charterPages": "159-160" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "160-161",
+      "charterPages": "159-160"
+    },
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Registers a death certificate within the 30-day reglementary period and processes the applicable burial, transfer, entrance, cremation, or exhumation permit.",
@@ -285,7 +307,12 @@
     },
     "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
     "updatedAt": null,
-    "sources": [{ "name": "City of Meycauayan Citizens' Charter", "url": "https://meycauayan.gov.ph" }],
+    "sources": [
+      {
+        "name": "City of Meycauayan Citizens' Charter",
+        "url": "https://meycauayan.gov.ph"
+      }
+    ],
     "dataComplete": false,
     "needsVerification": true
   },
@@ -293,7 +320,11 @@
     "service": "Certificate of Birth - Late Registration",
     "slug": "late-registration-of-birth",
     "officialServiceNumber": "CCRO-4",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "161-164", "charterPages": "160-163" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "161-164",
+      "charterPages": "160-163"
+    },
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Registers a birth reported beyond the 30-day reglementary period. The supplied procedure applies to children aged 0–6 with unmarried parents.",
@@ -413,7 +444,12 @@
     },
     "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
     "updatedAt": null,
-    "sources": [{ "name": "City of Meycauayan Citizens' Charter", "url": "https://meycauayan.gov.ph" }],
+    "sources": [
+      {
+        "name": "City of Meycauayan Citizens' Charter",
+        "url": "https://meycauayan.gov.ph"
+      }
+    ],
     "dataComplete": false,
     "needsVerification": true
   },
@@ -421,7 +457,11 @@
     "service": "Certificate of Marriage - Late Registration",
     "slug": "late-registration-of-marriage",
     "officialServiceNumber": "CCRO-5",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "164-166", "charterPages": "163-165" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "164-166",
+      "charterPages": "163-165"
+    },
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Registers a marriage reported beyond the 30-day reglementary period.",
@@ -527,7 +567,12 @@
     },
     "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
     "updatedAt": null,
-    "sources": [{ "name": "City of Meycauayan Citizens' Charter", "url": "https://meycauayan.gov.ph" }],
+    "sources": [
+      {
+        "name": "City of Meycauayan Citizens' Charter",
+        "url": "https://meycauayan.gov.ph"
+      }
+    ],
     "dataComplete": false,
     "needsVerification": true
   },
@@ -535,7 +580,11 @@
     "service": "Certificate of Death - Late Registration",
     "slug": "late-registration-of-death-certificate",
     "officialServiceNumber": "CCRO-6",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "166-168", "charterPages": "165-167" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "166-168",
+      "charterPages": "165-167"
+    },
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Registers a death certificate reported beyond the 30-day reglementary period.",
@@ -641,7 +690,12 @@
     },
     "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
     "updatedAt": null,
-    "sources": [{ "name": "City of Meycauayan Citizens' Charter", "url": "https://meycauayan.gov.ph" }],
+    "sources": [
+      {
+        "name": "City of Meycauayan Citizens' Charter",
+        "url": "https://meycauayan.gov.ph"
+      }
+    ],
     "dataComplete": false,
     "needsVerification": true
   },
@@ -649,7 +703,11 @@
     "service": "Issuance of Certified True Copy/Photocopy of Birth, Marriage, or Death Certificate",
     "slug": "issuance-of-certified-true-copy-of-birth-marriage-death-certificate",
     "officialServiceNumber": "CCRO-8",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "169-170", "charterPages": "168-169" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "169-170",
+      "charterPages": "168-169"
+    },
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Searches, verifies, certifies, and releases a true copy of a birth, marriage, or death record held by the Local Civil Registrar.",
@@ -739,7 +797,12 @@
     },
     "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
     "updatedAt": null,
-    "sources": [{ "name": "City of Meycauayan Citizens' Charter", "url": "https://meycauayan.gov.ph" }],
+    "sources": [
+      {
+        "name": "City of Meycauayan Citizens' Charter",
+        "url": "https://meycauayan.gov.ph"
+      }
+    ],
     "dataComplete": false,
     "needsVerification": true
   }

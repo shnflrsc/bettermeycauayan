@@ -11,7 +11,8 @@ const FORBIDDEN_INPUT_PARTS = [
   `${path.sep}pipeline${path.sep}archive${path.sep}`,
   `${path.sep}los_banos_legacy${path.sep}`,
 ];
-const FORBIDDEN_CONTENT = /los\s*ba(?:ñ|n)os|losbanos\.gov\.ph|sangguniang\s+bayan/i;
+const FORBIDDEN_CONTENT =
+  /los\s*ba(?:ñ|n)os|losbanos\.gov\.ph|sangguniang\s+bayan/i;
 
 function parseArgs(argv) {
   const args = {

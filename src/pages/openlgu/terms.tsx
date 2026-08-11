@@ -79,7 +79,7 @@ export default function TermsIndex() {
   return (
     <IndexPageLayout
       title='Legislative Terms'
-      description='Browse historical records of the Sangguniang Bayan sessions.'
+      description='Browse historical records of the Sangguniang Panlungsod sessions.'
       breadcrumbs={breadcrumbs}
       resultsCount={termsWithStats.length}
       resultsLabel='terms'

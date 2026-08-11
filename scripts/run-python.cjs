@@ -30,5 +30,7 @@ for (const command of commands) {
   }
 }
 
-console.error('Python was not found. Install Python 3 and ensure it is available on PATH.');
+console.error(
+  'Python was not found. Install Python 3 and ensure it is available on PATH.'
+);
 process.exit(1);

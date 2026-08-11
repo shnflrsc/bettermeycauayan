@@ -3,11 +3,18 @@
     "service": "Burial Assistance",
     "slug": "burial-assistance",
     "officialServiceNumber": "CMO-1 / CSWDO-3",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "14-15; 250-252", "charterPages": "13-14; 249-251" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "14-15; 250-252",
+      "charterPages": "13-14; 249-251"
+    },
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Supports applications for city burial financial assistance and the Social Case Study Report or endorsement required by partner institutions.",
-    "officeSlug": ["office-of-the-city-mayor", "city-social-welfare-and-development-office"],
+    "officeSlug": [
+      "office-of-the-city-mayor",
+      "city-social-welfare-and-development-office"
+    ],
     "officeDivision": "Office of the City Mayor / City Social Welfare and Development Office",
     "category": {
       "name": "Social Services & Assistance",
@@ -107,7 +114,11 @@
     "service": "Senior Citizen ID",
     "slug": "senior-citizen-id",
     "officialServiceNumber": "CSWDO-4",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "252-254", "charterPages": "251-253" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "252-254",
+      "charterPages": "251-253"
+    },
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Issues an identification card that enables qualified senior citizens to access the benefits and privileges provided under Republic Act No. 9994, including applicable discounts and VAT exemptions.",
@@ -207,7 +218,11 @@
     "service": "Solo Parent ID",
     "slug": "solo-parent-id",
     "officialServiceNumber": "CSWDO-6",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "258-263", "charterPages": "257-262" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "258-263",
+      "charterPages": "257-262"
+    },
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Issues an identification card that enables qualified solo parents to access benefits and privileges provided under the Solo Parents' Welfare Act of 2000, or Republic Act No. 8972.",
@@ -313,7 +328,11 @@
     "service": "Person with Disability (PWD) ID",
     "slug": "person-with-disability-pwd-id",
     "officialServiceNumber": "CSWDO-5",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "255-257", "charterPages": "254-256" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "255-257",
+      "charterPages": "254-256"
+    },
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Issues an identification card that serves as proof of eligibility for benefits and privileges provided to persons with disabilities under Republic Act No. 10754.",

@@ -3,7 +3,11 @@
     "service": "Real Property Tax (RPT) Payment",
     "slug": "real-property-tax",
     "officialServiceNumber": "CTO-1",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "123-124", "charterPages": "122-123" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "123-124",
+      "charterPages": "122-123"
+    },
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Collects the tax imposed by the City Treasurer's Office on natural or juridical persons who own or administer real property, including improvements.",

@@ -24,11 +24,7 @@ import SearchInput from '@/components/ui/SearchInput';
 import { formatPesoAdaptive } from '@/lib/format';
 import { config } from '@/lib/lguConfig';
 import { lguLabels } from '@/lib/lguLabels';
-import {
-  INDICES,
-  PhilgepsDoc,
-  procurementClient,
-} from '@/lib/meilisearch';
+import { INDICES, PhilgepsDoc, procurementClient } from '@/lib/meilisearch';
 
 // Helper Interface for Aggregate Data (matching BetterGov structure)
 interface AggregateStats {

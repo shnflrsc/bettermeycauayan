@@ -3,7 +3,11 @@
     "service": "Emergency Shelter Assistance",
     "slug": "emergency-shelter-assistance",
     "status": "historical",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "Not found", "charterPages": "Not found" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "Not found",
+      "charterPages": "Not found"
+    },
     "type": "transaction",
     "description": "Provides a Social Case Study Report and endorsement letter required by charitable institutions, government offices, and non-government organizations that assist clients needing emergency shelter assistance.",
     "officeSlug": ["city-social-welfare-and-development-office"],
@@ -99,7 +103,11 @@
     "service": "Impounded Pet/Animal Release",
     "slug": "redemption-of-impounded-pet-animal",
     "officialServiceNumber": "CVO-3",
-    "officialReference": { "edition": "2026 First Edition", "pdfPages": "349-350", "charterPages": "348-349" },
+    "officialReference": {
+      "edition": "2026 First Edition",
+      "pdfPages": "349-350",
+      "charterPages": "348-349"
+    },
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Allows an owner to identify, pay the required fee for, and reclaim an impounded pet or animal under the Animal Welfare Act of 1998 and Meycauayan City Ordinance No. 2012-05.",

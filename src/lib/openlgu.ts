@@ -206,7 +206,7 @@ export async function loadDocumentsFromAPI(): Promise<DocumentItem[]> {
         number: d.number,
         title: d.title,
         session_id: d.session_id,
-        status: d.status,
+        status: d.publication_status || d.status,
         date_enacted: d.date_enacted,
         link: d.pdf_url || d.link,
         author_ids: d.author_ids || [],
@@ -257,21 +257,23 @@ export async function loadTermsFromAPI(): Promise<Term[]> {
       throw new Error(`API error: ${response.status}`);
     }
     const data = await response.json();
-    return (data.terms || []).map((t: APITerm) => ({
-      id: t.id,
-      term_number: t.term_number,
-      ordinal: t.ordinal,
-      name: t.name,
-      start_date: t.start_date,
-      end_date: t.end_date,
-      year_range: t.year_range,
-      executive: {
-        mayor_id: t.mayor_id,
-        mayor: t.executive?.mayor || 'TBD',
-        vice_mayor_id: t.vice_mayor_id,
-        vice_mayor: t.executive?.vice_mayor || 'TBD',
-      },
-    }));
+    return (data.terms || [])
+      .filter((t: APITerm) => t.id.startsWith('sp_'))
+      .map((t: APITerm) => ({
+        id: t.id,
+        term_number: t.term_number,
+        ordinal: t.ordinal,
+        name: t.name,
+        start_date: t.start_date,
+        end_date: t.end_date,
+        year_range: t.year_range,
+        executive: {
+          mayor_id: t.mayor_id,
+          mayor: t.executive?.mayor || 'TBD',
+          vice_mayor_id: t.vice_mayor_id,
+          vice_mayor: t.executive?.vice_mayor || 'TBD',
+        },
+      }));
   } catch (error) {
     console.error('Failed to load terms from API:', error);
     return [];
@@ -306,7 +308,11 @@ export async function loadTermFromAPI(): Promise<Term | null> {
       throw new Error(`API error: ${response.status}`);
     }
     const data = await response.json();
-    const apiTerms: APITerm[] = data.terms || [];
+    // Ignore legacy Los Banos/Sangguniang Bayan terms that may still exist in
+    // an older remote database. Meycauayan uses Sangguniang Panlungsod terms.
+    const apiTerms: APITerm[] = (data.terms || []).filter((term: APITerm) =>
+      term.id.startsWith('sp_')
+    );
 
     if (apiTerms.length === 0) return null;
 

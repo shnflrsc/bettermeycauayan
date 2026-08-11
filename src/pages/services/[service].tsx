@@ -327,7 +327,9 @@ export default function ServiceDetail() {
                       key={idx}
                       className='border-kapwa-border-weak bg-kapwa-bg-surface-raised/50 flex gap-3 rounded-xl border p-4'
                     >
-                      <span className='text-kapwa-text-brand font-bold'>{idx + 1}.</span>
+                      <span className='text-kapwa-text-brand font-bold'>
+                        {idx + 1}.
+                      </span>
                       <span className='text-kapwa-text-support text-sm leading-relaxed'>
                         {requirement}
                       </span>
@@ -348,10 +350,9 @@ export default function ServiceDetail() {
             )}
 
           {/* Process Timeline (Citizens Charter) */}
-          {service.clientSteps &&
-            service.clientSteps.length > 0 && (
-              <ProcessTimeline steps={service.clientSteps} />
-            )}
+          {service.clientSteps && service.clientSteps.length > 0 && (
+            <ProcessTimeline steps={service.clientSteps} />
+          )}
 
           {/* Regular Steps (community services) */}
           {!isOfficialSource && service.steps && service.steps.length > 0 && (

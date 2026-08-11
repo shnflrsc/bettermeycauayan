@@ -357,10 +357,7 @@ function loadReviewDecisions(isRemote) {
 
 function loadTerms(isRemote) {
   console.log('\nLoading terms...');
-  const termsPath = path.join(
-    ROOT,
-    'pipeline/meycauayan/reference/terms.json'
-  );
+  const termsPath = path.join(ROOT, 'pipeline/meycauayan/reference/terms.json');
   if (!fs.existsSync(termsPath)) {
     console.log('  No terms file found.');
     return;
