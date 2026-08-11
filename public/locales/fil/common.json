@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "Maligayang Pagdating sa BetterLB",
-    "subtitle": "Ang volunteer-run portal ng Munisipalidad ng Los Baños. Maghanap ng impormasyon, i-access ang mga serbisyo ng pamahalaan, manatiling updated sa pinakabagong balita tungkol sa Los Baños.",
+    "title": "Maligayang Pagdating sa BetterMeycauayan",
+    "subtitle": "Ang volunteer-run portal ng Lungsod ng Meycauayan. Maghanap ng impormasyon, i-access ang mga serbisyo ng pamahalaan, at manatiling updated sa pinakabagong balita tungkol sa Meycauayan.",
     "quickAccess": "Mabilisang Puntahan",
     "nationalId": "National ID",
     "birthCertificate": "Sertipiko ng Kapanganakan",
@@ -35,7 +35,7 @@
     "title": "Pinakabagong Balita at Updates"
   },
   "footer": {
-    "copyright": "2025 BetterLB.org - Lahat ng nilalaman ay public domain maliban kung iba ang nakasaad."
+    "copyright": "2026 BetterMeycauayan.org - Lahat ng nilalaman ay public domain maliban kung iba ang nakasaad."
   },
   "navbar": {
     "home": "Home",
@@ -89,16 +89,16 @@
     "registerNow": "Magparehistro Ngayon"
   },
   "government": {
-    "title": "Lokal na Pamahalaan ng Munisipalidad ng Los Baños",
-    "description": "Alamin ang mga pangunahing opisina, konseho, at lokal na yunit na bumubuo sa Munisipal na Pamahalaan ng Los Baños.",
+    "title": "Pamahalaang Lungsod ng Meycauayan",
+    "description": "Alamin ang mga pangunahing opisina, konseho, at lokal na yunit na bumubuo sa Pamahalaang Lungsod ng Meycauayan.",
     "executiveTitle": "Sangay na Tagapagpaganap",
     "executiveDescription": "Pinangungunahan ng Alkalde, responsable sa pagpapatupad ng mga patakaran, programa, at ordinansa ng munisipyo.",
     "legislativeTitle": "Sangay na Tagapagbatas",
     "legislativeDescription": "Binubuo ng Sangguniang Bayan, responsable sa paggawa ng mga lokal na batas.",
     "barangaysTitle": "Mga Barangay",
-    "barangaysDescription": "Mga lokal na yunit ng pamahalaan sa loob ng munisipyo, pinangungunahan ng mga nahalal na opisyal na namamahala sa mga serbisyo sa komunidad.",
-    "departmentsTitle": "Mga Kagawaran ng Munisipyo",
-    "departmentsDescription": "Mga kagawaran at ahensya ng munisipyo na responsable sa mga partikular na larangan ng pamamahala.",
+    "barangaysDescription": "Mga lokal na yunit ng pamahalaan sa loob ng lungsod, pinangungunahan ng mga nahalal na opisyal na namamahala sa mga serbisyo sa komunidad.",
+    "departmentsTitle": "Mga Kagawaran ng Lungsod",
+    "departmentsDescription": "Mga kagawaran at ahensya ng lungsod na responsable sa mga partikular na larangan ng pamamahala.",
     "electedofficialsTitle": "Mga Nahalal na Opisyal",
     "electedofficialsDescription": "Ang nahalal na pamumuno ng Sangay na Tagapagpaganap at Tagapagbatas, responsable sa pagpapatupad ng patakaran at paggawa ng batas.",
     "learnMore": "Alamin pa",
