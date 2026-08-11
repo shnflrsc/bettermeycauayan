@@ -3,11 +3,20 @@ import { MeiliSearch } from 'meilisearch';
 // 1. Configuration
 const HOST =
   import.meta.env.VITE_MEILISEARCH_HOST || 'https://search2.bettergov.ph';
-const KEY = import.meta.env.VITE_MEILISEARCH_API_KEY || '';
+const SHARED_KEY = import.meta.env.VITE_MEILISEARCH_API_KEY || '';
+const INFRASTRUCTURE_KEY =
+  import.meta.env.VITE_MEILISEARCH_INFRASTRUCTURE_API_KEY || SHARED_KEY;
+const PROCUREMENT_KEY =
+  import.meta.env.VITE_MEILISEARCH_PROCUREMENT_API_KEY || SHARED_KEY;
 
-export const client = new MeiliSearch({
+export const infrastructureClient = new MeiliSearch({
   host: HOST,
-  apiKey: KEY,
+  apiKey: INFRASTRUCTURE_KEY,
+});
+
+export const procurementClient = new MeiliSearch({
+  host: HOST,
+  apiKey: PROCUREMENT_KEY,
 });
 
 export const INDICES = {

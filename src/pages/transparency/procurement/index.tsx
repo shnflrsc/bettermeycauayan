@@ -24,7 +24,11 @@ import SearchInput from '@/components/ui/SearchInput';
 import { formatPesoAdaptive } from '@/lib/format';
 import { config } from '@/lib/lguConfig';
 import { lguLabels } from '@/lib/lguLabels';
-import { INDICES, PhilgepsDoc, client } from '@/lib/meilisearch';
+import {
+  INDICES,
+  PhilgepsDoc,
+  procurementClient,
+} from '@/lib/meilisearch';
 
 // Helper Interface for Aggregate Data (matching BetterGov structure)
 interface AggregateStats {
@@ -120,8 +124,10 @@ export default function ProcurementPage() {
       setError(false);
 
       try {
-        const index = client.index(INDICES.PHILGEPS);
-        const orgIndex = client.index(INDICES.PHILGEPS_ORGANIZATIONS);
+        const index = procurementClient.index(INDICES.PHILGEPS);
+        const orgIndex = procurementClient.index(
+          INDICES.PHILGEPS_ORGANIZATIONS
+        );
 
         // 1. Search Documents (Paginated)
         const searchPromise = index.search(query, {

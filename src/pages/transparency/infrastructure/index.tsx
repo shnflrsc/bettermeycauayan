@@ -31,7 +31,7 @@ import {
   BetterGovFloodControlRecord,
   DPWHProject,
   INDICES,
-  client,
+  infrastructureClient,
   normalizeFloodControlProject,
 } from '@/lib/meilisearch';
 
@@ -147,7 +147,7 @@ export default function InfrastructurePage() {
       setLoading(true);
       setError(false);
       try {
-        const index = client.index(INDICES.FLOOD_CONTROL);
+        const index = infrastructureClient.index(INDICES.FLOOD_CONTROL);
 
         let searchString = config.transparency.infrastructure.searchString;
         if (query) searchString += ` ${query}`;
