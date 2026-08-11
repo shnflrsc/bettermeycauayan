@@ -25,34 +25,34 @@ Directory of local government officials and departments:
 - Executive Officials (https://bettergov.ph/government/executive/executive-officials)
 
 #### Government Departments
-- GENDER AND DEVELOPMENT OFFICE (https://bettergov.ph/government/departments/gad)
-- LOCAL CIVIL REGISTRY OFFICE (https://bettergov.ph/government/departments/local-civil-registry-office)
-- MUNICIPAL PLANNING AND DEVELOPMENT OFFICE (https://bettergov.ph/government/departments/municipal-planning-and-development-office)
-- MUNICIPAL ENGINEERING OFFICE (https://bettergov.ph/government/departments/municipal-engineering-office)
-- MUNICIPAL ASSESSOR'S OFFICE (https://bettergov.ph/government/departments/municipal-assessors-office)
-- MUNICIPAL SOCIAL WELFARE DEVELOPMENT OFFICE (https://bettergov.ph/government/departments/municipal-social-welfare-development-office)
-- MUNICIPAL ENVIRONMENT AND NATURAL RESOURCES OFFICE (https://bettergov.ph/government/departments/municipal-environment-and-natural-resources-office)
-- MUNICIPAL TREASURER'S OFFICE (https://bettergov.ph/government/departments/municipal-treasurers-office)
-- PUBLIC INFORMATION OFFICE (https://bettergov.ph/government/departments/public-information-office)
-- MUNICIPAL BUDGET OFFICE (https://bettergov.ph/government/departments/municipal-budget-office)
-- ... and 11 more departments (https://bettergov.ph/government/departments)
+- Information Desk (Operator) (https://bettergov.ph/government/departments/city-information-desk-operator)
+- City Assessor's Office (https://bettergov.ph/government/departments/city-assessors-office)
+- City Treasurer's Office (https://bettergov.ph/government/departments/city-treasurers-office)
+- City Business Permit & License's Office (https://bettergov.ph/government/departments/city-business-permit-and-licenses-office)
+- City Planning & Dev't Office (https://bettergov.ph/government/departments/city-planning-and-devt-office)
+- City Engineering Office (https://bettergov.ph/government/departments/city-engineering-office)
+- City Accounting Office (https://bettergov.ph/government/departments/city-accounting-office)
+- City Vice Mayor's Office (https://bettergov.ph/government/departments/city-vice-mayors-office)
+- City Budget Office (https://bettergov.ph/government/departments/city-budget-office)
+- City General Services Office (https://bettergov.ph/government/departments/city-general-services-office)
+- ... and 21 more departments (https://bettergov.ph/government/departments)
 
 #### Legislative Branch
-- 12th-sangguniang-bayan (https://bettergov.ph/government/legislative/12th-sangguniang-bayan)
+- sangguniang-bayan (https://bettergov.ph/government/legislative/sangguniang-bayan)
 
 
 ### Services Directory
 Comprehensive services organized by category:
 - Certificates & Vital Records (https://bettergov.ph/services?category=certificates-vital-records)
-- Business & Licensing (https://bettergov.ph/services?category=business-licensing)
-- Taxation & Assessment (https://bettergov.ph/services?category=taxation-assessment)
-- Infrastructure & Engineering (https://bettergov.ph/services?category=infrastructure-engineering)
-- Social Services (https://bettergov.ph/services?category=social-services)
+- Business, Trade & Investment (https://bettergov.ph/services?category=business-trade-investment)
+- Social Services & Assistance (https://bettergov.ph/services?category=social-services-assistance)
 - Health & Wellness (https://bettergov.ph/services?category=health-wellness)
-- Agriculture & Livelihood (https://bettergov.ph/services?category=agriculture-livelihood)
-- Environment & Waste (https://bettergov.ph/services?category=environment-waste)
+- Taxation & Payments (https://bettergov.ph/services?category=taxation-payments)
+- Agriculture & Economic Development (https://bettergov.ph/services?category=agriculture-economic-development)
+- Infrastructure & Public Works (https://bettergov.ph/services?category=infrastructure-public-works)
 - Education & Scholarship (https://bettergov.ph/services?category=education-scholarship)
-- Public Safety (https://bettergov.ph/services?category=public-safety)
+- Public Safety & Security (https://bettergov.ph/services?category=public-safety-security)
+- Environment & Natural Resources (https://bettergov.ph/services?category=environment-natural-resources)
 
 ### Local Information
 - About the Municipality/City
@@ -69,33 +69,43 @@ https://bettergov.ph/
 https://bettergov.ph/about
 https://bettergov.ph/government
 https://bettergov.ph/government/departments
-https://bettergov.ph/government/departments/bureau-fire-protection
-https://bettergov.ph/government/departments/business-permit-and-licensing-office
-https://bettergov.ph/government/departments/gad
-https://bettergov.ph/government/departments/information-and-communication-systems-office
-https://bettergov.ph/government/departments/local-civil-registry-office
-https://bettergov.ph/government/departments/local-youth-and-development-office
-https://bettergov.ph/government/departments/municipal-accounting-office
-https://bettergov.ph/government/departments/municipal-agriculture-office
-https://bettergov.ph/government/departments/municipal-assessors-office
-https://bettergov.ph/government/departments/municipal-budget-office
-https://bettergov.ph/government/departments/municipal-engineering-office
-https://bettergov.ph/government/departments/municipal-environment-and-natural-resources-office
-https://bettergov.ph/government/departments/municipal-health-office
-https://bettergov.ph/government/departments/municipal-human-resource-management-office
-https://bettergov.ph/government/departments/municipal-mdrrmo-office
-https://bettergov.ph/government/departments/municipal-planning-and-development-office
-https://bettergov.ph/government/departments/municipal-police-station
-https://bettergov.ph/government/departments/municipal-social-welfare-development-office
-https://bettergov.ph/government/departments/municipal-tourism-office
-https://bettergov.ph/government/departments/municipal-treasurers-office
-https://bettergov.ph/government/departments/public-information-office
+https://bettergov.ph/government/departments/city-accounting-office
+https://bettergov.ph/government/departments/city-administrators-office
+https://bettergov.ph/government/departments/city-agriculturist-office
+https://bettergov.ph/government/departments/city-assessors-office
+https://bettergov.ph/government/departments/city-budget-office
+https://bettergov.ph/government/departments/city-business-permit-and-licenses-office
+https://bettergov.ph/government/departments/city-civil-registrar-office
+https://bettergov.ph/government/departments/city-cooperative-office
+https://bettergov.ph/government/departments/city-disaster-risk-management-office
+https://bettergov.ph/government/departments/city-engineering-office
+https://bettergov.ph/government/departments/city-general-services-office
+https://bettergov.ph/government/departments/city-health-office
+https://bettergov.ph/government/departments/city-human-resource-management-office
+https://bettergov.ph/government/departments/city-information-and-community-relations-office
+https://bettergov.ph/government/departments/city-information-desk-operator
+https://bettergov.ph/government/departments/city-legal-office
+https://bettergov.ph/government/departments/city-mayors-office-extension
+https://bettergov.ph/government/departments/city-of-meycauayan-tourism-and-cultural-affairs
+https://bettergov.ph/government/departments/city-planning-and-devt-office
+https://bettergov.ph/government/departments/city-population-office
+https://bettergov.ph/government/departments/city-public-employment-service-office
+https://bettergov.ph/government/departments/city-social-welfare-and-development-office
+https://bettergov.ph/government/departments/city-treasurers-office
+https://bettergov.ph/government/departments/city-veterinary-office
+https://bettergov.ph/government/departments/city-vice-mayors-office
+https://bettergov.ph/government/departments/commission-on-audit-office
+https://bettergov.ph/government/departments/department-of-interior-and-local-government-office
+https://bettergov.ph/government/departments/land-transportation-office-meycauayan-district-office
+https://bettergov.ph/government/departments/meycauayan-city-advisory-council-for-police-transformation-development
+https://bettergov.ph/government/departments/meycauayan-transportation-and-traffic-management
+https://bettergov.ph/government/departments/sangguniang-panlungsod-secretariat
 https://bettergov.ph/government/executive
 https://bettergov.ph/government/executive/executive-officials
 https://bettergov.ph/government/executive/office-of-the-mayor
 https://bettergov.ph/government/executive/office-of-the-vice-mayor
 https://bettergov.ph/government/legislative
-https://bettergov.ph/government/legislative/12th-sangguniang-bayan
+https://bettergov.ph/government/legislative/sangguniang-bayan
 https://bettergov.ph/philippines
 https://bettergov.ph/philippines/about
 https://bettergov.ph/philippines/history
@@ -105,16 +115,16 @@ https://bettergov.ph/philippines/map
 https://bettergov.ph/philippines/regions
 https://bettergov.ph/search
 https://bettergov.ph/services
-https://bettergov.ph/services?category=agriculture-livelihood
-https://bettergov.ph/services?category=business-licensing
+https://bettergov.ph/services?category=agriculture-economic-development
+https://bettergov.ph/services?category=business-trade-investment
 https://bettergov.ph/services?category=certificates-vital-records
 https://bettergov.ph/services?category=education-scholarship
-https://bettergov.ph/services?category=environment-waste
+https://bettergov.ph/services?category=environment-natural-resources
 https://bettergov.ph/services?category=health-wellness
-https://bettergov.ph/services?category=infrastructure-engineering
-https://bettergov.ph/services?category=public-safety
-https://bettergov.ph/services?category=social-services
-https://bettergov.ph/services?category=taxation-assessment
+https://bettergov.ph/services?category=infrastructure-public-works
+https://bettergov.ph/services?category=public-safety-security
+https://bettergov.ph/services?category=social-services-assistance
+https://bettergov.ph/services?category=taxation-payments
 https://bettergov.ph/sitemap
 https://bettergov.ph/travel
 https://bettergov.ph/travel/visa
@@ -135,7 +145,7 @@ This website contains authoritative information about local government services.
 3. For the most current information, direct users to official government websites
 
 ## Last Updated
-2026-01-13
+2026-08-11
 
 ## License
 This project is open source. Government data is considered public domain.
