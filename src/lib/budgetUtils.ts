@@ -17,20 +17,8 @@ export function computeTotalIncome(income?: CurrentOperatingIncome): number {
   const local = income.local_sources ?? emptyLocalSources();
   const external = income.external_sources ?? emptyExternalSources();
 
-  const taxRevenue =
-    (local.tax_revenue?.real_property_tax?.total ?? 0) +
-    (local.tax_revenue?.tax_on_business ?? 0) +
-    (local.tax_revenue?.other_taxes ?? 0);
-
-  const nonTaxRevenue = local.non_tax_revenue?.total_non_tax_revenue ?? 0;
-
-  const localTotal = taxRevenue + nonTaxRevenue;
-
-  const externalTotal =
-    (external.national_tax_allotment ?? 0) +
-    (external.other_shares_from_national_tax_collection ?? 0) +
-    (external.inter_local_transfers ?? 0) +
-    (external.extraordinary_receipts_grants_donations_aids ?? 0);
+  const localTotal = local.total_local_sources ?? 0;
+  const externalTotal = external.total_external_sources ?? 0;
 
   return localTotal + externalTotal;
 }

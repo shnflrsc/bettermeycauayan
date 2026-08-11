@@ -40,12 +40,14 @@ const budgetData: FinancialQuarter[] = rawData.map(q => {
     emptyCurrentOperatingExpenditures();
   const socialRaw = coeRaw.social_services ?? emptySocialServices();
 
-  const totalSocial =
+  const componentSocialTotal =
     (socialRaw.education_culture_sports_manpower_development ?? 0) +
     (socialRaw.health_nutrition_population_control ?? 0) +
     (socialRaw.labor_and_employment ?? 0) +
     (socialRaw.housing_and_community_development ?? 0) +
     (socialRaw.social_services_and_social_welfare ?? 0);
+  const totalSocial =
+    componentSocialTotal || socialRaw.total_social_services || 0;
 
   const expenditures = {
     general_public_services: coeRaw.general_public_services ?? 0,

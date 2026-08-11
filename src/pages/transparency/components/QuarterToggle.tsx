@@ -1,6 +1,7 @@
 import { Calendar, PieChart } from 'lucide-react';
 
 interface QuarterToggleProps {
+  annualOnly?: boolean;
   quarters: string[];
   years: string[];
   viewMode: 'year' | 'quarter';
@@ -49,6 +50,7 @@ const SlideToggle = <T extends string>({
 };
 
 export default function QuarterToggle({
+  annualOnly = false,
   quarters,
   years,
   viewMode,
@@ -73,19 +75,21 @@ export default function QuarterToggle({
         </div>
 
         {/* View Mode Toggle */}
-        <div className='flex items-center gap-2'>
-          <PieChart className='text-kapwa-text-disabled h-4 w-4' />
-          <SlideToggle
-            options={['quarter', 'year']}
-            selected={viewMode}
-            onChange={onViewModeChange}
-            labels={{ quarter: 'Quarterly', year: 'Annual' }}
-          />
-        </div>
+        {!annualOnly && (
+          <div className='flex items-center gap-2'>
+            <PieChart className='text-kapwa-text-disabled h-4 w-4' />
+            <SlideToggle
+              options={['quarter', 'year']}
+              selected={viewMode}
+              onChange={onViewModeChange}
+              labels={{ quarter: 'Quarterly', year: 'Annual' }}
+            />
+          </div>
+        )}
       </div>
 
       {/* Bottom Row: Quarter Buttons (Only in Quarter View) */}
-      {viewMode === 'quarter' && (
+      {!annualOnly && viewMode === 'quarter' && (
         <div className='animate-in fade-in slide-in-from-top-1 flex items-center gap-2 duration-200'>
           <span className='text-kapwa-text-disabled mr-1 text-xs font-semibold tracking-wider uppercase'>
             Period

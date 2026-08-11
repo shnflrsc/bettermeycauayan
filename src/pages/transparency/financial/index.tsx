@@ -45,6 +45,11 @@ export default function FinancialPage() {
     getQuarter,
   } = useFinancialData();
 
+  const sourceUrl =
+    selectedYear === '2024'
+      ? 'https://www.dbm.gov.ph/wp-content/uploads/BESF/BESF2026/F13.pdf'
+      : 'https://www.dbm.gov.ph/wp-content/uploads/BESF/BESF2026/F14.pdf';
+
   // --- Transform Data for Charts ---
   const calcPct = (val: number, total: number) => (total > 0 ? val / total : 0);
 
@@ -179,7 +184,7 @@ export default function FinancialPage() {
       value: socialTotal,
       percent: calcPct(socialTotal, grandTotalExp),
       details: Object.entries(displayedExpenditure.social_services)
-        .filter(([key]) => key !== 'total_social_services')
+        .filter(([key, value]) => key !== 'total_social_services' && value > 0)
         .map(([key, value]) => ({
           name: formatLabel(key),
           value,
@@ -225,7 +230,7 @@ export default function FinancialPage() {
         <div className='space-y-4'>
           <div className='flex flex-wrap items-center gap-2'>
             <Badge variant='primary' dot>
-              Verified Audit
+              Official SRE Data
             </Badge>
             <Badge variant='slate'>FY {selectedYear}</Badge>
             <div className='border-kapwa-border-weak bg-kapwa-bg-surface-raised text-kapwa-text-disabled flex items-center gap-1.5 rounded-md border px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase'>
@@ -238,13 +243,14 @@ export default function FinancialPage() {
             Financial Performance
           </h1>
           <p className='text-kapwa-text-disabled max-w-xl text-sm leading-relaxed font-medium'>
-            Independent visualization of the municipal budget, including current
-            operating income and expenditures.
+            Annual financial performance of the City Government of Meycauayan,
+            based on figures reported through the LGU Integrated Financial Tool.
           </p>
         </div>
 
         <div className='border-kapwa-border-weak bg-kapwa-bg-surface-raised shrink-0 rounded-2xl border p-4'>
           <QuarterToggle
+            annualOnly
             quarters={quartersInYear.map(q => getQuarter(q.period))}
             years={years}
             viewMode={viewMode}
@@ -305,9 +311,15 @@ export default function FinancialPage() {
       <footer className='pt-10 text-center'>
         <div className='border-kapwa-border-weak bg-kapwa-bg-surface inline-flex items-center gap-2 rounded-full border px-4 py-2 shadow-sm'>
           <ShieldCheck className='h-4 w-4 text-kapwa-text-success' />
-          <span className='text-kapwa-text-disabled text-[10px] font-bold tracking-widest uppercase'>
-            Source: LGU SRE via BLGF and Full Disclosure Policy Portal
-          </span>
+          <a
+            href={sourceUrl}
+            target='_blank'
+            rel='noreferrer'
+            className='text-kapwa-text-disabled hover:text-kapwa-text-brand text-[10px] font-bold tracking-widest uppercase'
+          >
+            Source: DBM Statement of Receipts and Expenditures, FY{' '}
+            {selectedYear}
+          </a>
         </div>
       </footer>
     </div>

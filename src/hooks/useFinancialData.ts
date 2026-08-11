@@ -1,7 +1,5 @@
 import { useMemo, useState } from 'react';
 
-import { aggregateExpenditures, aggregateIncome } from '@/lib/budgetUtils';
-
 // Removed useEffect
 import budgetData from '@/data/transparency/budgetData';
 
@@ -19,7 +17,7 @@ export function useFinancialData() {
 
   // 2. State
   const [selectedYear, setSelectedYear] = useState(years[years.length - 1]);
-  const [viewMode, setViewMode] = useState<'quarter' | 'year'>('quarter');
+  const [viewMode, setViewMode] = useState<'quarter' | 'year'>('year');
 
   // 3. Filter data for selected year
   const quartersInYear = useMemo(
@@ -64,7 +62,7 @@ export function useFinancialData() {
   const displayedIncome = useMemo(
     () =>
       viewMode === 'year'
-        ? aggregateIncome(quartersInYear.map(q => q.current_operating_income))
+        ? quartersInYear[quartersInYear.length - 1].current_operating_income
         : selectedQuarter.current_operating_income,
     [viewMode, quartersInYear, selectedQuarter]
   );
@@ -72,9 +70,8 @@ export function useFinancialData() {
   const displayedExpenditure = useMemo(
     () =>
       viewMode === 'year'
-        ? aggregateExpenditures(
-            quartersInYear.map(q => q.current_operating_expenditures)
-          )
+        ? quartersInYear[quartersInYear.length - 1]
+            .current_operating_expenditures
         : selectedQuarter.current_operating_expenditures,
     [viewMode, quartersInYear, selectedQuarter]
   );
@@ -111,24 +108,14 @@ export function useFinancialData() {
       targetNet = match.net_operating_income_loss_from_current_operations;
       targetFundEnd = match.fund_summary?.fund_cash_balance_end || 0;
     } else {
-      targetIncome = prevYearData.reduce(
-        (acc, q) =>
-          acc + q.current_operating_income.total_current_operating_income,
-        0
-      );
-      targetExpenditure = prevYearData.reduce(
-        (acc, q) =>
-          acc +
-          q.current_operating_expenditures.total_current_operating_expenditures,
-        0
-      );
-      targetNet = prevYearData.reduce(
-        (acc, q) => acc + q.net_operating_income_loss_from_current_operations,
-        0
-      );
-      targetFundEnd =
-        prevYearData[prevYearData.length - 1]?.fund_summary
-          ?.fund_cash_balance_end || 0;
+      const latest = prevYearData[prevYearData.length - 1];
+      targetIncome =
+        latest.current_operating_income.total_current_operating_income;
+      targetExpenditure =
+        latest.current_operating_expenditures
+          .total_current_operating_expenditures;
+      targetNet = latest.net_operating_income_loss_from_current_operations;
+      targetFundEnd = latest.fund_summary?.fund_cash_balance_end || 0;
     }
 
     return {
