@@ -1,0 +1,31 @@
+{
+  "services": [
+    {
+      "service_number": "1.1",
+      "service_name": "Example Citizens Charter Service",
+      "office_division": "RESPONSIBLE OFFICE NAME",
+      "classification": "Simple",
+      "type_of_transaction": "G2C",
+      "who_may_avail": "Describe eligible applicants",
+      "requirements": [
+        {
+          "requirement": "Required document or information",
+          "where_to_secure": "Issuing office or source"
+        }
+      ],
+      "client_steps": [
+        {
+          "step": 1,
+          "action": "Describe what the client must do"
+        }
+      ],
+      "fees": {
+        "amount": "Free",
+        "description": "No fee"
+      },
+      "processing_time": "Example: 1 working day",
+      "turnaround_time": "Example: Same day",
+      "plain_language_name": "Short, public-friendly service name"
+    }
+  ]
+}

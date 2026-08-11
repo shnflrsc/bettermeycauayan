@@ -1,29 +1,186 @@
 [
   {
-    "service": "Fire Safety Inspection Certificate (FSIC)",
-    "slug": "fire-safety-inspection-certificate",
+    "service": "Emergency Shelter Assistance",
+    "slug": "emergency-shelter-assistance",
+    "status": "historical",
+    "officialReference": { "edition": "2026 First Edition", "pdfPages": "Not found", "charterPages": "Not found" },
     "type": "transaction",
-    "description": "Required for occupancy and business permits to ensure the structure meets fire safety standards.",
-    "officeSlug": ["bureau-fire-protection"],
+    "description": "Provides a Social Case Study Report and endorsement letter required by charitable institutions, government offices, and non-government organizations that assist clients needing emergency shelter assistance.",
+    "officeSlug": ["city-social-welfare-and-development-office"],
+    "officeDivision": "City Social Welfare and Development Office",
     "category": {
       "name": "Public Safety & Security",
       "slug": "public-safety-security"
     },
-    "requirements": [
-      "Unified Application Form",
-      "Building Permit Number and Date Issued",
-      "FSEC Number and Date Issued",
-      "Site Inspection by BFP personnel"
+    "classification": "Simple",
+    "typeOfTransaction": "Government to Client",
+    "whoMayAvail": "Residents of the City of Meycauayan",
+    "steps": [
+      "Submit the complete requirements.",
+      "Answer the questions during the intake interview.",
+      "Wait while the Social Case Study Report and endorsement letter are prepared.",
+      "Receive the Social Case Study Report and endorsement letter."
     ],
-    "quickInfo": {
-      "processingTime": "3-5 days",
-      "whoCanApply": "Building Owners / Business Operators"
+    "requirements": [
+      "Barangay Certificate of Indigency (original and 1 photocopy)",
+      "Certificate from the Bureau of Fire Protection (original and 1 photocopy)",
+      "Picture of the burned house",
+      "Valid IDs of the victim and representative (original and 1 photocopy)"
+    ],
+    "detailedRequirements": [
+      {
+        "requirement": "Barangay Certificate of Indigency (original and 1 photocopy)",
+        "where_to_secure": "Barangay Hall"
+      },
+      {
+        "requirement": "Certificate from the Bureau of Fire Protection (original and 1 photocopy)",
+        "where_to_secure": "City of Meycauayan Bureau of Fire Protection"
+      },
+      {
+        "requirement": "Picture of the burned house",
+        "where_to_secure": "Client or Barangay Official"
+      },
+      {
+        "requirement": "Valid IDs of the victim and representative (original and 1 photocopy)",
+        "where_to_secure": "Government agencies and COMELEC that issue IDs"
+      }
+    ],
+    "clientSteps": [
+      {
+        "step": 1,
+        "action": "Submit the complete requirements for receipt and review.",
+        "processing_time": "2 minutes"
+      },
+      {
+        "step": 2,
+        "action": "Answer the questions during the intake interview.",
+        "processing_time": "15 minutes"
+      },
+      {
+        "step": 3,
+        "action": "Wait while the Social Case Study Report and endorsement letter are prepared.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 4,
+        "action": "Receive the Social Case Study Report and endorsement letter.",
+        "processing_time": "3 minutes"
+      }
+    ],
+    "fees": {
+      "amount": "None",
+      "description": "No fee"
     },
+    "processingTime": "25 minutes",
+    "personResponsible": [
+      "Social Welfare Assistant Officer I",
+      "Social Welfare Officer III",
+      "City Social Welfare and Development Office"
+    ],
+    "relatedServices": [],
+    "quickInfo": {
+      "processingTime": "25 minutes",
+      "fee": "Free",
+      "whoCanApply": "Residents of the City of Meycauayan",
+      "appointmentType": "PLACEHOLDER: Confirm whether this service is walk-in or appointment-based"
+    },
+    "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
+    "updatedAt": "2026-08-11T12:21:52+08:00",
+    "sources": [
+      {
+        "name": "City of Meycauayan Citizens' Charter",
+        "url": "https://meycauayan.gov.ph"
+      }
+    ],
+    "dataComplete": true,
+    "needsVerification": true
+  },
+  {
+    "service": "Impounded Pet/Animal Release",
+    "slug": "redemption-of-impounded-pet-animal",
+    "officialServiceNumber": "CVO-3",
+    "officialReference": { "edition": "2026 First Edition", "pdfPages": "349-350", "charterPages": "348-349" },
+    "deliveryChannel": "Walk-in",
+    "type": "transaction",
+    "description": "Allows an owner to identify, pay the required fee for, and reclaim an impounded pet or animal under the Animal Welfare Act of 1998 and Meycauayan City Ordinance No. 2012-05.",
+    "officeSlug": ["city-veterinary-office"],
+    "officeDivision": "Office of the City Veterinarian",
+    "category": {
+      "name": "Public Safety & Security",
+      "slug": "public-safety-security"
+    },
+    "classification": "Simple",
+    "typeOfTransaction": "G2C - Government to Client",
+    "whoMayAvail": "Owners of impounded pets or animals",
+    "steps": [
+      "Present a valid ID at the City Veterinary Office and obtain an Order of Payment.",
+      "Proceed to the impounding facility to identify the pet or animal.",
+      "Pay the required fee at the City Treasurer's Office and secure the Official Receipt.",
+      "Present the Official Receipt at the City Veterinary Office and obtain the Release Order.",
+      "Present the Official Receipt and Release Order at the impounding facility and reclaim the pet or animal."
+    ],
+    "requirements": ["Valid government-issued ID (original)"],
+    "detailedRequirements": [
+      {
+        "requirement": "Valid government-issued ID (original)",
+        "where_to_secure": "Any government institution that issues identification cards"
+      }
+    ],
+    "clientSteps": [
+      {
+        "step": 1,
+        "action": "Present a valid ID at the City Veterinary Office. Staff will check the impounding report, validate the ID, and issue an Order of Payment.",
+        "processing_time": "3 minutes"
+      },
+      {
+        "step": 2,
+        "action": "Proceed to the impounding facility and physically identify the pet or animal.",
+        "processing_time": "2 minutes"
+      },
+      {
+        "step": 3,
+        "action": "Pay the required fee at the City Treasurer's Office and secure the Official Receipt.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 4,
+        "action": "Present the Official Receipt at the City Veterinary Office so the release information can be recorded and the Release Order prepared.",
+        "processing_time": "2 minutes"
+      },
+      {
+        "step": 5,
+        "action": "Present the Official Receipt and Release Order at the impounding facility and reclaim the pet or animal.",
+        "processing_time": "2 minutes"
+      }
+    ],
+    "fees": {
+      "amount": 500,
+      "description": "PHP 500.00 release fee"
+    },
+    "processingTime": "14 minutes",
+    "personResponsible": [
+      "Administrative Aide I",
+      "Assigned impounding-facility personnel",
+      "Revenue Collection Clerk",
+      "Office of the City Veterinarian",
+      "Office of the City Treasurer"
+    ],
+    "relatedServices": [],
+    "quickInfo": {
+      "processingTime": "14 minutes",
+      "fee": "PHP 500.00",
+      "whoCanApply": "Owners of impounded pets or animals",
+      "appointmentType": "Walk-in"
+    },
+    "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
     "updatedAt": null,
     "sources": [
       {
-        "name": "BFP Fire Safety Regulations"
+        "name": "City of Meycauayan Citizens' Charter",
+        "url": "https://meycauayan.gov.ph"
       }
-    ]
+    ],
+    "dataComplete": false,
+    "needsVerification": true
   }
 ]

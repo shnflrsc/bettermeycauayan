@@ -1,1 +1,746 @@
-[]
+[
+  {
+    "service": "Certificate of Birth - Timely Registration",
+    "slug": "registration-of-birth",
+    "officialServiceNumber": "CCRO-1",
+    "officialReference": { "edition": "2026 First Edition", "pdfPages": "158-159", "charterPages": "157-158" },
+    "deliveryChannel": "Walk-in",
+    "type": "transaction",
+    "description": "Registers a birth that occurred in Meycauayan within the 30-day reglementary period.",
+    "officeSlug": ["city-civil-registrar-office"],
+    "officeDivision": "Office of the City Civil Registrar",
+    "category": {
+      "name": "Certificates & Vital Records",
+      "slug": "certificates-vital-records"
+    },
+    "classification": "Simple",
+    "typeOfTransaction": "G2C",
+    "whoMayAvail": "All persons born in Meycauayan",
+    "requirements": [
+      "Duly accomplished Municipal Form No. 102 (4 original copies)",
+      "Marriage Contract (1 original and 1 photocopy)",
+      "Community Tax Certificate of the parents (Cedula)",
+      "Personal appearance of the father, if the parents are not married",
+      "Notarized Affidavit to Use the Surname of the Father under R.A. 9255 (2 original copies), if the parents are not married",
+      "Notarized Affidavit of Acknowledgment/Admission of Paternity on the back of Form No. 102, if the parents are not married",
+      "Government-issued identification cards of the parents (1 photocopy each)"
+    ],
+    "detailedRequirements": [
+      {
+        "requirement": "Duly accomplished Municipal Form No. 102 (4 original copies)",
+        "where_to_secure": "Local Civil Registrar, hospitals, lying-in clinics, or health centers"
+      },
+      {
+        "requirement": "Marriage Contract (1 original and 1 photocopy)",
+        "where_to_secure": "Local Civil Registrar or PSA offices/outlets"
+      },
+      {
+        "requirement": "Community Tax Certificate of the parents (Cedula)",
+        "where_to_secure": "City/Municipal Treasurer or Barangay Hall"
+      },
+      {
+        "requirement": "Personal appearance of the father, if the parents are not married",
+        "where_to_secure": "Not applicable"
+      },
+      {
+        "requirement": "Notarized Affidavit to Use the Surname of the Father under R.A. 9255 (2 original copies), if applicable",
+        "where_to_secure": "Local Civil Registrar or legal offices"
+      },
+      {
+        "requirement": "Notarized Affidavit of Acknowledgment/Admission of Paternity on Form No. 102, if applicable",
+        "where_to_secure": "Local Civil Registrar or legal offices"
+      },
+      {
+        "requirement": "Government-issued identification cards of the parents (1 photocopy each)",
+        "where_to_secure": "Issuing government agencies"
+      }
+    ],
+    "steps": [
+      "Submit the completed form and requirements and receive an order of payment.",
+      "Pay at the City Treasurer's Office and secure the Official Receipt.",
+      "Present the Official Receipt and verify the certificate details.",
+      "Receive the certificate."
+    ],
+    "clientSteps": [
+      {
+        "step": 1,
+        "action": "Submit the completed form and requirements and receive an order of payment.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 2,
+        "action": "Pay at the City Treasurer's Office and secure the Official Receipt.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 3,
+        "action": "Present the Official Receipt and verify the certificate details before registration.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 4,
+        "action": "Receive the certificate.",
+        "processing_time": "1 minute"
+      }
+    ],
+    "fees": { "amount": "₱50", "description": "Timely registration of birth" },
+    "processingTime": "16 minutes",
+    "personResponsible": [
+      "Administrative Aide II",
+      "Registration Officer III",
+      "Revenue Collection Clerk I",
+      "City Civil Registrar",
+      "Office of the City Civil Registrar",
+      "Office of the City Treasurer"
+    ],
+    "relatedServices": [],
+    "quickInfo": {
+      "processingTime": "16 minutes",
+      "fee": "₱50",
+      "whoCanApply": "Persons born in Meycauayan",
+      "appointmentType": "PLACEHOLDER: Confirm whether this service is walk-in or appointment-based"
+    },
+    "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
+    "updatedAt": null,
+    "sources": [{ "name": "City of Meycauayan Citizens' Charter", "url": "https://meycauayan.gov.ph" }],
+    "dataComplete": false,
+    "needsVerification": true
+  },
+  {
+    "service": "Certificate of Marriage - Timely Registration",
+    "slug": "registration-of-marriage",
+    "officialServiceNumber": "CCRO-2",
+    "officialReference": { "edition": "2026 First Edition", "pdfPages": "159-160", "charterPages": "158-159" },
+    "deliveryChannel": "Walk-in",
+    "type": "transaction",
+    "description": "Registers a marriage solemnized in Meycauayan within the 15-day reglementary period.",
+    "officeSlug": ["city-civil-registrar-office"],
+    "officeDivision": "Office of the City Civil Registrar",
+    "category": {
+      "name": "Certificates & Vital Records",
+      "slug": "certificates-vital-records"
+    },
+    "classification": "Simple",
+    "typeOfTransaction": "G2C",
+    "whoMayAvail": "All persons whose marriage was solemnized in Meycauayan",
+    "requirements": [
+      "Duly accomplished Municipal Form No. 97 (4 original copies)",
+      "Request to solemnize marriage outside a church (1 photocopy), if applicable",
+      "Authority to Solemnize Marriage of the solemnizing officer (1 photocopy)",
+      "Marriage License (1 photocopy)",
+      "Actual photograph of the marriage ceremony (1 original and 1 photocopy)"
+    ],
+    "detailedRequirements": [
+      {
+        "requirement": "Duly accomplished Municipal Form No. 97 (4 original copies)",
+        "where_to_secure": "Local Civil Registrar, churches, solemnizing offices, or other religious sectors"
+      },
+      {
+        "requirement": "Request to solemnize marriage outside a church (1 photocopy), if applicable",
+        "where_to_secure": "Local Civil Registrar"
+      },
+      {
+        "requirement": "Authority to Solemnize Marriage of the solemnizing officer (1 photocopy)",
+        "where_to_secure": "Solemnizing office"
+      },
+      {
+        "requirement": "Marriage License (1 photocopy)",
+        "where_to_secure": "Local Civil Registrar"
+      },
+      {
+        "requirement": "Actual photograph of the marriage ceremony (1 original and 1 photocopy)",
+        "where_to_secure": "Provided by the client"
+      }
+    ],
+    "steps": [
+      "Submit the completed form and requirements.",
+      "Check the certificate entries for discrepancies while it is prepared and registered.",
+      "Receive the certificate."
+    ],
+    "clientSteps": [
+      {
+        "step": 1,
+        "action": "Submit the completed form and requirements for review.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 2,
+        "action": "Check the certificate entries for discrepancies while it is prepared and registered.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 3,
+        "action": "Receive the certificate.",
+        "processing_time": "1 minute"
+      }
+    ],
+    "fees": { "amount": "None", "description": "No fee" },
+    "processingTime": "11 minutes",
+    "personResponsible": [
+      "Administrative Assistant II",
+      "Registration Officer III",
+      "City Civil Registrar",
+      "Office of the City Civil Registrar"
+    ],
+    "relatedServices": [],
+    "quickInfo": {
+      "processingTime": "11 minutes",
+      "fee": "Free",
+      "whoCanApply": "Persons whose marriage was solemnized in Meycauayan",
+      "appointmentType": "PLACEHOLDER: Confirm whether this service is walk-in or appointment-based"
+    },
+    "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
+    "updatedAt": null,
+    "sources": [{ "name": "City of Meycauayan Citizens' Charter", "url": "https://meycauayan.gov.ph" }],
+    "dataComplete": false,
+    "needsVerification": true
+  },
+  {
+    "service": "Certificate of Death - Timely Registration",
+    "slug": "registration-of-death-certificate",
+    "officialServiceNumber": "CCRO-3",
+    "officialReference": { "edition": "2026 First Edition", "pdfPages": "160-161", "charterPages": "159-160" },
+    "deliveryChannel": "Walk-in",
+    "type": "transaction",
+    "description": "Registers a death certificate within the 30-day reglementary period and processes the applicable burial, transfer, entrance, cremation, or exhumation permit.",
+    "officeSlug": ["city-civil-registrar-office"],
+    "officeDivision": "Office of the City Civil Registrar",
+    "category": {
+      "name": "Certificates & Vital Records",
+      "slug": "certificates-vital-records"
+    },
+    "classification": "Simple",
+    "typeOfTransaction": "G2C",
+    "whoMayAvail": "All persons registering a death",
+    "requirements": [
+      "Duly accomplished Municipal Form No. 103 (4 original copies)"
+    ],
+    "detailedRequirements": [
+      {
+        "requirement": "Duly accomplished Municipal Form No. 103 (4 original copies)",
+        "where_to_secure": "Local Civil Registrar, hospitals, or funeral services"
+      }
+    ],
+    "steps": [
+      "Proceed to the Sanitary Division for review and determination of the required permit.",
+      "Pay at the City Treasurer's Office and secure the Official Receipt.",
+      "Submit the completed form to the Local Civil Registrar.",
+      "Check the certificate entries for discrepancies.",
+      "Receive the certificate."
+    ],
+    "clientSteps": [
+      {
+        "step": 1,
+        "action": "Proceed to the Sanitary Division for review of the death certificate and determination of the required permit.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 2,
+        "action": "Pay the applicable permit fee at the City Treasurer's Office and secure the Official Receipt.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 3,
+        "action": "Submit the completed form to the Local Civil Registrar for review.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 4,
+        "action": "Check the certificate entries for discrepancies while it is prepared and registered.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 5,
+        "action": "Receive the certificate.",
+        "processing_time": "1 minute"
+      }
+    ],
+    "fees": {
+      "amount": "₱50–₱200",
+      "description": "Burial Permit ₱50; Transfer Permit ₱100; Entrance Permit ₱100; Cremation ₱200; Exhumation Permit ₱50"
+    },
+    "feeSchedule": [
+      { "name": "Burial Permit", "amount": "₱50" },
+      { "name": "Transfer Permit", "amount": "₱100" },
+      { "name": "Entrance Permit", "amount": "₱100" },
+      { "name": "Cremation", "amount": "₱200" },
+      { "name": "Exhumation Permit", "amount": "₱50" }
+    ],
+    "processingTime": "9 minutes",
+    "personResponsible": [
+      "City Health Officer",
+      "Revenue Collection Clerk I",
+      "Administrative Assistant II",
+      "Registration Officer III",
+      "City Civil Registrar",
+      "Office of the City Civil Registrar",
+      "Office of the City Treasurer"
+    ],
+    "relatedServices": [],
+    "quickInfo": {
+      "processingTime": "9 minutes",
+      "fee": "₱50–₱200 depending on permit",
+      "whoCanApply": "Persons registering a death",
+      "appointmentType": "PLACEHOLDER: Confirm whether this service is walk-in or appointment-based"
+    },
+    "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
+    "updatedAt": null,
+    "sources": [{ "name": "City of Meycauayan Citizens' Charter", "url": "https://meycauayan.gov.ph" }],
+    "dataComplete": false,
+    "needsVerification": true
+  },
+  {
+    "service": "Certificate of Birth - Late Registration",
+    "slug": "late-registration-of-birth",
+    "officialServiceNumber": "CCRO-4",
+    "officialReference": { "edition": "2026 First Edition", "pdfPages": "161-164", "charterPages": "160-163" },
+    "deliveryChannel": "Walk-in",
+    "type": "transaction",
+    "description": "Registers a birth reported beyond the 30-day reglementary period. The supplied procedure applies to children aged 0–6 with unmarried parents.",
+    "officeSlug": ["city-civil-registrar-office"],
+    "officeDivision": "Office of the City Civil Registrar",
+    "category": {
+      "name": "Certificates & Vital Records",
+      "slug": "certificates-vital-records"
+    },
+    "classification": "Highly Technical",
+    "typeOfTransaction": "G2C",
+    "whoMayAvail": "Persons born in Meycauayan aged 0–6 with unmarried parents",
+    "requirements": [
+      "Duly accomplished Municipal Form No. 102 (4 original copies)",
+      "Documentary evidence showing the child's name and date of birth and the parents' names: Baptismal Certificate, Barangay Certification for Late Registration, and earliest School Record (1 original and 1 photocopy each)",
+      "Community Tax Certificate of the parents (1 original and 1 photocopy)",
+      "Personal appearance of the father or mother",
+      "Affidavit to Use the Surname of the Father under R.A. 9255 (2 original copies)",
+      "Mother's Affidavit (2 original copies)",
+      "Notarized Affidavit of Acknowledgment/Admission of Paternity on Form No. 102, if applicable",
+      "Notarized Affidavit of Delayed Registration of Birth on Form No. 102",
+      "Joint Affidavit of Two Disinterested Persons (2 originals) with 1 photocopy of each affiant's ID",
+      "Government-issued identification cards of the parents (1 photocopy each)"
+    ],
+    "detailedRequirements": [
+      {
+        "requirement": "Duly accomplished Municipal Form No. 102 (4 original copies)",
+        "where_to_secure": "Local Civil Registrar, hospitals, lying-in clinics, or health centers"
+      },
+      {
+        "requirement": "Baptismal Certificate (1 original and 1 photocopy)",
+        "where_to_secure": "Church where the child was baptized"
+      },
+      {
+        "requirement": "Barangay Certification for Late Registration (1 original and 1 photocopy)",
+        "where_to_secure": "Barangay where the child was born"
+      },
+      {
+        "requirement": "Earliest School Record (1 original and 1 photocopy)",
+        "where_to_secure": "School where the child studied"
+      },
+      {
+        "requirement": "Community Tax Certificate of the parents (1 original and 1 photocopy)",
+        "where_to_secure": "City/Municipal Treasurer or Barangay Hall"
+      },
+      {
+        "requirement": "Personal appearance of the father or mother",
+        "where_to_secure": "Not applicable"
+      },
+      {
+        "requirement": "Affidavit to Use the Surname of the Father, Mother's Affidavit, paternity affidavit, delayed-registration affidavit, and Joint Affidavit of Two Disinterested Persons",
+        "where_to_secure": "Local Civil Registrar or legal offices"
+      },
+      {
+        "requirement": "Government-issued identification cards of the parents (1 photocopy each)",
+        "where_to_secure": "Issuing government agencies"
+      }
+    ],
+    "steps": [
+      "Submit the completed form and requirements and receive an order of payment.",
+      "Pay at the City Treasurer's Office and secure the Official Receipt.",
+      "Present the Official Receipt for preparation of the certificate.",
+      "Verify the certificate and return after the posting period.",
+      "Wait while the certificate is registered after posting.",
+      "Receive and verify the certificate."
+    ],
+    "clientSteps": [
+      {
+        "step": 1,
+        "action": "Submit the completed form and requirements and receive an order of payment.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 2,
+        "action": "Pay at the City Treasurer's Office and secure the Official Receipt.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 3,
+        "action": "Present the Official Receipt for preparation of the certificate.",
+        "processing_time": "10 minutes"
+      },
+      {
+        "step": 4,
+        "action": "Verify the certificate and return after the required posting period.",
+        "processing_time": "10 days posting after filing"
+      },
+      {
+        "step": 5,
+        "action": "The certificate is registered after the posting period.",
+        "processing_time": "2 minutes"
+      },
+      {
+        "step": 6,
+        "action": "Receive and verify the certificate.",
+        "processing_time": "1 minute"
+      }
+    ],
+    "fees": { "amount": "₱100", "description": "Late registration of birth" },
+    "processingTime": "23 minutes",
+    "turnaroundTime": "10-day posting period",
+    "personResponsible": [
+      "Administrative Aide II",
+      "Administrative Assistant II",
+      "Registration Officer III",
+      "Revenue Collection Clerk I",
+      "City Civil Registrar",
+      "Office of the City Civil Registrar",
+      "Office of the City Treasurer"
+    ],
+    "relatedServices": [],
+    "quickInfo": {
+      "processingTime": "23 minutes plus a 10-day posting period",
+      "fee": "₱100",
+      "whoCanApply": "Meycauayan-born children aged 0–6 with unmarried parents",
+      "appointmentType": "PLACEHOLDER: Confirm whether this service is walk-in or appointment-based"
+    },
+    "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
+    "updatedAt": null,
+    "sources": [{ "name": "City of Meycauayan Citizens' Charter", "url": "https://meycauayan.gov.ph" }],
+    "dataComplete": false,
+    "needsVerification": true
+  },
+  {
+    "service": "Certificate of Marriage - Late Registration",
+    "slug": "late-registration-of-marriage",
+    "officialServiceNumber": "CCRO-5",
+    "officialReference": { "edition": "2026 First Edition", "pdfPages": "164-166", "charterPages": "163-165" },
+    "deliveryChannel": "Walk-in",
+    "type": "transaction",
+    "description": "Registers a marriage reported beyond the 30-day reglementary period.",
+    "officeSlug": ["city-civil-registrar-office"],
+    "officeDivision": "Office of the City Civil Registrar",
+    "category": {
+      "name": "Certificates & Vital Records",
+      "slug": "certificates-vital-records"
+    },
+    "classification": "Highly Technical",
+    "typeOfTransaction": "G2C",
+    "whoMayAvail": "All persons whose marriage was solemnized in Meycauayan",
+    "requirements": [
+      "Original or certified copy of Marriage Certificate (1 copy)",
+      "PSA Certificate of No Record (1 original)",
+      "Affidavit of Late Registration of Marriage (1 original)",
+      "If no Marriage Certificate is available: affidavit stating complete marriage details, wedding pictures, Certificates of Live Birth of children, and Death Certificate of spouse if applicable"
+    ],
+    "detailedRequirements": [
+      {
+        "requirement": "Original or certified copy of Marriage Certificate (1 copy)",
+        "where_to_secure": "Local Civil Registrar"
+      },
+      {
+        "requirement": "PSA Certificate of No Record (1 original)",
+        "where_to_secure": "PSA offices or accredited outlets"
+      },
+      {
+        "requirement": "Affidavit of Late Registration of Marriage (1 original)",
+        "where_to_secure": "Legal offices"
+      },
+      {
+        "requirement": "If no Marriage Certificate is available: affidavit with complete marriage details (1 original)",
+        "where_to_secure": "Legal offices"
+      },
+      {
+        "requirement": "Wedding pictures (1 original and 1 photocopy)",
+        "where_to_secure": "Provided by the client"
+      },
+      {
+        "requirement": "Certificates of Live Birth of children (1 original and 1 photocopy)",
+        "where_to_secure": "Local Civil Registrar"
+      },
+      {
+        "requirement": "Death Certificate of spouse (1 original and 1 photocopy), if applicable",
+        "where_to_secure": "Local Civil Registrar"
+      }
+    ],
+    "steps": [
+      "Submit the marriage record or completed form and requirements.",
+      "Pay at the City Treasurer's Office and secure the Official Receipt.",
+      "Present the Official Receipt for preparation of the certificate.",
+      "Verify the certificate and return after the posting period.",
+      "Receive and verify the certificate."
+    ],
+    "clientSteps": [
+      {
+        "step": 1,
+        "action": "Submit the marriage record or completed form and requirements and receive an order of payment.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 2,
+        "action": "Pay at the City Treasurer's Office and secure the Official Receipt.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 3,
+        "action": "Present the Official Receipt for preparation of the certificate.",
+        "processing_time": "10 minutes"
+      },
+      {
+        "step": 4,
+        "action": "Verify the certificate and return after the required posting period; the certificate is then registered.",
+        "processing_time": "10-day posting period plus 2 minutes registration"
+      },
+      {
+        "step": 5,
+        "action": "Receive and verify the certificate.",
+        "processing_time": "2 minutes"
+      }
+    ],
+    "fees": {
+      "amount": "₱150",
+      "description": "Late registration of marriage"
+    },
+    "processingTime": "24 minutes",
+    "turnaroundTime": "10-day posting period",
+    "personResponsible": [
+      "Administrative Assistant II",
+      "Registration Officer III",
+      "Revenue Collection Clerk I",
+      "City Civil Registrar",
+      "Office of the City Civil Registrar",
+      "Office of the City Treasurer"
+    ],
+    "relatedServices": [],
+    "quickInfo": {
+      "processingTime": "24 minutes plus a 10-day posting period",
+      "fee": "₱150",
+      "whoCanApply": "Persons whose marriage was solemnized in Meycauayan",
+      "appointmentType": "PLACEHOLDER: Confirm whether this service is walk-in or appointment-based"
+    },
+    "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
+    "updatedAt": null,
+    "sources": [{ "name": "City of Meycauayan Citizens' Charter", "url": "https://meycauayan.gov.ph" }],
+    "dataComplete": false,
+    "needsVerification": true
+  },
+  {
+    "service": "Certificate of Death - Late Registration",
+    "slug": "late-registration-of-death-certificate",
+    "officialServiceNumber": "CCRO-6",
+    "officialReference": { "edition": "2026 First Edition", "pdfPages": "166-168", "charterPages": "165-167" },
+    "deliveryChannel": "Walk-in",
+    "type": "transaction",
+    "description": "Registers a death certificate reported beyond the 30-day reglementary period.",
+    "officeSlug": ["city-civil-registrar-office"],
+    "officeDivision": "Office of the City Civil Registrar",
+    "category": {
+      "name": "Certificates & Vital Records",
+      "slug": "certificates-vital-records"
+    },
+    "classification": "Highly Technical",
+    "typeOfTransaction": "G2C",
+    "whoMayAvail": "All persons registering a death that occurred in Meycauayan",
+    "requirements": [
+      "Duly accomplished Municipal Form No. 103 (4 original copies)",
+      "Affidavit of Late Registration of Death (1 original)",
+      "PSA Certificate of No Record (1 original)",
+      "Valid government-issued ID of the informant (photocopy)",
+      "Joint Affidavit of Two Disinterested Persons (original), when required",
+      "Police report (original), for deaths requiring police documentation",
+      "Picture of tombstone or lapida (1 copy)",
+      "Community Tax Certificate of the petitioner (1 original and 1 photocopy)"
+    ],
+    "detailedRequirements": [
+      {
+        "requirement": "Duly accomplished Municipal Form No. 103 (4 original copies)",
+        "where_to_secure": "Local Civil Registrar, hospitals, or funeral services"
+      },
+      {
+        "requirement": "Affidavit of Late Registration of Death (1 original)",
+        "where_to_secure": "Legal offices"
+      },
+      {
+        "requirement": "PSA Certificate of No Record (1 original)",
+        "where_to_secure": "PSA offices or accredited outlets"
+      },
+      {
+        "requirement": "Picture of tombstone or lapida (1 copy)",
+        "where_to_secure": "Cemetery"
+      },
+      {
+        "requirement": "Community Tax Certificate of the petitioner (1 original and 1 photocopy)",
+        "where_to_secure": "Barangay Hall or City/Municipal Treasurer"
+      }
+    ],
+    "steps": [
+      "Submit the completed form and requirements and receive an order of payment.",
+      "Pay at the City Treasurer's Office and secure the Official Receipt.",
+      "Proceed to the City Health Office for review and signature.",
+      "Submit the documents to the Local Civil Registrar.",
+      "Wait while the certificate is registered after the posting period.",
+      "Receive the certificate."
+    ],
+    "clientSteps": [
+      {
+        "step": 1,
+        "action": "Submit the completed form and requirements and receive an order of payment.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 2,
+        "action": "Pay at the City Treasurer's Office and secure the Official Receipt.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 3,
+        "action": "Proceed to the City Health Office for review and signature of the death certificate.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 4,
+        "action": "Submit the documents to the Local Civil Registrar for review.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 5,
+        "action": "The certificate is registered after the posting period.",
+        "processing_time": "After 10 days; 2 minutes registration"
+      },
+      {
+        "step": 6,
+        "action": "Receive the certificate.",
+        "processing_time": "2 minutes"
+      }
+    ],
+    "fees": { "amount": "₱100", "description": "Late registration of death" },
+    "processingTime": "24 minutes",
+    "turnaroundTime": "10-day posting period",
+    "personResponsible": [
+      "Administrative Assistant II",
+      "Registration Officer III",
+      "Revenue Collection Clerk I",
+      "City Health Officer",
+      "City Civil Registrar",
+      "Office of the City Civil Registrar",
+      "Office of the City Treasurer"
+    ],
+    "relatedServices": [],
+    "quickInfo": {
+      "processingTime": "24 minutes plus a 10-day posting period",
+      "fee": "₱100",
+      "whoCanApply": "Persons registering a death that occurred in Meycauayan",
+      "appointmentType": "PLACEHOLDER: Confirm whether this service is walk-in or appointment-based"
+    },
+    "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
+    "updatedAt": null,
+    "sources": [{ "name": "City of Meycauayan Citizens' Charter", "url": "https://meycauayan.gov.ph" }],
+    "dataComplete": false,
+    "needsVerification": true
+  },
+  {
+    "service": "Issuance of Certified True Copy/Photocopy of Birth, Marriage, or Death Certificate",
+    "slug": "issuance-of-certified-true-copy-of-birth-marriage-death-certificate",
+    "officialServiceNumber": "CCRO-8",
+    "officialReference": { "edition": "2026 First Edition", "pdfPages": "169-170", "charterPages": "168-169" },
+    "deliveryChannel": "Walk-in",
+    "type": "transaction",
+    "description": "Searches, verifies, certifies, and releases a true copy of a birth, marriage, or death record held by the Local Civil Registrar.",
+    "officeSlug": ["city-civil-registrar-office"],
+    "officeDivision": "Office of the City Civil Registrar",
+    "category": {
+      "name": "Certificates & Vital Records",
+      "slug": "certificates-vital-records"
+    },
+    "classification": "Simple",
+    "typeOfTransaction": "G2C",
+    "whoMayAvail": "Owners of Meycauayan birth, marriage, or death records, their nearest kin, or authorized representatives",
+    "requirements": [
+      "Government-issued ID of the document owner, nearest kin, or authorized person",
+      "Authorization Letter or Special Power of Attorney from the authorizing person (1 original), when applicable",
+      "Proof of relationship or kinship, including a Birth Certificate when needed to establish affinity",
+      "For Death Certificates: original authorization letter with 1 photocopy of the valid ID of the nearest kin and authorized person when the nearest kin is unavailable"
+    ],
+    "detailedRequirements": [
+      {
+        "requirement": "Government-issued ID of the document owner, nearest kin, or authorized person",
+        "where_to_secure": "Issuing government agencies"
+      },
+      {
+        "requirement": "Authorization Letter or Special Power of Attorney from the authorizing person (1 original), when applicable",
+        "where_to_secure": "Authorizing person or legal offices"
+      },
+      {
+        "requirement": "Proof of relationship or kinship, including a Birth Certificate when needed to establish affinity",
+        "where_to_secure": "PSA or Local Civil Registrar"
+      },
+      {
+        "requirement": "For Death Certificates: original authorization letter with IDs of the nearest kin and authorized person when applicable",
+        "where_to_secure": "Provided by the client"
+      }
+    ],
+    "steps": [
+      "Submit the completed verification or query slip.",
+      "Pay at the City Treasurer's Office and secure the Official Receipt while the certified copy is prepared.",
+      "Present the Official Receipt.",
+      "Receive the Certified True Copy."
+    ],
+    "clientSteps": [
+      {
+        "step": 1,
+        "action": "Submit the completed verification or query slip for document search and verification.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 2,
+        "action": "Pay at the City Treasurer's Office and secure the Official Receipt while the certified copy is prepared.",
+        "processing_time": "10 minutes"
+      },
+      {
+        "step": 3,
+        "action": "Present the Official Receipt so its number can be recorded on the certified copy.",
+        "processing_time": "1 minute"
+      },
+      {
+        "step": 4,
+        "action": "Receive the signed Certified True Copy.",
+        "processing_time": "1 minute"
+      }
+    ],
+    "fees": {
+      "amount": "₱50 per copy",
+      "description": "Certified True Copy or certified photocopy of a civil-registry certificate"
+    },
+    "processingTime": "17 minutes",
+    "personResponsible": [
+      "Administrative Aide II",
+      "Administrative Assistant II",
+      "Administrative Officer I",
+      "Office Staff (JO)",
+      "Revenue Collection Clerk I",
+      "Registration Officer III",
+      "City Civil Registrar",
+      "Office of the City Civil Registrar",
+      "Office of the City Treasurer"
+    ],
+    "relatedServices": [],
+    "quickInfo": {
+      "processingTime": "17 minutes",
+      "fee": "₱50 per copy",
+      "whoCanApply": "Record owners, nearest kin, or authorized representatives",
+      "appointmentType": "PLACEHOLDER: Confirm whether this service is walk-in or appointment-based"
+    },
+    "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
+    "updatedAt": null,
+    "sources": [{ "name": "City of Meycauayan Citizens' Charter", "url": "https://meycauayan.gov.ph" }],
+    "dataComplete": false,
+    "needsVerification": true
+  }
+]

@@ -10,10 +10,11 @@ interface FeesCardProps {
  * Parse fee amount string to extract numeric value in pesos
  * Handles formats like "₱3,000.00", "₱200.00 - ₱500.00", "Free", "Variable"
  */
-function parseFeeAmount(amount: string): number {
+function parseFeeAmount(amount: string | number | null): number {
   if (!amount || amount === 'Free' || amount === 'Variable') {
     return 0;
   }
+  if (typeof amount === 'number') return amount;
   // Remove peso sign, commas, and extract numbers
   const cleaned = amount.replace(/[₱,]/g, '').replace(/[^\d.-]/g, ' ');
   // Handle range format like "₱200.00 - ₱500.00" - take the max
@@ -105,7 +106,7 @@ export function FeesCard({ fees }: FeesCardProps) {
                       </p>
                     </div>
                     <p className='text-kapwa-text-brand ml-3 text-xs font-bold'>
-                      {fee.amount}
+                      {fee.amount ?? 'Variable'}
                     </p>
                   </div>
                 ))}
@@ -131,7 +132,7 @@ export function FeesCard({ fees }: FeesCardProps) {
                       </p>
                     </div>
                     <p className='text-kapwa-text-disabled ml-3 text-xs font-bold'>
-                      {fee.amount}
+                      {fee.amount ?? 'Variable'}
                     </p>
                   </div>
                 ))}

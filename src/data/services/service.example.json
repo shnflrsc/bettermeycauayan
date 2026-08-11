@@ -1,0 +1,29 @@
+[
+  {
+    "service": "Example Service Name",
+    "slug": "example-service-name",
+    "type": "transaction",
+    "description": "Briefly describe what the service provides.",
+    "officeSlug": ["responsible-office-slug"],
+    "category": {
+      "name": "Category Display Name",
+      "slug": "category-slug"
+    },
+    "steps": ["First step", "Second step"],
+    "requirements": ["First requirement"],
+    "relatedServices": [],
+    "quickInfo": {
+      "processingTime": "Example: 1 working day",
+      "fee": "Example: Free",
+      "whoCanApply": "Describe eligible applicants",
+      "appointmentType": "Walk-in"
+    },
+    "updatedAt": null,
+    "sources": [
+      {
+        "name": "Official source name",
+        "url": "https://example.gov.ph/service-page"
+      }
+    ]
+  }
+]

@@ -1,1 +1,98 @@
-[]
+[
+  {
+    "service": "Real Property Tax (RPT) Payment",
+    "slug": "real-property-tax",
+    "officialServiceNumber": "CTO-1",
+    "officialReference": { "edition": "2026 First Edition", "pdfPages": "123-124", "charterPages": "122-123" },
+    "deliveryChannel": "Walk-in",
+    "type": "transaction",
+    "description": "Collects the tax imposed by the City Treasurer's Office on natural or juridical persons who own or administer real property, including improvements.",
+    "officeSlug": ["city-treasurers-office"],
+    "officeDivision": "Office of the City Treasurer",
+    "category": {
+      "name": "Taxation & Payments",
+      "slug": "taxation-payments"
+    },
+    "classification": "Simple",
+    "typeOfTransaction": "G2C/G2B – Government to Client / Government to Business",
+    "whoMayAvail": "Real property owners or administrators",
+    "steps": [
+      "Obtain a queue number and present the latest Official Receipt or Notice of Assessment.",
+      "Pay the required real property tax and receive the issued Official Receipt.",
+      "Receive the Official Receipt."
+    ],
+    "requirements": [
+      "Latest Official Receipt or Notice of Assessment (original or 1 photocopy)",
+      "Authorization letter and valid IDs of the owner and representative, if transacting through a representative"
+    ],
+    "detailedRequirements": [
+      {
+        "requirement": "Latest Official Receipt or Notice of Assessment (original or 1 photocopy)",
+        "where_to_secure": "To be provided by the client"
+      },
+      {
+        "requirement": "Authorization letter and valid IDs of the owner and representative, if transacting through a representative",
+        "where_to_secure": "Property owner and government issuing agency"
+      }
+    ],
+    "clientSteps": [
+      {
+        "step": 1,
+        "action": "Present the latest Official Receipt or Notice of Assessment for verification and computation of the Real Property Tax.",
+        "processing_time": "10 minutes"
+      },
+      {
+        "step": 2,
+        "action": "Pay the required fees. The payment will be accepted and an Official Receipt will be issued.",
+        "processing_time": "4 minutes"
+      },
+      {
+        "step": 3,
+        "action": "Receive the Official Receipt.",
+        "processing_time": "1 minute"
+      }
+    ],
+    "fees": {
+      "amount": "Varies based on assessed value",
+      "description": "AV × 1% × 2 for Basic Tax and Special Education Fund, less any applicable discount if paid by March 31. Delinquent accounts are charged an additional 2% penalty per month of delay, not exceeding 36 months."
+    },
+    "feeSchedule": [
+      {
+        "name": "Current Real Property Tax",
+        "amount": "Assessed Value × 1% × 2 (Basic Tax and Special Education Fund), less any applicable discount",
+        "processing_time": "Deadline for discount: March 31",
+        "office": "Office of the City Treasurer"
+      },
+      {
+        "name": "Delinquent Real Property Tax",
+        "amount": "Assessed Value × 1% × 2 (Basic Tax and Special Education Fund), plus a 2% penalty per month of delay, not exceeding 36 months",
+        "office": "Office of the City Treasurer"
+      }
+    ],
+    "processingTime": "15 minutes, depending on the assessed value",
+    "personResponsible": [
+      "Administrative Assistant II",
+      "Revenue Collection Clerk II",
+      "Local Revenue Collection Officer II",
+      "Administrative Assistant III",
+      "Office of the City Treasurer"
+    ],
+    "relatedServices": [],
+    "quickInfo": {
+      "processingTime": "15 minutes, depending on the assessed value",
+      "fee": "Varies based on assessed value",
+      "whoCanApply": "Real property owners or administrators",
+      "appointmentType": "Walk-in"
+    },
+    "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
+    "updatedAt": null,
+    "sources": [
+      {
+        "name": "City of Meycauayan Citizens' Charter",
+        "url": "https://meycauayan.gov.ph"
+      }
+    ],
+    "dataComplete": false,
+    "needsVerification": true
+  }
+]

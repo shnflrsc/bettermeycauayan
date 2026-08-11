@@ -83,3 +83,5 @@ graphify-out/
 context/transcripts/
 .memsearch/
 ide_state.json/
+
+tmp

@@ -6,7 +6,11 @@ export interface ServiceCategory {
 
 export interface Source {
   name: string;
+  title?: string;
   url?: string;
+  edition?: string;
+  pdfPages?: string;
+  charterPages?: string;
 }
 
 export type ServiceType = 'transaction' | 'information';
@@ -65,7 +69,7 @@ export interface SupportingDocumentsDetail {
 }
 
 export interface ClientStep {
-  step: number;
+  step: number | string;
   action: string;
   sub_steps?: {
     letter: string;
@@ -77,7 +81,7 @@ export interface ClientStep {
 }
 
 export interface ServiceFee {
-  amount: string;
+  amount: string | number | null;
   description: string;
   required?: boolean;
 }
@@ -109,6 +113,11 @@ export interface Service {
   quickInfo?: QuickInfo;
   updatedAt?: string | null;
   sources?: Source[];
+  officialReference?: {
+    edition: string;
+    pdfPages: string;
+    charterPages: string;
+  };
 
   // NEW: Source tracking
   source?: ServiceSource;
@@ -116,7 +125,7 @@ export interface Service {
   // NEW: Citizens Charter fields (optional - only for CC services)
   serviceNumber?: string; // e.g., "1.1", "9.2"
   officeDivision?: string; // Full office name from CC
-  classification?: 'Simple' | 'Complex';
+  classification?: 'Simple' | 'Complex' | 'Highly Technical';
   typeOfTransaction?: string; // G2C, G2B, G2G
   whoMayAvail?: string;
 
@@ -130,6 +139,8 @@ export interface Service {
   turnaroundTime?: string; // Total time including waiting/approval (working days)
   personResponsible?: string[]; // DEPRECATED - use officeDivision instead
   website?: string; // Portal URL for online services
+  deliveryChannel?: 'Walk-in' | 'Online' | 'Hybrid' | 'Scheduled inspection';
+  status?: 'active' | 'historical' | 'needs-confirmation';
 
   // NEW: Plain language name (user-friendly version)
   plainLanguageName?: string; // Simplified name following UK GOV.UK plain language principles
@@ -147,7 +158,7 @@ export interface ServiceFilterOptions {
   category?: string;
   officeDivision?: string;
   source?: ServiceSource | 'all';
-  classification?: 'Simple' | 'Complex';
+  classification?: 'Simple' | 'Complex' | 'Highly Technical';
   search?: string;
 }
 

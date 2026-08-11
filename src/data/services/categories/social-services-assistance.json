@@ -1,125 +1,423 @@
 [
   {
-    "service": "Medical Assistance (AICS)",
-    "slug": "medical-assistance-aics",
+    "service": "Burial Assistance",
+    "slug": "burial-assistance",
+    "officialServiceNumber": "CMO-1 / CSWDO-3",
+    "officialReference": { "edition": "2026 First Edition", "pdfPages": "14-15; 250-252", "charterPages": "13-14; 249-251" },
+    "deliveryChannel": "Walk-in",
     "type": "transaction",
-    "description": "Assistance to Individuals in Crisis Situations for medical needs.",
-    "officeSlug": ["municipal-social-welfare-and-development-office"],
+    "description": "Supports applications for city burial financial assistance and the Social Case Study Report or endorsement required by partner institutions.",
+    "officeSlug": ["office-of-the-city-mayor", "city-social-welfare-and-development-office"],
+    "officeDivision": "Office of the City Mayor / City Social Welfare and Development Office",
     "category": {
       "name": "Social Services & Assistance",
       "slug": "social-services-assistance"
     },
+    "classification": "Highly Technical",
+    "typeOfTransaction": "Government to Client",
+    "whoMayAvail": "Indigent residents of the City of Meycauayan and qualified people's organizations",
     "steps": [
-      "Submit requirements for screening.",
-      "Undergo interview by Social Worker.",
-      "Receive Guarantee Letter or Cash Assistance."
+      "Submit the complete requirements.",
+      "Answer the questions during the intake interview.",
+      "Wait while the Social Case Study Report and endorsement letter are prepared.",
+      "Receive the Social Case Study Report and endorsement letter."
     ],
     "requirements": [
-      "Medical Certificate / Abstract",
-      "Hospital Bill / Prescription",
-      "Barangay Certificate of Indigency",
-      "Valid ID of claimant"
+      "Original Barangay Certificate of Indigency or Residency",
+      "Valid government-issued ID of the client or beneficiary (photocopy; three specimen signatures where required)",
+      "Referral letter (original), if referred by another office or organization",
+      "Funeral Contract (original and 1 photocopy)",
+      "Death Certificate (original and 1 photocopy)",
+      "Valid ID of the representative (original and 1 photocopy)",
+      "Promissory note or certification from the funeral service indicating the outstanding balance (original and 1 photocopy)"
     ],
+    "detailedRequirements": [
+      {
+        "requirement": "Barangay Certificate of Indigency (original)",
+        "where_to_secure": "Barangay Hall"
+      },
+      {
+        "requirement": "Funeral Contract (original and 1 photocopy)",
+        "where_to_secure": "Current funeral service provider"
+      },
+      {
+        "requirement": "Death Certificate (original and 1 photocopy)",
+        "where_to_secure": "City Hall, City Civil Registry Office"
+      },
+      {
+        "requirement": "Valid ID of the representative (original and 1 photocopy)",
+        "where_to_secure": "Government agencies and COMELEC that issue IDs"
+      },
+      {
+        "requirement": "Promissory note or certification indicating the outstanding balance (original and 1 photocopy)",
+        "where_to_secure": "Current funeral service provider"
+      }
+    ],
+    "clientSteps": [
+      {
+        "step": 1,
+        "action": "Submit the complete requirements for receipt and review.",
+        "processing_time": "2 minutes"
+      },
+      {
+        "step": 2,
+        "action": "Answer the questions during the intake interview.",
+        "processing_time": "15 minutes"
+      },
+      {
+        "step": 3,
+        "action": "Wait while the Social Case Study Report and endorsement letter are prepared.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 4,
+        "action": "Receive the Social Case Study Report and endorsement letter.",
+        "processing_time": "3 minutes"
+      }
+    ],
+    "fees": {
+      "amount": "None",
+      "description": "No fee"
+    },
+    "processingTime": "40 minutes for the Social Case Study Report; financial-assistance processing is subject to assessment and approval",
+    "personResponsible": [
+      "Social Welfare Assistant Officer I",
+      "Social Welfare Officer III",
+      "City Social Welfare and Development Office"
+    ],
+    "relatedServices": [],
     "quickInfo": {
-      "processingTime": "1-2 days",
-      "whoCanApply": "Indigent Residents",
+      "processingTime": "40 minutes for the Social Case Study Report",
+      "fee": "Free",
+      "whoCanApply": "Residents of the City of Meycauayan",
       "appointmentType": "Walk-in"
     },
+    "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
     "updatedAt": null,
     "sources": [
       {
-        "name": "DSWD Memorandum Circular No. 02 Series of 2014",
-        "url": ""
-      },
-      {
-        "name": "MSWDO Guidelines on Financial Assistance",
-        "url": ""
+        "name": "City of Meycauayan Citizens' Charter",
+        "url": "https://meycauayan.gov.ph"
       }
-    ]
+    ],
+    "dataComplete": false,
+    "needsVerification": true
   },
   {
-    "service": "Cash Subsidy for Solo Parents",
-    "slug": "solo-parents-cash-subsidy",
+    "service": "Senior Citizen ID",
+    "slug": "senior-citizen-id",
+    "officialServiceNumber": "CSWDO-4",
+    "officialReference": { "edition": "2026 First Edition", "pdfPages": "252-254", "charterPages": "251-253" },
+    "deliveryChannel": "Walk-in",
     "type": "transaction",
-    "description": "Financial assistance provided semi-annually to qualified solo parents in the municipality.",
-    "officeSlug": ["municipal-social-welfare-and-development-office"],
+    "description": "Issues an identification card that enables qualified senior citizens to access the benefits and privileges provided under Republic Act No. 9994, including applicable discounts and VAT exemptions.",
+    "officeSlug": ["city-social-welfare-and-development-office"],
+    "officeDivision": "City Social Welfare and Development Office",
     "category": {
       "name": "Social Services & Assistance",
       "slug": "social-services-assistance"
     },
+    "classification": "Complex",
+    "typeOfTransaction": "Government to Client",
+    "whoMayAvail": "Residents of the City of Meycauayan who are 60 years old or older",
     "steps": [
-      "Register as a Solo Parent with the MSWDO.",
-      "Submit required documents during the designated payout period.",
-      "Receive cash subsidy (Php 1,000 per month or as allocated)."
+      "Submit the completed application form and complete requirements.",
+      "Wait for the scheduled release while the Senior Citizen ID is prepared.",
+      "Receive the Senior Citizen ID."
     ],
     "requirements": [
-      "Valid Solo Parent ID",
-      "Barangay Certification of Residency",
-      "Affidavit of Solo Parent status"
+      "Accomplished Senior Citizen ID application form (original)",
+      "Barangay Clearance (original and 1 photocopy)",
+      "One latest 1 x 1 photograph",
+      "Voter's ID or Voter's Affidavit (1 photocopy)",
+      "Birth Certificate or SSS ID for applicants aged 60 to 65 (1 photocopy)"
     ],
-    "quickInfo": {
-      "fee": "Free",
-      "whoCanApply": "Registered Solo Parents",
-      "documents": "Solo Parent ID"
+    "detailedRequirements": [
+      {
+        "requirement": "Accomplished Senior Citizen ID application form (original)",
+        "where_to_secure": "Office for Senior Citizens Affairs / City Social Welfare and Development Office"
+      },
+      {
+        "requirement": "Barangay Clearance (original and 1 photocopy)",
+        "where_to_secure": "Barangay Hall of the applicant's current residence"
+      },
+      {
+        "requirement": "One latest 1 x 1 photograph",
+        "where_to_secure": "To be provided by the applicant"
+      },
+      {
+        "requirement": "Voter's ID or Voter's Affidavit (1 photocopy)",
+        "where_to_secure": "COMELEC"
+      },
+      {
+        "requirement": "Birth Certificate or SSS ID for applicants aged 60 to 65 (1 photocopy)",
+        "where_to_secure": "Local Civil Registrar Office or SSS"
+      }
+    ],
+    "clientSteps": [
+      {
+        "step": 1,
+        "action": "Submit the completed application form and complete requirements for receipt and review.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 2,
+        "action": "Wait for the scheduled release while the Senior Citizen ID is prepared.",
+        "processing_time": "5 minutes, with 3 days processing time"
+      },
+      {
+        "step": 3,
+        "action": "Receive the Senior Citizen ID.",
+        "processing_time": "3 minutes"
+      }
+    ],
+    "fees": {
+      "amount": "None",
+      "description": "No fee"
     },
+    "processingTime": "13 minutes",
+    "turnaroundTime": "3 days processing time",
+    "personResponsible": [
+      "Administrative Aide I",
+      "Social Welfare Assistant Officer I",
+      "Social Welfare Officer I",
+      "Social Welfare Officer III",
+      "City Social Welfare and Development Officer",
+      "City Social Welfare and Development Office"
+    ],
+    "relatedServices": [],
+    "quickInfo": {
+      "processingTime": "13 minutes plus 3 days processing time",
+      "fee": "Free",
+      "whoCanApply": "Meycauayan residents aged 60 or older",
+      "appointmentType": "Walk-in"
+    },
+    "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
     "updatedAt": null,
     "sources": [
       {
-        "name": "Republic Act No. 11861 (Expanded Solo Parents Welfare Act of 2022)"
+        "name": "City of Meycauayan Citizens' Charter",
+        "url": "https://meycauayan.gov.ph"
       }
-    ]
+    ],
+    "dataComplete": false,
+    "needsVerification": true
   },
   {
-    "service": "Expanded Centenarian Program Payout (Ages 80, 85, 90, 95)",
-    "slug": "expanded-centenarian-payout",
+    "service": "Solo Parent ID",
+    "slug": "solo-parent-id",
+    "officialServiceNumber": "CSWDO-6",
+    "officialReference": { "edition": "2026 First Edition", "pdfPages": "258-263", "charterPages": "257-262" },
+    "deliveryChannel": "Walk-in",
     "type": "transaction",
-    "description": "Provision of cash incentives for elderly residents reaching milestone ages of 80, 85, 90, and 95, facilitated by the National Commission of Senior Citizens (NCSC).",
-    "url": "",
-    "officeSlug": ["municipal-treasurers-office"],
+    "description": "Issues an identification card that enables qualified solo parents to access benefits and privileges provided under the Solo Parents' Welfare Act of 2000, or Republic Act No. 8972.",
+    "officeSlug": ["city-social-welfare-and-development-office"],
+    "officeDivision": "City Social Welfare and Development Office",
     "category": {
       "name": "Social Services & Assistance",
       "slug": "social-services-assistance"
     },
+    "classification": "Simple",
+    "typeOfTransaction": "Government to Client",
+    "whoMayAvail": "Residents of the City of Meycauayan who qualify as solo parents",
     "steps": [
-      "Verify if the senior's name is included in the official NCSC Masterlist (January to June 2025 batch).",
-      "Secure required templates (Authorization, SPA, or Warranty & Release forms) from the OSCA Office between 8:00 AM and 5:00 PM.",
-      "Prepare the specific set of documents based on the claimant's status (Personal, Representative, or Deceased).",
-      "Proceed to the Municipal Treasury Office on the designated payout date and time.",
-      "Submit documents for verification and receive the cash incentive."
+      "Submit the completed application form and complete requirements.",
+      "Wait for the scheduled release while the Solo Parent ID is prepared.",
+      "Receive the Solo Parent ID."
     ],
     "requirements": [
-      "FOR PERSONAL CLAIM: 2 copies of valid ID with signature or thumbmark.",
-      "FOR REPRESENTATIVE: Authorization Letter (NCSC template), Physical ID of grantee (original + photocopy), Physical ID of claimant (original + photocopy).",
-      "FOR REPRESENTATIVE (BEDRIDDEN): Barangay Certification signed by Captain and BHW or Medical Certificate.",
-      "FOR REPRESENTATIVE (PROOF OF LIFE): Half-body photo of the grantee holding a current calendar or newspaper.",
-      "FOR DECEASED GRANTEE: Special Power of Attorney (SPA template), Warranty and Release from Liability form, Original or CTC of Death Certificate, Claimant ID with 3 signatures, and Proof of Relationship."
+      "Accomplished Solo Parent application form (original)",
+      "Valid government-issued ID (photocopy)",
+      "Barangay Certificate of solo-parent status and residency (original)",
+      "Two recent 2 x 2 ID photographs (original)",
+      "Birth Certificate of the applicant (photocopy)",
+      "Birth Certificates of dependent children (photocopies)",
+      "Documentary proof of the qualifying circumstance under Republic Act No. 11861, such as a spouse's death certificate, detention certificate, medical certificate, overseas-employment record, court order, or affidavit, as applicable"
     ],
-    "faqs": [
+    "detailedRequirements": [
       {
-        "question": "Where can I get the SPA or Authorization templates?",
-        "answer": "Templates are available at the Office of the Senior Citizens Affairs (OSCA) from 8:00 AM to 5:00 PM."
+        "requirement": "Accomplished Solo Parent application form (original)",
+        "where_to_secure": "City Social Welfare and Development Office"
       },
       {
-        "question": "Who is eligible for this specific payout?",
-        "answer": "Seniors who are part of the qualified beneficiaries list from January to June 2025 provided by the NCSC."
+        "requirement": "Valid government-issued ID (photocopy)",
+        "where_to_secure": "Government issuing agency"
+      },
+      {
+        "requirement": "Barangay Certificate of solo-parent status and residency (original)",
+        "where_to_secure": "Barangay Hall of the applicant's current residence"
+      },
+      {
+        "requirement": "Two recent 2 x 2 ID photographs (original)",
+        "where_to_secure": "To be provided by the applicant"
+      },
+      {
+        "requirement": "Birth Certificate of the applicant and Birth Certificates of dependent children (photocopies)",
+        "where_to_secure": "Local Civil Registrar Office"
+      },
+      {
+        "requirement": "Documentary proof of the qualifying circumstance under Republic Act No. 11861, as applicable",
+        "where_to_secure": "Civil registrar, court, medical facility, employer, detention facility, or other issuing office, depending on the applicant's circumstance"
       }
     ],
-    "quickInfo": {
-      "processingTime": "Scheduled Payout (Dec 18, 2025)",
-      "fee": "Free",
-      "whoCanApply": "Seniors aged 80, 85, 90, 95",
-      "appointmentType": "Walk-in (Treasury Office)",
-      "documents": "Valid IDs, SPA/Authorization, Proof of Life"
+    "clientSteps": [
+      {
+        "step": 1,
+        "action": "Submit the completed application form and complete requirements for receipt and review.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 2,
+        "action": "Wait for the scheduled release while the Solo Parent ID is prepared.",
+        "processing_time": "5 minutes, with 3 days processing time"
+      },
+      {
+        "step": 3,
+        "action": "Receive the Solo Parent ID.",
+        "processing_time": "3 minutes"
+      }
+    ],
+    "fees": {
+      "amount": "None",
+      "description": "No fee"
     },
-    "updatedAt": "2026-01-13T20:44:00Z",
+    "processingTime": "13 minutes",
+    "turnaroundTime": "3 days processing time",
+    "personResponsible": [
+      "Administrative Aide I",
+      "Social Welfare Assistant Officer I",
+      "Social Welfare Officer I",
+      "Social Welfare Officer III",
+      "City Social Welfare and Development Officer",
+      "City Social Welfare and Development Office"
+    ],
+    "relatedServices": [],
+    "quickInfo": {
+      "processingTime": "13 minutes plus 3 days processing time",
+      "fee": "Free",
+      "whoCanApply": "Qualified solo-parent residents of the City of Meycauayan",
+      "appointmentType": "Walk-in"
+    },
+    "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
+    "updatedAt": null,
     "sources": [
       {
-        "name": "National Commission of Senior Citizens (NCSC)",
-        "url": "https://ncsc.gov.ph"
+        "name": "City of Meycauayan Citizens' Charter",
+        "url": "https://meycauayan.gov.ph"
+      }
+    ],
+    "dataComplete": false,
+    "needsVerification": true
+  },
+  {
+    "service": "Person with Disability (PWD) ID",
+    "slug": "person-with-disability-pwd-id",
+    "officialServiceNumber": "CSWDO-5",
+    "officialReference": { "edition": "2026 First Edition", "pdfPages": "255-257", "charterPages": "254-256" },
+    "deliveryChannel": "Walk-in",
+    "type": "transaction",
+    "description": "Issues an identification card that serves as proof of eligibility for benefits and privileges provided to persons with disabilities under Republic Act No. 10754.",
+    "officeSlug": ["city-social-welfare-and-development-office"],
+    "officeDivision": "City Social Welfare and Development Office",
+    "category": {
+      "name": "Social Services & Assistance",
+      "slug": "social-services-assistance"
+    },
+    "classification": "Simple",
+    "typeOfTransaction": "Government to Client",
+    "whoMayAvail": "Residents of the City of Meycauayan who are persons with disabilities",
+    "steps": [
+      "Submit the completed application form and complete requirements.",
+      "Wait for the scheduled release while the PWD ID is prepared.",
+      "Receive the PWD ID."
+    ],
+    "requirements": [
+      "Accomplished PWD application form (original)",
+      "Barangay Clearance, Certificate of Indigency, or Certificate of Residency (original)",
+      "Medical Certificate or Clinical Abstract stating the disability (original), required for non-apparent disabilities and issued within the prescribed validity period",
+      "Two recent 2 x 2 ID photographs (original; taken within the last 6 months)",
+      "Recent colored whole-body photograph (original), for an apparent disability",
+      "School assessment (original), for an enrolled special-education student when applicable",
+      "Authorization letter (original) and representative's valid ID, if filed by a representative",
+      "Notarized Affidavit of Loss (original), for replacement of a lost ID"
+    ],
+    "detailedRequirements": [
+      {
+        "requirement": "Accomplished PWD application form (original)",
+        "where_to_secure": "City Social Welfare and Development Office"
       },
       {
-        "name": "Office of the Senior Citizens Affairs (OSCA) Los Baños"
+        "requirement": "Barangay Clearance, Certificate of Indigency, or Certificate of Residency (original)",
+        "where_to_secure": "Barangay Hall of the applicant's current residence"
+      },
+      {
+        "requirement": "Medical Certificate or Clinical Abstract stating the disability (original), for a non-apparent disability",
+        "where_to_secure": "City Health Office or a hospital specializing in the applicable PWD diagnosis"
+      },
+      {
+        "requirement": "Two recent 2 x 2 ID photographs and, when applicable, a recent colored whole-body photograph",
+        "where_to_secure": "To be provided by the applicant"
+      },
+      {
+        "requirement": "School assessment (original), for an enrolled special-education student when applicable",
+        "where_to_secure": "School or special-education program"
+      },
+      {
+        "requirement": "Authorization letter and representative's valid ID, if filed by a representative",
+        "where_to_secure": "Applicant and government issuing agency"
+      },
+      {
+        "requirement": "Notarized Affidavit of Loss (original), for replacement of a lost ID",
+        "where_to_secure": "Notary public"
       }
-    ]
+    ],
+    "clientSteps": [
+      {
+        "step": 1,
+        "action": "Submit the completed application form and complete requirements for receipt and review.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 2,
+        "action": "Wait for the scheduled release while the PWD ID is prepared.",
+        "processing_time": "5 minutes, with 3 days processing time"
+      },
+      {
+        "step": 3,
+        "action": "Receive the PWD ID.",
+        "processing_time": "3 minutes"
+      }
+    ],
+    "fees": {
+      "amount": "None",
+      "description": "No fee"
+    },
+    "processingTime": "13 minutes",
+    "turnaroundTime": "3 days processing time",
+    "personResponsible": [
+      "Administrative Aide I",
+      "Social Welfare Assistant Officer I",
+      "Social Welfare Officer I",
+      "Social Welfare Officer III",
+      "City Social Welfare and Development Officer",
+      "City Social Welfare and Development Office"
+    ],
+    "relatedServices": [],
+    "quickInfo": {
+      "processingTime": "13 minutes plus 3 days processing time",
+      "fee": "Free",
+      "whoCanApply": "Meycauayan residents who are persons with disabilities",
+      "appointmentType": "Walk-in"
+    },
+    "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
+    "updatedAt": null,
+    "sources": [
+      {
+        "name": "City of Meycauayan Citizens' Charter",
+        "url": "https://meycauayan.gov.ph"
+      }
+    ],
+    "dataComplete": false,
+    "needsVerification": true
   }
 ]

@@ -319,9 +319,14 @@ def main():
                 "priority": "high"
             })
 
-    # Tag existing services as community source
+    # Category records sourced from the official city website are official
+    # Citizens' Charter data, even though they are maintained in category files.
     for service in existing_services:
-        service["source"] = "community"
+        official = any(
+            source.get("url", "").rstrip("/") == "https://meycauayan.gov.ph"
+            for source in service.get("sources", [])
+        )
+        service["source"] = "citizens-charter" if official else "community"
 
     # Merge services - CC services first, then community services
     merged_services = cc_services + existing_services

@@ -21,9 +21,21 @@ export function ProcessTimeline({ steps }: ProcessTimelineProps) {
                 {idx + 1}
               </div>
               <div className='flex-1'>
+                {typeof step.step === 'string' && step.step && (
+                  <p className='text-kapwa-text-strong mb-1 text-sm font-bold leading-relaxed'>
+                    {step.step}
+                  </p>
+                )}
                 <div className='flex items-start justify-between gap-4'>
                   <p className='text-kapwa-text-support text-sm leading-relaxed flex-1'>
-                    {step.action}
+                    {typeof step.step === 'string' ? (
+                      <>
+                        <span className='font-semibold'>Agency action: </span>
+                        {step.action}
+                      </>
+                    ) : (
+                      step.action
+                    )}
                   </p>
                   {step.url && (
                     <a

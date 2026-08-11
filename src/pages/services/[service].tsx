@@ -16,6 +16,7 @@ import {
   ExternalLink,
   FileText,
   HeartHandshake,
+  HelpCircle,
   Info,
   LinkIcon,
   LucideIcon,
@@ -112,6 +113,12 @@ export default function ServiceDetail() {
   // Citizens Charter specific
   const isOfficialSource = service.source === 'citizens-charter';
   const needsVerification = service.needsVerification === true;
+  const relatedServices = (service.relatedServices || [])
+    .map(slug => getServiceBySlug(slug))
+    .filter(
+      (related): related is NonNullable<ReturnType<typeof getServiceBySlug>> =>
+        Boolean(related)
+    );
 
   const quickInfoArray = service.quickInfo
     ? (Object.entries(service.quickInfo) as [keyof QuickInfo, string][]).map(
@@ -260,7 +267,7 @@ export default function ServiceDetail() {
       <div className='flex flex-col gap-8 xl:flex-row'>
         <div className='min-w-0 flex-1 space-y-8'>
           {/* Citizens Charter Info Grid (processing time, fees, etc.) */}
-          {isOfficialSource && ccInfoItems.length > 0 && (
+          {ccInfoItems.length > 0 && (
             <div className='grid grid-cols-2 gap-3 md:grid-cols-3'>
               {ccInfoItems.map((info, idx) => (
                 <div
@@ -284,7 +291,7 @@ export default function ServiceDetail() {
           )}
 
           {/* Fees Card (Citizens Charter) */}
-          {isOfficialSource && service.fees && <FeesCard fees={service.fees} />}
+          {service.fees && <FeesCard fees={service.fees} />}
 
           {/* Pending Verification Notice */}
           {needsVerification && (
@@ -305,15 +312,33 @@ export default function ServiceDetail() {
           )}
 
           {/* Requirements (Citizens Charter) */}
-          {isOfficialSource &&
-            service.detailedRequirements &&
+          {service.detailedRequirements &&
             service.detailedRequirements.length > 0 && (
               <RequirementGrid requirements={service.detailedRequirements} />
             )}
 
+          {!service.detailedRequirements?.length &&
+            service.requirements &&
+            service.requirements.length > 0 && (
+              <DetailSection title='Requirements' icon={FileText}>
+                <ol className='space-y-3'>
+                  {service.requirements.map((requirement, idx) => (
+                    <li
+                      key={idx}
+                      className='border-kapwa-border-weak bg-kapwa-bg-surface-raised/50 flex gap-3 rounded-xl border p-4'
+                    >
+                      <span className='text-kapwa-text-brand font-bold'>{idx + 1}.</span>
+                      <span className='text-kapwa-text-support text-sm leading-relaxed'>
+                        {requirement}
+                      </span>
+                    </li>
+                  ))}
+                </ol>
+              </DetailSection>
+            )}
+
           {/* Supporting Documents Detail (Citizens Charter - optional) */}
-          {isOfficialSource &&
-            service.supportingDocumentsDetail &&
+          {service.supportingDocumentsDetail &&
             Object.keys(service.supportingDocumentsDetail).length > 0 && (
               <div className='space-y-4'>
                 <SupportingDocumentsDetail
@@ -323,8 +348,7 @@ export default function ServiceDetail() {
             )}
 
           {/* Process Timeline (Citizens Charter) */}
-          {isOfficialSource &&
-            service.clientSteps &&
+          {service.clientSteps &&
             service.clientSteps.length > 0 && (
               <ProcessTimeline steps={service.clientSteps} />
             )}
@@ -356,8 +380,8 @@ export default function ServiceDetail() {
             </DetailSection>
           )}
 
-          {/* Quick Info Grid (community services) */}
-          {!isOfficialSource && isTransaction && quickInfoArray.length > 0 && (
+          {/* Quick information is useful for both official and community records. */}
+          {isTransaction && quickInfoArray.length > 0 && (
             <div className='grid grid-cols-2 gap-3 md:grid-cols-3'>
               {quickInfoArray.map((info, idx) => (
                 <div
@@ -378,6 +402,26 @@ export default function ServiceDetail() {
                 </div>
               ))}
             </div>
+          )}
+
+          {service.faqs && service.faqs.length > 0 && (
+            <DetailSection title='Frequently Asked Questions' icon={HelpCircle}>
+              <div className='space-y-3'>
+                {service.faqs.map((faq, idx) => (
+                  <details
+                    key={idx}
+                    className='border-kapwa-border-weak bg-kapwa-bg-surface-raised/50 rounded-xl border p-4'
+                  >
+                    <summary className='text-kapwa-text-strong cursor-pointer text-sm font-bold'>
+                      {faq.question}
+                    </summary>
+                    <p className='text-kapwa-text-support mt-3 text-sm leading-relaxed'>
+                      {faq.answer}
+                    </p>
+                  </details>
+                ))}
+              </div>
+            </DetailSection>
           )}
 
           {/* Sources and References */}
@@ -504,6 +548,22 @@ export default function ServiceDetail() {
                     </div>
                   );
                 })}
+              </div>
+            </DetailSection>
+          )}
+
+          {relatedServices.length > 0 && (
+            <DetailSection title='Related Services' icon={LinkIcon}>
+              <div className='space-y-3'>
+                {relatedServices.map(related => (
+                  <Link
+                    key={related.slug}
+                    to={`/services/${related.slug}`}
+                    className='border-kapwa-border-weak hover:border-kapwa-border-brand bg-kapwa-bg-surface-raised/50 text-kapwa-text-strong block rounded-xl border p-3 text-sm font-bold transition-colors'
+                  >
+                    {related.plainLanguageName || related.service}
+                  </Link>
+                ))}
               </div>
             </DetailSection>
           )}

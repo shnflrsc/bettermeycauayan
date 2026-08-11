@@ -1,45 +1,232 @@
 [
   {
-    "service": "Rural Health Unit (RHU) Locations",
-    "slug": "rhu-locations",
-    "type": "information",
-    "description": "Locations of health centers providing free primary care, immunization, and maternal services.",
-    "officeSlug": ["municipal-health-office"],
+    "service": "Medical Assistance",
+    "slug": "medical-assistance",
+    "officialServiceNumber": "CMO-1 / CSWDO-3",
+    "officialReference": { "edition": "2026 First Edition", "pdfPages": "14-15; 250-252", "charterPages": "13-14; 249-251" },
+    "deliveryChannel": "Walk-in",
+    "type": "transaction",
+    "description": "Supports applications for city medical financial assistance and the Social Case Study Report or endorsement required by hospitals, charitable institutions, and partner organizations.",
+    "officeSlug": ["office-of-the-city-mayor", "city-social-welfare-and-development-office"],
+    "officeDivision": "Office of the City Mayor / City Social Welfare and Development Office",
     "category": {
       "name": "Health & Wellness",
       "slug": "health-wellness"
     },
+    "classification": "Highly Technical",
+    "typeOfTransaction": "Government to Client",
+    "whoMayAvail": "Indigent residents of the City of Meycauayan and qualified people's organizations",
     "steps": [
-      "RHU 1: Main Health Center, Municipal Hall Compound, Brgy. Timugan",
-      "RHU 2: Brgy. Batong Malake (Near Barangay Hall)",
-      "RHU 3: Brgy. Mayondon (Purok 3)",
-      "Animal Bite Center: Municipal Hall Compound"
+      "Submit the complete requirements.",
+      "Answer the questions during the intake interview.",
+      "Wait while the Social Case Study Report and endorsement letter are prepared.",
+      "Receive the Social Case Study Report and endorsement letter."
     ],
-    "requirements": [],
-    "relatedServices": ["health-certificate"],
+    "requirements": [
+      "Barangay Certificate of Indigency or Residency (original)",
+      "Valid government-issued ID of the client or beneficiary (photocopy; three specimen signatures where required)",
+      "Referral letter (original), if referred by another office or organization",
+      "Medical Abstract or Medical Certificate issued within the last 3 months (original and 1 photocopy)",
+      "Latest Hospital Bill or Statement of Account issued within the last 3 months (original and 1 photocopy)",
+      "Quotation for dialysis (original and 1 photocopy), if applicable",
+      "Quotation for surgery (original and 1 photocopy), if applicable",
+      "Quotation for orthopedic implants, such as locking plates or screws (original and 1 photocopy), if applicable",
+      "Treatment Protocol (original and 1 photocopy), if applicable",
+      "Drug Prescription or Reseta (original and 1 photocopy), if applicable",
+      "Laboratory Request or Referral (original and 1 photocopy), if applicable",
+      "Valid IDs of the patient and representative"
+    ],
+    "detailedRequirements": [
+      {
+        "requirement": "Barangay Certificate of Indigency or Residency (original)",
+        "where_to_secure": "Barangay Hall"
+      },
+      {
+        "requirement": "Valid government-issued ID of the client or beneficiary (photocopy; three specimen signatures where required)",
+        "where_to_secure": "Government issuing agency"
+      },
+      {
+        "requirement": "Referral letter (original), if referred by another office or organization",
+        "where_to_secure": "Referring office or organization"
+      },
+      {
+        "requirement": "Medical Abstract or Medical Certificate issued within the last 3 months (original and 1 photocopy)",
+        "where_to_secure": "Hospital where the patient is currently admitted or diagnosed"
+      },
+      {
+        "requirement": "Latest Hospital Bill or Statement of Account issued within the last 3 months (original and 1 photocopy)",
+        "where_to_secure": "Hospital where the patient is currently admitted or diagnosed"
+      },
+      {
+        "requirement": "Quotation for dialysis (original and 1 photocopy)",
+        "where_to_secure": "Hospital where the patient is currently admitted or diagnosed"
+      },
+      {
+        "requirement": "Quotation for surgery (original and 1 photocopy)",
+        "where_to_secure": "Hospital where the patient is currently admitted or diagnosed"
+      },
+      {
+        "requirement": "Quotation for orthopedic implants, such as locking plates or screws (original and 1 photocopy)",
+        "where_to_secure": "Hospital where the patient is currently admitted or diagnosed"
+      },
+      {
+        "requirement": "Treatment Protocol (original and 1 photocopy)",
+        "where_to_secure": "Hospital or center where the patient is currently admitted or diagnosed"
+      },
+      {
+        "requirement": "Drug Prescription or Reseta (original and 1 photocopy)",
+        "where_to_secure": "Hospital or Health Center"
+      },
+      {
+        "requirement": "Laboratory Request or Referral (original and 1 photocopy)",
+        "where_to_secure": "Hospital or Health Center"
+      },
+      {
+        "requirement": "Valid IDs of the patient and representative",
+        "where_to_secure": "Government agencies and COMELEC that issue IDs"
+      }
+    ],
+    "clientSteps": [
+      {
+        "step": 1,
+        "action": "Submit the complete requirements for receipt and review.",
+        "processing_time": "2 minutes"
+      },
+      {
+        "step": 2,
+        "action": "Answer the questions during the intake interview.",
+        "processing_time": "15 minutes"
+      },
+      {
+        "step": 3,
+        "action": "Wait while the Social Case Study Report and endorsement letter are prepared.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 4,
+        "action": "Receive the Social Case Study Report and endorsement letter.",
+        "processing_time": "3 minutes"
+      }
+    ],
+    "fees": {
+      "amount": "None",
+      "description": "No fee"
+    },
+    "processingTime": "40 minutes for the Social Case Study Report; financial-assistance processing is subject to assessment and approval",
+    "personResponsible": [
+      "Social Welfare Assistant Officer I",
+      "Social Welfare Officer III",
+      "City Social Welfare and Development Office"
+    ],
+    "relatedServices": [],
+    "quickInfo": {
+      "processingTime": "40 minutes for the Social Case Study Report",
+      "fee": "Free",
+      "whoCanApply": "Residents of the City of Meycauayan",
+      "appointmentType": "Walk-in"
+    },
+    "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
     "updatedAt": null,
     "sources": [
       {
-        "name": "Municipal Health Office Registry",
-        "url": ""
+        "name": "City of Meycauayan Citizens' Charter",
+        "url": "https://meycauayan.gov.ph"
       }
-    ]
+    ],
+    "dataComplete": false,
+    "needsVerification": true
   },
   {
-    "service": "Animal Bite Treatment Center",
-    "slug": "animal-bite-treatment-center",
+    "service": "Anti-Rabies Vaccination for Walk-In Dog/Cat Owners",
+    "slug": "anti-rabies-vaccination-for-walk-in-dog-cat-owners",
+    "officialServiceNumber": "CVO-2",
+    "officialReference": { "edition": "2026 First Edition", "pdfPages": "347-348", "charterPages": "346-347" },
+    "deliveryChannel": "Walk-in",
     "type": "transaction",
-    "description": "Anti-rabies vaccination and wound management for individuals bitten by animals.",
-    "officeSlug": ["municipal-health-office"],
+    "description": "Registers and vaccinates eligible dogs and cats against rabies in support of Republic Act No. 9482 and a rabies-free Meycauayan City.",
+    "officeSlug": ["city-veterinary-office"],
+    "officeDivision": "Office of the City Veterinarian",
     "category": {
       "name": "Health & Wellness",
       "slug": "health-wellness"
     },
-    "updatedAt": null,
-    "quickInfo": {
-      "processingTime": "Immediate",
-      "appointmentType": "Walk-in (Urgent)"
+    "classification": "Simple",
+    "typeOfTransaction": "G2C – Government to Client",
+    "whoMayAvail": "Dog and cat owners",
+    "steps": [
+      "Create or present the required online registration account and bring the dog or cat, a valid ID, and an active smartphone/SIM.",
+      "Assist in safely restraining the pet during assessment and vaccination.",
+      "Receive the vaccination record and post-vaccination instructions."
+    ],
+    "requirements": [
+      "Smartphone with an active SIM for online registration",
+      "Dog or cat to be vaccinated",
+      "Valid government-issued ID of the client"
+    ],
+    "detailedRequirements": [
+      {
+        "requirement": "Smartphone with an active SIM for online registration",
+        "where_to_secure": "Client"
+      },
+      {
+        "requirement": "Dog or cat to be vaccinated",
+        "where_to_secure": "Not applicable"
+      },
+      {
+        "requirement": "Valid government-issued ID of the client",
+        "where_to_secure": "Government issuing agency"
+      }
+    ],
+    "clientSteps": [
+      {
+        "step": 1,
+        "action": "Bring the pet and valid ID, then present or create the required online registration account.",
+        "processing_time": "20 minutes"
+      },
+      {
+        "step": 2,
+        "action": "Assist in restraining the pet while veterinary personnel assess it for vaccination.",
+        "processing_time": "30 minutes"
+      },
+      {
+        "step": 3,
+        "action": "The vaccine is administered and the vaccination record is completed.",
+        "processing_time": "As assessed"
+      },
+      {
+        "step": 4,
+        "action": "Receive the vaccination record and post-vaccination instructions.",
+        "processing_time": "Included in service time"
+      }
+    ],
+    "fees": {
+      "amount": "None",
+      "description": "No fee"
     },
-    "sources": []
+    "processingTime": "Approximately 50 minutes, excluding queueing and clinical assessment",
+    "personResponsible": [
+      "Administrative Aide I",
+      "Administrative Aide III",
+      "Veterinarian I",
+      "City Veterinarian",
+      "Office of the City Veterinarian"
+    ],
+    "relatedServices": [],
+    "quickInfo": {
+      "processingTime": "Approximately 50 minutes",
+      "fee": "Free",
+      "whoCanApply": "Dog and cat owners",
+      "appointmentType": "Walk-in"
+    },
+    "serviceNumber": "PLACEHOLDER: Add the Citizens Charter service number",
+    "updatedAt": null,
+    "sources": [
+      {
+        "name": "City of Meycauayan Citizens' Charter",
+        "url": "https://meycauayan.gov.ph"
+      }
+    ],
+    "dataComplete": false,
+    "needsVerification": true
   }
 ]
