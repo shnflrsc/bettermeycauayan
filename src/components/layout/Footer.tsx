@@ -36,7 +36,7 @@ export const Footer: FC = () => {
   };
 
   return (
-    <footer className='bg-kapwa-bg-surface-bold selection:bg-primary-500 text-kapwa-text-inverse selection:text-kapwa-text-inverse'>
+    <footer className='bg-[#10190d] selection:bg-primary-500 text-kapwa-text-inverse selection:text-kapwa-text-inverse'>
       <div className='container px-4 pt-16 pb-12 mx-auto'>
         <div className='grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6'>
           {/* Brand Column */}
@@ -111,7 +111,7 @@ export const Footer: FC = () => {
 
         {/* 3. The Signature BetterGov "Cost Statement" */}
         <div className='flex justify-center mt-20'>
-          <div className='inline-flex flex-col gap-2 items-center px-6 py-4 text-center rounded-full border border-kapwa-border-strong bg-kapwa-bg-surface-bold/20 md:flex-row md:gap-4'>
+          <div className='inline-flex flex-col gap-2 items-center px-6 py-4 text-center rounded-full border border-kapwa-border-strong bg-white/5 md:flex-row md:gap-4'>
             <p className='text-xs font-medium text-kapwa-text-support md:text-sm'>
               Built by the community for the community.
             </p>
