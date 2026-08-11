@@ -13,6 +13,38 @@
     'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
+/* BetterMeycauayan bamboo identity
+ * A grounded, civic green inspired by Meycauayan's bamboo namesake. The full
+ * scale overrides Kapwa's default blue brand while retaining its semantic
+ * token system and accessible light/dark states.
+ */
+@theme {
+  --color-kapwa-brand-50: #f4f8ed;
+  --color-kapwa-brand-100: #e4efd3;
+  --color-kapwa-brand-200: #cadfaa;
+  --color-kapwa-brand-300: #a8ca76;
+  --color-kapwa-brand-400: #83af4c;
+  --color-kapwa-brand-500: #669338;
+  --color-kapwa-brand-600: #4f772d;
+  --color-kapwa-brand-700: #3f6125;
+  --color-kapwa-brand-800: #354d23;
+  --color-kapwa-brand-900: #2d4120;
+  --color-kapwa-brand-950: #172412;
+
+  /* Legacy Kapwa components such as Button and Banner still consume the
+   * primary scale directly, so keep it aligned with the bamboo identity. */
+  --color-primary-50: #f4f8ed;
+  --color-primary-100: #e4efd3;
+  --color-primary-200: #cadfaa;
+  --color-primary-300: #a8ca76;
+  --color-primary-400: #83af4c;
+  --color-primary-500: #4f772d;
+  --color-primary-600: #3f6125;
+  --color-primary-700: #354d23;
+  --color-primary-800: #2d4120;
+  --color-primary-900: #172412;
+}
+
 @layer base {
   *,
   ::after,

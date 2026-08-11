@@ -111,7 +111,7 @@ const Hit: FC<HitProps> = ({ hit }) => {
         rel='noopener noreferrer'
         className='block'
       >
-        <h2 className='text-kapwa-text-info text-lg font-semibold hover:underline'>
+        <h2 className='text-kapwa-text-brand text-lg font-semibold hover:underline'>
           {title}
           {/* <Highlight
             attribute={
@@ -159,7 +159,7 @@ const Hit: FC<HitProps> = ({ hit }) => {
           )}
         </div>
         {(hit.url || hit.website) && (
-          <p className='text-kapwa-text-link mt-1 truncate text-xs'>
+          <p className='text-kapwa-text-brand mt-1 truncate text-xs'>
             {hit.url || hit.website}
           </p>
         )}
@@ -223,7 +223,7 @@ const MeilisearchInstantSearch: FC = () => {
               root: 'mb-2',
               form: 'relative',
               input:
-                'w-full p-3 pl-10 border border-kapwa-border-weak rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-hidden transition duration-150 ease-in-out',
+                'w-full p-3 pl-10 border border-kapwa-border-weak rounded-lg focus:ring-2 focus:ring-kapwa-border-brand focus:border-transparent outline-hidden transition duration-150 ease-in-out',
               submit:
                 'absolute top-0 right-0 h-full px-3 text-kapwa-text-strong hover:text-kapwa-text-info',
               reset:

@@ -90,14 +90,14 @@ export const Footer: FC = () => {
                         href={link.href}
                         target='_blank'
                         rel='noreferrer'
-                        className='flex gap-1 items-center text-sm transition-colors hover:text-kapwa-text-link-hover text-kapwa-text-support'
+                        className='flex gap-1 items-center text-sm transition-colors hover:text-kapwa-text-brand text-kapwa-text-support'
                       >
                         {link.label}
                       </a>
                     ) : (
                       <Link
                         to={link.href}
-                        className='text-sm transition-colors hover:text-kapwa-text-link-hover text-kapwa-text-support'
+                        className='text-sm transition-colors hover:text-kapwa-text-brand text-kapwa-text-support'
                       >
                         {link.label}
                       </Link>

@@ -14,7 +14,7 @@ import { formatPesoAdaptive } from '@/lib/format';
 import ariData from '@/data/statistics/ari.json';
 
 const COLORS = {
-  national: '#0066eb',
+  national: '#4f772d',
   local: '#cc3e00',
   special: '#059669',
   other: '#64748b',

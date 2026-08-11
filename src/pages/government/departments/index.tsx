@@ -70,7 +70,7 @@ export default function DepartmentsIndex() {
                         {dept.office_name}
                       </p>
                     </div>
-                    <ArrowRight className='group-hover:text-kapwa-text-link text-kapwa-text-support mt-1 h-4 w-4 transition-all' />
+                    <ArrowRight className='group-hover:text-kapwa-text-brand text-kapwa-text-support mt-1 h-4 w-4 transition-all' />
                   </div>
 
                   {/* Middle Row: Leadership (Standardized Highlight Box) */}

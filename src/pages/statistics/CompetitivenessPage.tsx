@@ -26,7 +26,7 @@ import { cn } from '@/lib/utils';
 import cmciData from '@/data/statistics/cmci.json';
 
 const PILLAR_COLORS: Record<string, string> = {
-  Overall: '#0066eb',
+  Overall: '#4f772d',
   'Economic Dynamism': '#cc3e00',
   'Government Efficiency': '#059669',
   Infrastructure: '#4f46e5',

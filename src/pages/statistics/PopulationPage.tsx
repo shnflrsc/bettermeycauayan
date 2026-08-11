@@ -28,7 +28,7 @@ import populationData from '@/data/statistics/population.json';
 
 // 14 Highly Distinct Colors (Top 3 mapped to Brand Primaries)
 const BRGY_COLORS = [
-  '#0066eb', // 1. Municipal Blue (Mayondon)
+  '#4f772d', // 1. BetterMeycauayan bamboo green
   '#cc3e00', // 2. Brand Orange (San Antonio)
   '#059669', // 3. Emerald Green (Batong Malake)
   '#7c3aed', // 4. Vivid Purple
@@ -179,10 +179,10 @@ export default function PopulationPage() {
                 type='monotone'
                 dataKey='population'
                 name='Total Residents'
-                stroke='var(--color-kapwa-blue-600)'
+                stroke='var(--color-kapwa-brand-600)'
                 strokeWidth={5}
                 dot={{
-                  fill: 'var(--color-kapwa-blue-600)',
+                  fill: 'var(--color-kapwa-brand-600)',
                   r: 4,
                   strokeWidth: 2,
                   stroke: '#fff',

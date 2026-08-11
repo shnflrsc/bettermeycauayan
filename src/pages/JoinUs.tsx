@@ -22,14 +22,14 @@ import { SEO } from '@/components/layout/SEO';
 
 const JoinUs: FC = () => {
   return (
-    <div className='min-h-screen bg-linear-to-br from-kapwa-blue-50 via-white to-kapwa-purple-50'>
+    <div className='min-h-screen bg-linear-to-br from-kapwa-brand-50 via-white to-kapwa-brand-100'>
       <SEO
         title='Join Us'
         description='A volunteer-led civic tech initiative building open-source tools to make government more transparent, efficient, and accessible.'
       />
 
       {/* Hero Section */}
-      <section className='from-kapwa-brand-600 text-kapwa-text-inverse relative overflow-hidden bg-linear-to-r via-kapwa-blue-700 to-kapwa-purple-700'>
+      <section className='from-kapwa-brand-600 text-kapwa-text-inverse relative overflow-hidden bg-linear-to-r via-kapwa-brand-700 to-kapwa-brand-900'>
         <div className='bg-kapwa-bg-surface-bold absolute inset-0 opacity-10'></div>
         <div className='relative z-10 container mx-auto px-4 py-16 md:py-24'>
           <div className='mx-auto max-w-4xl text-center'>
@@ -98,7 +98,7 @@ const JoinUs: FC = () => {
           </div>
 
           <div className='mx-auto max-w-4xl'>
-            <div className='from-kapwa-brand-50 mb-8 rounded-2xl bg-linear-to-r to-kapwa-blue-50 p-8 md:p-12'>
+            <div className='from-kapwa-brand-50 mb-8 rounded-2xl bg-linear-to-r to-kapwa-brand-100 p-8 md:p-12'>
               <p className='text-kapwa-text-support mb-6 text-lg leading-relaxed'>
                 BetterGov is a <strong>volunteer-led tech initiative</strong>{' '}
                 committed to creating
@@ -248,7 +248,7 @@ const JoinUs: FC = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section className='from-kapwa-brand-600 bg-linear-to-r to-kapwa-blue-600 py-16 md:py-20'>
+      <section className='from-kapwa-brand-600 bg-linear-to-r to-kapwa-brand-800 py-16 md:py-20'>
         <div className='container mx-auto px-4 text-center'>
           <div className='mx-auto max-w-3xl'>
             <h2 className='text-kapwa-text-inverse mb-6 kapwa-heading-lg font-bold'>

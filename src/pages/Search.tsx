@@ -26,14 +26,14 @@ const Hit: FC<HitProps> = ({ hit }) => {
   return (
     <article className='hit-item border-kapwa-border-weak hover:bg-kapwa-bg-surface-raised hover:border-kapwa-border-brand border-b p-4 transition-all'>
       <a href={`/services/${hit.slug}`} className='block'>
-        <h2 className='text-kapwa-text-info text-lg font-semibold hover:underline'>
+        <h2 className='text-kapwa-text-brand text-lg font-semibold hover:underline'>
           {hit.plainLanguageName || hit.service}
         </h2>
         <div className='text-kapwa-text-support mt-1 flex items-center gap-2 text-xs'>
           {hit.category && <span>{hit.category.name}</span>}
           <Badge
             variant='primary'
-            className='bg-kapwa-bg-info-weak text-kapwa-text-info'
+            className='bg-kapwa-bg-brand-weak text-kapwa-text-brand'
           >
             {hit.type}
           </Badge>
@@ -141,7 +141,7 @@ const SearchPage: FC = () => {
                 setTypeFilter('');
                 setCategoryFilter('');
               }}
-              className='text-kapwa-text-brand hover:text-kapwa-text-link-hover text-sm font-medium'
+              className='text-kapwa-text-brand hover:text-kapwa-text-brand-bold text-sm font-medium'
             >
               Clear all
             </button>

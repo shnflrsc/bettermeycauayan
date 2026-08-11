@@ -122,7 +122,7 @@ const Ticker: FC = () => {
   if (!currentRate) return null;
 
   return (
-    <div className='bg-kapwa-blue-950 py-1.5'>
+    <div className='bg-kapwa-brand-950 py-1.5'>
       <div className='container flex justify-end px-4 mx-auto'>
         <div className='flex justify-end items-center'>
           {/* Forex ticker */}

@@ -55,7 +55,7 @@ export const Navbar: FC = () => {
           <div className='flex gap-3 justify-end items-center h-10 sm:gap-4 md:gap-6'>
             <Link
               to='/join-us'
-              className='text-kapwa-text-brand hover:text-kapwa-text-link-hover hidden text-[10px] font-bold tracking-widest whitespace-nowrap uppercase md:inline-flex md:text-xs'
+              className='text-kapwa-text-brand hover:text-kapwa-text-brand-bold hidden text-[10px] font-bold tracking-widest whitespace-nowrap uppercase md:inline-flex md:text-xs'
             >
               🚀 Join Us
             </Link>
@@ -164,7 +164,7 @@ export const Navbar: FC = () => {
                         <Link
                           key={child.label}
                           to={child.href}
-                          className='block px-5 py-3 text-xs font-bold tracking-wider uppercase transition-colors hover:bg-kapwa-bg-surface-raised hover:text-kapwa-text-link-hover text-kapwa-text-strong'
+                          className='block px-5 py-3 text-xs font-bold tracking-wider uppercase transition-colors hover:bg-kapwa-bg-surface-brand hover:text-kapwa-text-brand-bold text-kapwa-text-strong'
                           onClick={closeMenu}
                         >
                           {child.label}
