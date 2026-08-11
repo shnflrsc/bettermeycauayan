@@ -37,16 +37,14 @@ export default function ProcurementPage() {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<PhilgepsDoc[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
+  const [totalHits, setTotalHits] = useState(0);
 
   // Pagination
   const [resultsPerPage, setResultsPerPage] = useState(10);
   const [currentPage, setCurrentPage] = useState(1);
 
-  const totalPages = Math.ceil(results.length / resultsPerPage);
-  const paginatedResults = results.slice(
-    (currentPage - 1) * resultsPerPage,
-    (currentPage - 1) * resultsPerPage + resultsPerPage
-  );
+  const totalPages = Math.ceil(totalHits / resultsPerPage);
 
   // Statistics
   const [precomputedStats, setPrecomputedStats] =
@@ -64,17 +62,18 @@ export default function ProcurementPage() {
   const getAwardStatusBadgeVariant = (
     status: string | undefined
   ): 'success' | 'warning' | 'error' | 'slate' | 'primary' => {
-    switch (status) {
-      case 'Awarded':
+    switch (status?.toLowerCase()) {
+      case 'active':
+      case 'awarded':
         return 'success';
-      case 'Failed':
-      case 'Cancelled':
-      case 'Disapproved':
-      case 'Declined':
+      case 'failed':
+      case 'cancelled':
+      case 'disapproved':
+      case 'declined':
         return 'error';
-      case 'Pending':
-      case 'Under Review':
-      case 'Published':
+      case 'pending':
+      case 'under review':
+      case 'published':
         return 'warning';
       default:
         return 'slate';
@@ -118,10 +117,11 @@ export default function ProcurementPage() {
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
+      setError(false);
 
       try {
         const index = client.index(INDICES.PHILGEPS);
-        const orgIndex = client.index(INDICES.PHILGEPS_ORGS);
+        const orgIndex = client.index(INDICES.PHILGEPS_ORGANIZATIONS);
 
         // 1. Search Documents (Paginated)
         const searchPromise = index.search(query, {
@@ -152,9 +152,17 @@ export default function ProcurementPage() {
         ]);
 
         setResults(searchRes.hits as unknown as PhilgepsDoc[]);
+        setTotalHits(searchRes.estimatedTotalHits || 0);
 
         if (statsRes && statsRes.hits.length > 0) {
-          setPrecomputedStats(statsRes.hits[0] as unknown as AggregateStats);
+          const matchingStats = statsRes.hits.find(
+            hit =>
+              (hit as { organization_name?: string }).organization_name ===
+              ORG_NAME
+          );
+          if (matchingStats) {
+            setPrecomputedStats(matchingStats as unknown as AggregateStats);
+          }
         }
 
         setChartDataResults(
@@ -165,6 +173,9 @@ export default function ProcurementPage() {
         );
       } catch (err) {
         console.error('Search error:', err);
+        setError(true);
+        setResults([]);
+        setTotalHits(0);
       } finally {
         setLoading(false);
       }
@@ -177,14 +188,14 @@ export default function ProcurementPage() {
   // --- Derived Statistics ---
   const detailedStats = useMemo(() => {
     // Use precomputed totals if available (more accurate), otherwise sum the deep fetch
+    const chartTotal = chartDataResults.reduce(
+      (sum, item) => sum + Number(item.contract_amount || 0),
+      0
+    );
     const totalContractAmount =
-      precomputedStats?.total ||
-      chartDataResults.reduce(
-        (sum, item) => sum + Number(item.contract_amount || 0),
-        0
-      );
+      !query && precomputedStats ? precomputedStats.total : chartTotal;
     const totalContractCount =
-      precomputedStats?.count || chartDataResults.length;
+      !query && precomputedStats ? precomputedStats.count : totalHits;
 
     // Calculate Averages
     const averageCost =
@@ -201,7 +212,7 @@ export default function ProcurementPage() {
       totalContractCount,
       averageCost,
     };
-  }, [chartDataResults, precomputedStats]);
+  }, [chartDataResults, precomputedStats, query, totalHits]);
 
   // --- Helpers ---
   const formatDate = (dateStr: string) =>
@@ -303,7 +314,13 @@ export default function ProcurementPage() {
       </CardGrid>
 
       {/* --- RESULTS TABLE --- */}
-      {loading ? (
+      {error ? (
+        <EmptyState
+          title='Procurement Data Unavailable'
+          message='Could not connect to the BetterGov PhilGEPS search index. Check the public search key and try again.'
+          icon={FileText}
+        />
+      ) : loading ? (
         <div className='space-y-4'>
           {[1, 2, 3, 4, 5].map(i => (
             <div
@@ -340,7 +357,7 @@ export default function ProcurementPage() {
                 </tr>
               </thead>
               <tbody className='divide-y divide-kapwa-border-weak'>
-                {paginatedResults.map(row => (
+                {results.map(row => (
                   <tr
                     key={row.id}
                     className='group hover:bg-kapwa-bg-surface-raised/50 transition-colors'
@@ -401,7 +418,7 @@ export default function ProcurementPage() {
             currentPage={currentPage}
             totalPages={totalPages}
             resultsPerPage={resultsPerPage}
-            totalItems={results.length}
+            totalItems={totalHits}
             onPageChange={setCurrentPage}
             onResultsPerPageChange={limit => {
               setResultsPerPage(limit);

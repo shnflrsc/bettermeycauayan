@@ -27,7 +27,13 @@ import SelectPicker from '@/components/ui/SelectPicker';
 import { formatPesoAdaptive } from '@/lib/format';
 import { config } from '@/lib/lguConfig';
 import { lguLabels } from '@/lib/lguLabels';
-import { DPWHProject, INDICES, client } from '@/lib/meilisearch';
+import {
+  BetterGovFloodControlRecord,
+  DPWHProject,
+  INDICES,
+  client,
+  normalizeFloodControlProject,
+} from '@/lib/meilisearch';
 
 export default function InfrastructurePage() {
   const navigate = useNavigate();
@@ -141,38 +147,41 @@ export default function InfrastructurePage() {
       setLoading(true);
       setError(false);
       try {
-        const index = client.index(INDICES.DPWH);
-
-        const provinceFilter = config.lgu.districtEngineeringOffice
-          ? `location.province = "${config.lgu.districtEngineeringOffice}" OR location.province = "${config.lgu.province}"`
-          : `location.province = "${config.lgu.province}"`;
-
-        const filterConditions: string[] = [
-          `location.region = "${config.lgu.region}"`,
-          provinceFilter,
-          selectedStatuses.length > 0
-            ? `(${selectedStatuses.map(s => `status = "${s}"`).join(' OR ')})`
-            : '',
-        ].filter(Boolean);
+        const index = client.index(INDICES.FLOOD_CONTROL);
 
         let searchString = config.transparency.infrastructure.searchString;
         if (query) searchString += ` ${query}`;
 
-        const response = await index.search(searchString, {
-          filter: filterConditions.join(' AND '),
-          sort: ['infraYear:desc', 'budget:desc'],
-          limit: 200,
-        });
+        const response = await index.search(searchString, { limit: 200 });
 
-        const hits = response.hits as unknown as DPWHProject[];
-        const exactMatches = hits.filter(h => {
-          const mun = h.location.municipality?.toLowerCase() || '';
-          const desc = h.description?.toLowerCase() || '';
-          const target = config.transparency.infrastructure.exactMatchTargets;
-          return target.some(
-            (t: string) => mun.includes(t) || desc.includes(t)
+        const hits = response.hits as unknown as BetterGovFloodControlRecord[];
+        const exactMatches = hits
+          .map(normalizeFloodControlProject)
+          .filter(h => {
+            const mun = h.location.municipality?.toLowerCase() || '';
+            const desc = h.description?.toLowerCase() || '';
+            const regionMatches = h.location.region === 'Region III';
+            const provinceMatches =
+              h.location.province?.toUpperCase() === 'BULACAN';
+            const target = config.transparency.infrastructure.exactMatchTargets;
+            const locationMatches = target.some(
+              (t: string) => mun.includes(t) || desc.includes(t)
+            );
+            const statusMatches =
+              selectedStatuses.length === 0 ||
+              selectedStatuses.includes(h.status);
+            return (
+              regionMatches &&
+              provinceMatches &&
+              locationMatches &&
+              statusMatches
+            );
+          })
+          .sort((a, b) =>
+            Number(b.infraYear) !== Number(a.infraYear)
+              ? Number(b.infraYear) - Number(a.infraYear)
+              : b.budget - a.budget
           );
-        });
 
         setResults(exactMatches);
       } catch (err) {

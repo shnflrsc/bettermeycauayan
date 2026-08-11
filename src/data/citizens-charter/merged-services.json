@@ -11,9 +11,7 @@
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Registers and vaccinates eligible dogs and cats against rabies in support of Republic Act No. 9482 and a rabies-free Meycauayan City.",
-    "officeSlug": [
-      "city-veterinary-office"
-    ],
+    "officeSlug": ["city-veterinary-office"],
     "officeDivision": "Office of the City Veterinarian",
     "category": {
       "name": "Health & Wellness",
@@ -80,9 +78,7 @@
       "City Veterinarian",
       "Office of the City Veterinarian"
     ],
-    "relatedServices": [
-      "medical-assistance"
-    ],
+    "relatedServices": ["medical-assistance"],
     "quickInfo": {
       "processingTime": "Approximately 50 minutes",
       "fee": "Free",
@@ -117,9 +113,7 @@
     "deliveryChannel": "Scheduled inspection",
     "type": "transaction",
     "description": "Permit issued by the Building Official allowing an owner or contractor to begin a construction, remodeling, or renovation project. The source classifies applications as Simple, Complex, or Highly Technical depending on scope.",
-    "officeSlug": [
-      "city-engineering-office"
-    ],
+    "officeSlug": ["city-engineering-office"],
     "officeDivision": "Office of the City Engineer",
     "category": {
       "name": "Business, Trade and Investment",
@@ -605,9 +599,7 @@
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Registers a birth reported beyond the 30-day reglementary period. The supplied procedure applies to children aged 0–6 with unmarried parents.",
-    "officeSlug": [
-      "city-civil-registrar-office"
-    ],
+    "officeSlug": ["city-civil-registrar-office"],
     "officeDivision": "Office of the City Civil Registrar",
     "category": {
       "name": "Certificates & Vital Records",
@@ -757,9 +749,7 @@
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Registers a birth that occurred in Meycauayan within the 30-day reglementary period.",
-    "officeSlug": [
-      "city-civil-registrar-office"
-    ],
+    "officeSlug": ["city-civil-registrar-office"],
     "officeDivision": "Office of the City Civil Registrar",
     "category": {
       "name": "Certificates & Vital Records",
@@ -888,9 +878,7 @@
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Registers a death certificate reported beyond the 30-day reglementary period.",
-    "officeSlug": [
-      "city-civil-registrar-office"
-    ],
+    "officeSlug": ["city-civil-registrar-office"],
     "officeDivision": "Office of the City Civil Registrar",
     "category": {
       "name": "Certificates & Vital Records",
@@ -1026,9 +1014,7 @@
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Registers a death certificate within the 30-day reglementary period and processes the applicable burial, transfer, entrance, cremation, or exhumation permit.",
-    "officeSlug": [
-      "city-civil-registrar-office"
-    ],
+    "officeSlug": ["city-civil-registrar-office"],
     "officeDivision": "Office of the City Civil Registrar",
     "category": {
       "name": "Certificates & Vital Records",
@@ -1156,9 +1142,7 @@
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Registers a marriage reported beyond the 30-day reglementary period.",
-    "officeSlug": [
-      "city-civil-registrar-office"
-    ],
+    "officeSlug": ["city-civil-registrar-office"],
     "officeDivision": "Office of the City Civil Registrar",
     "category": {
       "name": "Certificates & Vital Records",
@@ -1291,9 +1275,7 @@
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Registers a marriage solemnized in Meycauayan within the 15-day reglementary period.",
-    "officeSlug": [
-      "city-civil-registrar-office"
-    ],
+    "officeSlug": ["city-civil-registrar-office"],
     "officeDivision": "Office of the City Civil Registrar",
     "category": {
       "name": "Certificates & Vital Records",
@@ -1404,10 +1386,7 @@
     "deliveryChannel": "Scheduled inspection",
     "type": "transaction",
     "description": "Certificate issued by the Building Official confirming that a completed structure is suitable for occupancy under the National Building Code.",
-    "officeSlug": [
-      "city-engineering-office",
-      "city-treasurers-office"
-    ],
+    "officeSlug": ["city-engineering-office", "city-treasurers-office"],
     "officeDivision": "Office of the City Engineer",
     "category": {
       "name": "Business, Trade and Investment",
@@ -1532,10 +1511,7 @@
     "deliveryChannel": "Scheduled inspection",
     "type": "transaction",
     "description": "Permit issued by the Building Official for electrical installation, alteration, replacement, or repair work.",
-    "officeSlug": [
-      "city-engineering-office",
-      "city-treasurers-office"
-    ],
+    "officeSlug": ["city-engineering-office", "city-treasurers-office"],
     "officeDivision": "Office of the City Engineer",
     "category": {
       "name": "Business, Trade and Investment",
@@ -1662,9 +1638,7 @@
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Allows an owner to identify, pay the required fee for, and reclaim an impounded pet or animal under the Animal Welfare Act of 1998 and Meycauayan City Ordinance No. 2012-05.",
-    "officeSlug": [
-      "city-veterinary-office"
-    ],
+    "officeSlug": ["city-veterinary-office"],
     "officeDivision": "Office of the City Veterinarian",
     "category": {
       "name": "Public Safety & Security",
@@ -1680,9 +1654,7 @@
       "Present the Official Receipt at the City Veterinary Office and obtain the Release Order.",
       "Present the Official Receipt and Release Order at the impounding facility and reclaim the pet or animal."
     ],
-    "requirements": [
-      "Valid government-issued ID (original)"
-    ],
+    "requirements": ["Valid government-issued ID (original)"],
     "detailedRequirements": [
       {
         "requirement": "Valid government-issued ID (original)",
@@ -1763,9 +1735,7 @@
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Searches, verifies, certifies, and releases a true copy of a birth, marriage, or death record held by the Local Civil Registrar.",
-    "officeSlug": [
-      "city-civil-registrar-office"
-    ],
+    "officeSlug": ["city-civil-registrar-office"],
     "officeDivision": "Office of the City Civil Registrar",
     "category": {
       "name": "Certificates & Vital Records",
@@ -1882,10 +1852,7 @@
     "deliveryChannel": "Scheduled inspection",
     "type": "transaction",
     "description": "Permit issued to new and renewing business establishments after sanitation requirements are met.",
-    "officeSlug": [
-      "city-health-office",
-      "city-treasurers-office"
-    ],
+    "officeSlug": ["city-health-office", "city-treasurers-office"],
     "officeDivision": "Office of the City Health Officer",
     "category": {
       "name": "Business, Trade and Investment",
@@ -1969,10 +1936,7 @@
     "deliveryChannel": "Scheduled inspection",
     "type": "transaction",
     "description": "Locational or zoning clearance confirming that a proposed building project complies with the city's land-use plan and zoning rules.",
-    "officeSlug": [
-      "city-planning-and-devt-office",
-      "city-treasurers-office"
-    ],
+    "officeSlug": ["city-planning-and-devt-office", "city-treasurers-office"],
     "officeDivision": "Office of the City Planning and Development Coordinator",
     "category": {
       "name": "Business, Trade and Investment",
@@ -2303,9 +2267,7 @@
       "Social Welfare Officer III",
       "City Social Welfare and Development Office"
     ],
-    "relatedServices": [
-      "anti-rabies-vaccination-for-walk-in-dog-cat-owners"
-    ],
+    "relatedServices": ["anti-rabies-vaccination-for-walk-in-dog-cat-owners"],
     "quickInfo": {
       "processingTime": "40 minutes for the Social Case Study Report",
       "fee": "Free",
@@ -2340,9 +2302,7 @@
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "One-year permit for qualified tricycle operators to operate a tricycle for hire.",
-    "officeSlug": [
-      "city-business-permit-and-licenses-office"
-    ],
+    "officeSlug": ["city-business-permit-and-licenses-office"],
     "officeDivision": "City Business Permit and Licensing Office",
     "category": {
       "name": "Business, Trade and Investment",
@@ -2531,9 +2491,7 @@
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Issues an identification card that serves as proof of eligibility for benefits and privileges provided to persons with disabilities under Republic Act No. 10754.",
-    "officeSlug": [
-      "city-social-welfare-and-development-office"
-    ],
+    "officeSlug": ["city-social-welfare-and-development-office"],
     "officeDivision": "City Social Welfare and Development Office",
     "category": {
       "name": "Social Services & Assistance",
@@ -2748,9 +2706,7 @@
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Collects the tax imposed by the City Treasurer's Office on natural or juridical persons who own or administer real property, including improvements.",
-    "officeSlug": [
-      "city-treasurers-office"
-    ],
+    "officeSlug": ["city-treasurers-office"],
     "officeDivision": "Office of the City Treasurer",
     "category": {
       "name": "Taxation & Payments",
@@ -2855,9 +2811,7 @@
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Issues an identification card that enables qualified senior citizens to access the benefits and privileges provided under Republic Act No. 9994, including applicable discounts and VAT exemptions.",
-    "officeSlug": [
-      "city-social-welfare-and-development-office"
-    ],
+    "officeSlug": ["city-social-welfare-and-development-office"],
     "officeDivision": "City Social Welfare and Development Office",
     "category": {
       "name": "Social Services & Assistance",
@@ -2970,9 +2924,7 @@
     "deliveryChannel": "Walk-in",
     "type": "transaction",
     "description": "Issues an identification card that enables qualified solo parents to access benefits and privileges provided under the Solo Parents' Welfare Act of 2000, or Republic Act No. 8972.",
-    "officeSlug": [
-      "city-social-welfare-and-development-office"
-    ],
+    "officeSlug": ["city-social-welfare-and-development-office"],
     "officeDivision": "City Social Welfare and Development Office",
     "category": {
       "name": "Social Services & Assistance",
