@@ -1,8 +1,8 @@
-# 🏛️ Better LB (Los Baños)
+# 🏛️ BetterMeycauayan
 
-A community-led, open-source portal designed to make the government of the **Municipality of Los Baños** accessible, transparent, and user-friendly.
+A community-led, open-source portal designed to make the **City Government of Meycauayan** accessible, transparent, and user-friendly.
 
-This project is a municipal-focused fork of [BetterGov.ph](https://bettergov.ph), adapted to meet the specific needs of Los Bañenses.
+This project is a city-focused fork of [BetterGov.ph](https://bettergov.ph), adapted to meet the specific needs of Meycaueños.
 
 ---
 ### Inspirations
@@ -12,9 +12,9 @@ BetterSolano.org https://github.com/BetterSolano/bettersolano
 Betterlocalgov https://github.com/iyanski/betterlocalgov
 
 ### Portal Features
-BetterLB provides Los Baños with:
-- **Public Services Directory**: Comprehensive guide to municipal services with requirements, fees, and step-by-step processes
-- **Legislative Portal**: Access to ordinances, resolutions, and executive orders from the Sangguniang Bayan
+BetterMeycauayan provides Meycauayan with:
+- **Public Services Directory**: Comprehensive guide to city services with requirements, fees, and step-by-step processes
+- **Legislative Portal**: Access to ordinances, resolutions, and executive orders from the Sangguniang Panlungsod
 - **Transparency Dashboard**: Financial data, procurement bids, and infrastructure projects
 - **Government Directory**: Contact information for all municipal departments and officials
 - **Multi-language Support**: English and Filipino translations
@@ -23,7 +23,7 @@ BetterLB provides Los Baños with:
 
 ## 🔄 Forking for Your LGU
 
-BetterLB is designed to be easily adapted for any Local Government Unit (LGU) in the Philippines.
+BetterMeycauayan can be adapted for other Local Government Units (LGUs) in the Philippines.
 
 ## Quick Start for Other LGUs
 
@@ -44,18 +44,18 @@ BetterLB is designed to be easily adapted for any Local Government Unit (LGU) in
 
 ### Key Configuration Fields
 
-| Field | Description | Example (Los Baños) |
+| Field | Description | Example (Meycauayan) |
 |-------|-------------|---------------------|
-| `lgu.name` | Short municipality name | "Los Baños" |
-| `lgu.fullName` | Full official name | "Municipality of Los Baños" |
-| `lgu.province` | Province name | "Laguna" |
-| `lgu.region` | Region name | "Region IV-A" |
-| `lgu.regionCode` | Region code | "CALABARZON" |
+| `lgu.name` | Short city name | "Meycauayan" |
+| `lgu.fullName` | Full official name | "City of Meycauayan" |
+| `lgu.province` | Province name | "Bulacan" |
+| `lgu.region` | Region name | "Region III" |
+| `lgu.regionCode` | Region code | "Central Luzon" |
 | `lgu.type` | LGU type | "municipality" or "city" |
-| `lgu.officialWebsite` | Official LGU website | "https://losbanos.gov.ph" |
-| `portal.name` | Portal name | "BetterLB" |
-| `portal.baseUrl` | Portal base URL | "https://betterlb.org" |
-| `portal.tagline` | Portal tagline | "Community Powered Los Baños Portal" |
+| `lgu.officialWebsite` | Official LGU website | "https://meycauayan.gov.ph" |
+| `portal.name` | Portal name | "BetterMeycauayan" |
+| `portal.baseUrl` | Portal base URL | "https://bettermeycauayan.pages.dev" |
+| `portal.tagline` | Portal tagline | "Community Powered Meycauayan Portal" |
 
 **Note:** See [`FORKING.md`](./FORKING.md) for comprehensive forking instructions including database setup for legislative data.
 
@@ -79,7 +79,7 @@ BetterLB is designed to be easily adapted for any Local Government Unit (LGU) in
 ## Project Structure
 
 ```
-betterlb/
+bettermeycauayan/
 ├── e2e/                         # End-to-end tests
 │   └── utils/                   # Test helpers and shared testing logic
 ├── functions/                   # Serverless / backend functions (Cloudflare Pages)
@@ -161,14 +161,14 @@ betterlb/
 - **Search Integration**: Meilisearch-powered search with real-time indexing
 - **Internationalization**: Multi-language support with i18next
 
-### Los Baños-Specific Data
+### Meycauayan-Specific Data
 
-BetterLB includes structured data for Los Baños:
+BetterMeycauayan includes structured data for the City of Meycauayan:
 
 | Data Type | Location | Description |
 |-----------|----------|-------------|
 | **Departments** | `/src/data/directory/departments.json` | Municipal departments and offices with contact info |
-| **Barangays** | `/src/data/directory/barangays.json` | 14 barangay profiles and officials |
+| **Barangays** | `/src/data/directory/barangays.json` | Barangay profiles and officials |
 | **Services** | `/src/data/services/categories/*.json` | Public services by category (BPLO, Assessor, Engineering, etc.) |
 | **Citizens Charter** | `/src/data/citizens-charter/citizens-charter.json` | Service requirements, fees, and client steps |
 | **Legislation** | Cloudflare D1 Database | Ordinances, resolutions, executive orders |
@@ -176,14 +176,14 @@ BetterLB includes structured data for Los Baños:
 
 #### Data Pipeline for Legislative Documents
 
-Los Baños legislative documents are processed through a Python pipeline:
+Meycauayan legislative documents are processed through the OpenLGU workflow:
 
-1. **Scrape** (`pipeline/1_scrape.py`) - Download PDFs from official sources
-2. **Normalize** (`pipeline/1.5_normalize.py`) - Standardize filenames and metadata
-3. **Parse** (`pipeline/3_parse.py`) - Extract text and metadata from PDFs
-4. **Generate** (`pipeline/4_generate.py`) - Create structured JSON for database import
+1. **Collect** - Validate local PDFs, extract their text, and apply OCR when necessary
+2. **Normalize** - Classify records and generate concise display titles
+3. **Stage and review** - Validate metadata, reconcile duplicates, and review uncertain records
+4. **Promote and load** - Generate canonical records and import them into Cloudflare D1
 
-See [`pipeline/README.md`](./pipeline/README.md) for complete documentation.
+See [`pipeline/meycauayan/OPENLGU_PIPELINE.md`](./pipeline/meycauayan/OPENLGU_PIPELINE.md) for the complete operator guide.
 
 ---
 
@@ -191,8 +191,8 @@ See [`pipeline/README.md`](./pipeline/README.md) for complete documentation.
 
 ### 1. Clone and Install
 ```bash
-git clone https://github.com/BetterLosBanos/betterlb
-cd betterlb
+git clone https://github.com/shnflrsc/bettermeycauayan.git
+cd bettermeycauayan
 npm install
 ```
 
@@ -224,39 +224,41 @@ npm run build           # Combines merge_services, TypeScript, and Vite build
 
 ---
 
-## 🏛️ Los Baños Government Structure
+## 🏛️ Meycauayan City Government Structure
 
 ### Executive Branch
-- **Mayor**: Chief executive officer of the municipality
-- **Vice Mayor**: Presiding officer of the Sangguniang Bayan and mayoral successor
-- **Municipal Departments**: Administrative offices implementing municipal programs
+- **Mayor**: Chief executive officer of the city
+- **Vice Mayor**: Presiding officer of the Sangguniang Panlungsod and mayoral successor
+- **City Departments**: Administrative offices implementing city programs
 
-### Legislative Branch (Sangguniang Bayan)
-The Sangguniang Bayan is the legislative body of Los Baños, composed of:
+### Legislative Branch (Sangguniang Panlungsod)
+The Sangguniang Panlungsod is the legislative body of the City of Meycauayan.
+
+Its membership includes:
 - **Vice Mayor** (Presiding Officer)
-- **8 Regular Councilors** (District representatives)
-- **2 Ex-Officio Councilors** (ABC President and SK Federation President)
+- **Regular Councilors**
+- **Ex-Officio Councilors**, including the Liga ng mga Barangay and SK Federation representatives
 
 ### Key Departments
 - **BPLO**: Business Permit and Licensing Office
-- **MTO**: Municipal Treasurer's Office
+- **City Treasurer's Office**: Local revenue collection and treasury services
 - **Assessor's Office**: Property assessment and taxation
 - **Engineering Office**: Infrastructure and public works
-- **MPDC**: Municipal Planning and Development Coordinator
-- **LCR**: Local Civil Registry
-- **Municipal Health Office**: Public health services
-- **Municipal Agriculture Office**: Agricultural programs
+- **CUPDO**: City Urban Planning and Development Office
+- **City Civil Registrar**: Civil registration and vital-record services
+- **City Health Office**: Public health services
+- **City Veterinary Office**: Animal health and veterinary services
 
-See the [Government Directory](https://betterlb.org/government) on the live site for complete department listings and contact information.
+See the [Government Directory](https://bettermeycauayan.pages.dev/government) on the live site for department listings and contact information.
 
 ---
 
 ## Join the Grassroots Movement
-We are looking for volunteers passionate individuals who want to make Los Baños a better place. You don't need to be a developer to help!
+We are looking for passionate volunteers who want to make Meycauayan a better place. You don't need to be a developer to help!
 
 ### How You Can Contribute:
 1.  **Non-Developers**: Visit the `/contribute` page on the live site to suggest new services or fix outdated information via GitHub Issues (requires a free GitHub account).
-2.  **Developers**: Check the [Issues](https://github.com/BetterLosBanos/betterlb/issues) tab for "Help Wanted" or "Good First Issue" labels.
+2.  **Developers**: Check the [Issues](https://github.com/shnflrsc/bettermeycauayan/issues) tab for "Help Wanted" or "Good First Issue" labels.
 3.  **Data Auditors**: Help us verify community submissions on GitHub to ensure the portal remains an authoritative source of information.
 4.  **Translators**: Help translate the portal to Filipino and other Philippine languages by working on `public/locales/` files.
 
@@ -269,12 +271,12 @@ We are looking for volunteers passionate individuals who want to make Los Baños
 
 ## 🚢 Deployment
 
-### Production Deployment (BetterLB)
+### Production Deployment (BetterMeycauayan)
 
-BetterLB is deployed on **Cloudflare Pages** with:
+BetterMeycauayan is deployed on **Cloudflare Pages** with:
 - **Frontend**: Vite build automatically deployed on push to `main` branch
 - **Backend**: Cloudflare Pages Functions for API endpoints
-- **Database**: Cloudflare D1 (`betterlb_openlgu`) for legislative data
+- **Database**: Cloudflare D1 (`BETTERME_DB` binding) for legislative data
 - **Search**: Meilisearch instance for fuzzy search
 - **KV Storage**: Weather data caching with automatic updates
 - **Wrangler**: Version 4.70.0 (pinned for compatibility)
@@ -299,11 +301,11 @@ See [`ARCHITECTURE.md`](./ARCHITECTURE.md#deployment) for detailed deployment st
 This project is released under the [Creative Commons CC0](https://creativecommons.org/publicdomain/zero/1.0/) dedication. The work is dedicated to the public domain and can be freely used, modified, and distributed without restriction.
 
 ### Data Attribution
-BetterLB aggregates data from multiple sources:
+BetterMeycauayan aggregates data from multiple sources:
 
 | Data Source | Type | Attribution |
 |-------------|------|-------------|
-| **Municipality of Los Baños** | Official government data, services directory | Public domain |
+| **City Government of Meycauayan** | Official government data, services directory, and Citizen's Charter | Public domain |
 | **Philippine Government Procurement Portal (PhilGEPS)** | Procurement bids and awards | Republic of the Philippines |
 | **Department of Budget and Management (DBM)** | Financial releases | Republic of the Philippines |
 | **Department of Public Works and Highways (DPWH)** | Infrastructure projects | Republic of the Philippines |
@@ -315,9 +317,9 @@ BetterLB aggregates data from multiple sources:
 
 ## 📞 Contact and Support
 
-### For Los Baños Residents
-- **Website**: https://betterlb.org
-- **GitHub Issues**: Report bugs or suggest features at [github.com/BetterLosBanos/betterlb/issues](https://github.com/BetterLosBanos/betterlb/issues)
+### For Meycauayan Residents
+- **Website**: https://bettermeycauayan.pages.dev
+- **GitHub Issues**: Report bugs or suggest features at [github.com/shnflrsc/bettermeycauayan/issues](https://github.com/shnflrsc/bettermeycauayan/issues)
 - **Community**: Join our community contributions via the "Contribute" page on the portal
 
 ### For Other LGUs
