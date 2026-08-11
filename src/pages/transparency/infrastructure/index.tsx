@@ -30,8 +30,6 @@ import { lguLabels } from '@/lib/lguLabels';
 import {
   BetterGovFloodControlRecord,
   DPWHProject,
-  INDICES,
-  infrastructureClient,
   normalizeFloodControlProject,
 } from '@/lib/meilisearch';
 
@@ -147,14 +145,16 @@ export default function InfrastructurePage() {
       setLoading(true);
       setError(false);
       try {
-        const index = infrastructureClient.index(INDICES.FLOOD_CONTROL);
+        const params = new URLSearchParams({ q: query });
+        const response = await fetch(
+          `/api/transparency/infrastructure?${params.toString()}`
+        );
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
-        let searchString = config.transparency.infrastructure.searchString;
-        if (query) searchString += ` ${query}`;
-
-        const response = await index.search(searchString, { limit: 200 });
-
-        const hits = response.hits as unknown as BetterGovFloodControlRecord[];
+        const data = (await response.json()) as {
+          hits: BetterGovFloodControlRecord[];
+        };
+        const hits = data.hits;
         const exactMatches = hits
           .map(normalizeFloodControlProject)
           .filter(h => {

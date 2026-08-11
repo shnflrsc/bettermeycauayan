@@ -24,12 +24,19 @@ import SearchInput from '@/components/ui/SearchInput';
 import { formatPesoAdaptive } from '@/lib/format';
 import { config } from '@/lib/lguConfig';
 import { lguLabels } from '@/lib/lguLabels';
-import { INDICES, PhilgepsDoc, procurementClient } from '@/lib/meilisearch';
+import { PhilgepsDoc } from '@/lib/meilisearch';
 
 // Helper Interface for Aggregate Data (matching BetterGov structure)
 interface AggregateStats {
   count: number;
   total: number;
+}
+
+interface ProcurementApiResponse {
+  hits: PhilgepsDoc[];
+  estimatedTotalHits: number;
+  statistics: AggregateStats | null;
+  chartHits: Partial<PhilgepsDoc>[];
 }
 
 export default function ProcurementPage() {
@@ -55,7 +62,6 @@ export default function ProcurementPage() {
 
   // Constants
   const ORG_NAME = config.transparency.procurement.organizationName;
-  const ORG_FILTER = `organization_name = "${ORG_NAME}"`;
   const orgDashboardUrl = `${config.transparency.procurement.externalDashboard}${encodeURIComponent(ORG_NAME)}`;
 
   // Helper function to get badge variant based on award status
@@ -120,59 +126,21 @@ export default function ProcurementPage() {
       setError(false);
 
       try {
-        const index = procurementClient.index(INDICES.PHILGEPS);
-        const orgIndex = procurementClient.index(
-          INDICES.PHILGEPS_ORGANIZATIONS
-        );
-
-        // 1. Search Documents (Paginated)
-        const searchPromise = index.search(query, {
-          filter: ORG_FILTER,
-          sort: ['award_date:desc'],
-          limit: resultsPerPage,
-          offset: (currentPage - 1) * resultsPerPage,
+        const params = new URLSearchParams({
+          q: query,
+          limit: String(resultsPerPage),
+          offset: String((currentPage - 1) * resultsPerPage),
         });
-
-        // 2. Fetch Precomputed Stats (Fast Total)
-        const statsPromise =
-          !precomputedStats && !query
-            ? orgIndex.search(ORG_NAME, { limit: 1 })
-            : Promise.resolve(null);
-
-        // 3. Fetch Data for Visualizations
-        // We need a larger dataset to calculate the "Unique Categories" and "Average Cost" accurately
-        const chartPromise = index.search(query, {
-          filter: ORG_FILTER,
-          attributesToRetrieve: ['contract_amount', 'business_category'],
-          limit: 5000,
-        });
-
-        const [searchRes, statsRes, chartRes] = await Promise.all([
-          searchPromise,
-          statsPromise,
-          chartPromise,
-        ]);
-
-        setResults(searchRes.hits as unknown as PhilgepsDoc[]);
-        setTotalHits(searchRes.estimatedTotalHits || 0);
-
-        if (statsRes && statsRes.hits.length > 0) {
-          const matchingStats = statsRes.hits.find(
-            hit =>
-              (hit as { organization_name?: string }).organization_name ===
-              ORG_NAME
-          );
-          if (matchingStats) {
-            setPrecomputedStats(matchingStats as unknown as AggregateStats);
-          }
-        }
-
-        setChartDataResults(
-          chartRes.hits as {
-            contract_amount: number;
-            business_category: string;
-          }[]
+        const response = await fetch(
+          `/api/transparency/procurement?${params.toString()}`
         );
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+        const data = (await response.json()) as ProcurementApiResponse;
+        setResults(data.hits);
+        setTotalHits(data.estimatedTotalHits);
+        if (!query && data.statistics) setPrecomputedStats(data.statistics);
+        setChartDataResults(data.chartHits);
       } catch (err) {
         console.error('Search error:', err);
         setError(true);
@@ -185,7 +153,7 @@ export default function ProcurementPage() {
 
     const timer = setTimeout(fetchData, 400);
     return () => clearTimeout(timer);
-  }, [query, currentPage, resultsPerPage]); // eslint-disable-line react-hooks/exhaustive-deps -- ORG_NAME and ORG_FILTER are config-derived constants; precomputedStats is only read conditionally
+  }, [query, currentPage, resultsPerPage]);
 
   // --- Derived Statistics ---
   const detailedStats = useMemo(() => {

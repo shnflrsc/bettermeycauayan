@@ -38,6 +38,10 @@ import { EmptyState } from '@/components/ui/EmptyState';
 
 import { formatPesoAdaptive } from '@/lib/format';
 import { config } from '@/lib/lguConfig';
+import {
+  type BetterGovFloodControlRecord,
+  normalizeFloodControlProject,
+} from '@/lib/meilisearch';
 
 // --- Strict Types (Matched to API Response) ---
 interface ProjectComponent {
@@ -186,17 +190,29 @@ export default function InfrastructureDetail() {
       setError(null);
 
       try {
-        // USE API DIRECTLY FOR FULL DETAILS
         const response = await fetch(
-          `https://api.dpwh.bettergov.ph/projects/${contractId}`
+          `/api/transparency/infrastructure?contractId=${encodeURIComponent(contractId)}`
         );
 
         if (!response.ok) {
           throw new Error(`Failed to load project: ${response.status}`);
         }
 
-        const result = await response.json();
-        setProject(result.data);
+        const result = (await response.json()) as {
+          hits: BetterGovFloodControlRecord[];
+        };
+        const record = result.hits[0];
+        if (!record) throw new Error('Project not found');
+
+        const normalized = normalizeFloodControlProject(record);
+        setProject({
+          ...normalized,
+          startDate: normalized.startDate || '',
+          completionDate: normalized.completionDate || null,
+          infraYear: String(normalized.infraYear),
+          latitude: normalized.latitude || 0,
+          longitude: normalized.longitude || 0,
+        });
       } catch (err) {
         console.error('Error loading project detail:', err);
         setError('Project not found or service unavailable.');

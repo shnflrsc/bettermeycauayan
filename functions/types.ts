@@ -14,6 +14,8 @@ export interface Env {
   FOREX_API_KEY?: string;
   MEILISEARCH_HOST?: string;
   MEILISEARCH_API_KEY?: string;
+  MEILISEARCH_INFRASTRUCTURE_API_KEY?: string;
+  MEILISEARCH_PROCUREMENT_API_KEY?: string;
   JINA_API_KEY?: string;
   CF_ACCOUNT_ID?: string;
   CF_API_TOKEN?: string;
