@@ -1,0 +1,14 @@
+{
+  "jurisdiction": "City of Meycauayan",
+  "province": "Bulacan",
+  "officialBaseUrl": "https://meycauayan.gov.ph",
+  "legislativeBody": "Sangguniang Panlungsod",
+  "termIdPrefix": "sp_",
+  "documentTypes": ["ordinance", "resolution", "executive_order"],
+  "forbiddenLegacyMarkers": [
+    "Los Baños",
+    "losbanos.gov.ph",
+    "Sangguniang Bayan",
+    "sb_"
+  ]
+}

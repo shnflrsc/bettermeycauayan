@@ -8,6 +8,9 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+.venv-openlgu/
+.tools/
+__pycache__/
 dist
 dist-ssr
 *.local
@@ -48,6 +51,16 @@ wrangler.toml
 /raw_data
 _worker.bundle
 pipeline/*
+!pipeline/README.md
+!pipeline/meycauayan/
+pipeline/meycauayan/*
+!pipeline/meycauayan/README.md
+!pipeline/meycauayan/config.json
+!pipeline/archive/
+pipeline/archive/*
+!pipeline/archive/README.md
+!pipeline/archive/los_banos_legacy/
+!pipeline/archive/los_banos_legacy/**
 CLAUDE.md
 .local/
 pipeline/__pycache__/

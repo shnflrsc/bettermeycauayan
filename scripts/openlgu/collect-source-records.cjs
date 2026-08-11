@@ -4,9 +4,14 @@ const crypto = require('node:crypto');
 const fs = require('node:fs');
 const path = require('node:path');
 
-const DEFAULT_INPUT = 'pipeline/data/documents.csv';
+const DEFAULT_INPUT = 'pipeline/meycauayan/import/documents.csv';
 const DEFAULT_OUTPUT = 'pipeline/openlgu/source-records.jsonl';
-const SOURCE_ID = 'legacy_manual_documents_csv';
+const SOURCE_ID = 'meycauayan_manual_documents_csv';
+const FORBIDDEN_INPUT_PARTS = [
+  `${path.sep}pipeline${path.sep}archive${path.sep}`,
+  `${path.sep}los_banos_legacy${path.sep}`,
+];
+const FORBIDDEN_CONTENT = /los\s*ba(?:ñ|n)os|losbanos\.gov\.ph|sangguniang\s+bayan/i;
 
 function parseArgs(argv) {
   const args = {
@@ -147,7 +152,33 @@ function writeJsonl(filePath, records) {
 
 function main() {
   const args = parseArgs(process.argv);
-  const rows = parseCsv(fs.readFileSync(args.input, 'utf8'));
+  const resolvedInput = path.resolve(args.input);
+  const normalizedInput = `${path.sep}${resolvedInput.toLowerCase()}${path.sep}`;
+  if (
+    FORBIDDEN_INPUT_PARTS.some(part =>
+      normalizedInput.includes(part.toLowerCase())
+    )
+  ) {
+    throw new Error(
+      `Refusing to collect from isolated legacy data: ${resolvedInput}`
+    );
+  }
+
+  if (!fs.existsSync(resolvedInput)) {
+    throw new Error(
+      `Meycauayan input not found: ${resolvedInput}\n` +
+        'Create it explicitly or pass --input <meycauayan-csv>. Legacy Los Baños data is archived and cannot be used.'
+    );
+  }
+
+  const inputText = fs.readFileSync(resolvedInput, 'utf8');
+  if (FORBIDDEN_CONTENT.test(inputText)) {
+    throw new Error(
+      `Refusing input containing Los Baños legislative data: ${resolvedInput}`
+    );
+  }
+
+  const rows = parseCsv(inputText);
   const records = rows.map(row => toSourceRecord(row, args.input));
 
   writeJsonl(args.output, records);

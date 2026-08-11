@@ -10,6 +10,18 @@ const ROOT = path.resolve(__dirname, '../..');
 const PIPELINE_DIR = path.join(ROOT, 'pipeline/openlgu');
 
 const BATCH_SIZE = 50;
+const MEYCAUAYAN_BASE_URL = 'https://meycauayan.gov.ph';
+const FORBIDDEN_LEGACY_TEXT =
+  /los\s*ba(?:ñ|n)os|losbanos\.gov\.ph|sangguniang\s+bayan/i;
+
+function assertMeycauayanData(label, value) {
+  const serialized = JSON.stringify(value);
+  if (FORBIDDEN_LEGACY_TEXT.test(serialized)) {
+    throw new Error(
+      `Safety check failed: ${label} contains isolated Los Baños data.`
+    );
+  }
+}
 
 function readJsonl(filePath) {
   if (!fs.existsSync(filePath)) return [];
@@ -71,6 +83,7 @@ function loadSourceRecords(isRemote) {
     console.log('  No source records found.');
     return;
   }
+  assertMeycauayanData('source-records.jsonl', sourceRecords);
 
   const sourceKeys = [
     ...new Set(sourceRecords.map(r => r.source_key).filter(Boolean)),
@@ -79,7 +92,7 @@ function loadSourceRecords(isRemote) {
     const scrapeSourcesSql = sourceKeys
       .map(key => {
         const id = `scrape_${key}`;
-        return `INSERT OR IGNORE INTO scrape_sources (id, name, source_type, base_url) VALUES ('${id}', '${key}', 'lgu_website', 'https://losbanos.gov.ph');`;
+        return `INSERT OR IGNORE INTO scrape_sources (id, name, source_type, base_url) VALUES ('${id}', '${key}', 'lgu_website', '${MEYCAUAYAN_BASE_URL}');`;
       })
       .join('\n');
     console.log(`  Loading ${sourceKeys.length} scrape_sources...`);
@@ -119,7 +132,10 @@ function loadSourceRecords(isRemote) {
       : null,
     source_record_id: null,
     source_url: r.source_url || null,
-    source_kind: r.source_kind || 'website_table_row',
+    source_kind:
+      r.source_kind === 'manual_browser_download'
+        ? 'pdf_ocr'
+        : r.source_kind || 'website_table_row',
     entity_type: 'document',
     content_hash: r.content_hash || null,
     raw_payload_json: r.raw_payload_json || null,
@@ -153,6 +169,7 @@ function loadStagedDocuments(isRemote) {
     console.log('  No staged documents found.');
     return;
   }
+  assertMeycauayanData('staged-documents.jsonl', stagedDocs);
 
   const columns = [
     'id',
@@ -214,6 +231,41 @@ function loadStagedDocuments(isRemote) {
   console.log(`  Done: ${rows.length} staged_documents.`);
 }
 
+function loadCanonicalDocuments(isRemote) {
+  console.log('\nLoading canonical documents...');
+  const documents = readJsonl(
+    path.join(PIPELINE_DIR, 'canonical-documents.jsonl')
+  );
+  if (!documents.length) {
+    console.log('  No canonical documents found.');
+    return;
+  }
+  assertMeycauayanData('canonical-documents.jsonl', documents);
+
+  const columns = [
+    'id',
+    'type',
+    'number',
+    'title',
+    'session_id',
+    'term_id',
+    'date_enacted',
+    'date_filed',
+    'pdf_url',
+    'source_type',
+    'publication_status',
+    'verification_state',
+    'source_confidence',
+    'canonical_notes',
+    'created_at',
+    'updated_at',
+  ];
+  const sql = batchInsert('documents', columns, documents);
+  console.log(`  Loading ${documents.length} canonical documents...`);
+  wranglerCommand(sql, isRemote);
+  console.log(`  Done: ${documents.length} canonical documents.`);
+}
+
 function loadStagedPersonRefs(isRemote) {
   console.log('\nLoading staged_document_person_refs...');
   const personRefs = readJsonl(
@@ -223,6 +275,7 @@ function loadStagedPersonRefs(isRemote) {
     console.log('  No person refs found.');
     return;
   }
+  assertMeycauayanData('staged-person-refs.jsonl', personRefs);
 
   const columns = [
     'id',
@@ -304,33 +357,32 @@ function loadReviewDecisions(isRemote) {
 
 function loadTerms(isRemote) {
   console.log('\nLoading terms...');
-  const termsPath = path.join(PIPELINE_DIR, 'terms.json');
+  const termsPath = path.join(
+    ROOT,
+    'pipeline/meycauayan/reference/terms.json'
+  );
   if (!fs.existsSync(termsPath)) {
     console.log('  No terms file found.');
     return;
   }
 
   const terms = JSON.parse(fs.readFileSync(termsPath, 'utf8'));
-  const termNumberMap = {
-    sb_9: 9,
-    sb_10: 10,
-    sb_11: 11,
-    sb_12: 12,
-    sb_13: 13,
-    sb_14: 14,
-    sb_15: 15,
-    sb_16: 16,
-  };
+  assertMeycauayanData('terms.json', terms);
 
   const sql = terms
     .map(t => {
       const id = t.term_id || t.id;
-      const num = termNumberMap[id] || parseInt(id.replace('sb_', ''), 10);
+      if (!/^sp_\d+$/.test(id)) {
+        throw new Error(
+          `Safety check failed: term ID "${id}" must use the Meycauayan sp_<number> format.`
+        );
+      }
+      const num = parseInt(id.replace('sp_', ''), 10);
       const ordinal = `${num}${num < 20 ? ['th', 'st', 'nd', 'rd'][((num + 90) % 10) - 4 || 'th'] : 'th'}`;
       const label =
         t.label ||
         `${t.start_date?.split('-')[0]}-${t.end_date?.split('-')[0]}`;
-      return `INSERT OR REPLACE INTO terms (id, term_number, ordinal, name, start_date, end_date, year_range) VALUES ('${id}', ${num}, '${ordinal}', 'Sangguniang Bayan ${label}', '${t.start_date}', '${t.end_date}', '${label}');`;
+      return `INSERT OR REPLACE INTO terms (id, term_number, ordinal, name, start_date, end_date, year_range) VALUES ('${id}', ${num}, '${ordinal}', 'Sangguniang Panlungsod ${label}', '${t.start_date}', '${t.end_date}', '${label}');`;
     })
     .join('\n');
 
@@ -343,6 +395,13 @@ function main() {
   const args = process.argv.slice(2);
   const isRemote = args.includes('--remote');
   const isLocal = args.includes('--local') || !isRemote;
+
+  if (isRemote && !args.includes('--confirm-meycauayan')) {
+    console.error(
+      '\nRefusing remote load without --confirm-meycauayan. Run the local load and review its records first.'
+    );
+    process.exit(1);
+  }
 
   console.log(`\nOpenLGU Pipeline -> D1 Loader`);
   console.log(
@@ -357,6 +416,7 @@ function main() {
   // Load terms FIRST - staged_documents have FK to terms
   loadTerms(!isLocal);
   loadSourceRecords(!isLocal);
+  loadCanonicalDocuments(!isLocal);
   loadStagedDocuments(!isLocal);
   loadStagedPersonRefs(!isLocal);
   loadReviewDecisions(!isLocal);

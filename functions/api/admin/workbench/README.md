@@ -97,7 +97,7 @@ Migration `db/migrations/003_workbench_extensions.sql`:
 ./scripts/migrate.sh remote
 
 # Load pipeline JSONL into remote D1
-node scripts/openlgu/load-pipeline-to-d1.mjs --remote
+node scripts/openlgu/load-pipeline-to-d1.mjs --remote --confirm-meycauayan
 ```
 
 Local dev against JSONL (no D1) uses the standalone server:

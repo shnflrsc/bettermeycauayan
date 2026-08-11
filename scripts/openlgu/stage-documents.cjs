@@ -4,8 +4,8 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const DEFAULT_INPUT = 'pipeline/openlgu/source-records.jsonl';
-const DEFAULT_TERMS = 'pipeline/openlgu/reference/terms.json';
-const DEFAULT_ROSTER = 'pipeline/openlgu/reference/term-roster.json';
+const DEFAULT_TERMS = 'pipeline/meycauayan/reference/terms.json';
+const DEFAULT_ROSTER = 'pipeline/meycauayan/reference/term-roster.json';
 const DEFAULT_DOCUMENTS_OUTPUT = 'pipeline/openlgu/staged-documents.jsonl';
 const DEFAULT_PERSON_REFS_OUTPUT = 'pipeline/openlgu/staged-person-refs.jsonl';
 
@@ -297,7 +297,7 @@ function normalizeSourceFields(row, sourceKey, terms) {
   const normalized = { ...row };
   const isOld = /\(old\)/i.test(normalized.combined_title_number || '');
 
-  if (sourceKey === 'resolutions') {
+  if (sourceKey === 'resolutions' && normalized.combined_title_number) {
     normalized.number = extractNumberFromCombined(
       normalized.combined_title_number
     );
@@ -316,7 +316,10 @@ function normalizeSourceFields(row, sourceKey, terms) {
     if (author && !normalized.raw_author_text) {
       normalized.raw_author_text = author;
     }
-  } else if (sourceKey === 'executive_orders') {
+  } else if (
+    sourceKey === 'executive_orders' &&
+    normalized.combined_title_number
+  ) {
     normalized.number = extractNumberFromCombined(
       normalized.combined_title_number
     );
@@ -333,10 +336,28 @@ function toStagedDocument(sourceRecord, terms) {
   const row = normalizeSourceFields(rawRow, sourceRecord.source_key, terms);
   const documentType = normalizeType(row.type);
   const dateEnacted = String(row.date_enacted ?? '').trim();
+  const yearMatch = [
+    dateEnacted,
+    row.number,
+    row.source_filename,
+    sourceRecord.raw_text?.slice(0, 15000),
+  ]
+    .filter(Boolean)
+    .join(' ')
+    .match(/(?:OF|SERIES\s*OF|[-_ ])(20\d{2})\b/i);
+  const inferredYear = yearMatch ? Number(yearMatch[1]) : null;
+  const termFromYear = inferredYear
+    ? terms.find(candidate => {
+        const startYear = new Date(candidate.start_date).getFullYear();
+        const endYear = new Date(candidate.end_date).getFullYear();
+        return inferredYear >= startYear && inferredYear <= endYear;
+      })?.id || ''
+    : '';
   const termId =
     String(row.term_id ?? '').trim() ||
     inferTermId(dateEnacted, terms) ||
-    String(row._term_from_number ?? '').trim();
+    String(row._term_from_number ?? '').trim() ||
+    termFromYear;
   const normalizedNumber = normalizeNumber(row.number);
   const missing = [];
 
@@ -349,6 +370,7 @@ function toStagedDocument(sourceRecord, terms) {
   return {
     id: `staged_${sourceRecord.id.replace(/^source_/, '')}`,
     source_record_id: sourceRecord.id,
+    source_filename: String(row.source_filename ?? '').trim(),
     candidate_document_id: String(row.id ?? '').trim() || null,
     document_type: documentType,
     number: String(row.number ?? '').trim(),
@@ -364,7 +386,8 @@ function toStagedDocument(sourceRecord, terms) {
     seconder_text: String(row.seconded_by ?? '').trim(),
     publication_status: 'active',
     verification_state: 'unverified',
-    confidence_score: null,
+    confidence_score:
+      typeof row.ocr_confidence === 'number' ? row.ocr_confidence : null,
     staging_status: missing.length ? 'needs_review' : 'new',
     review_reason: missing.length ? `missing:${missing.join(',')}` : null,
     turnover_marker: hasTurnoverMarker(rawRow),
