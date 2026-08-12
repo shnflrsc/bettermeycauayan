@@ -54,7 +54,7 @@ BetterMeycauayan can be adapted for other Local Government Units (LGUs) in the P
 | `lgu.type` | LGU type | "municipality" or "city" |
 | `lgu.officialWebsite` | Official LGU website | "https://meycauayan.gov.ph" |
 | `portal.name` | Portal name | "BetterMeycauayan" |
-| `portal.baseUrl` | Portal base URL | "https://bettermeycauayan.pages.dev" |
+| `portal.baseUrl` | Portal base URL | "https://bettermeycauayan.org" |
 | `portal.tagline` | Portal tagline | "Community Powered Meycauayan Portal" |
 
 **Note:** See [`FORKING.md`](./FORKING.md) for comprehensive forking instructions including database setup for legislative data.
@@ -249,7 +249,7 @@ Its membership includes:
 - **City Health Office**: Public health services
 - **City Veterinary Office**: Animal health and veterinary services
 
-See the [Government Directory](https://bettermeycauayan.pages.dev/government) on the live site for department listings and contact information.
+See the [Government Directory](https://bettermeycauayan.org/government) on the live site for department listings and contact information.
 
 ---
 
@@ -318,7 +318,7 @@ BetterMeycauayan aggregates data from multiple sources:
 ## 📞 Contact and Support
 
 ### For Meycauayan Residents
-- **Website**: https://bettermeycauayan.pages.dev
+- **Website**: https://bettermeycauayan.org
 - **GitHub Issues**: Report bugs or suggest features at [github.com/shnflrsc/bettermeycauayan/issues](https://github.com/shnflrsc/bettermeycauayan/issues)
 - **Community**: Join our community contributions via the "Contribute" page on the portal
 
