@@ -9,7 +9,6 @@ import {
   Scroll,
   Waves,
   House,
-  Swords,
   Gem,
 } from 'lucide-react';
 
@@ -25,7 +24,6 @@ const ICON_MAP: Record<string, LucideIcon> = {
   Gavel,
   MapPin,
   House,
-  Swords,
   Gem,
 };
 
@@ -87,12 +85,12 @@ export default function TimelineSection() {
           </div>
 
           {/* --- RIGHT: Highlights --- */}
-          <div className='hidden space-y-3 lg:block'>
+          <div className='space-y-3'>
             {visibleHighlights.map((item, idx) => {
               const Icon = ICON_MAP[item.icon] || Waves;
               return (
                 <div
-                  key={idx}
+                  key={item.title}
                   className='duration-300 group animate-in fade-in slide-in-from-right-4'
                   style={{ animationDelay: `${idx * 50}ms` }}
                 >
