@@ -3839,7 +3839,7 @@
       ]
     },
     {
-      "service_number": "CC-232",
+      "service_number": "CC-232-ER",
       "service_name": "Emergency Department",
       "plain_language_name": "Emergency Department",
       "office_division": "Ospital ng Meycauayan",
@@ -3880,7 +3880,7 @@
       "person_responsible": ["Emergency physician", "Emergency nurse", "CMDC"]
     },
     {
-      "service_number": "CC-232",
+      "service_number": "CC-232-IP",
       "service_name": "Inpatient Department",
       "plain_language_name": "Inpatient Department",
       "office_division": "Ospital ng Meycauayan",

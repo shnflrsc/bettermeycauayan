@@ -5862,7 +5862,7 @@
   {
     "service": "Emergency Department",
     "slug": "emergency-department",
-    "serviceNumber": "CC-232",
+    "serviceNumber": "CC-232-ER",
     "source": "citizens-charter",
     "type": "transaction",
     "officeDivision": "Ospital ng Meycauayan",
@@ -7249,7 +7249,7 @@
   {
     "service": "Inpatient Department",
     "slug": "inpatient-department",
-    "serviceNumber": "CC-232",
+    "serviceNumber": "CC-232-IP",
     "source": "citizens-charter",
     "type": "transaction",
     "officeDivision": "Ospital ng Meycauayan",
