@@ -46,7 +46,7 @@ export const Navbar: FC = () => {
 
   return (
     <nav
-      className='sticky top-0 z-50 border-b border-kapwa-border-weak bg-kapwa-bg-surface shadow-xs'
+      className='sticky top-0 z-[2000] border-b border-kapwa-border-weak bg-kapwa-bg-surface shadow-xs'
       role='navigation'
     >
       {/* 1. TOP BAR: Responsive & Aligned Right */}

@@ -263,7 +263,7 @@ export default function WeatherMapSection() {
           </Card>
 
           {/* Map Container */}
-          <div className='flex w-full flex-col overflow-hidden rounded-xl shadow-sm hover:shadow-md md:flex-[2.5]'>
+          <div className='relative z-0 isolate flex w-full flex-col overflow-hidden rounded-xl shadow-sm hover:shadow-md md:flex-[2.5]'>
             <div
               id='map-container'
               className='h-64 w-full md:flex-1'
