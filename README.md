@@ -7,6 +7,7 @@ This project is a city-focused fork of [BetterGov.ph](https://bettergov.ph), ada
 ---
 ### Inspirations
 
+BetterLB.org https://github.com/BetterLosBanos/betterlb
 BetterGov.PH https://github.com/bettergovph/bettergov
 BetterSolano.org https://github.com/BetterSolano/bettersolano
 Betterlocalgov https://github.com/iyanski/betterlocalgov
