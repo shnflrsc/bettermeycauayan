@@ -117,7 +117,12 @@ def is_incomplete_service(service: dict) -> bool:
 
     Returns True if service has "See document" placeholders
     """
-    incomplete_indicators = ["See document", "See document for details", "for details"]
+    incomplete_indicators = [
+        "See document",
+        "See document for details",
+        "See official service page",
+        "for details",
+    ]
 
     # Check various fields for incomplete indicators
     fields_to_check = [
@@ -134,11 +139,9 @@ def is_incomplete_service(service: dict) -> bool:
     has_requirements = "requirements" in service and len(service.get("requirements", [])) > 0
     has_client_steps = "client_steps" in service and len(service.get("client_steps", [])) > 0
 
-    # Services 1-8 should have detailed tables
-    service_number = service.get("service_number", "")
-    section = int(service_number.split('.')[0]) if service_number.split('.')[0].isdigit() else 99
-
-    if section <= 8 and not (has_requirements or has_client_steps):
+    # A public-service record is not complete until its requirements or process
+    # table has been transcribed, regardless of the service-number format.
+    if not (has_requirements or has_client_steps):
         return True
 
     return False
@@ -214,6 +217,21 @@ def convert_cc_service_to_service(cc_service: dict, category: dict, slug: str, m
         "whoMayAvail": cc_service.get("who_may_avail") if not is_incomplete else None,
         "dataComplete": not is_incomplete,
         "needsVerification": is_incomplete,
+        "description": f"Official service of {cc_service['office_division']}. Consult the linked Citizen's Charter page for the complete requirements, fees, and procedure.",
+        "officialReference": {
+            "edition": "2026 First Edition",
+            "pdfPages": str(cc_service.get("pdf_page", "")),
+            "charterPages": str(cc_service.get("charter_page", "")),
+        },
+        "sources": [
+            {
+                "name": "City Government of Meycauayan Citizen's Charter 2026 (1st Edition)",
+                "url": "https://meycauayan.gov.ph/wp-content/uploads/CITIZENS_CHARTER_2026_1ST_ED_MEYC.pdf",
+                "edition": "2026 First Edition",
+                "pdfPages": str(cc_service.get("pdf_page", "")),
+                "charterPages": str(cc_service.get("charter_page", "")),
+            }
+        ],
     }
 
     # Add detailed fields if available

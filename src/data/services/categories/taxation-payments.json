@@ -98,5 +98,409 @@
     ],
     "dataComplete": false,
     "needsVerification": true
+  },
+  {
+    "service": "Transport Terminal Trip Ticket & Fee Payment",
+    "slug": "transport-terminal-trip-ticket-fee-payment",
+    "deliveryChannel": "Walk-in",
+    "type": "transaction",
+    "description": "Issues trip tickets and collects per-trip terminal fees from public utility vehicles authorized to pick up commuters at the Meycauayan Common Transport Terminal.",
+    "officeSlug": ["city-economic-enterprise-management-office"],
+    "officeDivision": "City Economic Enterprise Management Office (Transport Division)",
+    "category": {
+      "name": "Taxation & Payments",
+      "slug": "taxation-payments"
+    },
+    "classification": "Simple",
+    "typeOfTransaction": "G2C – Government to Client",
+    "whoMayAvail": "Terminal drivers and operators",
+    "steps": [
+      "Request a trip ticket at the Meycauayan Common Transport Terminal.",
+      "Pay the applicable terminal fee and receive the Official Receipt."
+    ],
+    "requirements": [],
+    "detailedRequirements": [],
+    "clientSteps": [
+      {
+        "step": 1,
+        "action": "Request a trip ticket. CEEMO personnel will issue the ticket.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 2,
+        "action": "Pay the applicable terminal fee. CEEMO personnel will receive the payment and issue an Official Receipt.",
+        "processing_time": "2 minutes"
+      }
+    ],
+    "fees": {
+      "amount": "₱15–₱50 per trip",
+      "description": "The fee depends on the type and seating capacity of the public utility vehicle."
+    },
+    "feeSchedule": [
+      {
+        "name": "UV terminal fee",
+        "amount": "₱50.00 per trip",
+        "office": "City Economic Enterprise Management Office (Transport Division)"
+      },
+      {
+        "name": "PUJ terminal fee — 19 seats or fewer",
+        "amount": "₱15.00 per trip",
+        "office": "City Economic Enterprise Management Office (Transport Division)"
+      },
+      {
+        "name": "PUJ terminal fee — 20 seats or more",
+        "amount": "₱20.00 per trip",
+        "office": "City Economic Enterprise Management Office (Transport Division)"
+      }
+    ],
+    "processingTime": "7 minutes",
+    "personResponsible": [
+      "CEEMO assigned personnel",
+      "City Economic Enterprise Management Office"
+    ],
+    "relatedServices": [],
+    "quickInfo": {
+      "processingTime": "7 minutes",
+      "fee": "₱15–₱50 per trip",
+      "whoCanApply": "Terminal drivers and operators",
+      "appointmentType": "Walk-in"
+    },
+    "updatedAt": "2026-08-12",
+    "sources": [
+      {
+        "name": "City Government of Meycauayan Citizen's Charter 2026 (1st Edition)",
+        "url": "https://meycauayan.gov.ph/wp-content/uploads/CITIZENS_CHARTER_2026_1ST_ED_MEYC.pdf"
+      }
+    ],
+    "dataComplete": true,
+    "needsVerification": false
+  },
+  {
+    "service": "Meycauayan Convention Center Reservation",
+    "slug": "meycauayan-convention-center-reservation",
+    "deliveryChannel": "Walk-in",
+    "type": "transaction",
+    "description": "Allows members of the public to check availability, submit a Convention Request Form, and pay the applicable fees to reserve and use the City of Meycauayan Convention Center.",
+    "officeSlug": ["city-economic-enterprise-management-office"],
+    "officeDivision": "City Economic Enterprise Management Office (Market Office)",
+    "category": {
+      "name": "Taxation & Payments",
+      "slug": "taxation-payments"
+    },
+    "classification": "Simple",
+    "typeOfTransaction": "G2C – Government to Client",
+    "whoMayAvail": "General public",
+    "steps": [
+      "Verify the availability of the desired date with the City Economic Enterprise Management Office.",
+      "Complete and submit the Convention Request Form.",
+      "Pay the applicable reservation and rental fees and receive the Official Receipt."
+    ],
+    "requirements": [],
+    "detailedRequirements": [],
+    "clientSteps": [
+      {
+        "step": 1,
+        "action": "Verify the availability of the desired date with CEEMO. Assigned personnel will assist with the request to rent or use the convention center.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 2,
+        "action": "Fill out and submit the Convention Request Form. CEEMO personnel will review the completed form.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 3,
+        "action": "Pay the applicable rental fees. CEEMO personnel will receive the payment and issue an Official Receipt.",
+        "processing_time": "5 minutes"
+      }
+    ],
+    "fees": {
+      "amount": "₱1,000–₱6,000",
+      "description": "A ₱1,000 reservation fee applies. Rental charges vary according to the selected convention-center space."
+    },
+    "feeSchedule": [
+      {
+        "name": "Reservation fee",
+        "amount": "₱1,000",
+        "office": "City Economic Enterprise Management Office (Market Office)"
+      },
+      {
+        "name": "Third-floor rental",
+        "amount": "₱4,000",
+        "office": "City Economic Enterprise Management Office (Market Office)"
+      },
+      {
+        "name": "Second-floor rental",
+        "amount": "₱6,000",
+        "office": "City Economic Enterprise Management Office (Market Office)"
+      },
+      {
+        "name": "Executive office rental",
+        "amount": "₱1,500",
+        "office": "City Economic Enterprise Management Office (Market Office)"
+      },
+      {
+        "name": "Executive office with lobby rental",
+        "amount": "₱3,000",
+        "office": "City Economic Enterprise Management Office (Market Office)"
+      }
+    ],
+    "processingTime": "15 minutes",
+    "personResponsible": [
+      "Market Supervisor III",
+      "CEEMO assigned personnel",
+      "City Economic Enterprise Management Office"
+    ],
+    "relatedServices": [],
+    "quickInfo": {
+      "processingTime": "15 minutes",
+      "fee": "₱1,000–₱6,000",
+      "whoCanApply": "General public",
+      "appointmentType": "Walk-in"
+    },
+    "updatedAt": "2026-08-12",
+    "sources": [
+      {
+        "name": "City Government of Meycauayan Citizen's Charter 2026 (1st Edition)",
+        "url": "https://meycauayan.gov.ph/wp-content/uploads/CITIZENS_CHARTER_2026_1ST_ED_MEYC.pdf"
+      }
+    ],
+    "dataComplete": true,
+    "needsVerification": false
+  },
+  {
+    "service": "Calvario Public Cemetery Burial Space Application",
+    "slug": "calvario-public-cemetery-burial-space-application",
+    "deliveryChannel": "Walk-in",
+    "type": "transaction",
+    "description": "Allows relatives of deceased Meycauayan residents to check the availability of a niche or crypt, complete the burial application and agreement, and pay the applicable cemetery fee.",
+    "officeSlug": ["city-economic-enterprise-management-office"],
+    "officeDivision": "City Economic Enterprise Management Office (Public Cemetery Division)",
+    "category": {
+      "name": "Taxation & Payments",
+      "slug": "taxation-payments"
+    },
+    "classification": "Simple",
+    "typeOfTransaction": "G2C – Government to Client",
+    "whoMayAvail": "Relatives of deceased Meycauayan residents",
+    "steps": [
+      "Check the availability of a niche or crypt at Calvario Public Cemetery.",
+      "Complete and submit the burial application form.",
+      "Complete the Contract of Agreement.",
+      "Pay the applicable cemetery fee and receive the Official Receipt."
+    ],
+    "requirements": [
+      "Death Certificate (original and 1 photocopy)",
+      "Applicable Burial, Transfer, Exhumation, or Cremation Permit (original and 1 photocopy)",
+      "Contract of Agreement (original and 1 photocopy)"
+    ],
+    "detailedRequirements": [
+      {
+        "requirement": "Death Certificate (original and 1 photocopy)",
+        "where_to_secure": "Local Civil Registrar Office"
+      },
+      {
+        "requirement": "Applicable Burial, Transfer, Exhumation, or Cremation Permit (original and 1 photocopy)",
+        "where_to_secure": "City Health Office"
+      },
+      {
+        "requirement": "Contract of Agreement (original and 1 photocopy)",
+        "where_to_secure": "Public Cemetery Division"
+      }
+    ],
+    "clientSteps": [
+      {
+        "step": 1,
+        "action": "Check the availability of a niche or crypt. The cemetery caretaker will guide the client to an available space.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 2,
+        "action": "Fill out the burial application form for review by the cemetery caretaker.",
+        "processing_time": "7 minutes"
+      },
+      {
+        "step": 3,
+        "action": "Complete the Contract of Agreement for review.",
+        "processing_time": "8 minutes"
+      },
+      {
+        "step": 4,
+        "action": "Pay the applicable cemetery fee and receive the Official Receipt.",
+        "processing_time": "5 minutes"
+      }
+    ],
+    "fees": {
+      "amount": "₱300–₱10,000",
+      "description": "Charges depend on whether the applicant uses or renews a niche or crypt."
+    },
+    "feeSchedule": [
+      {
+        "name": "Apartment-type niche — initial five years",
+        "amount": "₱10,000",
+        "office": "Public Cemetery Division"
+      },
+      {
+        "name": "Apartment-type niche — annual renewal",
+        "amount": "₱1,000 per year",
+        "office": "Public Cemetery Division"
+      },
+      {
+        "name": "Crypt — initial five years",
+        "amount": "₱1,500",
+        "office": "Public Cemetery Division"
+      },
+      {
+        "name": "Crypt — annual renewal",
+        "amount": "₱300 per year",
+        "office": "Public Cemetery Division"
+      }
+    ],
+    "processingTime": "25 minutes",
+    "personResponsible": [
+      "Cemetery Caretaker",
+      "City Economic Enterprise Management Office"
+    ],
+    "relatedServices": ["calvario-public-cemetery-cremation-service"],
+    "quickInfo": {
+      "processingTime": "25 minutes",
+      "fee": "₱300–₱10,000",
+      "whoCanApply": "Relatives of deceased Meycauayan residents",
+      "appointmentType": "Walk-in"
+    },
+    "updatedAt": "2026-08-12",
+    "sources": [
+      {
+        "name": "City Government of Meycauayan Citizen's Charter 2026 (1st Edition)",
+        "url": "https://meycauayan.gov.ph/wp-content/uploads/CITIZENS_CHARTER_2026_1ST_ED_MEYC.pdf"
+      }
+    ],
+    "dataComplete": true,
+    "needsVerification": false
+  },
+  {
+    "service": "Calvario Public Cemetery Cremation Service",
+    "slug": "calvario-public-cemetery-cremation-service",
+    "deliveryChannel": "Walk-in",
+    "type": "transaction",
+    "description": "Processes applications, approval, payment, and scheduling for cremation services at Calvario Public Cemetery.",
+    "officeSlug": [
+      "city-economic-enterprise-management-office",
+      "office-of-the-city-mayor"
+    ],
+    "officeDivision": "City Economic Enterprise Management Office (Public Cemetery Division) / Office of the City Mayor",
+    "category": {
+      "name": "Taxation & Payments",
+      "slug": "taxation-payments"
+    },
+    "classification": "Simple",
+    "typeOfTransaction": "G2C – Government to Client",
+    "whoMayAvail": "Relatives of the deceased",
+    "steps": [
+      "Complete the Cremation Authorization Form and submit all requirements to the Calvario Public Cemetery office.",
+      "Proceed to the Office of the City Mayor for approval.",
+      "Complete the Contract of Agreement.",
+      "Pay the cremation fee and receive the Official Receipt.",
+      "Wait for confirmation of the cremation schedule."
+    ],
+    "requirements": [
+      "Duly accomplished Cremation Authorization Form",
+      "Death Certificate (original and 1 photocopy)",
+      "Cremation Permit (original and 1 photocopy)",
+      "Valid IDs of the applicant and two witnesses (photocopies)",
+      "Residence Certificate of the applicant (original)",
+      "Embalmer Certificate (original), if the funeral wake exceeds seven days",
+      "Payment of cremation fees"
+    ],
+    "detailedRequirements": [
+      {
+        "requirement": "Duly accomplished Cremation Authorization Form",
+        "where_to_secure": "Calvario Public Cemetery"
+      },
+      {
+        "requirement": "Death Certificate (original and 1 photocopy)",
+        "where_to_secure": "Local Civil Registrar"
+      },
+      {
+        "requirement": "Cremation Permit (original and 1 photocopy)",
+        "where_to_secure": "City Health Office"
+      },
+      {
+        "requirement": "Valid IDs of the applicant and two witnesses (photocopies)",
+        "where_to_secure": "Provided by the client"
+      },
+      {
+        "requirement": "Residence Certificate of the applicant (original)",
+        "where_to_secure": "City Treasury Office"
+      },
+      {
+        "requirement": "Embalmer Certificate (original), if the funeral wake exceeds seven days",
+        "where_to_secure": "Funeral service provider"
+      },
+      {
+        "requirement": "Payment of cremation fees",
+        "where_to_secure": "Public Cemetery Division"
+      }
+    ],
+    "clientSteps": [
+      {
+        "step": 1,
+        "action": "Complete the Cremation Authorization Form and submit it with all requirements to the Calvario Public Cemetery office for checking.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 2,
+        "action": "Proceed to the Office of the City Mayor for verification and approval.",
+        "processing_time": "15 minutes"
+      },
+      {
+        "step": 3,
+        "action": "Complete the Contract of Agreement.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 4,
+        "action": "Pay the cremation fee and receive the Official Receipt.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": 5,
+        "action": "Wait while the cremation service is entered into the schedule.",
+        "processing_time": "3 minutes"
+      }
+    ],
+    "fees": {
+      "amount": "₱10,000",
+      "description": "Cremation service fee"
+    },
+    "feeSchedule": [
+      {
+        "name": "Cremation service",
+        "amount": "₱10,000",
+        "office": "Public Cemetery Division"
+      }
+    ],
+    "processingTime": "33 minutes",
+    "personResponsible": [
+      "Cemetery Caretaker",
+      "Executive Assistant, Office of the City Mayor",
+      "City Economic Enterprise Management Office"
+    ],
+    "relatedServices": ["calvario-public-cemetery-burial-space-application"],
+    "quickInfo": {
+      "processingTime": "33 minutes",
+      "fee": "₱10,000",
+      "whoCanApply": "Relatives of the deceased",
+      "appointmentType": "Walk-in"
+    },
+    "updatedAt": "2026-08-12",
+    "sources": [
+      {
+        "name": "City Government of Meycauayan Citizen's Charter 2026 (1st Edition)",
+        "url": "https://meycauayan.gov.ph/wp-content/uploads/CITIZENS_CHARTER_2026_1ST_ED_MEYC.pdf"
+      }
+    ],
+    "dataComplete": true,
+    "needsVerification": false
   }
 ]

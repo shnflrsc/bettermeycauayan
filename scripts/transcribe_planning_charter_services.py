@@ -1,0 +1,41 @@
+import json
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+PATH=ROOT/"src/data/citizens-charter/citizens-charter.json"
+staff=["Draftsman I","Project Development Officer I","Project Development Officer II","Planning Officer II","Economic Researcher","Acting City Planning and Development Coordinator"]
+def r(name,source): return {"requirement":name,"where_to_secure":source}
+
+updates={
+"Locational Clearance for Business Permit":{
+ "plain_language_name":"Business Locational and Zoning Clearance","classification":"Simple","type_of_transaction":"G2C/G2B – Government to Client / Government to Business","who_may_avail":"All",
+ "requirements":[r("Notarized application form (2 originals)","City Planning and Development Office"),r("Location or vicinity map showing the exact site and landmarks (original)","Licensed Engineer or Architect, or Google Maps"),r("Transfer Certificate of Title, Tax Declaration, and Deed of Conveyance, as applicable","Owner, Registry of Deeds, City Assessor, or Notary Public"),r("Lessor's Business Permit, Contract of Lease, authority letter with owner's ID, or Contract to Sell, when the applicant is not the owner","Property owner or lessor"),r("Barangay Business Clearance (1 photocopy)","Barangay Hall"),r("Homeowners' Association Clearance (1 photocopy), when applicable","Subdivision or condominium association"),r("Floor plan (1 original)","Applicant or licensed professional"),r("DTI registration for sole proprietorship, or SEC registration and incorporation/partnership papers","DTI or SEC"),r("Product description, manufacturing process flowchart, and ECC/CNC for industrial or agro-industrial projects","Applicant and DENR")],
+ "client_steps":[{"step":1,"action":"Submit the notarized application and requirements for review and City Mayor approval.","processing_time":"2 days and 15 minutes"},{"step":2,"action":"Assist during the scheduled ocular inspection.","processing_time":"1 hour"},{"step":3,"action":"Receive the Order of Payment, pay at the City Treasurer, and present the Official Receipt.","processing_time":"7 minutes"},{"step":4,"action":"Receive the prepared Locational Clearance.","processing_time":"10 minutes"}],
+ "fees":{"amount":"Varies","description":"Refer to the official Zoning Schedule of Fees."},"processing_time":"2 days, 1 hour, and 32 minutes","person_responsible":staff+["City Mayor","Office of the City Treasurer"]},
+"Data (Socio-Economic Profile/Statistical Data/Maps/Others) Request":{
+ "plain_language_name":"Meycauayan Data and Map Request","classification":"Simple","type_of_transaction":"G2C/G2B/G2G – Government to Client / Government to Business / Government to Government","who_may_avail":"All",
+ "requirements":[r("Endorsed request letter stating the scope and purpose of the research, addressed to the City Mayor and attention to the City Administrator","Applicant and Office of the City Administrator"),r("Scanned request letter for email applications","Applicant")],
+ "client_steps":[{"step":1,"action":"Submit the endorsed request and sign the logbook, or email the scanned request to cupdo@meycauayan.gov.ph.","processing_time":"5 minutes"},{"step":2,"action":"Receive the requested data personally or by email.","processing_time":"30 minutes"}],"fees":{"amount":"None","description":"No fee"},"processing_time":"35 minutes","person_responsible":["Economic Researcher","Acting City Planning and Development Coordinator"]},
+"Certificate/Endorsement of Barangay Annual Investment Program (AIP) Issuance":{
+ "plain_language_name":"Barangay Annual Investment Program Endorsement","classification":"Simple","type_of_transaction":"G2G – Government to Government","who_may_avail":"Barangay Secretaries and Barangay Treasurers",
+ "requirements":[r("Endorsement Letter (1 original)","Barangay Hall"),r("Barangay Development Council Annual Investment Plan (1 original)","Barangay Hall"),r("BDC Resolution endorsing the AIP (1 original)","Barangay Hall"),r("Sangguniang Barangay Resolution adopting the AIP (1 original)","Barangay Hall"),r("Sangguniang Barangay Resolution and list of programs, projects, and activities for each mandatory fund (1 original each)","Barangay Hall"),r("Transmittal Letter (1 original)","Barangay Hall")],
+ "client_steps":[{"step":1,"action":"Submit all documents for review and preparation of the endorsement.","processing_time":"15 minutes"},{"step":2,"action":"Receive the certificate or endorsement.","processing_time":"Included above"}],"fees":{"amount":"None","description":"No fee"},"processing_time":"15 minutes","person_responsible":["Planning Officer II","Acting City Planning and Development Coordinator"]},
+"Preliminary Approval and Locational Clearance (PALC) Issuance":{
+ "plain_language_name":"Subdivision Preliminary Approval and Locational Clearance","classification":"Highly Technical","type_of_transaction":"G2B – Government to Business","who_may_avail":"Real estate developers",
+ "requirements":[r("Application form (3 copies)","City Planning and Development Office"),r("Complete subdivision plans (15 sets): site development, road network, topographic, grading, water, drainage, and electrical-post layouts","Applicant and licensed professionals"),r("Vicinity map showing adjoining land uses (15 photocopies)","Applicant or Geodetic Engineer"),r("Transfer Certificate of Title and Tax Declaration (15 photocopies each)","Registry of Deeds, owner, or City Assessor"),r("DAR Clearance, when applicable (15 photocopies)","Department of Agrarian Reform"),r("Site Zoning Certification (15 photocopies)","City Planning and Development Office")],
+ "client_steps":[{"step":1,"action":"Submit the notarized application, plans, and documents for evaluation and inspection scheduling.","processing_time":"30 minutes"},{"step":2,"action":"Assist during site inspection and await the committee hearing and inspection report.","processing_time":"1 hour and 10 minutes"},{"step":3,"action":"Attend the committee hearing and any subsequent ocular inspection while the subdivision project is reviewed.","processing_time":"2 weeks and 1 day"},{"step":4,"action":"After approval, receive the Order of Payment, pay the zoning fee, and submit the receipt.","processing_time":"7 minutes"},{"step":5,"action":"Wait for preparation and mayoral signature, then receive the PALC and sealed schematic plan.","processing_time":"3 hours and 10 minutes"}],
+ "fees":{"amount":"Varies","description":"Refer to the official Zoning Schedule of Fees."},"processing_time":"2 weeks, 4 hours, and 57 minutes","person_responsible":staff+["Sangguniang Panlungsod","City Mayor","Office of the City Treasurer"]},
+"Site Zoning Classification Certificate Issuance":{
+ "plain_language_name":"Site Zoning Classification Certificate","classification":"Simple","type_of_transaction":"G2C/G2B – Government to Citizen / Government to Business","who_may_avail":"Real estate developers, business owners, prospective buyers, and students",
+ "requirements":[r("Application form (1 original)","City Planning and Development Office"),r("Request letter stating the purpose (1 original)","Applicant"),r("Location or vicinity map (1 original)","Applicant or Geodetic Engineer"),r("Transfer Certificate of Title (1 photocopy)","Registry of Deeds or applicant"),r("Tax Declaration (1 photocopy)","City Assessor or applicant")],
+ "client_steps":[{"step":1,"action":"Submit the application and documents for evaluation.","processing_time":"2 minutes"},{"step":2,"action":"Receive the Order of Payment, pay at the City Treasurer, and present the Official Receipt.","processing_time":"7 minutes"},{"step":3,"action":"Wait for preparation and signature, then receive the certificate.","processing_time":"15 minutes"}],"fees":{"amount":"Varies","description":"Refer to the official Zoning Schedule of Fees."},"processing_time":"24 minutes","person_responsible":staff+["Office of the City Treasurer"]},
+}
+
+data=json.loads(PATH.read_text(encoding="utf-8")); found=set()
+for service in data["services"]:
+    name=service.get("service_name")
+    if name in updates: service.update(updates[name]); found.add(name)
+missing=set(updates)-found
+if missing: raise SystemExit(f"Services not found: {sorted(missing)}")
+PATH.write_text(json.dumps(data,indent=2,ensure_ascii=False),encoding="utf-8")
+print(f"Transcribed {len(found)} City Planning services")

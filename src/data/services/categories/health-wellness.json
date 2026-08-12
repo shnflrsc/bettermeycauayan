@@ -239,5 +239,170 @@
     ],
     "dataComplete": false,
     "needsVerification": true
+  },
+  {
+    "service": "City Health Units",
+    "slug": "city-health-units",
+    "deliveryChannel": "Walk-in",
+    "type": "transaction",
+    "description": "Provides accessible medical consultations, dental consultations, oral prophylaxis, tooth extraction, patient assessment, and related primary health services through Meycauayan's City Health Units.",
+    "officeSlug": ["city-health-office"],
+    "officeDivision": "Office of the City Health Officer",
+    "category": {
+      "name": "Health & Wellness",
+      "slug": "health-wellness"
+    },
+    "classification": "Simple",
+    "typeOfTransaction": "G2C – Government to Citizen",
+    "whoMayAvail": "General public",
+    "steps": [
+      "Visit the City Health Unit serving your barangay and proceed to the Health Information Desk.",
+      "Provide your personal information, chief complaint, and vital signs for recording.",
+      "Secure a queue number and wait to be called.",
+      "Undergo the appropriate medical or dental consultation and treatment.",
+      "Follow the health professional's instructions and prescribed treatment."
+    ],
+    "requirements": [],
+    "detailedRequirements": [],
+    "clientSteps": [
+      {
+        "step": "Medical 1",
+        "action": "Proceed to the Health Information Desk for record verification. Staff will retrieve the existing Individual Treatment Record or create a new patient record.",
+        "processing_time": "2 minutes"
+      },
+      {
+        "step": "Medical 2",
+        "action": "Provide personal information at the designated Health Information Desk. Staff will record the patient profile, chief complaint, and vital signs.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": "Medical 3",
+        "action": "Secure a number and wait to be called. Numbers are provided on a first-come, first-served basis and in accordance with accessibility laws.",
+        "processing_time": "1 minute"
+      },
+      {
+        "step": "Medical 4",
+        "action": "Undergo medical consultation. The physician will assess and examine the patient based on the Individual Treatment Record and presenting signs and symptoms.",
+        "processing_time": "Included in the 30-minute clinical assessment"
+      },
+      {
+        "step": "Medical 5",
+        "action": "Wait for the result of the medical examination. The physician may interpret laboratory results, issue a medical certificate, or request laboratory examinations when necessary.",
+        "processing_time": "30 minutes"
+      },
+      {
+        "step": "Medical 6",
+        "action": "Follow the doctor's order and receive medical advice or a prescription when appropriate.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": "Dental 1",
+        "action": "Proceed to the Health Information Desk for record verification. Staff will retrieve the existing Individual Treatment Record or create a new patient record.",
+        "processing_time": "1 minute"
+      },
+      {
+        "step": "Dental 2",
+        "action": "Provide personal information at the designated Health Information Desk. Staff will record the patient profile, chief complaint, and vital signs.",
+        "processing_time": "5 minutes"
+      },
+      {
+        "step": "Dental 3",
+        "action": "Secure a number at the Health Information Desk and wait to be called on a first-come, first-served basis.",
+        "processing_time": "1 minute"
+      },
+      {
+        "step": "Dental 4",
+        "action": "Undergo a dental consultation and examination by the City Health Dentist.",
+        "processing_time": "10 minutes"
+      },
+      {
+        "step": "Dental 5",
+        "action": "Undergo oral prophylaxis when necessary.",
+        "processing_time": "30 minutes"
+      },
+      {
+        "step": "Dental 6",
+        "action": "Undergo tooth extraction with topical or local anesthesia when necessary.",
+        "processing_time": "30 minutes"
+      },
+      {
+        "step": "Dental 7",
+        "action": "Follow the dentist's order and receive dental advice or a prescription when appropriate.",
+        "processing_time": "5 minutes"
+      }
+    ],
+    "fees": {
+      "amount": "None",
+      "description": "No fee"
+    },
+    "processingTime": "Medical services: 43 minutes; dental services: up to 1 hour and 22 minutes",
+    "personResponsible": [
+      "Nurse",
+      "Midwife",
+      "Barangay Health Worker",
+      "Dental Aide",
+      "City Health Officer",
+      "City Health Physician",
+      "City Health Dentist",
+      "Office of the City Health Officer"
+    ],
+    "relatedServices": [],
+    "faqs": [
+      {
+        "question": "City Health Unit 1",
+        "answer": "Head: Dra. Cristina Condecido, CHP. Serves Bayugo and St. Francis Gasak."
+      },
+      {
+        "question": "City Health Unit 2",
+        "answer": "Head: Dr. Ernesto Mochtar Curioso, CHP. Serves Caingin, Calvario, Hulo, Liputan, Poblacion, Saluysoy, Tugatog, Ubihan, and Zamora."
+      },
+      {
+        "question": "City Health Unit 3",
+        "answer": "Head: Dra. Fe Victoria Palaganas, CHP. Serves Iba, Pantoc, Libtong, and Langka."
+      },
+      {
+        "question": "City Health Unit 4",
+        "answer": "Head: Dr. Kalir Soriano, CHP. Serves Malhacan and Lawa."
+      },
+      {
+        "question": "City Health Unit 5",
+        "answer": "Head: Dra. Elaine Therese, CHP. Serves Bagbaguin, Bahay Pare, Camalig, Pajo, and Perez."
+      },
+      {
+        "question": "City Health Unit 6",
+        "answer": "Head: Dra. Carolina Fernandez, CHP. Serves Bancal, Banga, and Longos."
+      },
+      {
+        "question": "City Health Unit 7",
+        "answer": "Head: Dr. Ferdinand Baribal, CHP. Serves Pandayan."
+      },
+      {
+        "question": "City Health Unit 8",
+        "answer": "Head: Dr. Merie Jane Berboso. Serves Lawa and Caingin."
+      },
+      {
+        "question": "City Health Unit 9",
+        "answer": "Head: Dr. Nikki Solano. Serves Saluysoy and Ubihan."
+      },
+      {
+        "question": "City Health Unit 10",
+        "answer": "Head: Dr. Seren Lunaria. Serves Bahay Pare, Camalig, and Pajo."
+      }
+    ],
+    "quickInfo": {
+      "processingTime": "Medical: 43 minutes; dental: up to 1 hour and 22 minutes",
+      "fee": "Free",
+      "whoCanApply": "General public",
+      "appointmentType": "Walk-in"
+    },
+    "updatedAt": "2026-08-12",
+    "sources": [
+      {
+        "name": "City Government of Meycauayan Citizen's Charter 2026 (1st Edition)",
+        "url": "https://meycauayan.gov.ph/wp-content/uploads/CITIZENS_CHARTER_2026_1ST_ED_MEYC.pdf"
+      }
+    ],
+    "dataComplete": true,
+    "needsVerification": false
   }
 ]
