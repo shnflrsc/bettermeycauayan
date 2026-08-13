@@ -15,25 +15,8 @@ import { useTranslation } from 'react-i18next';
 import { Badge } from '@/components/ui/Badge';
 import SearchInput from '@/components/ui/SearchInput';
 
-import servicesData from '@/data/services/services.json';
 import mergedServicesData from '@/data/citizens-charter/merged-services.json';
-
-interface Service {
-  slug: string;
-  service?: string;
-  office_name?: string;
-  office?: string;
-  description?: string;
-  category?: { name: string; slug: string };
-  subcategory?: { name: string; slug: string };
-}
-
-interface MergedService {
-  slug: string;
-  service: string;
-  plainLanguageName?: string;
-  officeSlug: string;
-}
+import type { Service } from '@/types/servicesTypes';
 
 interface QuickAccessCard {
   title: string;
@@ -51,14 +34,13 @@ const Hero: FC = () => {
   const showResults = query.trim().length > 0;
 
   const fuse = useMemo(() => {
-    return new Fuse(servicesData as Service[], {
+    return new Fuse(mergedServicesData as Service[], {
       keys: [
         'service',
-        'office_name',
-        'office',
-        'description',
+        'plainLanguageName',
         'category.name',
-        'subcategory.name',
+        'officeDivision',
+        'description',
       ],
       threshold: 0.3,
     });
@@ -77,11 +59,6 @@ const Hero: FC = () => {
   };
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    console.log('keydown fired:', e.key, {
-      showResults,
-      visibleResults,
-      activeIndex,
-    });
     if (!showResults || visibleResults.length === 0) return;
     if (e.key === 'ArrowDown') {
       e.preventDefault();
@@ -92,12 +69,12 @@ const Hero: FC = () => {
         i => (i - 1 + visibleResults.length) % visibleResults.length
       );
     } else if (e.key === 'Enter' && activeIndex >= 0) {
-      navigate(`services/${visibleResults[activeIndex].slug}`);
+      navigate(`/services/${visibleResults[activeIndex].slug}`);
     }
   };
 
   const randomServices = useMemo(() => {
-    const services = mergedServicesData as MergedService[];
+    const services = mergedServicesData as Service[];
     const servicesWithPlainNames = services.filter(s => s.plainLanguageName);
     const shuffled = [...servicesWithPlainNames].sort(
       () => Math.random() - 0.5
@@ -199,7 +176,7 @@ const Hero: FC = () => {
                       }`}
                     >
                       <strong>
-                        {hit.service || hit.office_name || hit.office}
+                        {hit.plainLanguageName || hit.service}
                       </strong>
                       {hit.description && (
                         <p className='text-kapwa-text-support kapwa-body-sm-default'>

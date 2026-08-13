@@ -14,7 +14,11 @@ test.describe('Home Page', () => {
     const searchInput = page.locator('input[placeholder*="Search"]');
     await searchInput.fill('health');
     await page.waitForTimeout(300);
-    await expect(page.locator('a[href*="/services/"]')).toHaveCount(1);
+    const searchResults = page.locator(
+      'ul[role=listbox] a[href*="/services/"]'
+    );
+    await expect(searchResults.first()).toBeVisible();
+    expect(await searchResults.count()).toBeGreaterThanOrEqual(1);
 
     // Clear search and verify quick access cards
     await searchInput.fill('');
