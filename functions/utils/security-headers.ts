@@ -67,6 +67,7 @@ export const CSP_STRICT =
   "img-src 'self' data: https:; " +
   "font-src 'self' data:; " +
   "connect-src 'self'; " +
+  "frame-src 'self' https://www.facebook.com; " +
   "frame-ancestors 'none';";
 
 /**
@@ -84,6 +85,7 @@ export const CSP_DEVELOPMENT =
   "img-src 'self' data: https: http://localhost:*; " +
   "font-src 'self' data:; " +
   "connect-src 'self' http://localhost:* ws://localhost:* ws://localhost:*; " +
+  "frame-src 'self' https://www.facebook.com; " +
   "frame-ancestors 'none';";
 
 /**

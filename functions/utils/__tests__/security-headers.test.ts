@@ -56,6 +56,7 @@ describe('Security Headers', () => {
     it('should have strict CSP for production', () => {
       expect(CSP_STRICT).toContain("default-src 'self'");
       expect(CSP_STRICT).toContain("script-src 'self' 'unsafe-inline'");
+      expect(CSP_STRICT).toContain("frame-src 'self' https://www.facebook.com");
       expect(CSP_STRICT).toContain("frame-ancestors 'none'");
     });
 
@@ -63,6 +64,9 @@ describe('Security Headers', () => {
       expect(CSP_DEVELOPMENT).toContain("default-src 'self' 'unsafe-eval'");
       expect(CSP_DEVELOPMENT).toContain('http://localhost:*');
       expect(CSP_DEVELOPMENT).toContain('ws://localhost:*');
+      expect(CSP_DEVELOPMENT).toContain(
+        "frame-src 'self' https://www.facebook.com"
+      );
     });
   });
 

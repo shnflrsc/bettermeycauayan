@@ -116,7 +116,7 @@ export const Navbar: FC = () => {
               <div className='text-lg font-black tracking-tighter leading-none text-kapwa-text-strong md:text-xl'>
                 {config.portal.name}
               </div>
-              <div className='line-clamp-2 text-[9px] leading-tight font-medium text-kapwa-text-support md:line-clamp-1 md:text-xs md:leading-normal'>
+              <div className='hidden text-[9px] leading-tight font-medium text-kapwa-text-support sm:line-clamp-1 sm:block md:text-xs md:leading-normal'>
                 Community Portal for {config.lgu.fullName}
               </div>
             </div>

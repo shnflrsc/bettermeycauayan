@@ -3,13 +3,15 @@ import { FC } from 'react';
 // import InfoWidgets from '../components/home/InfoWidgets';
 // import PromotionBanner from '../components/home/PromotionBanner';
 // import JoinUsBanner from '../components/home/JoinUsBanner';
-import GovernmentSection from '@/components/home/GovernmentSection';
 import Hero from '@/components/home/Hero';
+import TimelineSection from '@/components/home/TimelineSection';
+import GovernmentSection from '@/components/home/GovernmentSection';
+import NewsSection from '@/components/home/NewsSection';
+import OpenLGUSection from '@/components/home/OpenLGUSection';
+import AboutPortalSection from '@/components/home/AboutPortalSection';
+import PublicDataSection from '@/components/home/PublicDataSection';
 // import NewsSection from '@/components/home/NewsSection';
 // import JoinUsStrip from '../components/home/JoinUsStrip';
-import ServicesSection from '@/components/home/ServicesSection';
-import TimelineSection from '@/components/home/TimelineSection';
-import WeatherMapSection from '@/components/home/WeatherMapSection';
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
 
 const Home: FC = () => {
@@ -21,24 +23,29 @@ const Home: FC = () => {
           <Hero />
         </ErrorBoundary>
 
-        {/* Using space-y-16 for consistent section spacing per design system */}
-        <div className='space-y-16 py-12'>
-          <ErrorBoundary name='Services'>
-            <ServicesSection />
+        <div>
+          <ErrorBoundary name='CityNews'>
+            <NewsSection />
           </ErrorBoundary>
 
-          <ErrorBoundary name='Timeline'>
+          <ErrorBoundary name='GovernmentDirectory'>
+            <GovernmentSection />
+          </ErrorBoundary>
+
+          <ErrorBoundary name='PublicData'>
+            <PublicDataSection />
+          </ErrorBoundary>
+
+          <ErrorBoundary name='OpenLGU'>
+            <OpenLGUSection />
+          </ErrorBoundary>
+
+          <ErrorBoundary name='CityHistory'>
             <TimelineSection />
           </ErrorBoundary>
 
-          <ErrorBoundary name='WeatherMap'>
-            <WeatherMapSection />
-          </ErrorBoundary>
-
-          {/* <NewsSection /> */}
-
-          <ErrorBoundary name='Government'>
-            <GovernmentSection />
+          <ErrorBoundary name='AboutPortal'>
+            <AboutPortalSection />
           </ErrorBoundary>
         </div>
       </div>

@@ -1,172 +1,105 @@
 import { Link } from 'react-router-dom';
 
-import { format, isValid } from 'date-fns';
 import {
-  AlertCircle,
   ArrowRightIcon,
-  BookOpenIcon,
-  BriefcaseIcon,
-  ClockIcon,
-  DollarSignIcon,
-  FileTextIcon,
-  HammerIcon,
-  HeartIcon,
-  LeafIcon,
-  LucideIcon,
-  ShieldCheck,
-  ShieldIcon,
-  UsersIcon,
+  Clock3Icon,
+  PhilippinePesoIcon,
+  ShieldCheckIcon,
 } from 'lucide-react';
 
-import { Badge } from '@/components/ui/Badge';
-import { Card, CardContent } from '@/components/ui/Card';
-
 import type { Service } from '@/types/servicesTypes';
-
-// Icons
-const categoryIcons: Record<string, LucideIcon> = {
-  'certificates-vital-records': FileTextIcon,
-  'business-licensing': BriefcaseIcon,
-  'business-trade-investment': BriefcaseIcon,
-  'taxation-assessment': DollarSignIcon,
-  'taxation-payments': DollarSignIcon,
-  'infrastructure-engineering': HammerIcon,
-  'infrastructure-public-works': HammerIcon,
-  'social-services': UsersIcon,
-  'social-services-assistance': UsersIcon,
-  'health-wellness': HeartIcon,
-  'agriculture-livelihood': LeafIcon,
-  'agriculture-economic-development': LeafIcon,
-  'environment-waste': LeafIcon,
-  'environment-natural-resources': LeafIcon,
-  'education-scholarship': BookOpenIcon,
-  'public-safety': ShieldIcon,
-  'public-safety-security': ShieldIcon,
-  'other-municipal': FileTextIcon,
-};
 
 interface ServiceCardProps {
   service: Service;
 }
 
 export default function ServiceCard({ service }: ServiceCardProps) {
-  const CategoryIcon = categoryIcons[service.category.slug] || FileTextIcon;
-  const hasValidDate =
-    service.updatedAt && isValid(new Date(service.updatedAt));
-  const isOfficialSource = service.source === 'citizens-charter';
-  const needsVerification = service.needsVerification === true;
-  const isTransaction = service.type === 'transaction';
+  const title = service.plainLanguageName || service.service;
+  const processingTime =
+    service.quickInfo?.processingTime || service.processingTime;
+  const fee = getFeeLabel(service);
 
   return (
     <Link
       to={`/services/${service.slug}`}
-      className='group min-h-[200px]'
+      className='group block rounded-xl focus-visible:ring-2 focus-visible:ring-kapwa-border-brand focus-visible:outline-none'
       data-testid='service-card'
       data-service-slug={service.slug}
-      aria-label={`View details for ${service.plainLanguageName || service.service}`}
+      aria-label={`View requirements for ${title}`}
     >
-      <Card
-        hover
-        className='border-kapwa-border-weak flex h-full flex-col shadow-sm'
-      >
-        <CardContent className='flex h-full flex-col p-6'>
-          {/* Icon & Status Badges */}
-          <div className='mb-4 flex items-start justify-between gap-2'>
-            <div className='bg-kapwa-bg-surface text-kapwa-text-brand border-kapwa-border-brand rounded-xl border p-2.5 shadow-xs'>
-              <CategoryIcon className='h-5 w-5' />
-            </div>
-            <div className='flex flex-wrap items-center justify-end gap-1.5'>
-              {/* Source Badge */}
-              <Badge variant={isOfficialSource ? 'success' : 'secondary'} dot>
-                {isOfficialSource ? 'Official' : 'Community'}
-              </Badge>
-              {/* Online/Walk-in Badge */}
-              {service.url ? (
-                <Badge variant='success' dot>
-                  Online
-                </Badge>
-              ) : isTransaction ? (
-                <Badge variant='slate' dot>
-                  Walk-in
-                </Badge>
-              ) : null}
-            </div>
-          </div>
-
-          {/* Service Number (for Citizens Charter services) */}
-          {service.serviceNumber && (
-            <div className='mb-2'>
-              <span className='text-kapwa-text-disabled text-[10px] font-bold tracking-widest uppercase'>
-                Service No. {service.serviceNumber}
+      <article className='border-kapwa-border-weak bg-kapwa-bg-surface rounded-xl border px-4 py-4 shadow-sm transition hover:border-stone-400 hover:shadow-md sm:px-5'>
+        <div className='grid gap-4 sm:grid-cols-[minmax(0,1fr)_minmax(18rem,34rem)] sm:items-center'>
+          <div className='min-w-0'>
+            <div className='mb-1.5 flex flex-wrap items-center gap-2'>
+              <span className='text-kapwa-text-brand text-xs font-bold tracking-wide uppercase'>
+                {service.category.name}
               </span>
+              {service.source === 'citizens-charter' && (
+                <span className='text-kapwa-text-success bg-kapwa-bg-success-weak inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-semibold'>
+                  <ShieldCheckIcon className='h-3 w-3' />
+                  Official
+                </span>
+              )}
             </div>
-          )}
-
-          {/* Title & Category Label */}
-          <div className='flex-1'>
-            <h3 className='group-hover:text-kapwa-text-brand text-kapwa-text-strong mb-1 leading-snug font-bold transition-colors'>
-              {service.plainLanguageName || service.service}
+            <h3 className='text-kapwa-text-strong text-base leading-snug font-bold group-hover:text-kapwa-text-brand sm:text-lg'>
+              {title}
             </h3>
-            <p className='text-kapwa-text-disabled text-[10px] font-bold tracking-widest uppercase'>
-              {service.category.name}
-            </p>
-            {/* Office Division (for Citizens Charter services) */}
             {service.officeDivision && (
-              <p className='text-kapwa-text-support mt-1 text-[11px] font-medium leading-tight'>
+              <p className='text-kapwa-text-support mt-1 truncate text-sm'>
                 {service.officeDivision}
               </p>
             )}
           </div>
 
-          {/* Footer Row */}
-          <div className='mt-6 flex items-center justify-between border-t border-kapwa-border-weak pt-4'>
-            {/* Verification / Data Status */}
-            <div className='flex items-center gap-1.5 text-[10px] font-bold tracking-widest uppercase'>
-              {needsVerification ? (
-                <>
-                  <AlertCircle className='h-3 w-3 text-kapwa-text-warning' />
-                  <span className='text-kapwa-text-warning'>
-                    Pending Verification
-                  </span>
-                </>
-              ) : hasValidDate ? (
-                <>
-                  <ClockIcon className='h-3 w-3 text-kapwa-text-success' />
-                  <span className='text-kapwa-text-strong0'>
-                    {format(new Date(service.updatedAt!), 'MMM yyyy')}
-                  </span>
-                </>
-              ) : isOfficialSource ? (
-                <>
-                  <ShieldCheck className='h-3 w-3 text-kapwa-text-success' />
-                  <span className='text-kapwa-text-success'>Official Data</span>
-                </>
-              ) : (
-                <>
-                  <span className='bg-kapwa-bg-disabled h-1.5 w-1.5 shrink-0 rounded-full' />
-                  <span className='text-kapwa-text-inverse-subtle italic'>
-                    Unverified
-                  </span>
-                </>
-              )}
-            </div>
-
-            {/* View Link */}
-            <span className='text-kapwa-text-brand flex items-center gap-1 text-xs font-bold transition-transform group-hover:translate-x-1'>
-              View <ArrowRightIcon className='h-3 w-3' />
+          <div className='border-kapwa-border-weak flex min-w-0 items-center gap-3 border-t pt-3 sm:border-t-0 sm:pt-0'>
+            {(fee || processingTime) && (
+              <dl className='grid min-w-0 flex-1 grid-cols-1 gap-x-5 gap-y-3 text-sm md:grid-cols-2'>
+                {fee && (
+                  <div className='flex min-w-0 items-start gap-2'>
+                    <PhilippinePesoIcon className='text-kapwa-text-disabled mt-0.5 h-4 w-4 shrink-0' />
+                    <div className='min-w-0'>
+                      <dt className='sr-only'>Fee</dt>
+                      <dd className='text-kapwa-text-support break-words leading-5'>
+                        {fee}
+                      </dd>
+                    </div>
+                  </div>
+                )}
+                {processingTime && (
+                  <div className='flex min-w-0 items-start gap-2'>
+                    <Clock3Icon className='text-kapwa-text-disabled mt-0.5 h-4 w-4 shrink-0' />
+                    <div className='min-w-0'>
+                      <dt className='sr-only'>Processing time</dt>
+                      <dd className='text-kapwa-text-support break-words leading-5'>
+                        {processingTime}
+                      </dd>
+                    </div>
+                  </div>
+                )}
+              </dl>
+            )}
+            <span className='text-kapwa-text-brand ml-auto flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-kapwa-bg-brand-weak'>
+              <ArrowRightIcon className='h-4 w-4 transition-transform group-hover:translate-x-1' />
+              <span className='sr-only'>View requirements</span>
             </span>
           </div>
-
-          {/* Classification Badge (for Citizens Charter services) */}
-          {service.classification && (
-            <div className='mt-3 border-t border-kapwa-border-weak pt-3'>
-              <Badge variant='outline' className='text-[9px]'>
-                {service.classification} Transaction
-              </Badge>
-            </div>
-          )}
-        </CardContent>
-      </Card>
+        </div>
+      </article>
     </Link>
   );
+}
+
+function getFeeLabel(service: Service): string | undefined {
+  if (service.quickInfo?.fee) return service.quickInfo.fee;
+  if (!service.fees) return undefined;
+  if (service.fees.amount === null || service.fees.amount === undefined) {
+    return service.fees.description || undefined;
+  }
+  if (typeof service.fees.amount === 'number') {
+    if (service.fees.amount === 0) return 'Free';
+    return `₱${service.fees.amount.toLocaleString('en-PH')}`;
+  }
+  const amount = String(service.fees.amount).trim();
+  if (/^(none|free|no fee|₱?0(?:\.00)?)$/i.test(amount)) return 'Free';
+  return amount;
 }

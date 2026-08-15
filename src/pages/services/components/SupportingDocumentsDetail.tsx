@@ -17,7 +17,7 @@ interface SupportingDocumentsDetailProps {
 export function SupportingDocumentsDetail({
   detail,
 }: SupportingDocumentsDetailProps) {
-  const [isExpanded, setIsExpanded] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(false);
   const [showAdditional, setShowAdditional] = useState(false);
   const [showConditional, setShowConditional] = useState(false);
 

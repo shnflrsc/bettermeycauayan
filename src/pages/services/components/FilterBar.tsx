@@ -1,16 +1,9 @@
 import { useState } from 'react';
-import {
-  Building2,
-  ChevronDown,
-  ChevronUp,
-  CheckCircle2,
-  Layers,
-} from 'lucide-react';
 
-import { Badge } from '@/components/ui/Badge';
+import { ChevronDown, SlidersHorizontal } from 'lucide-react';
+
 import { getAllOfficeDivisions } from '@/lib/services';
 
-// Types
 export type ServiceSource = 'citizens-charter' | 'community' | 'all';
 export type ClassificationFilter = 'Simple' | 'Complex' | 'all';
 
@@ -31,180 +24,120 @@ export default function FilterBar({
   onSourceChange,
   onClassificationChange,
 }: FilterBarProps) {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
   const officeDivisions = getAllOfficeDivisions();
-
   const hasActiveFilters =
     selectedOfficeDivision !== 'all' ||
     selectedSource !== 'all' ||
     selectedClassification !== 'all';
 
   return (
-    <div
-      className='border-kapwa-border-weak bg-kapwa-bg-surface rounded-2xl border shadow-sm'
-      data-testid='filter-bar'
-    >
-      {/* Filter Bar Header */}
-      <button
-        type='button'
-        onClick={() => setIsExpanded(!isExpanded)}
-        className='flex w-full items-center justify-between px-4 py-3 transition-colors hover:bg-kapwa-bg-surface-raised sm:px-5'
-        data-testid='filter-bar-toggle'
-      >
-        <div className='flex items-center gap-3'>
-          <span className='text-kapwa-text-strong text-sm font-bold'>
-            Filters
-          </span>
+    <div data-testid='filter-bar'>
+      <div className='flex items-center justify-between gap-4 md:mb-2'>
+        <button
+          type='button'
+          onClick={() => setMobileOpen(open => !open)}
+          className='border-kapwa-border-weak text-kapwa-text-strong flex min-h-10 items-center gap-2 rounded-lg border px-3 text-sm font-semibold md:pointer-events-none md:border-0 md:px-0'
+          aria-expanded={mobileOpen}
+        >
+          <SlidersHorizontal className='h-4 w-4' />
+          More filters
           {hasActiveFilters && (
-            <Badge variant='primary' className='text-xs'>
-              Active
-            </Badge>
+            <span className='bg-kapwa-bg-brand-default h-2 w-2 rounded-full' />
           )}
-        </div>
-        {isExpanded ? (
-          <ChevronUp className='text-kapwa-text-disabled h-4 w-4' />
-        ) : (
-          <ChevronDown className='text-kapwa-text-disabled h-4 w-4' />
+          <ChevronDown
+            className={`h-4 w-4 transition-transform md:hidden ${mobileOpen ? 'rotate-180' : ''}`}
+          />
+        </button>
+        {hasActiveFilters && (
+          <button
+            type='button'
+            onClick={() => {
+              onOfficeDivisionChange('all');
+              onSourceChange('all');
+              onClassificationChange('all');
+            }}
+            className='text-kapwa-text-brand text-sm font-semibold hover:underline'
+            data-testid='filter-clear-all'
+          >
+            Clear filters
+          </button>
         )}
-      </button>
-
-      {/* Expandable Filter Content */}
-      {isExpanded && (
-        <div className='border-kapwa-border-weak border-t px-4 py-4 sm:px-5'>
-          <div className='flex flex-col gap-4 md:flex-row md:gap-6'>
-            {/* Data Source Filter */}
-            <div className='flex-1'>
-              <div className='mb-2 flex items-center gap-2'>
-                <CheckCircle2 className='text-kapwa-text-disabled h-3.5 w-3.5' />
-                <h4 className='text-kapwa-text-disabled text-[10px] font-bold uppercase tracking-wider'>
-                  Source
-                </h4>
-              </div>
-              <div className='flex flex-wrap gap-1.5'>
-                <FilterPill
-                  label='All'
-                  selected={selectedSource === 'all'}
-                  onClick={() => onSourceChange('all')}
-                  data-testid='filter-source-all'
-                />
-                <FilterPill
-                  label='Official'
-                  selected={selectedSource === 'citizens-charter'}
-                  onClick={() => onSourceChange('citizens-charter')}
-                  data-testid='filter-source-official'
-                />
-                <FilterPill
-                  label='Community'
-                  selected={selectedSource === 'community'}
-                  onClick={() => onSourceChange('community')}
-                  data-testid='filter-source-community'
-                />
-              </div>
-            </div>
-
-            {/* Classification Filter */}
-            <div className='flex-1'>
-              <div className='mb-2 flex items-center gap-2'>
-                <Layers className='text-kapwa-text-disabled h-3.5 w-3.5' />
-                <h4 className='text-kapwa-text-disabled text-[10px] font-bold uppercase tracking-wider'>
-                  Type
-                </h4>
-              </div>
-              <div className='flex flex-wrap gap-1.5'>
-                <FilterPill
-                  label='All'
-                  selected={selectedClassification === 'all'}
-                  onClick={() => onClassificationChange('all')}
-                  data-testid='filter-classification-all'
-                />
-                <FilterPill
-                  label='Simple'
-                  selected={selectedClassification === 'Simple'}
-                  onClick={() => onClassificationChange('Simple')}
-                  data-testid='filter-classification-simple'
-                />
-                <FilterPill
-                  label='Complex'
-                  selected={selectedClassification === 'Complex'}
-                  onClick={() => onClassificationChange('Complex')}
-                  data-testid='filter-classification-complex'
-                />
-              </div>
-            </div>
-
-            {/* Office Division Filter */}
-            <div className='flex-1'>
-              <div className='mb-2 flex items-center gap-2'>
-                <Building2 className='text-kapwa-text-disabled h-3.5 w-3.5' />
-                <h4 className='text-kapwa-text-disabled text-[10px] font-bold uppercase tracking-wider'>
-                  Office
-                </h4>
-              </div>
-              <select
-                value={selectedOfficeDivision}
-                onChange={e => onOfficeDivisionChange(e.target.value)}
-                className='border-kapwa-border-weak bg-kapwa-bg-surface-raised text-kapwa-text-strong w-full rounded-lg border px-3 py-1.5 text-xs font-medium focus:outline-none focus:ring-2 focus:ring-kapwa-border-brand'
-                data-testid='filter-office-select'
-              >
-                <option value='all'>All Offices</option>
-                {officeDivisions.map(division => (
-                  <option key={division} value={division}>
-                    {division}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            {/* Clear All Button */}
-            {hasActiveFilters && (
-              <div className='flex items-end'>
-                <button
-                  type='button'
-                  onClick={() => {
-                    onOfficeDivisionChange('all');
-                    onSourceChange('all');
-                    onClassificationChange('all');
-                  }}
-                  className='text-kapwa-text-brand hover:text-kapwa-text-accent-orange text-xs font-bold transition-colors'
-                  data-testid='filter-clear-all'
-                >
-                  Clear All
-                </button>
-              </div>
-            )}
-          </div>
-        </div>
-      )}
+      </div>
+      <div
+        className={`${mobileOpen ? 'grid' : 'hidden'} mt-2 w-full grid-cols-1 gap-2 md:mt-0 md:grid md:grid-cols-3`}
+      >
+        <FilterSelect
+          label='Office'
+          value={selectedOfficeDivision}
+          onChange={onOfficeDivisionChange}
+          testId='filter-office-select'
+          options={[
+            { value: 'all', label: 'All offices' },
+            ...officeDivisions.map(division => ({
+              value: division,
+              label: division,
+            })),
+          ]}
+        />
+        <FilterSelect
+          label='Classification'
+          value={selectedClassification}
+          onChange={value =>
+            onClassificationChange(value as ClassificationFilter)
+          }
+          testId='filter-classification-select'
+          options={[
+            { value: 'all', label: 'All classifications' },
+            { value: 'Simple', label: 'Simple' },
+            { value: 'Complex', label: 'Complex' },
+          ]}
+        />
+        <FilterSelect
+          label='Source'
+          value={selectedSource}
+          onChange={value => onSourceChange(value as ServiceSource)}
+          testId='filter-source-select'
+          options={[
+            { value: 'all', label: 'All sources' },
+            { value: 'citizens-charter', label: 'Official Citizens Charter' },
+            { value: 'community', label: 'Community contributed' },
+          ]}
+        />
+      </div>
     </div>
   );
 }
 
-// Filter Pill Component
-interface FilterPillProps {
-  label: string;
-  selected: boolean;
-  onClick: () => void;
-  'data-testid'?: string;
-}
-
-function FilterPill({
+function FilterSelect({
   label,
-  selected,
-  onClick,
-  'data-testid': testId,
-}: FilterPillProps) {
+  value,
+  onChange,
+  options,
+  testId,
+}: {
+  label: string;
+  value: string;
+  onChange: (value: string) => void;
+  options: { value: string; label: string }[];
+  testId: string;
+}) {
   return (
-    <button
-      type='button'
-      onClick={onClick}
-      data-testid={testId}
-      className={`transition-all ${
-        selected
-          ? 'border-kapwa-border-brand bg-kapwa-bg-brand-weak text-kapwa-text-brand'
-          : 'border-kapwa-border-weak bg-kapwa-bg-surface text-kapwa-text-support hover:border-kapwa-border-brand hover:bg-kapwa-bg-surface-raised'
-      } rounded-md border px-3 py-1 text-xs font-bold`}
-    >
-      {label}
-    </button>
+    <label className='min-w-0'>
+      <span className='sr-only'>{label}</span>
+      <select
+        value={value}
+        onChange={event => onChange(event.target.value)}
+        className='border-kapwa-border-weak bg-kapwa-bg-surface text-kapwa-text-strong min-h-10 w-full rounded-lg border px-3 py-2 text-sm font-medium focus:ring-2 focus:ring-kapwa-border-brand focus:outline-none'
+        data-testid={testId}
+        aria-label={label}
+      >
+        {options.map(option => (
+          <option key={option.value} value={option.value}>
+            {option.label}
+          </option>
+        ))}
+      </select>
+    </label>
   );
 }

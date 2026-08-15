@@ -40,13 +40,13 @@
   "navbar": {
     "home": "Home",
     "services": "Mga Serbisyo",
-    "statistics": "Istatistika",
-    "government": "Pamahalaan",
+    "statistics": "Datos ng Lungsod",
+    "government": "Pamahalaang Lungsod",
     "legislative": "Lehislatura",
-    "transparency": "Transparency",
+    "transparency": "Badyet at mga Proyekto",
     "contact": "Makipag-ugnayan",
     "legislation": "Lehislasyon",
-    "openlgu": "OpenLGU",
+    "openlgu": "Mga Ordinansa at Resolusyon",
     "philippines": "Pilipinas",
     "travel": "Paglalakbay",
     "flood control projects": "Mga Proyekto sa Pagkontrol ng Baha"

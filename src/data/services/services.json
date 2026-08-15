@@ -1751,68 +1751,68 @@
     "detailedRequirements": [],
     "clientSteps": [
       {
-        "step": "Medical 1",
-        "action": "Proceed to the Health Information Desk for record verification. Staff will retrieve the existing Individual Treatment Record or create a new patient record.",
+        "step": "Proceed to the Health Information Desk for record verification.",
+        "action": "Retrieve the existing Individual Treatment Record or create a new patient record.",
         "processing_time": "2 minutes"
       },
       {
-        "step": "Medical 2",
-        "action": "Provide personal information at the designated Health Information Desk. Staff will record the patient profile, chief complaint, and vital signs.",
+        "step": "Provide your personal information at the designated Health Information Desk.",
+        "action": "Record the patient's profile, chief complaint, and vital signs.",
         "processing_time": "5 minutes"
       },
       {
-        "step": "Medical 3",
-        "action": "Secure a number and wait to be called. Numbers are provided on a first-come, first-served basis and in accordance with accessibility laws.",
+        "step": "Secure a queue number and wait to be called.",
+        "action": "Provide a number on a first-come, first-served basis and in accordance with accessibility laws.",
         "processing_time": "1 minute"
       },
       {
-        "step": "Medical 4",
-        "action": "Undergo medical consultation. The physician will assess and examine the patient based on the Individual Treatment Record and presenting signs and symptoms.",
+        "step": "Undergo a medical consultation.",
+        "action": "Assess and examine the patient using the Individual Treatment Record and the patient's presenting signs and symptoms.",
         "processing_time": "Included in the 30-minute clinical assessment"
       },
       {
-        "step": "Medical 5",
-        "action": "Wait for the result of the medical examination. The physician may interpret laboratory results, issue a medical certificate, or request laboratory examinations when necessary.",
+        "step": "Wait for the result of the medical examination.",
+        "action": "Interpret and explain laboratory results, issue a medical certificate, or request laboratory examinations when necessary.",
         "processing_time": "30 minutes"
       },
       {
-        "step": "Medical 6",
-        "action": "Follow the doctor's order and receive medical advice or a prescription when appropriate.",
+        "step": "Follow the doctor's instructions.",
+        "action": "Advise the patient and prescribe medication when appropriate.",
         "processing_time": "5 minutes"
       },
       {
-        "step": "Dental 1",
-        "action": "Proceed to the Health Information Desk for record verification. Staff will retrieve the existing Individual Treatment Record or create a new patient record.",
+        "step": "Proceed to the Health Information Desk for record verification.",
+        "action": "Retrieve the existing Individual Treatment Record or create a new patient record.",
         "processing_time": "1 minute"
       },
       {
-        "step": "Dental 2",
-        "action": "Provide personal information at the designated Health Information Desk. Staff will record the patient profile, chief complaint, and vital signs.",
+        "step": "Provide your personal information at the designated Health Information Desk.",
+        "action": "Record the patient's profile, chief complaint, and vital signs.",
         "processing_time": "5 minutes"
       },
       {
-        "step": "Dental 3",
-        "action": "Secure a number at the Health Information Desk and wait to be called on a first-come, first-served basis.",
+        "step": "Secure a queue number at the Health Information Desk and wait to be called.",
+        "action": "Provide a number on a first-come, first-served basis.",
         "processing_time": "1 minute"
       },
       {
-        "step": "Dental 4",
-        "action": "Undergo a dental consultation and examination by the City Health Dentist.",
+        "step": "Undergo a dental consultation.",
+        "action": "Assess and examine the patient.",
         "processing_time": "10 minutes"
       },
       {
-        "step": "Dental 5",
-        "action": "Undergo oral prophylaxis when necessary.",
+        "step": "Undergo oral prophylaxis when necessary.",
+        "action": "Perform oral prophylaxis when necessary.",
         "processing_time": "30 minutes"
       },
       {
-        "step": "Dental 6",
-        "action": "Undergo tooth extraction with topical or local anesthesia when necessary.",
+        "step": "Undergo tooth extraction when necessary.",
+        "action": "Perform the tooth extraction using topical or local anesthesia when necessary.",
         "processing_time": "30 minutes"
       },
       {
-        "step": "Dental 7",
-        "action": "Follow the dentist's order and receive dental advice or a prescription when appropriate.",
+        "step": "Follow the dentist's instructions.",
+        "action": "Advise the patient and prescribe medication when appropriate.",
         "processing_time": "5 minutes"
       }
     ],

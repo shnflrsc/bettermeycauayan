@@ -40,13 +40,13 @@
   "navbar": {
     "home": "Home",
     "services": "Services",
-    "statistics": "Statistics",
-    "government": "Government",
+    "statistics": "City Facts",
+    "government": "City Government",
     "legislative": "Legislative",
-    "transparency": "Transparency",
+    "transparency": "Budgets & Projects",
     "contact": "Contact",
     "legislation": "Legislation",
-    "openlgu": "OpenLGU"
+    "openlgu": "Ordinances & Resolutions"
   },
   "joinUs": {
     "stripTitle": "🚀 Join the #CivicTech Revolution",
@@ -94,8 +94,8 @@
     "legislativeDescription": "Composed of the Sangguniang Bayan, responsible for making local laws.",
     "barangaysTitle": "Barangays",
     "barangaysDescription": "Local government units within the municipality, led by elected officials who manage community-level services and programs.",
-    "departmentsTitle": "Municipal Departments",
-    "departmentsDescription" : "Municipal departments and agencies responsible for specific areas of governance.",
+    "departmentsTitle": "City Departments",
+    "departmentsDescription" : "City departments and offices responsible for public programs and services.",
     "electedofficialsTitle": "Elected Officials",
     "electedofficialsDescription": "The elected leadership of the Executive and Legislative branches, responsible for policy implementation and law-making.",
     "learnMore": "Learn More",

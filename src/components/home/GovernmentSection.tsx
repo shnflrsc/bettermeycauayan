@@ -1,128 +1,75 @@
-import { FC } from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowRight, Building2, MapPinned, Users } from 'lucide-react';
 
-import { useNavigate } from 'react-router-dom';
+const destinations = [
+  {
+    title: 'Meet your city officials',
+    description:
+      'Know the elected officials serving Meycauayan and their roles.',
+    to: '/government/elected-officials',
+    icon: Users,
+    accent: 'bg-amber-100 text-amber-800',
+  },
+  {
+    title: 'Find a department',
+    description: 'See what each city office handles and how to reach it.',
+    to: '/government/departments',
+    icon: Building2,
+    accent: 'bg-stone-200 text-stone-800',
+  },
+  {
+    title: 'Explore the barangays',
+    description: 'Browse Meycauayan’s barangays and their local information.',
+    to: '/government/barangays',
+    icon: MapPinned,
+    accent: 'bg-orange-100 text-orange-800',
+  },
+];
 
-import { Banner } from '@bettergov/kapwa/banner';
-import { Button } from '@bettergov/kapwa/button';
-import { Building2Icon, HomeIcon, UsersIcon } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
-
-import { Badge } from '@/components/ui/Badge';
-import { Card, CardContent, CardGrid } from '@/components/ui/Card';
-
-const GovernmentSection: FC = () => {
-  const { t } = useTranslation('common');
-  const navigate = useNavigate();
-
-  const branches = [
-    {
-      id: 'executive',
-      title: t('government.electedofficialsTitle'),
-      description: t(
-        'government.electedofficialsDescription',
-        'Meet your Mayor, Vice Mayor, and Councilors.'
-      ),
-      icon: <UsersIcon className='text-kapwa-text-brand h-10 w-10' />,
-      link: '/government/elected-officials',
-    },
-    {
-      id: 'legislative',
-      title: t('government.departmentsTitle'),
-      description: t(
-        'government.departmentsDescription',
-        'Services and offices under the Executive branch.'
-      ),
-      icon: <Building2Icon className='text-kapwa-text-brand h-10 w-10' />,
-      link: '/government/departments',
-    },
-    {
-      id: 'barangays',
-      title: t('government.barangaysTitle'),
-      description: t('government.barangaysDescription'),
-      icon: <HomeIcon className='text-kapwa-text-brand h-10 w-10' />,
-      link: '/government/barangays',
-    },
-  ];
-
+export default function GovernmentSection() {
   return (
-    <section className='bg-kapwa-bg-surface py-12'>
+    <section className='border-b border-kapwa-border-weak bg-kapwa-bg-surface py-14 md:py-16'>
       <div className='container mx-auto px-4'>
-        <div className='mb-12 text-center'>
-          <h2 className='text-kapwa-text-strong mb-4 kapwa-heading-lg font-bold'>
-            {t('government.title')}
+        <div className='mb-7 max-w-2xl'>
+          <p className='mb-2 text-sm font-bold uppercase tracking-wide text-kapwa-text-brand'>
+            City Government
+          </p>
+          <h2 className='text-2xl font-bold text-kapwa-text-strong md:text-3xl'>
+            Meet the people serving your city
           </h2>
-          <p className='text-kapwa-text-support mx-auto max-w-2xl'>
-            {t('government.description')}
+          <p className='mt-2 text-kapwa-text-support'>
+            Find the people, offices, and barangays responsible for serving the
+            city.
           </p>
         </div>
-
-        {/* Quick stats using documented Badge component */}
-        <div className='flex flex-wrap justify-center gap-4 mb-8'>
-          <Badge variant='primary' className='px-4 py-2 text-sm'>
-            26 Barangays
-          </Badge>
-          <Badge variant='secondary' className='px-4 py-2 text-sm'>
-            31 Departments
-          </Badge>
-          <Badge variant='slate' className='px-4 py-2 text-sm'>
-            Elected Officials
-          </Badge>
-        </div>
-
-        {/* Using documented CardGrid pattern */}
-        <CardGrid columns={3}>
-          {branches.map(branch => (
-            <Card key={branch.id} hover className='text-center'>
-              <CardContent className='p-6'>
-                <div className='mb-4 flex justify-center'>{branch.icon}</div>
-                <h3 className='text-kapwa-text-strong mb-2 text-xl font-semibold'>
-                  {branch.title}
-                </h3>
-                <p className='text-kapwa-text-support mb-4'>
-                  {branch.description}
-                </p>
-                <Button
-                  onClick={() => navigate(branch.link)}
-                  variant='link'
-                  size='sm'
-                  rightIcon={
-                    <svg
-                      className='h-4 w-4'
-                      viewBox='0 0 24 24'
-                      fill='none'
-                      stroke='currentColor'
-                      strokeWidth='2'
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                    >
-                      <line x1='5' y1='12' x2='19' y2='12'></line>
-                      <polyline points='12 5 19 12 12 19'></polyline>
-                    </svg>
-                  }
+        <div className='grid gap-3 md:grid-cols-3'>
+          {destinations.map(item => {
+            const Icon = item.icon;
+            return (
+              <Link
+                key={item.to}
+                to={item.to}
+                className='group flex gap-4 rounded-xl border border-kapwa-border-weak bg-kapwa-bg-surface p-5 transition hover:border-stone-400 hover:shadow-sm'
+              >
+                <span
+                  className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-lg ${item.accent}`}
                 >
-                  {t('government.learnMore')}
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
-        </CardGrid>
-
-        {/* Banner CTA - using documented Banner component */}
-        <Banner
-          className='p-kapwa-lg mt-12'
-          type='default'
-          title={t('government.directoryTitle')}
-          description={t('government.directoryDescription')}
-          cta={{
-            label: t('government.viewDirectory'),
-            onClick: () => navigate('/government/'),
-            variant: 'primary',
-            size: 'lg',
-          }}
-        />
+                  <Icon className='h-5 w-5' />
+                </span>
+                <span>
+                  <span className='flex items-center gap-2 font-semibold text-kapwa-text-strong'>
+                    {item.title}
+                    <ArrowRight className='h-4 w-4 text-kapwa-text-brand transition-transform group-hover:translate-x-1' />
+                  </span>
+                  <span className='mt-1 block text-sm leading-relaxed text-kapwa-text-support'>
+                    {item.description}
+                  </span>
+                </span>
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
-};
-
-export default GovernmentSection;
+}
