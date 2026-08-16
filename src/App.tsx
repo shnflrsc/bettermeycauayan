@@ -42,6 +42,7 @@ const ServiceDetail = lazy(() => import('@/pages/services/[service]'));
 
 // Government Directory
 const GovernmentRootLayout = lazy(() => import('@/pages/government/layout'));
+const GovernmentOverview = lazy(() => import('@/pages/government'));
 const ElectedOfficialsLayout = lazy(
   () => import('@/pages/government/elected-officials/layout')
 );
@@ -71,6 +72,7 @@ const ReferenceImplementationPage = lazy(
 
 // Statistics Dashboard
 const StatisticsLayout = lazy(() => import('@/pages/statistics/layout'));
+const StatisticsIndex = lazy(() => import('@/pages/statistics'));
 const PopulationPage = lazy(() => import('@/pages/statistics/PopulationPage'));
 const MunicipalIncomePage = lazy(
   () => import('@/pages/statistics/MunicipalIncomePage')
@@ -186,10 +188,7 @@ function AppContent() {
 
             {/* Government Directory Hub */}
             <Route path='/government' element={<GovernmentRootLayout />}>
-              <Route
-                index
-                element={<Navigate to='elected-officials' replace />}
-              />
+              <Route index element={<GovernmentOverview />} />
 
               {/* 1. Elected Officials */}
               <Route
@@ -225,7 +224,7 @@ function AppContent() {
             {/* Statistics Dashboard — feature gated */}
             {config.features.statistics && (
               <Route path='statistics' element={<StatisticsLayout />}>
-                <Route index element={<PopulationPage />} />
+                <Route index element={<StatisticsIndex />} />
                 <Route path='population' element={<PopulationPage />} />
                 <Route
                   path='municipal-income'

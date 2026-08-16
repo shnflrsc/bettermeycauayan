@@ -21,7 +21,7 @@ import {
   ContactContainer,
   ContactItem,
 } from '@/components/data-display/ContactInfo';
-import { DetailSection, PageHero } from '@/components/layout/PageLayouts';
+import { DetailSection, ModuleHeader } from '@/components/layout/PageLayouts';
 import { Badge } from '@/components/ui/Badge';
 import { Card, CardContent } from '@/components/ui/Card';
 
@@ -245,7 +245,7 @@ export default function ElectedOfficialsPage() {
   );
 
   const sbData = legislativeData.find(
-    item => item.slug === '12th-sangguniang-bayan'
+    item => item.slug === 'sangguniang-panlungsod'
   );
 
   const getChairedCommittees = (memberName: string): Committee[] =>
@@ -261,13 +261,9 @@ export default function ElectedOfficialsPage() {
 
   return (
     <div className='space-y-8'>
-      <PageHero
+      <ModuleHeader
         title='Elected Officials'
-        description='The elected leaders and legislative body of the Municipal Government.'
-        breadcrumb={[
-          { label: 'Government', href: '/government' },
-          { label: 'Elected Officials', href: '/government/elected-officials' },
-        ]}
+        description='The elected leadership and legislative body of the City Government of Meycauayan.'
       />
 
       {/* ── SECTION 1: EXECUTIVE BRANCH ── */}

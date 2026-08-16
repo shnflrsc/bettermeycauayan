@@ -10,11 +10,19 @@ export default function DepartmentsPageLayout() {
   // Logic: Collapse if not on the index
   const isDeepPage = location.pathname !== '/government/departments';
 
+  if (!isDeepPage) {
+    return (
+      <div className='container mx-auto px-4 py-6 md:py-8'>
+        <Outlet />
+      </div>
+    );
+  }
+
   return (
     <SidebarLayout
       sidebar={<DepartmentsSidebar />}
       collapsible={true}
-      defaultCollapsed={isDeepPage}
+      defaultCollapsed={true}
     >
       <Outlet />
     </SidebarLayout>

@@ -14,7 +14,6 @@ import {
 } from 'lucide-react';
 
 import { StatCard } from '@/components/ui/StatCard';
-import { ModuleHeader } from '@/components/layout/PageLayouts';
 import { Badge } from '@/components/ui/Badge';
 import { CardGrid } from '@/components/ui/Card';
 import { EmptyState } from '@/components/ui/EmptyState';
@@ -221,17 +220,25 @@ export default function ProcurementPage() {
   };
 
   return (
-    <div className='animate-in fade-in mx-auto max-w-full space-y-8 px-4 pb-20 duration-500 md:px-8'>
-      <ModuleHeader
-        title='Procurement Transparency'
-        description={`Real-time database of bids and awards from the ${lguLabels.fullName}.`}
-      >
-        <div className='flex w-full flex-col items-center gap-4 md:w-auto md:flex-row'>
+    <div className='animate-in fade-in mx-auto max-w-7xl space-y-6 pb-20 duration-500'>
+      <header className='space-y-5'>
+        <div className='max-w-3xl'>
+          <p className='mb-2 text-sm font-bold tracking-wide text-kapwa-text-brand uppercase'>
+            Transparency
+          </p>
+          <h1 className='text-3xl font-extrabold tracking-tight text-kapwa-text-strong md:text-4xl'>
+            Government procurement
+          </h1>
+          <p className='mt-2 text-sm leading-relaxed text-kapwa-text-support'>
+            Search awarded contracts published for {lguLabels.fullName}.
+          </p>
+        </div>
+        <div className='flex w-full flex-col gap-3 sm:flex-row'>
           <SearchInput
             value={query}
             onChangeValue={setQuery}
             placeholder='Search contracts...'
-            className='w-full md:w-80'
+            className='w-full flex-1'
           />
           <div className='flex shrink-0 gap-2'>
             <Button
@@ -244,7 +251,7 @@ export default function ProcurementPage() {
             </Button>
           </div>
         </div>
-      </ModuleHeader>
+      </header>
 
       {/* --- STATS GRID --- */}
       <CardGrid columns={4}>

@@ -16,7 +16,6 @@ import {
 } from 'lucide-react';
 
 import { StatCard } from '@/components/ui/StatCard';
-import { ModuleHeader } from '@/components/layout/PageLayouts';
 import { Badge } from '@/components/ui/Badge';
 import { CardGrid } from '@/components/ui/Card';
 import { EmptyState } from '@/components/ui/EmptyState';
@@ -207,18 +206,27 @@ export default function InfrastructurePage() {
   );
 
   return (
-    <div className='animate-in fade-in mx-auto max-w-full space-y-8 px-4 pb-20 duration-500 md:px-8'>
+    <div className='animate-in fade-in mx-auto max-w-7xl space-y-6 pb-20 duration-500'>
       {/* Header + Search + Status Toggle  */}
-      <ModuleHeader
-        title='Infrastructure Projects'
-        description={`Monitoring of national DPWH infrastructure projects within ${lguLabels.name}.`}
-      >
-        <div className='flex w-full flex-col items-center gap-4 md:w-auto md:flex-row'>
+      <header className='space-y-5'>
+        <div className='max-w-3xl'>
+          <p className='mb-2 text-sm font-bold tracking-wide text-kapwa-text-brand uppercase'>
+            Transparency
+          </p>
+          <h1 className='text-3xl font-extrabold tracking-tight text-kapwa-text-strong md:text-4xl'>
+            Infrastructure projects
+          </h1>
+          <p className='mt-2 text-sm leading-relaxed text-kapwa-text-support'>
+            Find national DPWH projects reported within {lguLabels.name},
+            including their cost, location, and status.
+          </p>
+        </div>
+        <div className='flex w-full flex-col gap-3 md:flex-row'>
           <SearchInput
             value={query}
             onChangeValue={setQuery}
             placeholder='Search projects...'
-            className='md:w-72'
+            className='w-full flex-1'
           />
           <SelectPicker
             options={STATUS_OPTIONS}
@@ -232,7 +240,7 @@ export default function InfrastructurePage() {
             clearable={true}
           />
         </div>
-      </ModuleHeader>
+      </header>
 
       {/* Stats Grid  */}
       <CardGrid columns={4}>

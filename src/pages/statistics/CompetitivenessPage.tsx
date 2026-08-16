@@ -19,7 +19,6 @@ import {
   ResponsiveChart,
 } from '@/components/data-display/ChartContainer';
 import { DetailSection } from '@/components/layout/PageLayouts';
-import { PageHero } from '@/components/layout/PageLayouts';
 
 import { cn } from '@/lib/utils';
 
@@ -74,18 +73,22 @@ export default function CompetitivenessPage() {
 
   return (
     <>
-      {/* PageHero - documented pattern for layout headers */}
-      <PageHero
-        title='Competitiveness'
-        description='National evaluation of municipal progress across pillars of governance and development.'
-      >
-        <div className='flex flex-wrap gap-2 justify-center'>
+      <header className='mb-7 border-b border-kapwa-border-weak pb-6'>
+        <h1 className='text-3xl font-black tracking-tight text-kapwa-text-strong'>
+          Competitiveness
+        </h1>
+        <p className='mt-2 max-w-2xl text-sm leading-6 text-kapwa-text-support md:text-base'>
+          Meycauayan’s national evaluation across economic dynamism, government
+          efficiency, infrastructure, resiliency, and innovation. Higher scores
+          and a lower rank number indicate stronger performance.
+        </p>
+        <div className='mt-3 flex flex-wrap gap-2'>
           <Badge variant='primary' dot>
             CMCI {latestYear}
           </Badge>
           <Badge variant='slate'>DTI Standards</Badge>
         </div>
-      </PageHero>
+      </header>
 
       {/* KPI Cards - using new StatCard component */}
       <div className='grid grid-cols-1 gap-4 items-stretch md:grid-cols-3 mb-kapwa-lg'>
@@ -231,7 +234,7 @@ export default function CompetitivenessPage() {
                       {ind.name}
                     </span>
                     <span className='mt-2 text-xl font-black text-kapwa-text-strong'>
-                      {ind.values[latestIdx]?.toFixed(4) || '0.0000'}
+                      {ind.values[latestIdx]?.toFixed(2) || '0.00'}
                     </span>
                   </div>
                 ))}
@@ -241,40 +244,17 @@ export default function CompetitivenessPage() {
         </div>
       )}
 
-      {/* Footer */}
-      <footer className='pt-10 space-y-4 text-center border-t border-kapwa-border-weak'>
-        <div className='flex justify-center items-center mx-auto w-6 h-6 rounded-full bg-kapwa-bg-success-weak text-kapwa-text-success'>
-          <svg
-            className='w-4 h-4'
-            fill='none'
-            viewBox='0 0 24 24'
-            stroke='currentColor'
-          >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth={2}
-              d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'
-            />
-          </svg>
-        </div>
-        <div className='space-y-1'>
-          <p className='text-kapwa-text-strong text-[10px] font-bold tracking-widest uppercase'>
-            Verified Data Audit
-          </p>
-          <p className='text-kapwa-text-disabled text-[10px] font-bold tracking-widest uppercase'>
-            Source:{' '}
-            <a
-              href='https://cmci.dti.gov.ph/data-portal.php'
-              target='_blank'
-              rel='noreferrer'
-              className='underline hover:text-kapwa-text-brand'
-            >
-              {cmciData.meta.source}
-            </a>
-          </p>
-        </div>
-      </footer>
+      <p className='mt-8 border-t border-kapwa-border-weak pt-5 text-sm text-kapwa-text-support'>
+        Source:{' '}
+        <a
+          href='https://cmci.dti.gov.ph/data-portal.php'
+          target='_blank'
+          rel='noreferrer'
+          className='underline hover:text-kapwa-text-brand'
+        >
+          {cmciData.meta.source}
+        </a>
+      </p>
     </>
   );
 }

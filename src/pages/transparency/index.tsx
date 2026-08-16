@@ -1,182 +1,112 @@
-import { Link } from 'react-router-dom';
-
 import {
-  ChevronRight,
+  ArrowRight,
   ExternalLink,
   FileText,
   HardHat,
-  HeartHandshake,
   Landmark,
-  Search,
   ShoppingBag,
-  Users,
 } from 'lucide-react';
-
-import { DetailSection } from '@/components/layout';
+import { Link } from 'react-router-dom';
 import { config } from '@/lib/lguConfig';
-import { Badge } from '@/components/ui/Badge';
-import { Card, CardContent, CardGrid } from '@/components/ui/Card';
+
+const sections = [
+  {
+    title: 'Budget & finances',
+    description:
+      'Understand city income, spending, and fund balances using official financial reports.',
+    detail: 'Annual financial reports',
+    icon: Landmark,
+    href: '/transparency/financial',
+  },
+  {
+    title: 'Procurement',
+    description:
+      'Search awarded government contracts and see who supplied goods, services, and public works.',
+    detail: 'PhilGEPS award records',
+    icon: ShoppingBag,
+    href: '/transparency/procurement',
+  },
+  {
+    title: 'Infrastructure projects',
+    description:
+      'Find DPWH projects affecting Meycauayan, including their cost, location, and reported status.',
+    detail: 'National infrastructure records',
+    icon: HardHat,
+    href: '/transparency/infrastructure',
+  },
+];
 
 export default function TransparencyIndex() {
-  const sections = [
-    {
-      title: 'Public Funds',
-      description:
-        'Independent visualization of municipal income and where your taxes are being allocated.',
-      icon: Landmark,
-      href: '/transparency/financial',
-      color: 'blue',
-      badge: 'Financials',
-    },
-    {
-      title: 'Public Works',
-      description:
-        'Community tracking of road repairs, building constructions, and local infrastructure projects.',
-      icon: HardHat,
-      href: '/transparency/infrastructure',
-      color: 'orange',
-      badge: 'Monitoring',
-    },
-    {
-      title: 'Procurement',
-      description:
-        'Audit of municipal bidding and awarded contracts to ensure fair and open competition.',
-      icon: ShoppingBag,
-      href: '/transparency/procurement',
-      color: 'blue',
-      badge: 'Contracts',
-    },
-  ];
-
   return (
-    <div className='animate-in fade-in duration-500'>
-      {/* 1. Grassroots Mission Box - Uses Brand Orange to signify "Community" */}
-      <div className='mb-10'>
-        <div className='bg-kapwa-orange-50 flex flex-col items-center gap-6 rounded-3xl border-0 p-6 shadow-sm md:flex-row'>
-          <div className='text-kapwa-orange-600 bg-kapwa-bg-surface rounded-2xl p-4 shadow-md'>
-            <HeartHandshake className='h-8 w-8' />
-          </div>
-          <div className='flex-1 space-y-2 text-center md:text-left'>
-            <h3 className='text-[10px] font-bold tracking-widest text-kapwa-orange-600 uppercase'>
-              Independent Grassroots Initiative
-            </h3>
-            <p className='text-sm leading-relaxed text-kapwa-orange-600'>
-              BetterMeycauayan is{' '}
-              <strong>not an official government portal</strong>. We are a
-              volunteer movement mirroring public records to empower citizens
-              with the information they need to engage in local governance.
+    <div className='mx-auto max-w-6xl space-y-10'>
+      <header className='max-w-3xl'>
+        <p className='mb-2 text-sm font-bold tracking-wide text-kapwa-text-brand uppercase'>
+          Public information
+        </p>
+        <h1 className='text-3xl font-extrabold tracking-tight text-kapwa-text-strong md:text-4xl'>
+          Follow Meycauayan’s public money and projects
+        </h1>
+        <p className='mt-3 text-base leading-relaxed text-kapwa-text-support'>
+          Explore financial reports, awarded contracts, and infrastructure
+          records in a format designed to be easier to search and understand.
+        </p>
+      </header>
+
+      <section aria-labelledby='transparency-sections-heading'>
+        <h2 id='transparency-sections-heading' className='sr-only'>
+          Transparency sections
+        </h2>
+        <div className='divide-y divide-kapwa-border-weak border-y border-kapwa-border-weak bg-kapwa-bg-surface'>
+          {sections.map(section => (
+            <Link
+              key={section.href}
+              to={section.href}
+              className='group grid gap-4 px-1 py-6 transition-colors hover:bg-kapwa-bg-surface-raised md:grid-cols-[3rem_minmax(0,1fr)_13rem_1.5rem] md:items-center md:px-5'
+            >
+              <div className='flex h-11 w-11 items-center justify-center rounded-xl bg-kapwa-bg-brand-weak text-kapwa-text-brand'>
+                <section.icon className='h-5 w-5' />
+              </div>
+              <div>
+                <h3 className='text-lg font-bold text-kapwa-text-strong group-hover:text-kapwa-text-brand'>
+                  {section.title}
+                </h3>
+                <p className='mt-1 max-w-2xl text-sm leading-relaxed text-kapwa-text-support'>
+                  {section.description}
+                </p>
+              </div>
+              <span className='text-sm font-medium text-kapwa-text-support'>
+                {section.detail}
+              </span>
+              <ArrowRight className='hidden h-5 w-5 text-kapwa-text-disabled transition-transform group-hover:translate-x-1 group-hover:text-kapwa-text-brand md:block' />
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <aside className='grid gap-6 border-t border-kapwa-border-weak pt-7 md:grid-cols-[minmax(0,1fr)_auto] md:items-start'>
+        <div className='flex gap-3'>
+          <FileText className='mt-0.5 h-5 w-5 shrink-0 text-kapwa-text-brand' />
+          <div>
+            <h2 className='font-bold text-kapwa-text-strong'>
+              About this data
+            </h2>
+            <p className='mt-1 max-w-3xl text-sm leading-relaxed text-kapwa-text-support'>
+              BetterMeycauayan is an independent civic project, not an official
+              government portal. Records are presented from public government
+              datasets and may have reporting delays or incomplete fields.
+              Follow the source links on each page to verify a record.
             </p>
           </div>
         </div>
-      </div>
-
-      {/* 2. The Three Pillars of Oversight - Using CardGrid */}
-      <CardGrid columns={3}>
-        {sections.map(section => (
-          <Link
-            key={section.href}
-            to={section.href}
-            className='group'
-            role='listitem'
-          >
-            <Card
-              hover
-              className='border-kapwa-border-weak flex h-full flex-col'
-            >
-              <CardContent className='flex h-full flex-col p-6'>
-                <div className='mb-6 flex items-start justify-between'>
-                  <div
-                    className={`rounded-2xl p-3 shadow-sm transition-all ${
-                      section.color === 'blue'
-                        ? 'bg-kapwa-bg-surface text-kapwa-text-brand group-hover:bg-kapwa-bg-brand-default group-hover:text-kapwa-text-inverse'
-                        : 'bg-kapwa-orange-50 text-kapwa-orange-600 group-hover:bg-kapwa-orange-100 group-hover:text-kapwa-text-inverse'
-                    }`}
-                  >
-                    <section.icon className='h-6 w-6' />
-                  </div>
-                  <Badge
-                    variant={section.color === 'blue' ? 'primary' : 'secondary'}
-                    dot
-                  >
-                    {section.badge}
-                  </Badge>
-                </div>
-
-                <div className='flex-1 space-y-2'>
-                  <h4 className='group-hover:text-kapwa-text-brand text-kapwa-text-strong text-lg font-extrabold transition-colors'>
-                    {section.title}
-                  </h4>
-                  <p className='text-kapwa-text-disabled text-xs leading-relaxed'>
-                    {section.description}
-                  </p>
-                </div>
-
-                <div className='mt-8 flex items-center justify-between border-t border-kapwa-border-weak pt-4 transition-transform group-hover:translate-x-1'>
-                  <span className='text-kapwa-text-brand text-[10px] font-black tracking-widest uppercase'>
-                    Analyze Data
-                  </span>
-                  <ChevronRight className='text-kapwa-text-support h-4 w-4' />
-                </div>
-              </CardContent>
-            </Card>
-          </Link>
-        ))}
-      </CardGrid>
-
-      {/* 3. Community Engagement Block */}
-      <div className='mt-10 grid grid-cols-1 gap-8 md:grid-cols-2'>
-        <DetailSection
-          title='Help Our Audit'
-          icon={Search}
-          className='bg-kapwa-bg-surface-raised border-kapwa-border-weak flex h-full flex-col'
+        <a
+          href={`${config.portal.githubUrl}/issues`}
+          target='_blank'
+          rel='noreferrer'
+          className='inline-flex items-center justify-center gap-2 rounded-lg border border-kapwa-border-weak bg-kapwa-bg-surface px-4 py-2.5 text-sm font-semibold text-kapwa-text-strong hover:border-kapwa-border-brand hover:text-kapwa-text-brand'
         >
-          <div className='flex h-full flex-col justify-between'>
-            <p className='text-kapwa-text-support mb-6 text-sm leading-relaxed'>
-              Our data depends on volunteers like you. If you find a project
-              that is missing or an expense that seems incorrect, please let us
-              know.
-            </p>
-            <a
-              href={`${config.portal.githubUrl}/issues`}
-              target='_blank'
-              rel='noreferrer'
-              className='text-kapwa-text-inverse bg-kapwa-brand-600 hover:bg-kapwa-brand-700 inline-flex w-full items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-xs font-bold transition-colors'
-            >
-              <Users className='h-4 w-4' /> Report an Issue
-            </a>
-          </div>
-        </DetailSection>
-
-        <DetailSection
-          title='Data Sources'
-          icon={FileText}
-          className='flex h-full flex-col'
-        >
-          <div className='flex h-full flex-col justify-between'>
-            <p className='text-kapwa-text-disabled mb-6 text-[11px] font-medium italic'>
-              We mirror and verify data from the following platforms:
-            </p>
-            <div className='flex flex-col gap-3'>
-              <a
-                href='https://transparency.bettergov.ph'
-                target='_blank'
-                rel='noreferrer'
-                className='text-kapwa-text-inverse bg-kapwa-brand-600 hover:bg-kapwa-brand-700 inline-flex w-full items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-xs font-bold transition-colors'
-              >
-                Transparency Dashboard <ExternalLink className='h-3 w-3' />
-              </a>
-              <a
-                href='https://data.bettergov.ph/'
-                target='_blank'
-                rel='noreferrer'
-                className='text-kapwa-text-inverse bg-kapwa-brand-600 hover:bg-kapwa-brand-700 inline-flex w-full items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-xs font-bold transition-colors'
-              >
-                BetterGov Data Portal <ExternalLink className='h-3 w-3' />
-              </a>
-            </div>
-          </div>
-        </DetailSection>
-      </div>
+          Report a data problem <ExternalLink className='h-4 w-4' />
+        </a>
+      </aside>
     </div>
   );
 }

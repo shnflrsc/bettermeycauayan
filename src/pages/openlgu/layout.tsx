@@ -1,15 +1,8 @@
-import { Outlet, useLocation } from 'react-router-dom';
-
+import { NavLink, Outlet } from 'react-router-dom';
 import { parseAsStringEnum, useQueryState } from 'nuqs';
 
-import { PageHeader } from '@/components/layout';
-import { lguLabels } from '@/lib/lguLabels';
-import { SidebarLayout } from '@/components/layout/SidebarLayout';
-import SearchInput from '@/components/ui/SearchInput';
-
+import { cn } from '@/lib/utils';
 import useOpenLGU from '@/hooks/useOpenLGU';
-
-import OpenLGUSidebar from './components/OpenLGUSidebar';
 
 const filterValues = [
   'all',
@@ -20,100 +13,83 @@ const filterValues = [
 
 export type FilterType = (typeof filterValues)[number];
 
+const navigation = [
+  { label: 'Documents', to: '/openlgu', end: true },
+  { label: 'Officials', to: '/openlgu/officials' },
+  { label: 'Legislative terms', to: '/openlgu/terms' },
+];
+
 export default function OpenLGULayout() {
-  const location = useLocation();
-
-  // Logic: Collapse sidebar if reading a specific document
-  const isIndexPage =
-    location.pathname === '/openlgu' || location.pathname === '/openlgu/';
-
   const [searchQuery, setSearchQuery] = useQueryState('search', {
     defaultValue: '',
   });
-
   const [filterType, setFilterType] = useQueryState(
     'type',
     parseAsStringEnum([...filterValues])
       .withDefault('all')
       .withOptions({ clearOnDefault: true })
   );
-
-  // New: Author multi-select filter (comma-separated IDs in URL)
   const [authorIds, setAuthorIds] = useQueryState('authors', {
     defaultValue: [] as string[],
     parse: value => (value ? value.split(',').filter(Boolean) : []),
     serialize: values => values.join(','),
   });
-
-  // New: Year single-select filter
-  const [year, setYear] = useQueryState('year', {
-    defaultValue: '',
-  });
-
+  const [year, setYear] = useQueryState('year', { defaultValue: '' });
   const legislation = useOpenLGU();
 
   return (
-    <SidebarLayout
-      collapsible={true}
-      defaultCollapsed={!isIndexPage}
-      // Unified header using PageHeader component
-      headerNode={
-        isIndexPage ? (
-          <PageHeader
-            variant='hero'
-            title='OpenLGU Portal'
-            description={`Browse official local ordinances, resolutions, and executive orders of ${lguLabels.name}.`}
-            actions={
-              <SearchInput
-                placeholder='Search by title, number, or author...'
-                value={searchQuery}
-                onChangeValue={setSearchQuery}
-                size='md'
-              />
-            }
-          />
-        ) : (
-          <PageHeader
-            variant='compact'
-            title='OpenLGU Document'
-            description='Official record from the Sangguniang Panlungsod.'
-            autoBreadcrumbs={true}
-            actions={
-              <SearchInput
-                placeholder='Search by title, number, or author...'
-                value={searchQuery}
-                onChangeValue={setSearchQuery}
-                size='sm'
-              />
-            }
-          />
-        )
-      }
-      // SIDEBAR
-      sidebar={
-        <OpenLGUSidebar
-          filterType={filterType}
-          setFilterType={setFilterType}
-          terms={legislation.terms}
-          persons={legislation.persons}
-          term={legislation.term}
-          documents={legislation.documents}
+    <div className='min-h-screen bg-kapwa-bg-surface-raised'>
+      <div className='border-b border-kapwa-border-weak bg-kapwa-bg-surface'>
+        <div className='container mx-auto px-4'>
+          <div className='flex flex-col gap-3 py-4 md:flex-row md:items-center md:justify-between'>
+            <NavLink
+              to='/openlgu'
+              end
+              className='text-lg font-extrabold text-kapwa-text-strong hover:text-kapwa-text-brand'
+            >
+              OpenLGU
+            </NavLink>
+            <nav
+              aria-label='OpenLGU sections'
+              className='flex min-w-0 gap-1 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden'
+            >
+              {navigation.map(item => (
+                <NavLink
+                  key={item.to}
+                  to={item.to}
+                  end={item.end}
+                  className={({ isActive }) =>
+                    cn(
+                      'shrink-0 rounded-lg px-3 py-2 text-sm font-semibold transition-colors',
+                      isActive
+                        ? 'bg-kapwa-bg-brand-weak text-kapwa-text-brand'
+                        : 'text-kapwa-text-support hover:bg-stone-100 hover:text-kapwa-text-strong'
+                    )
+                  }
+                >
+                  {item.label}
+                </NavLink>
+              ))}
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <main className='container mx-auto px-4 py-7 md:py-10'>
+        <Outlet
+          context={{
+            searchQuery,
+            setSearchQuery,
+            filterType,
+            setFilterType,
+            authorIds,
+            setAuthorIds,
+            year,
+            setYear,
+            ...legislation,
+          }}
         />
-      }
-    >
-      <Outlet
-        context={{
-          searchQuery,
-          setSearchQuery,
-          filterType,
-          setFilterType,
-          authorIds,
-          setAuthorIds,
-          year,
-          setYear,
-          ...legislation,
-        }}
-      />
-    </SidebarLayout>
+      </main>
+    </div>
   );
 }

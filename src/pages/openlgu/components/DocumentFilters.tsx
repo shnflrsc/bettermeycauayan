@@ -4,8 +4,6 @@ import { X } from 'lucide-react';
 import { Badge } from '@/components/ui/Badge';
 import SelectPicker from '@/components/ui/SelectPicker';
 
-import { getDocTypeBadgeVariant } from '@/lib/openlgu';
-
 import type { FilterType } from '../layout';
 
 interface DocumentFiltersProps {
@@ -18,13 +16,6 @@ interface DocumentFiltersProps {
   authorOptions: Array<{ label: string; value: string }>;
   yearOptions: Array<{ label: string; value: string }>;
 }
-
-const typeOptions: Array<{ label: string; value: FilterType }> = [
-  { label: 'All Documents', value: 'all' },
-  { label: 'Ordinances', value: 'ordinance' },
-  { label: 'Resolutions', value: 'resolution' },
-  { label: 'Executive Orders', value: 'executive_order' },
-];
 
 export default function DocumentFilters({
   filterType,
@@ -48,19 +39,6 @@ export default function DocumentFilters({
   return (
     <div className='space-y-4'>
       <div className='flex flex-wrap items-center gap-3'>
-        {/* Type Filter - Single Select */}
-        <div className='min-w-[180px] flex-1 sm:flex-none'>
-          <SelectPicker
-            options={typeOptions}
-            selectedValues={[filterType]}
-            onSelect={selected => setFilterType(selected[0]?.value || 'all')}
-            placeholder='Type'
-            size='md'
-            searchable={false}
-            clearable={true}
-          />
-        </div>
-
         {/* Author Filter - Multi Select */}
         <div className='min-w-[240px] flex-1 sm:flex-none'>
           <SelectPicker
@@ -103,19 +81,6 @@ export default function DocumentFilters({
       {/* Active Filters Display */}
       {hasActiveFilters && (
         <div className='flex flex-wrap gap-2'>
-          {filterType !== 'all' && (
-            <Badge
-              variant={
-                filterType === 'all'
-                  ? 'slate'
-                  : getDocTypeBadgeVariant(filterType)
-              }
-              className='cursor-pointer hover:opacity-80'
-              onClick={() => setFilterType('all')}
-            >
-              Type: {typeOptions.find(o => o.value === filterType)?.label}
-            </Badge>
-          )}
           {authorIds.length > 0 && (
             <Badge
               variant='secondary'

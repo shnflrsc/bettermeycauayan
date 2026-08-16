@@ -6,15 +6,6 @@ import {
   ShieldCheck,
 } from 'lucide-react';
 
-import {
-  Breadcrumb,
-  BreadcrumbHome,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from '@/components/navigation/Breadcrumb';
 // UI Components
 import { Badge } from '@/components/ui/Badge';
 
@@ -208,26 +199,11 @@ export default function FinancialPage() {
 
   return (
     <div className='animate-in fade-in mx-auto max-w-7xl space-y-6 pb-20 duration-500'>
-      {/* 1. Standardized Breadcrumbs */}
-      <Breadcrumb>
-        <BreadcrumbList>
-          <BreadcrumbItem>
-            <BreadcrumbHome href='/' />
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <BreadcrumbLink href='/transparency'>Transparency</BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <BreadcrumbPage>Financial Report</BreadcrumbPage>
-          </BreadcrumbItem>
-        </BreadcrumbList>
-      </Breadcrumb>
-
-      {/* 2. Unified Header with Controls */}
-      <div className='border-kapwa-border-weak bg-kapwa-bg-surface flex flex-col gap-8 rounded-3xl border p-8 shadow-sm xl:flex-row xl:items-center xl:justify-between'>
+      <header className='flex flex-col gap-6 border-b border-kapwa-border-weak pb-6 xl:flex-row xl:items-end xl:justify-between'>
         <div className='space-y-4'>
+          <p className='text-sm font-bold tracking-wide text-kapwa-text-brand uppercase'>
+            Transparency
+          </p>
           <div className='flex flex-wrap items-center gap-2'>
             <Badge variant='primary' dot>
               Official SRE Data
@@ -238,9 +214,9 @@ export default function FinancialPage() {
               <span>Millions (PHP)</span>
             </div>
           </div>
-          <h1 className='text-kapwa-text-strong kapwa-heading-xl font-extrabold flex items-center gap-3'>
-            <BarChart2Icon className='h-8 w-8 text-kapwa-text-success' />
-            Financial Performance
+          <h1 className='flex items-center gap-3 text-3xl font-extrabold tracking-tight text-kapwa-text-strong md:text-4xl'>
+            <BarChart2Icon className='h-7 w-7 text-kapwa-text-success' />
+            Budget and finances
           </h1>
           <p className='text-kapwa-text-disabled max-w-xl text-sm leading-relaxed font-medium'>
             Annual financial performance of the City Government of Meycauayan,
@@ -248,7 +224,7 @@ export default function FinancialPage() {
           </p>
         </div>
 
-        <div className='border-kapwa-border-weak bg-kapwa-bg-surface-raised shrink-0 rounded-2xl border p-4'>
+        <div className='shrink-0'>
           <QuarterToggle
             annualOnly
             quarters={quartersInYear.map(q => getQuarter(q.period))}
@@ -266,7 +242,7 @@ export default function FinancialPage() {
             }}
           />
         </div>
-      </div>
+      </header>
 
       {/* 3. KPI Cards - Uses established card patterns inside SummaryCards */}
       <div role='region' aria-label='Financial Summary Cards'>

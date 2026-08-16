@@ -31,7 +31,7 @@ export default function ElectedOfficialsSidebar() {
   ];
 
   return (
-    <SidebarContainer title='Municipal Government'>
+    <SidebarContainer title='City Government'>
       {groups.map(group => (
         <SidebarGroup key={group.title} title={group.title}>
           {group.items.map(item => (

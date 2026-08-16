@@ -29,7 +29,7 @@ export default function DepartmentsSidebar() {
   });
 
   return (
-    <SidebarContainer title='Municipal Departments'>
+    <SidebarContainer title='City Departments'>
       {sortedDepartments.map(dept => {
         // 2. Get the specific icon or fallback to a default building icon
         const IconComponent = officeIcons[dept.slug] || Building2Icon;

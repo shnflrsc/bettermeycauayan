@@ -28,7 +28,7 @@ export default function MunicipalCommitteesPage() {
   const [searchTerm, setSearchTerm] = useState('');
 
   const sbData = legislativeData.find(
-    item => item.slug === '12th-sangguniang-bayan'
+    item => item.slug === 'sangguniang-panlungsod'
   );
 
   const committees = useMemo(
@@ -51,7 +51,7 @@ export default function MunicipalCommitteesPage() {
     <>
       <PageHero
         title='Standing Committees'
-        description={`Active committees of the ${sbData?.chamber ?? 'Sangguniang Bayan'}.`}
+        description={`Active committees of the ${sbData?.chamber ?? 'Sangguniang Panlungsod'}.`}
         breadcrumb={[
           { label: 'Government', href: '/government' },
           { label: 'Elected Officials', href: '/government/elected-officials' },

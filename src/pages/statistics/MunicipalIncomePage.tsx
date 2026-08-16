@@ -5,7 +5,6 @@ import { Coins, Landmark, Wallet } from 'lucide-react';
 import { StatGrid } from '@/components/ui/StatCard';
 import { Badge } from '@/components/ui/Badge';
 import { DetailSection } from '@/components/layout/PageLayouts';
-import { PageHero } from '@/components/layout/PageLayouts';
 
 import FinancialPieChart from '@/pages/transparency/components/FinancialPieChart';
 
@@ -64,18 +63,20 @@ export default function MunicipalIncomePage() {
 
   return (
     <>
-      {/* PageHero - documented pattern for layout headers */}
-      <PageHero
-        title='Municipal Income'
-        description='Detailed analysis of revenue sources, fiscal autonomy, and national tax dependency.'
-      >
-        <div className='flex flex-wrap justify-center gap-2'>
+      <header className='mb-7 border-b border-kapwa-border-weak pb-6'>
+        <h1 className='text-3xl font-black tracking-tight text-kapwa-text-strong'>
+          City finances
+        </h1>
+        <p className='mt-2 max-w-2xl text-sm leading-6 text-kapwa-text-support md:text-base'>
+          Where Meycauayan’s income comes from and how much is raised locally.
+        </p>
+        <div className='mt-3 flex flex-wrap gap-2'>
           <Badge variant='primary' dot>
             {data.period}
           </Badge>
           <Badge variant='slate'>BLGF Data</Badge>
         </div>
-      </PageHero>
+      </header>
 
       {/* KPI Cards - using StatGrid with StatCard */}
       <div className='mb-kapwa-lg'>
@@ -91,15 +92,15 @@ export default function MunicipalIncomePage() {
               variant: 'primary',
             },
             {
-              label: 'Local Sufficiency',
+              label: 'Locally Sourced Revenue Share',
               value: `${data.summary_indicators.dependency_rates.lsr_dependency}`,
-              subtext: 'LSR Share',
+              subtext: 'Share raised by the city',
               variant: 'secondary',
             },
             {
-              label: 'NTA Dependency',
+              label: 'National Allotment Share',
               value: `${data.summary_indicators.dependency_rates.nta_dependency}`,
-              subtext: 'National Allotment',
+              subtext: 'Share received through NTA',
               variant: 'slate',
               icon: Wallet,
             },
@@ -217,40 +218,17 @@ export default function MunicipalIncomePage() {
         </div>
       </DetailSection>
 
-      {/* Footer */}
-      <footer className='border-kapwa-border-weak space-y-4 border-t pt-10 text-center'>
-        <div className='bg-kapwa-bg-success-weak text-kapwa-text-success mx-auto flex h-6 w-6 items-center justify-center rounded-full'>
-          <svg
-            className='h-4 w-4'
-            fill='none'
-            viewBox='0 0 24 24'
-            stroke='currentColor'
-          >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth={2}
-              d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'
-            />
-          </svg>
-        </div>
-        <div className='space-y-1'>
-          <p className='text-kapwa-text-strong text-[10px] font-bold tracking-widest uppercase'>
-            Verified Data Audit
-          </p>
-          <p className='text-kapwa-text-disabled text-[10px] font-bold tracking-widest uppercase'>
-            Source:{' '}
-            <a
-              href='https://data.bettergov.ph/datasets/9/resources/31'
-              target='_blank'
-              rel='noreferrer'
-              className='hover:text-kapwa-text-brand underline'
-            >
-              Bureau of Local Government Finance (BLGF)
-            </a>
-          </p>
-        </div>
-      </footer>
+      <p className='mt-8 border-t border-kapwa-border-weak pt-5 text-sm text-kapwa-text-support'>
+        Source:{' '}
+        <a
+          href='https://data.bettergov.ph/datasets/9/resources/31'
+          target='_blank'
+          rel='noreferrer'
+          className='hover:text-kapwa-text-brand underline'
+        >
+          Bureau of Local Government Finance (BLGF)
+        </a>
+      </p>
     </>
   );
 }
